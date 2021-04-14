@@ -4,7 +4,7 @@ Este repositorio tiene como objetivo mostrar  los elementos que componen el sist
 ## DOCUMENTOS RELACIONADOS
 * [Configuración o asignación de pines](https://docs.google.com/spreadsheets/d/19cve4B_YzyOGqIv9DEK3eCqArvopMfsAZXm61Hay0jQ/edit?usp=sharing)
 * [Google Drive](https://docs.google.com/spreadsheets/d/19cve4B_YzyOGqIv9DEK3eCqArvopMfsAZXm61Hay0jQ/edit?usp=sharing)
-* [Diagrama de bloques](https://drive.google.com/file/d/15hplvUb-0VYiLSafDF4zVQiwi1Wwi6ML/view?usp=sharing)
+* [Diagrama de bloques](https://drive.google.com/file/d/1_osPgyQmuKj5nIkt5gdU3hPU3BZLeOLT/view?usp=sharing)
 * [Schematic](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/shematic.pdf)
 
 ## REQUERIMIENTOS DE HARDWARE 
