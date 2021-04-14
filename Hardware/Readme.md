@@ -11,4 +11,5 @@ Este repositorio tiene como objetivo mostrar  los elementos que componen el sist
 * [MaxSonar](https://co.mouser.com/ProductDetail/DFRobot/SEN0272?qs=T8HDo%252BTk69VWj8BEbH%252BU3Q%3D%3D)
 * [LoRa Mote](https://co.mouser.com/ProductDetail/DFRobot/SEN0272?qs=T8HDo%252BTk69VWj8BEbH%252BU3Q%3D%3D)
 * [Dspic30f4011](https://co.mouser.com/ProductDetail/Microchip-Technology/dsPIC30F4011-30I-P?qs=nMCt4TBfEwpnzUUd8LIZNg%3D%3D)
+* falta agregar los nuevos componentes!
 
