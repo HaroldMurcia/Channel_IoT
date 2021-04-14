@@ -5,6 +5,7 @@ Este repositorio tiene como objetivo mostrar  los elementos que componen el sist
 * [Configuración o asignación de pines](https://docs.google.com/spreadsheets/d/19cve4B_YzyOGqIv9DEK3eCqArvopMfsAZXm61Hay0jQ/edit?usp=sharing)
 * [Google Drive](https://docs.google.com/spreadsheets/d/19cve4B_YzyOGqIv9DEK3eCqArvopMfsAZXm61Hay0jQ/edit?usp=sharing)
 * [Diagrama de bloques](https://drive.google.com/file/d/15hplvUb-0VYiLSafDF4zVQiwi1Wwi6ML/view?usp=sharing)
+* [Schematic](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/shematic.pdf)
 
 ## REQUERIMIENTOS DE HARDWARE 
 * [MaxSonar](https://co.mouser.com/ProductDetail/DFRobot/SEN0272?qs=T8HDo%252BTk69VWj8BEbH%252BU3Q%3D%3D)
