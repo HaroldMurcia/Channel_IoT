@@ -129,8 +129,10 @@ uint8_t EUSART1_Read(void)
     return RCREG1;
 }
 //  funcion que leee el puerto serial 
-char * get_Data(void)
-{
+char *get_Data(void)
+{   
+//    char read[64];
+//    int i;
     while(!PIR1bits.RC1IF)
     {
     }
@@ -144,7 +146,11 @@ char * get_Data(void)
         RCSTA1bits.CREN = 0; 
         RCSTA1bits.CREN = 1; 
     }
-
+    
+//    for(i = 0; read[i] != '\0'; i++)
+//    {
+//        read[i] = RCREG1;
+//    }
     return RCREG1;
 }
 void EUSART1_Write(uint8_t txData)
