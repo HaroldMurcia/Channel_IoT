@@ -32,17 +32,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "5228
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf45k50.h: 5228: extern volatile unsigned char TRISD __attribute__((address(0xF95)));
 [v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
-[v F4798 `(v ~T0 @X0 1 tf1`ul ]
-"203 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\pic18.h
-[v __delay `JF4798 ~T0 @X0 0 e ]
-[p i __delay ]
 "341 ./mcc_generated_files/eusart1.h
 [; ;./mcc_generated_files/eusart1.h: 341: void EUSART1_Write(uint8_t txData);
 [v _EUSART1_Write `(v ~T0 @X0 0 ef1`uc ]
 "64 ./SSD1306oLED.h
 [; ;./SSD1306oLED.h: 64: void oled_putString(const char *string, uint8_t station_dot, uint8_t start_page);
 [v _oled_putString `(v ~T0 @X0 0 ef3`*Cuc`uc`uc ]
-"54
+[v F4798 `(v ~T0 @X0 1 tf1`ul ]
+"203 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\pic18.h
+[v __delay `JF4798 ~T0 @X0 0 e ]
+[p i __delay ]
+"54 ./SSD1306oLED.h
 [; ;./SSD1306oLED.h: 54: void oled_clear();
 [v _oled_clear `(v ~T0 @X0 0 e? ]
 "113 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
@@ -53,9 +53,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "56 ./SSD1306oLED.h
 [; ;./SSD1306oLED.h: 56: void oled_clearRow(uint8_t page);
 [v _oled_clearRow `(v ~T0 @X0 0 ef1`uc ]
-"321 ./mcc_generated_files/eusart1.h
-[; ;./mcc_generated_files/eusart1.h: 321: uint8_t EUSART1_Read(void);
-[v _EUSART1_Read `(uc ~T0 @X0 0 ef ]
 [p mainexit ]
 "70 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 70: void SYSTEM_Initialize(void);
@@ -63,7 +60,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "52 ./SSD1306oLED.h
 [; ;./SSD1306oLED.h: 52: void oled_init();
 [v _oled_init `(v ~T0 @X0 0 e? ]
-"66
+"321 ./mcc_generated_files/eusart1.h
+[; ;./mcc_generated_files/eusart1.h: 321: uint8_t EUSART1_Read(void);
+[v _EUSART1_Read `(uc ~T0 @X0 0 ef ]
+"66 ./SSD1306oLED.h
 [; ;./SSD1306oLED.h: 66: void oled_putUint8(uint8_t number, uint8_t station_dot, uint8_t start_page);
 [v _oled_putUint8 `(v ~T0 @X0 0 ef3`uc`uc`uc ]
 "54 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf45k50.h
@@ -715,297 +715,280 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 641 ]
 }
 "23
-[; ;main.c: 23: void delayms(uint16_t length)
-[v _delayms `(v ~T0 @X0 1 ef1`us ]
-"24
-[; ;main.c: 24: {
-{
-[e :U _delayms ]
-"23
-[; ;main.c: 23: void delayms(uint16_t length)
-[v _length `us ~T0 @X0 1 r1 ]
-"24
-[; ;main.c: 24: {
-[f ]
-"25
-[; ;main.c: 25:     uint16_t counter;
-[v _counter `us ~T0 @X0 1 a ]
-"26
-[; ;main.c: 26:     for(counter = 0; counter < length; counter++)
-{
-[e = _counter -> -> 0 `i `us ]
-[e $U 646  ]
-[e :U 643 ]
-"27
-[; ;main.c: 27:     {
-{
-"28
-[; ;main.c: 28:         _delay((unsigned long)((1)*(48000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
-"29
-[; ;main.c: 29:     }
-}
-[e ++ _counter -> -> 1 `i `us ]
-[e :U 646 ]
-[e $ < -> _counter `ui -> _length `ui 643  ]
-[e :U 644 ]
-}
-"30
-[; ;main.c: 30: }
-[e :UE 642 ]
-}
-"32
-[; ;main.c: 32: void Endline(void)
+[; ;main.c: 23: void Endline(void)
 [v _Endline `(v ~T0 @X0 1 ef ]
-"33
-[; ;main.c: 33: {
+"24
+[; ;main.c: 24: {
 {
 [e :U _Endline ]
 [f ]
-"34
-[; ;main.c: 34:     EUSART1_Write(0x0D);
+"25
+[; ;main.c: 25:     EUSART1_Write(0x0D);
 [e ( _EUSART1_Write (1 -> -> 13 `i `uc ]
-"35
-[; ;main.c: 35:     EUSART1_Write(0x0A);
+"26
+[; ;main.c: 26:     EUSART1_Write(0x0A);
 [e ( _EUSART1_Write (1 -> -> 10 `i `uc ]
-"36
-[; ;main.c: 36: }
-[e :UE 647 ]
+"27
+[; ;main.c: 27: }
+[e :UE 642 ]
 }
-"38
-[; ;main.c: 38: void sendCommand(char * texto)
+"29
+[; ;main.c: 29: void sendCommand(char * texto)
 [v _sendCommand `(v ~T0 @X0 1 ef1`*uc ]
-"39
-[; ;main.c: 39: {
+"30
+[; ;main.c: 30: {
 {
 [e :U _sendCommand ]
-"38
-[; ;main.c: 38: void sendCommand(char * texto)
+"29
+[; ;main.c: 29: void sendCommand(char * texto)
 [v _texto `*uc ~T0 @X0 1 r1 ]
-"39
-[; ;main.c: 39: {
+"30
+[; ;main.c: 30: {
 [f ]
-"40
-[; ;main.c: 40:     while(* texto)
-[e $U 649  ]
-[e :U 650 ]
-"41
-[; ;main.c: 41:     {
+"31
+[; ;main.c: 31:     while(* texto)
+[e $U 644  ]
+[e :U 645 ]
+"32
+[; ;main.c: 32:     {
 {
-"42
-[; ;main.c: 42:         EUSART1_Write(* texto);
+"33
+[; ;main.c: 33:         EUSART1_Write(* texto);
 [e ( _EUSART1_Write (1 -> *U _texto `uc ]
-"43
-[; ;main.c: 43:         texto++;
+"34
+[; ;main.c: 34:         texto++;
 [e ++ _texto * -> -> 1 `i `x -> -> # *U _texto `i `x ]
-"44
-[; ;main.c: 44:     }
+"35
+[; ;main.c: 35:     }
 }
-[e :U 649 ]
+[e :U 644 ]
+"31
+[; ;main.c: 31:     while(* texto)
+[e $ != -> *U _texto `i -> 0 `i 645  ]
+[e :U 646 ]
+"37
+[; ;main.c: 37: }
+[e :UE 643 ]
+}
 "40
-[; ;main.c: 40:     while(* texto)
-[e $ != -> *U _texto `i -> 0 `i 650  ]
-[e :U 651 ]
-"46
-[; ;main.c: 46: }
-[e :UE 648 ]
-}
-"49
-[; ;main.c: 49: void test_leds(void)
+[; ;main.c: 40: void test_leds(void)
 [v _test_leds `(v ~T0 @X0 1 ef ]
-"50
-[; ;main.c: 50: {
+"41
+[; ;main.c: 41: {
 {
 [e :U _test_leds ]
 [f ]
-"51
-[; ;main.c: 51:     oled_putString("LED Test:",0,1);
+"42
+[; ;main.c: 42:     oled_putString("LED Test:",0,1);
 [e ( _oled_putString (3 , , :s 1C -> -> 0 `i `uc -> -> 1 `i `uc ]
+"43
+[; ;main.c: 43:     LATAbits.LATA6 = 1;
+[e = . . _LATAbits 0 6 -> -> 1 `i `uc ]
+"44
+[; ;main.c: 44:     LATAbits.LATA7 = 1;
+[e = . . _LATAbits 0 7 -> -> 1 `i `uc ]
+"45
+[; ;main.c: 45:     _delay((unsigned long)((500)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"46
+[; ;main.c: 46:     LATAbits.LATA6 = 0;
+[e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
+"47
+[; ;main.c: 47:     LATAbits.LATA7 = 0;
+[e = . . _LATAbits 0 7 -> -> 0 `i `uc ]
+"48
+[; ;main.c: 48:     _delay((unsigned long)((500)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"49
+[; ;main.c: 49:     LATAbits.LATA6 = 1;
+[e = . . _LATAbits 0 6 -> -> 1 `i `uc ]
+"50
+[; ;main.c: 50:     LATAbits.LATA7 = 1;
+[e = . . _LATAbits 0 7 -> -> 1 `i `uc ]
+"51
+[; ;main.c: 51:     _delay((unsigned long)((500)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"52
+[; ;main.c: 52:     LATAbits.LATA6 = 0;
+[e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
 "53
-[; ;main.c: 53:     LATAbits.LATA6 = 1;
-[e = . . _LATAbits 0 6 -> -> 1 `i `uc ]
+[; ;main.c: 53:     LATAbits.LATA7 = 0;
+[e = . . _LATAbits 0 7 -> -> 0 `i `uc ]
 "54
-[; ;main.c: 54:     LATAbits.LATA7 = 1;
-[e = . . _LATAbits 0 7 -> -> 1 `i `uc ]
+[; ;main.c: 54:     _delay((unsigned long)((500)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
 "55
-[; ;main.c: 55:      delayms(500);
-[e ( _delayms (1 -> -> 500 `i `us ]
-"56
-[; ;main.c: 56:     LATAbits.LATA6 = 0;
-[e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
-"57
-[; ;main.c: 57:     LATAbits.LATA7 = 0;
-[e = . . _LATAbits 0 7 -> -> 0 `i `uc ]
-"58
-[; ;main.c: 58:     delayms(500);
-[e ( _delayms (1 -> -> 500 `i `us ]
-"59
-[; ;main.c: 59:     LATAbits.LATA6 = 1;
-[e = . . _LATAbits 0 6 -> -> 1 `i `uc ]
-"60
-[; ;main.c: 60:     LATAbits.LATA7 = 1;
-[e = . . _LATAbits 0 7 -> -> 1 `i `uc ]
-"61
-[; ;main.c: 61:     delayms(500);
-[e ( _delayms (1 -> -> 500 `i `us ]
-"62
-[; ;main.c: 62:     LATAbits.LATA6 = 0;
-[e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
-"63
-[; ;main.c: 63:     LATAbits.LATA7 = 0;
-[e = . . _LATAbits 0 7 -> -> 0 `i `uc ]
-"64
-[; ;main.c: 64:     delayms(500);
-[e ( _delayms (1 -> -> 500 `i `us ]
-"65
-[; ;main.c: 65: }
-[e :UE 652 ]
+[; ;main.c: 55: }
+[e :UE 647 ]
 }
-"68
-[; ;main.c: 68: void RN_Leds(_Bool state)
+"58
+[; ;main.c: 58: void RN_Leds(_Bool state)
 [v _RN_Leds `(v ~T0 @X0 1 ef1`a ]
-"69
-[; ;main.c: 69: {
+"59
+[; ;main.c: 59: {
 {
 [e :U _RN_Leds ]
-"68
-[; ;main.c: 68: void RN_Leds(_Bool state)
+"58
+[; ;main.c: 58: void RN_Leds(_Bool state)
 [v _state `a ~T0 @X0 1 r1 ]
-"69
-[; ;main.c: 69: {
+"59
+[; ;main.c: 59: {
 [f ]
-"70
-[; ;main.c: 70:     _delay((unsigned long)((16)*(48000000/4000.0)));
-[e ( __delay (1 -> * -> -> 16 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
-"71
-[; ;main.c: 71:     _delay((unsigned long)((16)*(48000000/4000.0)));
-[e ( __delay (1 -> * -> -> 16 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
-"72
-[; ;main.c: 72:     _delay((unsigned long)((16)*(48000000/4000.0)));
-[e ( __delay (1 -> * -> -> 16 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
-"73
-[; ;main.c: 73:     if (state)
-[e $ ! != -> _state `i -> 0 `i 654  ]
-"74
-[; ;main.c: 74:     {
+"60
+[; ;main.c: 60:     _delay((unsigned long)((50)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"61
+[; ;main.c: 61:     if (state)
+[e $ ! != -> _state `i -> 0 `i 649  ]
+"62
+[; ;main.c: 62:     {
 {
-"75
-[; ;main.c: 75:         sendCommand("sys set pindig GPIO10 1\r\n");
+"63
+[; ;main.c: 63:         sendCommand("sys set pindig GPIO10 1\r\n");
 [e ( _sendCommand (1 :s 2C ]
-"76
-[; ;main.c: 76:         _delay((unsigned long)((16)*(48000000/4000.0)));
-[e ( __delay (1 -> * -> -> 16 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
-"77
-[; ;main.c: 77:         _delay((unsigned long)((16)*(48000000/4000.0)));
-[e ( __delay (1 -> * -> -> 16 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
-"78
-[; ;main.c: 78:         _delay((unsigned long)((16)*(48000000/4000.0)));
-[e ( __delay (1 -> * -> -> 16 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
-"79
-[; ;main.c: 79:         sendCommand("sys set pindig GPIO11 1\r\n");
+"64
+[; ;main.c: 64:         _delay((unsigned long)((50)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"65
+[; ;main.c: 65:         sendCommand("sys set pindig GPIO11 1\r\n");
 [e ( _sendCommand (1 :s 3C ]
-"80
-[; ;main.c: 80:     }
+"66
+[; ;main.c: 66:     }
 }
-[e $U 655  ]
-"81
-[; ;main.c: 81:     else
-[e :U 654 ]
-"82
-[; ;main.c: 82:     {
+[e $U 650  ]
+"67
+[; ;main.c: 67:     else
+[e :U 649 ]
+"68
+[; ;main.c: 68:     {
 {
-"83
-[; ;main.c: 83:         sendCommand("sys set pindig GPIO10 0\r\n");
+"69
+[; ;main.c: 69:         sendCommand("sys set pindig GPIO10 0\r\n");
 [e ( _sendCommand (1 :s 4C ]
-"84
-[; ;main.c: 84:         _delay((unsigned long)((16)*(48000000/4000.0)));
-[e ( __delay (1 -> * -> -> 16 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
-"85
-[; ;main.c: 85:         _delay((unsigned long)((16)*(48000000/4000.0)));
-[e ( __delay (1 -> * -> -> 16 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
-"86
-[; ;main.c: 86:         _delay((unsigned long)((16)*(48000000/4000.0)));
-[e ( __delay (1 -> * -> -> 16 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
-"87
-[; ;main.c: 87:         sendCommand("sys set pindig GPIO11 0\r\n");
+"70
+[; ;main.c: 70:         _delay((unsigned long)((50)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"71
+[; ;main.c: 71:         sendCommand("sys set pindig GPIO11 0\r\n");
 [e ( _sendCommand (1 :s 5C ]
-"88
-[; ;main.c: 88:     }
+"72
+[; ;main.c: 72:     }
 }
-[e :U 655 ]
-"89
-[; ;main.c: 89: }
-[e :UE 653 ]
+[e :U 650 ]
+"73
+[; ;main.c: 73: }
+[e :UE 648 ]
 }
-"91
-[; ;main.c: 91: void init_mod_LoRa(void)
+"75
+[; ;main.c: 75: void init_mod_LoRa(void)
 [v _init_mod_LoRa `(v ~T0 @X0 1 ef ]
-"92
-[; ;main.c: 92: { char read[10];
+"76
+[; ;main.c: 76: {
 {
 [e :U _init_mod_LoRa ]
 [f ]
-[v _read `uc ~T0 @X0 -> 10 `i a ]
-"93
-[; ;main.c: 93:     char READ[10];
+"77
+[; ;main.c: 77:     char READ[10];
 [v _READ `uc ~T0 @X0 -> 10 `i a ]
-"94
-[; ;main.c: 94:     delayms(200);
-[e ( _delayms (1 -> -> 200 `i `us ]
-"95
-[; ;main.c: 95:     oled_clear();
+"78
+[; ;main.c: 78:     _delay((unsigned long)((200)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"79
+[; ;main.c: 79:     oled_clear();
 [e ( _oled_clear ..  ]
-"96
-[; ;main.c: 96:     sprintf(READ,"%c",get_Data());
+"80
+[; ;main.c: 80:     sprintf(READ,"%c",get_Data());
 [e ( _sprintf (1 , (. , &U _READ :s 6C ( _get_Data ..  ]
-"97
-[; ;main.c: 97:     oled_putString(READ,0,3);
+"81
+[; ;main.c: 81:     oled_putString(READ,0,3);
 [e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"98
-[; ;main.c: 98:     delayms(100);
-[e ( _delayms (1 -> -> 100 `i `us ]
-"99
-[; ;main.c: 99:     sprintf(READ,"%c",get_Data());
+"82
+[; ;main.c: 82:     _delay((unsigned long)((100)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"83
+[; ;main.c: 83:     sprintf(READ,"%c",get_Data());
 [e ( _sprintf (1 , (. , &U _READ :s 7C ( _get_Data ..  ]
-"100
-[; ;main.c: 100:     oled_putString(READ,0,3);
+"84
+[; ;main.c: 84:     oled_putString(READ,0,3);
 [e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"101
-[; ;main.c: 101:     delayms(100);
-[e ( _delayms (1 -> -> 100 `i `us ]
-"103
-[; ;main.c: 103:     oled_putString("Config modulo RN",0,0);
+"85
+[; ;main.c: 85:     _delay((unsigned long)((100)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"87
+[; ;main.c: 87:     oled_putString("Config modulo RN",0,0);
 [e ( _oled_putString (3 , , :s 8C -> -> 0 `i `uc -> -> 0 `i `uc ]
-"104
-[; ;main.c: 104:     oled_clearRow(1);
+"88
+[; ;main.c: 88:     oled_clearRow(1);
 [e ( _oled_clearRow (1 -> -> 1 `i `uc ]
-"105
-[; ;main.c: 105:     oled_clearRow(2);
+"89
+[; ;main.c: 89:     oled_clearRow(2);
 [e ( _oled_clearRow (1 -> -> 2 `i `uc ]
-"106
-[; ;main.c: 106:     oled_clearRow(3);
+"90
+[; ;main.c: 90:     oled_clearRow(3);
 [e ( _oled_clearRow (1 -> -> 3 `i `uc ]
-"107
-[; ;main.c: 107:     oled_putString("potencia",0,1);
+"91
+[; ;main.c: 91:     oled_putString("potencia",0,1);
 [e ( _oled_putString (3 , , :s 9C -> -> 0 `i `uc -> -> 1 `i `uc ]
-"108
-[; ;main.c: 108:     sendCommand("radio set pwr 3\r\n");
+"92
+[; ;main.c: 92:     sendCommand("radio set pwr 3\r\n");
 [e ( _sendCommand (1 :s 10C ]
+"93
+[; ;main.c: 93:     sprintf(READ,"%c",get_Data());
+[e ( _sprintf (1 , (. , &U _READ :s 11C ( _get_Data ..  ]
+"94
+[; ;main.c: 94:     oled_putString(READ,0,3);
+[e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
+"95
+[; ;main.c: 95:     _delay((unsigned long)((500)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"97
+[; ;main.c: 97:     oled_clearRow(1);
+[e ( _oled_clearRow (1 -> -> 1 `i `uc ]
+"98
+[; ;main.c: 98:     oled_clearRow(2);
+[e ( _oled_clearRow (1 -> -> 2 `i `uc ]
+"99
+[; ;main.c: 99:     oled_clearRow(3);
+[e ( _oled_clearRow (1 -> -> 3 `i `uc ]
+"100
+[; ;main.c: 100:     oled_putString("ancho de banda",0,1);
+[e ( _oled_putString (3 , , :s 12C -> -> 0 `i `uc -> -> 1 `i `uc ]
+"101
+[; ;main.c: 101:     sendCommand("radio set bw 250\r\n");
+[e ( _sendCommand (1 :s 13C ]
+"102
+[; ;main.c: 102:     sprintf(READ,"%c",get_Data());
+[e ( _sprintf (1 , (. , &U _READ :s 14C ( _get_Data ..  ]
+"103
+[; ;main.c: 103:     oled_putString(READ,0,3);
+[e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
+"104
+[; ;main.c: 104:     _delay((unsigned long)((500)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"106
+[; ;main.c: 106:     oled_clearRow(1);
+[e ( _oled_clearRow (1 -> -> 1 `i `uc ]
+"107
+[; ;main.c: 107:     oled_clearRow(2);
+[e ( _oled_clearRow (1 -> -> 2 `i `uc ]
+"108
+[; ;main.c: 108:     oled_clearRow(3);
+[e ( _oled_clearRow (1 -> -> 3 `i `uc ]
 "109
-[; ;main.c: 109:     sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 11C -> ( _EUSART1_Read ..  `i ]
+[; ;main.c: 109:     oled_putString("frecuencia",0,1);
+[e ( _oled_putString (3 , , :s 15C -> -> 0 `i `uc -> -> 1 `i `uc ]
 "110
-[; ;main.c: 110:     sprintf(READ,"%c",get_Data());
-[e ( _sprintf (1 , (. , &U _READ :s 12C ( _get_Data ..  ]
+[; ;main.c: 110:     sendCommand("radio set freq 923300000\r\n");
+[e ( _sendCommand (1 :s 16C ]
 "111
-[; ;main.c: 111:     oled_putString(read,0,2);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 111:     sprintf(READ,"%c",get_Data());
+[e ( _sprintf (1 , (. , &U _READ :s 17C ( _get_Data ..  ]
 "112
 [; ;main.c: 112:     oled_putString(READ,0,3);
 [e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
 "113
-[; ;main.c: 113:     delayms(500);
-[e ( _delayms (1 -> -> 500 `i `us ]
+[; ;main.c: 113:     _delay((unsigned long)((500)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
 "115
 [; ;main.c: 115:     oled_clearRow(1);
 [e ( _oled_clearRow (1 -> -> 1 `i `uc ]
@@ -1016,804 +999,666 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 117:     oled_clearRow(3);
 [e ( _oled_clearRow (1 -> -> 3 `i `uc ]
 "118
-[; ;main.c: 118:     oled_putString("ancho de banda",0,1);
-[e ( _oled_putString (3 , , :s 13C -> -> 0 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 118:     oled_putString("cod Dec Errores",0,1);
+[e ( _oled_putString (3 , , :s 18C -> -> 0 `i `uc -> -> 1 `i `uc ]
 "119
-[; ;main.c: 119:     sendCommand("radio set bw 250\r\n");
-[e ( _sendCommand (1 :s 14C ]
+[; ;main.c: 119:     sendCommand("radio set crc on\r\n");
+[e ( _sendCommand (1 :s 19C ]
 "120
-[; ;main.c: 120:     sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 15C -> ( _EUSART1_Read ..  `i ]
-"121
-[; ;main.c: 121:     sprintf(READ,"%c",get_Data());
-[e ( _sprintf (1 , (. , &U _READ :s 16C ( _get_Data ..  ]
-"122
-[; ;main.c: 122:     oled_putString(read,0,2);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 2 `i `uc ]
-"123
-[; ;main.c: 123:     oled_putString(READ,0,3);
-[e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"124
-[; ;main.c: 124:     delayms(500);
-[e ( _delayms (1 -> -> 500 `i `us ]
-"126
-[; ;main.c: 126:     oled_clearRow(1);
-[e ( _oled_clearRow (1 -> -> 1 `i `uc ]
-"127
-[; ;main.c: 127:     oled_clearRow(2);
-[e ( _oled_clearRow (1 -> -> 2 `i `uc ]
-"128
-[; ;main.c: 128:     oled_clearRow(3);
-[e ( _oled_clearRow (1 -> -> 3 `i `uc ]
-"129
-[; ;main.c: 129:     oled_putString("frecuencia",0,1);
-[e ( _oled_putString (3 , , :s 17C -> -> 0 `i `uc -> -> 1 `i `uc ]
-"130
-[; ;main.c: 130:     sendCommand("radio set freq 923300000\r\n");
-[e ( _sendCommand (1 :s 18C ]
-"131
-[; ;main.c: 131:     sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 19C -> ( _EUSART1_Read ..  `i ]
-"132
-[; ;main.c: 132:     sprintf(READ,"%c",get_Data());
+[; ;main.c: 120:     sprintf(READ,"%c",get_Data());
 [e ( _sprintf (1 , (. , &U _READ :s 20C ( _get_Data ..  ]
-"133
-[; ;main.c: 133:     oled_putString(read,0,2);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 2 `i `uc ]
-"134
-[; ;main.c: 134:     oled_putString(READ,0,3);
+"121
+[; ;main.c: 121:     oled_putString(READ,0,3);
 [e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"135
-[; ;main.c: 135:     delayms(500);
-[e ( _delayms (1 -> -> 500 `i `us ]
-"137
-[; ;main.c: 137:     oled_clearRow(1);
+"122
+[; ;main.c: 122:     _delay((unsigned long)((500)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"124
+[; ;main.c: 124:     oled_clearRow(1);
 [e ( _oled_clearRow (1 -> -> 1 `i `uc ]
-"138
-[; ;main.c: 138:     oled_clearRow(2);
+"125
+[; ;main.c: 125:     oled_clearRow(2);
 [e ( _oled_clearRow (1 -> -> 2 `i `uc ]
-"139
-[; ;main.c: 139:     oled_clearRow(3);
+"126
+[; ;main.c: 126:     oled_clearRow(3);
 [e ( _oled_clearRow (1 -> -> 3 `i `uc ]
-"140
-[; ;main.c: 140:     oled_putString("cod Dec Errores",0,1);
+"127
+[; ;main.c: 127:     oled_putString("tasa de cod",0,1);
 [e ( _oled_putString (3 , , :s 21C -> -> 0 `i `uc -> -> 1 `i `uc ]
-"141
-[; ;main.c: 141:     sendCommand("radio set crc on\r\n");
+"128
+[; ;main.c: 128:     sendCommand("radio set cr 4/5\r\n");
 [e ( _sendCommand (1 :s 22C ]
+"129
+[; ;main.c: 129:     sprintf(READ,"%c",get_Data());
+[e ( _sprintf (1 , (. , &U _READ :s 23C ( _get_Data ..  ]
+"130
+[; ;main.c: 130:     oled_putString(READ,0,3);
+[e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
+"131
+[; ;main.c: 131:     _delay((unsigned long)((500)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"133
+[; ;main.c: 133:     oled_clearRow(1);
+[e ( _oled_clearRow (1 -> -> 1 `i `uc ]
+"134
+[; ;main.c: 134:     oled_clearRow(2);
+[e ( _oled_clearRow (1 -> -> 2 `i `uc ]
+"135
+[; ;main.c: 135:     oled_clearRow(3);
+[e ( _oled_clearRow (1 -> -> 3 `i `uc ]
+"136
+[; ;main.c: 136:     oled_putString("mod lora",0,1);
+[e ( _oled_putString (3 , , :s 24C -> -> 0 `i `uc -> -> 1 `i `uc ]
+"137
+[; ;main.c: 137:     sendCommand("radio set mod lora\r\n");
+[e ( _sendCommand (1 :s 25C ]
+"138
+[; ;main.c: 138:     sprintf(READ,"%c",get_Data());
+[e ( _sprintf (1 , (. , &U _READ :s 26C ( _get_Data ..  ]
+"139
+[; ;main.c: 139:     oled_putString(READ,0,3);
+[e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
+"140
+[; ;main.c: 140:     _delay((unsigned long)((500)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
 "142
-[; ;main.c: 142:     sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 23C -> ( _EUSART1_Read ..  `i ]
+[; ;main.c: 142:     oled_clearRow(1);
+[e ( _oled_clearRow (1 -> -> 1 `i `uc ]
 "143
-[; ;main.c: 143:     sprintf(READ,"%c",get_Data());
-[e ( _sprintf (1 , (. , &U _READ :s 24C ( _get_Data ..  ]
+[; ;main.c: 143:     oled_clearRow(2);
+[e ( _oled_clearRow (1 -> -> 2 `i `uc ]
 "144
-[; ;main.c: 144:     oled_putString(read,0,2);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 144:     oled_clearRow(3);
+[e ( _oled_clearRow (1 -> -> 3 `i `uc ]
 "145
-[; ;main.c: 145:     oled_putString(READ,0,3);
-[e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
+[; ;main.c: 145:     oled_putString("inversion",0,1);
+[e ( _oled_putString (3 , , :s 27C -> -> 0 `i `uc -> -> 1 `i `uc ]
 "146
-[; ;main.c: 146:     delayms(500);
-[e ( _delayms (1 -> -> 500 `i `us ]
+[; ;main.c: 146:     sendCommand("radio set iqi off\r\n");
+[e ( _sendCommand (1 :s 28C ]
+"147
+[; ;main.c: 147:     sprintf(READ,"%c",get_Data());
+[e ( _sprintf (1 , (. , &U _READ :s 29C ( _get_Data ..  ]
 "148
-[; ;main.c: 148:     oled_clearRow(1);
-[e ( _oled_clearRow (1 -> -> 1 `i `uc ]
-"149
-[; ;main.c: 149:     oled_clearRow(2);
-[e ( _oled_clearRow (1 -> -> 2 `i `uc ]
-"150
-[; ;main.c: 150:     oled_clearRow(3);
-[e ( _oled_clearRow (1 -> -> 3 `i `uc ]
-"151
-[; ;main.c: 151:     oled_putString("tasa de cod",0,1);
-[e ( _oled_putString (3 , , :s 25C -> -> 0 `i `uc -> -> 1 `i `uc ]
-"152
-[; ;main.c: 152:     sendCommand("radio set cr 4/5\r\n");
-[e ( _sendCommand (1 :s 26C ]
-"153
-[; ;main.c: 153:     sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 27C -> ( _EUSART1_Read ..  `i ]
-"154
-[; ;main.c: 154:     sprintf(READ,"%c",get_Data());
-[e ( _sprintf (1 , (. , &U _READ :s 28C ( _get_Data ..  ]
-"155
-[; ;main.c: 155:     oled_putString(read,0,2);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 2 `i `uc ]
-"156
-[; ;main.c: 156:     oled_putString(READ,0,3);
+[; ;main.c: 148:     oled_putString(READ,0,3);
 [e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"157
-[; ;main.c: 157:     delayms(500);
-[e ( _delayms (1 -> -> 500 `i `us ]
-"159
-[; ;main.c: 159:     oled_clearRow(1);
+"149
+[; ;main.c: 149:     _delay((unsigned long)((500)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"151
+[; ;main.c: 151:     oled_clearRow(1);
 [e ( _oled_clearRow (1 -> -> 1 `i `uc ]
-"160
-[; ;main.c: 160:     oled_clearRow(2);
+"152
+[; ;main.c: 152:     oled_clearRow(2);
 [e ( _oled_clearRow (1 -> -> 2 `i `uc ]
-"161
-[; ;main.c: 161:     oled_clearRow(3);
+"153
+[; ;main.c: 153:     oled_clearRow(3);
 [e ( _oled_clearRow (1 -> -> 3 `i `uc ]
+"154
+[; ;main.c: 154:     oled_putString("wdt",0,1);
+[e ( _oled_putString (3 , , :s 30C -> -> 0 `i `uc -> -> 1 `i `uc ]
+"155
+[; ;main.c: 155:     sendCommand("radio set wdt 15000\r\n");
+[e ( _sendCommand (1 :s 31C ]
+"156
+[; ;main.c: 156:     sprintf(READ,"%c",get_Data());
+[e ( _sprintf (1 , (. , &U _READ :s 32C ( _get_Data ..  ]
+"157
+[; ;main.c: 157:     oled_putString(READ,0,3);
+[e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
+"158
+[; ;main.c: 158:     _delay((unsigned long)((500)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"160
+[; ;main.c: 160:     oled_clearRow(1);
+[e ( _oled_clearRow (1 -> -> 1 `i `uc ]
+"161
+[; ;main.c: 161:     oled_clearRow(2);
+[e ( _oled_clearRow (1 -> -> 2 `i `uc ]
 "162
-[; ;main.c: 162:     oled_putString("mod lora",0,1);
-[e ( _oled_putString (3 , , :s 29C -> -> 0 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 162:     oled_clearRow(3);
+[e ( _oled_clearRow (1 -> -> 3 `i `uc ]
 "163
-[; ;main.c: 163:     sendCommand("radio set mod lora\r\n");
-[e ( _sendCommand (1 :s 30C ]
+[; ;main.c: 163:     oled_putString("factor de dispersion",0,1);
+[e ( _oled_putString (3 , , :s 33C -> -> 0 `i `uc -> -> 1 `i `uc ]
 "164
-[; ;main.c: 164:     sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 31C -> ( _EUSART1_Read ..  `i ]
+[; ;main.c: 164:     sendCommand("radio set sf SF12\r\n");
+[e ( _sendCommand (1 :s 34C ]
 "165
 [; ;main.c: 165:     sprintf(READ,"%c",get_Data());
-[e ( _sprintf (1 , (. , &U _READ :s 32C ( _get_Data ..  ]
+[e ( _sprintf (1 , (. , &U _READ :s 35C ( _get_Data ..  ]
 "166
-[; ;main.c: 166:     oled_putString(read,0,2);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 166:     oled_putString(READ,0,3);
+[e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
 "167
-[; ;main.c: 167:     oled_putString(READ,0,3);
-[e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"168
-[; ;main.c: 168:     delayms(500);
-[e ( _delayms (1 -> -> 500 `i `us ]
+[; ;main.c: 167:     _delay((unsigned long)((500)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"169
+[; ;main.c: 169:     oled_clearRow(1);
+[e ( _oled_clearRow (1 -> -> 1 `i `uc ]
 "170
-[; ;main.c: 170:     oled_clearRow(1);
-[e ( _oled_clearRow (1 -> -> 1 `i `uc ]
+[; ;main.c: 170:     oled_clearRow(2);
+[e ( _oled_clearRow (1 -> -> 2 `i `uc ]
 "171
-[; ;main.c: 171:     oled_clearRow(2);
-[e ( _oled_clearRow (1 -> -> 2 `i `uc ]
+[; ;main.c: 171:     oled_clearRow(3);
+[e ( _oled_clearRow (1 -> -> 3 `i `uc ]
 "172
-[; ;main.c: 172:     oled_clearRow(3);
-[e ( _oled_clearRow (1 -> -> 3 `i `uc ]
+[; ;main.c: 172:     oled_putString("sync",0,1);
+[e ( _oled_putString (3 , , :s 36C -> -> 0 `i `uc -> -> 1 `i `uc ]
 "173
-[; ;main.c: 173:     oled_putString("inversion",0,1);
-[e ( _oled_putString (3 , , :s 33C -> -> 0 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 173:     sendCommand("radio set sync 34\r\n");
+[e ( _sendCommand (1 :s 37C ]
 "174
-[; ;main.c: 174:     sendCommand("radio set iqi off\r\n");
-[e ( _sendCommand (1 :s 34C ]
+[; ;main.c: 174:     sprintf(READ,"%c",get_Data());
+[e ( _sprintf (1 , (. , &U _READ :s 38C ( _get_Data ..  ]
 "175
-[; ;main.c: 175:     sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 35C -> ( _EUSART1_Read ..  `i ]
+[; ;main.c: 175:     oled_putString(READ,0,3);
+[e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
 "176
-[; ;main.c: 176:     sprintf(READ,"%c",get_Data());
-[e ( _sprintf (1 , (. , &U _READ :s 36C ( _get_Data ..  ]
+[; ;main.c: 176:     _delay((unsigned long)((500)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
 "177
-[; ;main.c: 177:     oled_putString(read,0,2);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 2 `i `uc ]
-"178
-[; ;main.c: 178:     oled_putString(READ,0,3);
-[e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"179
-[; ;main.c: 179:     delayms(500);
-[e ( _delayms (1 -> -> 500 `i `us ]
-"181
-[; ;main.c: 181:     oled_clearRow(1);
-[e ( _oled_clearRow (1 -> -> 1 `i `uc ]
-"182
-[; ;main.c: 182:     oled_clearRow(2);
-[e ( _oled_clearRow (1 -> -> 2 `i `uc ]
-"183
-[; ;main.c: 183:     oled_clearRow(3);
-[e ( _oled_clearRow (1 -> -> 3 `i `uc ]
-"184
-[; ;main.c: 184:     oled_putString("wdt",0,1);
-[e ( _oled_putString (3 , , :s 37C -> -> 0 `i `uc -> -> 1 `i `uc ]
-"185
-[; ;main.c: 185:     sendCommand("radio set wdt 15000\r\n");
-[e ( _sendCommand (1 :s 38C ]
-"186
-[; ;main.c: 186:     sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 39C -> ( _EUSART1_Read ..  `i ]
-"187
-[; ;main.c: 187:     sprintf(READ,"%c",get_Data());
-[e ( _sprintf (1 , (. , &U _READ :s 40C ( _get_Data ..  ]
-"188
-[; ;main.c: 188:     oled_putString(read,0,2);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 2 `i `uc ]
-"189
-[; ;main.c: 189:     oled_putString(READ,0,3);
-[e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"190
-[; ;main.c: 190:     delayms(500);
-[e ( _delayms (1 -> -> 500 `i `us ]
-"192
-[; ;main.c: 192:     oled_clearRow(1);
-[e ( _oled_clearRow (1 -> -> 1 `i `uc ]
-"193
-[; ;main.c: 193:     oled_clearRow(2);
-[e ( _oled_clearRow (1 -> -> 2 `i `uc ]
-"194
-[; ;main.c: 194:     oled_clearRow(3);
-[e ( _oled_clearRow (1 -> -> 3 `i `uc ]
-"195
-[; ;main.c: 195:     oled_putString("factor de dispersion",0,1);
-[e ( _oled_putString (3 , , :s 41C -> -> 0 `i `uc -> -> 1 `i `uc ]
-"196
-[; ;main.c: 196:     sendCommand("radio set sf SF12\r\n");
-[e ( _sendCommand (1 :s 42C ]
-"197
-[; ;main.c: 197:     sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 43C -> ( _EUSART1_Read ..  `i ]
-"198
-[; ;main.c: 198:     sprintf(READ,"%c",get_Data());
-[e ( _sprintf (1 , (. , &U _READ :s 44C ( _get_Data ..  ]
-"199
-[; ;main.c: 199:     oled_putString(read,0,2);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 2 `i `uc ]
-"200
-[; ;main.c: 200:     oled_putString(READ,0,3);
-[e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"201
-[; ;main.c: 201:     delayms(500);
-[e ( _delayms (1 -> -> 500 `i `us ]
-"203
-[; ;main.c: 203:     oled_clearRow(1);
-[e ( _oled_clearRow (1 -> -> 1 `i `uc ]
-"204
-[; ;main.c: 204:     oled_clearRow(2);
-[e ( _oled_clearRow (1 -> -> 2 `i `uc ]
-"205
-[; ;main.c: 205:     oled_clearRow(3);
-[e ( _oled_clearRow (1 -> -> 3 `i `uc ]
-"206
-[; ;main.c: 206:     oled_putString("sync",0,1);
-[e ( _oled_putString (3 , , :s 45C -> -> 0 `i `uc -> -> 1 `i `uc ]
-"207
-[; ;main.c: 207:     sendCommand("radio set sync 34\r\n");
-[e ( _sendCommand (1 :s 46C ]
-"208
-[; ;main.c: 208:     sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 47C -> ( _EUSART1_Read ..  `i ]
-"209
-[; ;main.c: 209:     sprintf(READ,"%c",get_Data());
-[e ( _sprintf (1 , (. , &U _READ :s 48C ( _get_Data ..  ]
-"210
-[; ;main.c: 210:     oled_putString(read,0,2);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 2 `i `uc ]
-"211
-[; ;main.c: 211:     oled_putString(READ,0,3);
-[e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"212
-[; ;main.c: 212:     delayms(500);
-[e ( _delayms (1 -> -> 500 `i `us ]
-"213
-[; ;main.c: 213: }
-[e :UE 656 ]
+[; ;main.c: 177: }
+[e :UE 651 ]
 }
-"214
-[; ;main.c: 214: void test_LoRa(void)
-[v _test_LoRa `(v ~T0 @X0 1 ef ]
-"215
-[; ;main.c: 215: {
+"178
+[; ;main.c: 178: void test_leds_LoRa(void)
+[v _test_leds_LoRa `(v ~T0 @X0 1 ef ]
+"179
+[; ;main.c: 179: {
 {
-[e :U _test_LoRa ]
+[e :U _test_leds_LoRa ]
 [f ]
-"216
-[; ;main.c: 216:     char read[32];
-[v _read `uc ~T0 @X0 -> 32 `i a ]
-"217
-[; ;main.c: 217:     char READ[64];
-[v _READ `uc ~T0 @X0 -> 64 `i a ]
-"218
-[; ;main.c: 218:      oled_clear();
+"180
+[; ;main.c: 180:     char READ[10];
+[v _READ `uc ~T0 @X0 -> 10 `i a ]
+"181
+[; ;main.c: 181:      oled_clear();
 [e ( _oled_clear ..  ]
-"219
-[; ;main.c: 219:      RN_Leds(1);
+"182
+[; ;main.c: 182:      RN_Leds(1);
 [e ( _RN_Leds (1 -> -> 1 `i `a ]
-"220
-[; ;main.c: 220:      oled_putString("comando enviado",0,0);
-[e ( _oled_putString (3 , , :s 49C -> -> 0 `i `uc -> -> 0 `i `uc ]
-"221
-[; ;main.c: 221:      oled_putString("Encendido",0,1);
-[e ( _oled_putString (3 , , :s 50C -> -> 0 `i `uc -> -> 1 `i `uc ]
-"222
-[; ;main.c: 222:      sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 51C -> ( _EUSART1_Read ..  `i ]
-"223
-[; ;main.c: 223:      sprintf(READ,"%c",get_Data());
-[e ( _sprintf (1 , (. , &U _READ :s 52C ( _get_Data ..  ]
-"224
-[; ;main.c: 224:      oled_putString(read,0,2);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 2 `i `uc ]
-"225
-[; ;main.c: 225:      oled_putString(READ,0,3);
+"183
+[; ;main.c: 183:      oled_putString("comando enviado",0,0);
+[e ( _oled_putString (3 , , :s 39C -> -> 0 `i `uc -> -> 0 `i `uc ]
+"184
+[; ;main.c: 184:      oled_putString("Encendido",0,1);
+[e ( _oled_putString (3 , , :s 40C -> -> 0 `i `uc -> -> 1 `i `uc ]
+"185
+[; ;main.c: 185:      sprintf(READ,"%c",get_Data());
+[e ( _sprintf (1 , (. , &U _READ :s 41C ( _get_Data ..  ]
+"186
+[; ;main.c: 186:      oled_putString(READ,0,3);
 [e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"226
-[; ;main.c: 226:      LATAbits.LATA7 = 1;
+"187
+[; ;main.c: 187:      LATAbits.LATA7 = 1;
 [e = . . _LATAbits 0 7 -> -> 1 `i `uc ]
-"227
-[; ;main.c: 227:      _delay((unsigned long)((100)*(48000000/4000.0)));
+"188
+[; ;main.c: 188:      _delay((unsigned long)((100)*(48000000/4000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
-"229
-[; ;main.c: 229:      delayms(3000);
-[e ( _delayms (1 -> -> 3000 `i `us ]
-"230
-[; ;main.c: 230:      oled_clear();
+"190
+[; ;main.c: 190:      oled_clear();
 [e ( _oled_clear ..  ]
-"231
-[; ;main.c: 231:      RN_Leds(0);
+"191
+[; ;main.c: 191:      RN_Leds(0);
 [e ( _RN_Leds (1 -> -> 0 `i `a ]
-"232
-[; ;main.c: 232:      oled_putString("comando enviado",0,0);
-[e ( _oled_putString (3 , , :s 53C -> -> 0 `i `uc -> -> 0 `i `uc ]
-"233
-[; ;main.c: 233:      oled_putString("Apagado",0,1);
-[e ( _oled_putString (3 , , :s 54C -> -> 0 `i `uc -> -> 1 `i `uc ]
-"234
-[; ;main.c: 234:      sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 55C -> ( _EUSART1_Read ..  `i ]
-"235
-[; ;main.c: 235:      sprintf(READ,"%c",get_Data());
-[e ( _sprintf (1 , (. , &U _READ :s 56C ( _get_Data ..  ]
-"236
-[; ;main.c: 236:      oled_putString(read,0,2);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 2 `i `uc ]
-"237
-[; ;main.c: 237:      oled_putString(READ,0,3);
+"192
+[; ;main.c: 192:      oled_putString("comando enviado",0,0);
+[e ( _oled_putString (3 , , :s 42C -> -> 0 `i `uc -> -> 0 `i `uc ]
+"193
+[; ;main.c: 193:      oled_putString("Apagado",0,1);
+[e ( _oled_putString (3 , , :s 43C -> -> 0 `i `uc -> -> 1 `i `uc ]
+"194
+[; ;main.c: 194:      sprintf(READ,"%c",get_Data());
+[e ( _sprintf (1 , (. , &U _READ :s 44C ( _get_Data ..  ]
+"195
+[; ;main.c: 195:      oled_putString(READ,0,3);
 [e ( _oled_putString (3 , , -> &U _READ `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"238
-[; ;main.c: 238:      LATAbits.LATA7 = 0;
+"196
+[; ;main.c: 196:      LATAbits.LATA7 = 0;
 [e = . . _LATAbits 0 7 -> -> 0 `i `uc ]
-"239
-[; ;main.c: 239:      _delay((unsigned long)((100)*(48000000/4000.0)));
+"197
+[; ;main.c: 197:      _delay((unsigned long)((100)*(48000000/4000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
-"240
-[; ;main.c: 240:      delayms(3000);
-[e ( _delayms (1 -> -> 3000 `i `us ]
-"241
-[; ;main.c: 241: }
-[e :UE 657 ]
+"198
+[; ;main.c: 198: }
+[e :UE 652 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"242
-[; ;main.c: 242: void main(void)
+"200
+[; ;main.c: 200: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"243
-[; ;main.c: 243: {
+"201
+[; ;main.c: 201: {
 {
 [e :U _main ]
 [f ]
-"244
-[; ;main.c: 244:     SYSTEM_Initialize();
+"202
+[; ;main.c: 202:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"245
-[; ;main.c: 245:     init_port();
+"203
+[; ;main.c: 203:     init_port();
 [e ( _init_port ..  ]
-"247
-[; ;main.c: 247:     delayms(500);
-[e ( _delayms (1 -> -> 500 `i `us ]
-"249
-[; ;main.c: 249:     oled_init();
+"204
+[; ;main.c: 204:     _delay((unsigned long)((200)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"205
+[; ;main.c: 205:     oled_init();
 [e ( _oled_init ..  ]
-"251
-[; ;main.c: 251:     init_mod_LoRa();
+"206
+[; ;main.c: 206:     init_mod_LoRa();
 [e ( _init_mod_LoRa ..  ]
-"255
-[; ;main.c: 255:     oled_clear();
+"207
+[; ;main.c: 207:     oled_clear();
 [e ( _oled_clear ..  ]
-"256
-[; ;main.c: 256:     char read[32];
+"208
+[; ;main.c: 208:     char read[32];
 [v _read `uc ~T0 @X0 -> 32 `i a ]
-"257
-[; ;main.c: 257:     uint8_t cont = 0;
+"209
+[; ;main.c: 209:     uint8_t cont = 0;
 [v _cont `uc ~T0 @X0 1 a ]
 [e = _cont -> -> 0 `i `uc ]
-"258
-[; ;main.c: 258:     while (1)
-[e :U 660 ]
-"259
-[; ;main.c: 259:     { if(cont <1)
+"210
+[; ;main.c: 210:     while (1)
+[e :U 655 ]
+"211
+[; ;main.c: 211:     { if(cont <1)
 {
-[e $ ! < -> _cont `i -> 1 `i 662  ]
-"260
-[; ;main.c: 260:         {
+[e $ ! < -> _cont `i -> 1 `i 657  ]
+"212
+[; ;main.c: 212:         {
 {
-"261
-[; ;main.c: 261:             oled_putString("MAC PUASE",0,0);
-[e ( _oled_putString (3 , , :s 57C -> -> 0 `i `uc -> -> 0 `i `uc ]
-"262
-[; ;main.c: 262:             sendCommand("mac pause\r\n");
-[e ( _sendCommand (1 :s 58C ]
-"263
-[; ;main.c: 263:             sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 59C -> ( _EUSART1_Read ..  `i ]
-"264
-[; ;main.c: 264:             oled_putString(read,0,1);
+"213
+[; ;main.c: 213:             oled_putString("MAC PUASE",0,0);
+[e ( _oled_putString (3 , , :s 45C -> -> 0 `i `uc -> -> 0 `i `uc ]
+"214
+[; ;main.c: 214:             sendCommand("mac pause\r\n");
+[e ( _sendCommand (1 :s 46C ]
+"215
+[; ;main.c: 215:             sprintf(read,"%c",EUSART1_Read());
+[e ( _sprintf (1 , (. , &U _read :s 47C -> ( _EUSART1_Read ..  `i ]
+"216
+[; ;main.c: 216:             oled_putString(read,0,1);
 [e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 1 `i `uc ]
-"265
-[; ;main.c: 265:             delayms(200);
-[e ( _delayms (1 -> -> 200 `i `us ]
-"266
-[; ;main.c: 266:          }
+"218
+[; ;main.c: 218:          }
 }
-[e $U 663  ]
-"267
-[; ;main.c: 267:         else if(cont == 1)
-[e :U 662 ]
-[e $ ! == -> _cont `i -> 1 `i 664  ]
-"268
-[; ;main.c: 268:         {
+[e $U 658  ]
+"219
+[; ;main.c: 219:         else if(cont == 1)
+[e :U 657 ]
+[e $ ! == -> _cont `i -> 1 `i 659  ]
+"220
+[; ;main.c: 220:         {
 {
-"269
-[; ;main.c: 269:             oled_putString("transmision=1",0,2);
-[e ( _oled_putString (3 , , :s 60C -> -> 0 `i `uc -> -> 2 `i `uc ]
-"270
-[; ;main.c: 270:             sendCommand("radio tx 10\r\n");
-[e ( _sendCommand (1 :s 61C ]
-"271
-[; ;main.c: 271:             sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 62C -> ( _EUSART1_Read ..  `i ]
-"272
-[; ;main.c: 272:             oled_putString(read,0,3);
+"221
+[; ;main.c: 221:             oled_putString("transmision=1",0,2);
+[e ( _oled_putString (3 , , :s 48C -> -> 0 `i `uc -> -> 2 `i `uc ]
+"222
+[; ;main.c: 222:             sendCommand("radio tx 10\r\n");
+[e ( _sendCommand (1 :s 49C ]
+"223
+[; ;main.c: 223:             sprintf(read,"%c",EUSART1_Read());
+[e ( _sprintf (1 , (. , &U _read :s 50C -> ( _EUSART1_Read ..  `i ]
+"224
+[; ;main.c: 224:             oled_putString(read,0,3);
 [e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"273
-[; ;main.c: 273:         }
+"225
+[; ;main.c: 225:         }
 }
-[e $U 665  ]
-"274
-[; ;main.c: 274:         else if(cont == 2)
-[e :U 664 ]
-[e $ ! == -> _cont `i -> 2 `i 666  ]
-"275
-[; ;main.c: 275:         {
-{
-"276
-[; ;main.c: 276:             oled_putString("transmision=2",0,2);
-[e ( _oled_putString (3 , , :s 63C -> -> 0 `i `uc -> -> 2 `i `uc ]
-"277
-[; ;main.c: 277:             sendCommand("radio tx 20\r\n");
-[e ( _sendCommand (1 :s 64C ]
-"278
-[; ;main.c: 278:             sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 65C -> ( _EUSART1_Read ..  `i ]
-"279
-[; ;main.c: 279:             oled_putString(read,0,3);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"280
-[; ;main.c: 280:         }
-}
-[e $U 667  ]
-"281
-[; ;main.c: 281:         else if(cont == 3)
-[e :U 666 ]
-[e $ ! == -> _cont `i -> 3 `i 668  ]
-"282
-[; ;main.c: 282:         {
-{
-"283
-[; ;main.c: 283:             oled_putString("transmision=3",0,2);
-[e ( _oled_putString (3 , , :s 66C -> -> 0 `i `uc -> -> 2 `i `uc ]
-"284
-[; ;main.c: 284:             sendCommand("radio tx 30\r\n");
-[e ( _sendCommand (1 :s 67C ]
-"285
-[; ;main.c: 285:             sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 68C -> ( _EUSART1_Read ..  `i ]
-"286
-[; ;main.c: 286:             oled_putString(read,0,3);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"287
-[; ;main.c: 287:         }
-}
-[e $U 669  ]
-"288
-[; ;main.c: 288:         else if(cont == 4)
-[e :U 668 ]
-[e $ ! == -> _cont `i -> 4 `i 670  ]
-"289
-[; ;main.c: 289:         {
-{
-"290
-[; ;main.c: 290:             oled_putString("transmision=4",0,2);
-[e ( _oled_putString (3 , , :s 69C -> -> 0 `i `uc -> -> 2 `i `uc ]
-"291
-[; ;main.c: 291:             sendCommand("radio tx 40\r\n");
-[e ( _sendCommand (1 :s 70C ]
-"292
-[; ;main.c: 292:             sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 71C -> ( _EUSART1_Read ..  `i ]
-"293
-[; ;main.c: 293:             oled_putString(read,0,3);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"294
-[; ;main.c: 294:         }
-}
-[e $U 671  ]
-"295
-[; ;main.c: 295:         else if(cont == 5)
-[e :U 670 ]
-[e $ ! == -> _cont `i -> 5 `i 672  ]
-"296
-[; ;main.c: 296:         {
-{
-"297
-[; ;main.c: 297:             oled_putString("transmision=5",0,2);
-[e ( _oled_putString (3 , , :s 72C -> -> 0 `i `uc -> -> 2 `i `uc ]
-"298
-[; ;main.c: 298:             sendCommand("radio tx 50\r\n");
-[e ( _sendCommand (1 :s 73C ]
-"299
-[; ;main.c: 299:             sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 74C -> ( _EUSART1_Read ..  `i ]
-"300
-[; ;main.c: 300:             oled_putString(read,0,3);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"301
-[; ;main.c: 301:         }
-}
-[e $U 673  ]
-"302
-[; ;main.c: 302:         else if(cont == 6)
-[e :U 672 ]
-[e $ ! == -> _cont `i -> 6 `i 674  ]
-"303
-[; ;main.c: 303:         {
-{
-"304
-[; ;main.c: 304:             oled_putString("transmision=6",0,2);
-[e ( _oled_putString (3 , , :s 75C -> -> 0 `i `uc -> -> 2 `i `uc ]
-"305
-[; ;main.c: 305:             sendCommand("radio tx 60\r\n");
-[e ( _sendCommand (1 :s 76C ]
-"306
-[; ;main.c: 306:             sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 77C -> ( _EUSART1_Read ..  `i ]
-"307
-[; ;main.c: 307:             oled_putString(read,0,3);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"308
-[; ;main.c: 308:         }
-}
-[e $U 675  ]
-"309
-[; ;main.c: 309:          else if(cont == 7)
-[e :U 674 ]
-[e $ ! == -> _cont `i -> 7 `i 676  ]
-"310
-[; ;main.c: 310:         {
-{
-"311
-[; ;main.c: 311:             oled_putString("transmision=7",0,2);
-[e ( _oled_putString (3 , , :s 78C -> -> 0 `i `uc -> -> 2 `i `uc ]
-"312
-[; ;main.c: 312:             sendCommand("radio tx 70\r\n");
-[e ( _sendCommand (1 :s 79C ]
-"313
-[; ;main.c: 313:             sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 80C -> ( _EUSART1_Read ..  `i ]
-"314
-[; ;main.c: 314:             oled_putString(read,0,3);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"315
-[; ;main.c: 315:         }
-}
-[e $U 677  ]
-"316
-[; ;main.c: 316:         else if(cont == 8)
-[e :U 676 ]
-[e $ ! == -> _cont `i -> 8 `i 678  ]
-"317
-[; ;main.c: 317:         {
-{
-"318
-[; ;main.c: 318:             oled_putString("transmision=8",0,2);
-[e ( _oled_putString (3 , , :s 81C -> -> 0 `i `uc -> -> 2 `i `uc ]
-"319
-[; ;main.c: 319:             sendCommand("radio tx 80\r\n");
-[e ( _sendCommand (1 :s 82C ]
-"320
-[; ;main.c: 320:             sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 83C -> ( _EUSART1_Read ..  `i ]
-"321
-[; ;main.c: 321:             oled_putString(read,0,3);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"322
-[; ;main.c: 322:         }
-}
-[e $U 679  ]
-"323
-[; ;main.c: 323:         else if(cont == 9)
-[e :U 678 ]
-[e $ ! == -> _cont `i -> 9 `i 680  ]
-"324
-[; ;main.c: 324:         {
-{
-"325
-[; ;main.c: 325:             oled_putString("transmision=9",0,2);
-[e ( _oled_putString (3 , , :s 84C -> -> 0 `i `uc -> -> 2 `i `uc ]
-"326
-[; ;main.c: 326:             sendCommand("radio tx 90\r\n");
-[e ( _sendCommand (1 :s 85C ]
-"327
-[; ;main.c: 327:             sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 86C -> ( _EUSART1_Read ..  `i ]
-"328
-[; ;main.c: 328:             oled_putString(read,0,3);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"329
-[; ;main.c: 329:         }
-}
-[e $U 681  ]
-"330
-[; ;main.c: 330:         else if(cont == 10)
-[e :U 680 ]
-[e $ ! == -> _cont `i -> 10 `i 682  ]
-"331
-[; ;main.c: 331:         {
-{
-"332
-[; ;main.c: 332:             oled_clear();
-[e ( _oled_clear ..  ]
-"333
-[; ;main.c: 333:             oled_putString("termino",0,0);
-[e ( _oled_putString (3 , , :s 87C -> -> 0 `i `uc -> -> 0 `i `uc ]
-"334
-[; ;main.c: 334:             sendCommand("mac resume\r\n");
-[e ( _sendCommand (1 :s 88C ]
-"335
-[; ;main.c: 335:             sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 89C -> ( _EUSART1_Read ..  `i ]
-"336
-[; ;main.c: 336:             oled_putString(read,0,3);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
-"337
-[; ;main.c: 337:             oled_putUint8(cont,9,1);
-[e ( _oled_putUint8 (3 , , _cont -> -> 9 `i `uc -> -> 1 `i `uc ]
-"338
-[; ;main.c: 338:             oled_putString("cont: ",4,1);
-[e ( _oled_putString (3 , , :s 90C -> -> 4 `i `uc -> -> 1 `i `uc ]
-"339
-[; ;main.c: 339:             cont = 0;
-[e = _cont -> -> 0 `i `uc ]
-"340
-[; ;main.c: 340:             delayms(200);
-[e ( _delayms (1 -> -> 200 `i `us ]
-"341
-[; ;main.c: 341:             oled_clear();
-[e ( _oled_clear ..  ]
-"342
-[; ;main.c: 342:             oled_putString("MAC PUASE",0,0);
-[e ( _oled_putString (3 , , :s 91C -> -> 0 `i `uc -> -> 0 `i `uc ]
-"343
-[; ;main.c: 343:             sendCommand("mac pause\r\n");
-[e ( _sendCommand (1 :s 92C ]
-"344
-[; ;main.c: 344:             sprintf(read,"%d",EUSART1_Read());
-[e ( _sprintf (1 , (. , &U _read :s 93C -> ( _EUSART1_Read ..  `i ]
-"345
-[; ;main.c: 345:             oled_putString(read,0,1);
-[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 1 `i `uc ]
-"346
-[; ;main.c: 346:             delayms(200);
-[e ( _delayms (1 -> -> 200 `i `us ]
-"347
-[; ;main.c: 347:         }
-}
-[e :U 682 ]
-[e :U 681 ]
-[e :U 679 ]
-[e :U 677 ]
-[e :U 675 ]
-[e :U 673 ]
-[e :U 671 ]
-[e :U 669 ]
-[e :U 667 ]
-[e :U 665 ]
-[e :U 663 ]
-"348
-[; ;main.c: 348:         oled_putUint8(cont,9,1);
-[e ( _oled_putUint8 (3 , , _cont -> -> 9 `i `uc -> -> 1 `i `uc ]
-"349
-[; ;main.c: 349:         oled_putString("cont: ",4,1);
-[e ( _oled_putString (3 , , :s 94C -> -> 4 `i `uc -> -> 1 `i `uc ]
-"350
-[; ;main.c: 350:         cont++;
-[e ++ _cont -> -> 1 `i `uc ]
-"351
-[; ;main.c: 351:         delayms(3000);
-[e ( _delayms (1 -> -> 3000 `i `us ]
-"352
-[; ;main.c: 352:     }
-}
-[e :U 659 ]
 [e $U 660  ]
-[e :U 661 ]
-"353
-[; ;main.c: 353: }
-[e :UE 658 ]
+"226
+[; ;main.c: 226:         else if(cont == 2)
+[e :U 659 ]
+[e $ ! == -> _cont `i -> 2 `i 661  ]
+"227
+[; ;main.c: 227:         {
+{
+"228
+[; ;main.c: 228:             oled_putString("transmision=2",0,2);
+[e ( _oled_putString (3 , , :s 51C -> -> 0 `i `uc -> -> 2 `i `uc ]
+"229
+[; ;main.c: 229:             sendCommand("radio tx 20\r\n");
+[e ( _sendCommand (1 :s 52C ]
+"230
+[; ;main.c: 230:             sprintf(read,"%c",EUSART1_Read());
+[e ( _sprintf (1 , (. , &U _read :s 53C -> ( _EUSART1_Read ..  `i ]
+"231
+[; ;main.c: 231:             oled_putString(read,0,3);
+[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
+"232
+[; ;main.c: 232:         }
 }
-[p f _sprintf 8913024 ]
-[a 37C 119 100 116 0 ]
-[a 21C 99 111 100 32 68 101 99 32 69 114 114 111 114 101 115 0 ]
-[a 87C 116 101 114 109 105 110 111 0 ]
-[a 50C 69 110 99 101 110 100 105 100 111 0 ]
-[a 49C 99 111 109 97 110 100 111 32 101 110 118 105 97 100 111 0 ]
-[a 53C 99 111 109 97 110 100 111 32 101 110 118 105 97 100 111 0 ]
-[a 54C 65 112 97 103 97 100 111 0 ]
-[a 33C 105 110 118 101 114 115 105 111 110 0 ]
-[a 41C 102 97 99 116 111 114 32 100 101 32 100 105 115 112 101 114 115 105 111 110 0 ]
-[a 25C 116 97 115 97 32 100 101 32 99 111 100 0 ]
-[a 11C 37 100 0 ]
-[a 15C 37 100 0 ]
-[a 19C 37 100 0 ]
-[a 23C 37 100 0 ]
-[a 27C 37 100 0 ]
-[a 31C 37 100 0 ]
-[a 35C 37 100 0 ]
-[a 39C 37 100 0 ]
-[a 43C 37 100 0 ]
-[a 47C 37 100 0 ]
-[a 51C 37 100 0 ]
-[a 55C 37 100 0 ]
-[a 59C 37 100 0 ]
-[a 62C 37 100 0 ]
-[a 65C 37 100 0 ]
-[a 68C 37 100 0 ]
-[a 71C 37 100 0 ]
-[a 74C 37 100 0 ]
-[a 77C 37 100 0 ]
-[a 80C 37 100 0 ]
-[a 83C 37 100 0 ]
-[a 86C 37 100 0 ]
-[a 89C 37 100 0 ]
-[a 93C 37 100 0 ]
-[a 45C 115 121 110 99 0 ]
+[e $U 662  ]
+"233
+[; ;main.c: 233:         else if(cont == 3)
+[e :U 661 ]
+[e $ ! == -> _cont `i -> 3 `i 663  ]
+"234
+[; ;main.c: 234:         {
+{
+"235
+[; ;main.c: 235:             oled_putString("transmision=3",0,2);
+[e ( _oled_putString (3 , , :s 54C -> -> 0 `i `uc -> -> 2 `i `uc ]
+"236
+[; ;main.c: 236:             sendCommand("radio tx 30\r\n");
+[e ( _sendCommand (1 :s 55C ]
+"237
+[; ;main.c: 237:             sprintf(read,"%c",EUSART1_Read());
+[e ( _sprintf (1 , (. , &U _read :s 56C -> ( _EUSART1_Read ..  `i ]
+"238
+[; ;main.c: 238:             oled_putString(read,0,3);
+[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
+"239
+[; ;main.c: 239:         }
+}
+[e $U 664  ]
+"240
+[; ;main.c: 240:         else if(cont == 4)
+[e :U 663 ]
+[e $ ! == -> _cont `i -> 4 `i 665  ]
+"241
+[; ;main.c: 241:         {
+{
+"242
+[; ;main.c: 242:             oled_putString("transmision=4",0,2);
+[e ( _oled_putString (3 , , :s 57C -> -> 0 `i `uc -> -> 2 `i `uc ]
+"243
+[; ;main.c: 243:             sendCommand("radio tx 40\r\n");
+[e ( _sendCommand (1 :s 58C ]
+"244
+[; ;main.c: 244:             sprintf(read,"%c",EUSART1_Read());
+[e ( _sprintf (1 , (. , &U _read :s 59C -> ( _EUSART1_Read ..  `i ]
+"245
+[; ;main.c: 245:             oled_putString(read,0,3);
+[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
+"246
+[; ;main.c: 246:         }
+}
+[e $U 666  ]
+"247
+[; ;main.c: 247:         else if(cont == 5)
+[e :U 665 ]
+[e $ ! == -> _cont `i -> 5 `i 667  ]
+"248
+[; ;main.c: 248:         {
+{
+"249
+[; ;main.c: 249:             oled_putString("transmision=5",0,2);
+[e ( _oled_putString (3 , , :s 60C -> -> 0 `i `uc -> -> 2 `i `uc ]
+"250
+[; ;main.c: 250:             sendCommand("radio tx 50\r\n");
+[e ( _sendCommand (1 :s 61C ]
+"251
+[; ;main.c: 251:             sprintf(read,"%c",EUSART1_Read());
+[e ( _sprintf (1 , (. , &U _read :s 62C -> ( _EUSART1_Read ..  `i ]
+"252
+[; ;main.c: 252:             oled_putString(read,0,3);
+[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
+"253
+[; ;main.c: 253:         }
+}
+[e $U 668  ]
+"254
+[; ;main.c: 254:         else if(cont == 6)
+[e :U 667 ]
+[e $ ! == -> _cont `i -> 6 `i 669  ]
+"255
+[; ;main.c: 255:         {
+{
+"256
+[; ;main.c: 256:             oled_putString("transmision=6",0,2);
+[e ( _oled_putString (3 , , :s 63C -> -> 0 `i `uc -> -> 2 `i `uc ]
+"257
+[; ;main.c: 257:             sendCommand("radio tx 60\r\n");
+[e ( _sendCommand (1 :s 64C ]
+"258
+[; ;main.c: 258:             sprintf(read,"%c",EUSART1_Read());
+[e ( _sprintf (1 , (. , &U _read :s 65C -> ( _EUSART1_Read ..  `i ]
+"259
+[; ;main.c: 259:             oled_putString(read,0,3);
+[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
+"260
+[; ;main.c: 260:         }
+}
+[e $U 670  ]
+"261
+[; ;main.c: 261:          else if(cont == 7)
+[e :U 669 ]
+[e $ ! == -> _cont `i -> 7 `i 671  ]
+"262
+[; ;main.c: 262:         {
+{
+"263
+[; ;main.c: 263:             oled_putString("transmision=7",0,2);
+[e ( _oled_putString (3 , , :s 66C -> -> 0 `i `uc -> -> 2 `i `uc ]
+"264
+[; ;main.c: 264:             sendCommand("radio tx 70\r\n");
+[e ( _sendCommand (1 :s 67C ]
+"265
+[; ;main.c: 265:             sprintf(read,"%c",EUSART1_Read());
+[e ( _sprintf (1 , (. , &U _read :s 68C -> ( _EUSART1_Read ..  `i ]
+"266
+[; ;main.c: 266:             oled_putString(read,0,3);
+[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
+"267
+[; ;main.c: 267:         }
+}
+[e $U 672  ]
+"268
+[; ;main.c: 268:         else if(cont == 8)
+[e :U 671 ]
+[e $ ! == -> _cont `i -> 8 `i 673  ]
+"269
+[; ;main.c: 269:         {
+{
+"270
+[; ;main.c: 270:             oled_putString("transmision=8",0,2);
+[e ( _oled_putString (3 , , :s 69C -> -> 0 `i `uc -> -> 2 `i `uc ]
+"271
+[; ;main.c: 271:             sendCommand("radio tx 80\r\n");
+[e ( _sendCommand (1 :s 70C ]
+"272
+[; ;main.c: 272:             sprintf(read,"%c",EUSART1_Read());
+[e ( _sprintf (1 , (. , &U _read :s 71C -> ( _EUSART1_Read ..  `i ]
+"273
+[; ;main.c: 273:             oled_putString(read,0,3);
+[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
+"274
+[; ;main.c: 274:         }
+}
+[e $U 674  ]
+"275
+[; ;main.c: 275:         else if(cont == 9)
+[e :U 673 ]
+[e $ ! == -> _cont `i -> 9 `i 675  ]
+"276
+[; ;main.c: 276:         {
+{
+"277
+[; ;main.c: 277:             oled_putString("transmision=9",0,2);
+[e ( _oled_putString (3 , , :s 72C -> -> 0 `i `uc -> -> 2 `i `uc ]
+"278
+[; ;main.c: 278:             sendCommand("radio tx 90\r\n");
+[e ( _sendCommand (1 :s 73C ]
+"279
+[; ;main.c: 279:             sprintf(read,"%c",EUSART1_Read());
+[e ( _sprintf (1 , (. , &U _read :s 74C -> ( _EUSART1_Read ..  `i ]
+"280
+[; ;main.c: 280:             oled_putString(read,0,3);
+[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
+"281
+[; ;main.c: 281:         }
+}
+[e $U 676  ]
+"282
+[; ;main.c: 282:         else if(cont == 10)
+[e :U 675 ]
+[e $ ! == -> _cont `i -> 10 `i 677  ]
+"283
+[; ;main.c: 283:         {
+{
+"284
+[; ;main.c: 284:             oled_clear();
+[e ( _oled_clear ..  ]
+"285
+[; ;main.c: 285:             oled_putString("termino",0,0);
+[e ( _oled_putString (3 , , :s 75C -> -> 0 `i `uc -> -> 0 `i `uc ]
+"286
+[; ;main.c: 286:             sendCommand("mac resume\r\n");
+[e ( _sendCommand (1 :s 76C ]
+"287
+[; ;main.c: 287:             sprintf(read,"%c",EUSART1_Read());
+[e ( _sprintf (1 , (. , &U _read :s 77C -> ( _EUSART1_Read ..  `i ]
+"288
+[; ;main.c: 288:             oled_putString(read,0,3);
+[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 3 `i `uc ]
+"289
+[; ;main.c: 289:             oled_putUint8(cont,9,1);
+[e ( _oled_putUint8 (3 , , _cont -> -> 9 `i `uc -> -> 1 `i `uc ]
+"290
+[; ;main.c: 290:             oled_putString("cont: ",4,1);
+[e ( _oled_putString (3 , , :s 78C -> -> 4 `i `uc -> -> 1 `i `uc ]
+"291
+[; ;main.c: 291:             cont = 0;
+[e = _cont -> -> 0 `i `uc ]
+"292
+[; ;main.c: 292:             _delay((unsigned long)((200)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"294
+[; ;main.c: 294:             oled_clear();
+[e ( _oled_clear ..  ]
+"295
+[; ;main.c: 295:             oled_putString("MAC PUASE",0,0);
+[e ( _oled_putString (3 , , :s 79C -> -> 0 `i `uc -> -> 0 `i `uc ]
+"296
+[; ;main.c: 296:             sendCommand("mac pause\r\n");
+[e ( _sendCommand (1 :s 80C ]
+"297
+[; ;main.c: 297:             sprintf(read,"%c",EUSART1_Read());
+[e ( _sprintf (1 , (. , &U _read :s 81C -> ( _EUSART1_Read ..  `i ]
+"298
+[; ;main.c: 298:             oled_putString(read,0,1);
+[e ( _oled_putString (3 , , -> &U _read `*Cuc -> -> 0 `i `uc -> -> 1 `i `uc ]
+"299
+[; ;main.c: 299:             _delay((unsigned long)((200)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"300
+[; ;main.c: 300:         }
+}
+[e :U 677 ]
+[e :U 676 ]
+[e :U 674 ]
+[e :U 672 ]
+[e :U 670 ]
+[e :U 668 ]
+[e :U 666 ]
+[e :U 664 ]
+[e :U 662 ]
+[e :U 660 ]
+[e :U 658 ]
+"301
+[; ;main.c: 301:         oled_putUint8(cont,9,1);
+[e ( _oled_putUint8 (3 , , _cont -> -> 9 `i `uc -> -> 1 `i `uc ]
+"302
+[; ;main.c: 302:         oled_putString("cont: ",4,1);
+[e ( _oled_putString (3 , , :s 82C -> -> 4 `i `uc -> -> 1 `i `uc ]
+"303
+[; ;main.c: 303:         cont++;
+[e ++ _cont -> -> 1 `i `uc ]
+"304
+[; ;main.c: 304:         _delay((unsigned long)((3000)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 3000 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"305
+[; ;main.c: 305:     }
+}
+[e :U 654 ]
+[e $U 655  ]
+[e :U 656 ]
+"306
+[; ;main.c: 306: }
+[e :UE 653 ]
+}
+[p f _sprintf 8912896 ]
+[a 30C 119 100 116 0 ]
+[a 18C 99 111 100 32 68 101 99 32 69 114 114 111 114 101 115 0 ]
+[a 75C 116 101 114 109 105 110 111 0 ]
+[a 40C 69 110 99 101 110 100 105 100 111 0 ]
+[a 39C 99 111 109 97 110 100 111 32 101 110 118 105 97 100 111 0 ]
+[a 42C 99 111 109 97 110 100 111 32 101 110 118 105 97 100 111 0 ]
+[a 43C 65 112 97 103 97 100 111 0 ]
+[a 27C 105 110 118 101 114 115 105 111 110 0 ]
+[a 33C 102 97 99 116 111 114 32 100 101 32 100 105 115 112 101 114 115 105 111 110 0 ]
+[a 21C 116 97 115 97 32 100 101 32 99 111 100 0 ]
+[a 36C 115 121 110 99 0 ]
 [a 6C 37 99 0 ]
 [a 7C 37 99 0 ]
-[a 12C 37 99 0 ]
-[a 16C 37 99 0 ]
+[a 11C 37 99 0 ]
+[a 14C 37 99 0 ]
+[a 17C 37 99 0 ]
 [a 20C 37 99 0 ]
-[a 24C 37 99 0 ]
-[a 28C 37 99 0 ]
+[a 23C 37 99 0 ]
+[a 26C 37 99 0 ]
+[a 29C 37 99 0 ]
 [a 32C 37 99 0 ]
-[a 36C 37 99 0 ]
-[a 40C 37 99 0 ]
+[a 35C 37 99 0 ]
+[a 38C 37 99 0 ]
+[a 41C 37 99 0 ]
 [a 44C 37 99 0 ]
-[a 48C 37 99 0 ]
-[a 52C 37 99 0 ]
+[a 47C 37 99 0 ]
+[a 50C 37 99 0 ]
+[a 53C 37 99 0 ]
 [a 56C 37 99 0 ]
-[a 29C 109 111 100 32 108 111 114 97 0 ]
-[a 17C 102 114 101 99 117 101 110 99 105 97 0 ]
+[a 59C 37 99 0 ]
+[a 62C 37 99 0 ]
+[a 65C 37 99 0 ]
+[a 68C 37 99 0 ]
+[a 71C 37 99 0 ]
+[a 74C 37 99 0 ]
+[a 77C 37 99 0 ]
+[a 81C 37 99 0 ]
+[a 24C 109 111 100 32 108 111 114 97 0 ]
+[a 15C 102 114 101 99 117 101 110 99 105 97 0 ]
 [a 9C 112 111 116 101 110 99 105 97 0 ]
-[a 13C 97 110 99 104 111 32 100 101 32 98 97 110 100 97 0 ]
+[a 12C 97 110 99 104 111 32 100 101 32 98 97 110 100 97 0 ]
 [a 8C 67 111 110 102 105 103 32 109 111 100 117 108 111 32 82 78 0 ]
-[a 57C 77 65 67 32 80 85 65 83 69 0 ]
-[a 91C 77 65 67 32 80 85 65 83 69 0 ]
+[a 45C 77 65 67 32 80 85 65 83 69 0 ]
+[a 79C 77 65 67 32 80 85 65 83 69 0 ]
 [a 1C 76 69 68 32 84 101 115 116 58 0 ]
-[a 84C 116 114 97 110 115 109 105 115 105 111 110 61 57 0 ]
-[a 81C 116 114 97 110 115 109 105 115 105 111 110 61 56 0 ]
-[a 78C 116 114 97 110 115 109 105 115 105 111 110 61 55 0 ]
-[a 75C 116 114 97 110 115 109 105 115 105 111 110 61 54 0 ]
-[a 72C 116 114 97 110 115 109 105 115 105 111 110 61 53 0 ]
-[a 69C 116 114 97 110 115 109 105 115 105 111 110 61 52 0 ]
-[a 66C 116 114 97 110 115 109 105 115 105 111 110 61 51 0 ]
-[a 63C 116 114 97 110 115 109 105 115 105 111 110 61 50 0 ]
-[a 60C 116 114 97 110 115 109 105 115 105 111 110 61 49 0 ]
-[a 90C 99 111 110 116 58 32 0 ]
-[a 94C 99 111 110 116 58 32 0 ]
-[a 22C 114 97 100 105 111 32 115 101 116 32 99 114 99 32 111 110 13 10 0 ]
-[a 34C 114 97 100 105 111 32 115 101 116 32 105 113 105 32 111 102 102 13 10 0 ]
-[a 58C 109 97 99 32 112 97 117 115 101 13 10 0 ]
-[a 92C 109 97 99 32 112 97 117 115 101 13 10 0 ]
-[a 88C 109 97 99 32 114 101 115 117 109 101 13 10 0 ]
-[a 30C 114 97 100 105 111 32 115 101 116 32 109 111 100 32 108 111 114 97 13 10 0 ]
-[a 26C 114 97 100 105 111 32 115 101 116 32 99 114 32 52 47 53 13 10 0 ]
-[a 46C 114 97 100 105 111 32 115 101 116 32 115 121 110 99 32 51 52 13 10 0 ]
+[a 72C 116 114 97 110 115 109 105 115 105 111 110 61 57 0 ]
+[a 69C 116 114 97 110 115 109 105 115 105 111 110 61 56 0 ]
+[a 66C 116 114 97 110 115 109 105 115 105 111 110 61 55 0 ]
+[a 63C 116 114 97 110 115 109 105 115 105 111 110 61 54 0 ]
+[a 60C 116 114 97 110 115 109 105 115 105 111 110 61 53 0 ]
+[a 57C 116 114 97 110 115 109 105 115 105 111 110 61 52 0 ]
+[a 54C 116 114 97 110 115 109 105 115 105 111 110 61 51 0 ]
+[a 51C 116 114 97 110 115 109 105 115 105 111 110 61 50 0 ]
+[a 48C 116 114 97 110 115 109 105 115 105 111 110 61 49 0 ]
+[a 78C 99 111 110 116 58 32 0 ]
+[a 82C 99 111 110 116 58 32 0 ]
+[a 19C 114 97 100 105 111 32 115 101 116 32 99 114 99 32 111 110 13 10 0 ]
+[a 28C 114 97 100 105 111 32 115 101 116 32 105 113 105 32 111 102 102 13 10 0 ]
+[a 46C 109 97 99 32 112 97 117 115 101 13 10 0 ]
+[a 80C 109 97 99 32 112 97 117 115 101 13 10 0 ]
+[a 76C 109 97 99 32 114 101 115 117 109 101 13 10 0 ]
+[a 25C 114 97 100 105 111 32 115 101 116 32 109 111 100 32 108 111 114 97 13 10 0 ]
+[a 22C 114 97 100 105 111 32 115 101 116 32 99 114 32 52 47 53 13 10 0 ]
+[a 37C 114 97 100 105 111 32 115 101 116 32 115 121 110 99 32 51 52 13 10 0 ]
 [a 10C 114 97 100 105 111 32 115 101 116 32 112 119 114 32 51 13 10 0 ]
-[a 42C 114 97 100 105 111 32 115 101 116 32 115 102 32 83 70 49 50 13 10 0 ]
+[a 34C 114 97 100 105 111 32 115 101 116 32 115 102 32 83 70 49 50 13 10 0 ]
 [a 3C 115 121 115 32 115 101 116 32 112 105 110 100 105 103 32 71 80 73 79 49 49 32 49 13 10 0 ]
 [a 2C 115 121 115 32 115 101 116 32 112 105 110 100 105 103 32 71 80 73 79 49 48 32 49 13 10 0 ]
-[a 85C 114 97 100 105 111 32 116 120 32 57 48 13 10 0 ]
-[a 82C 114 97 100 105 111 32 116 120 32 56 48 13 10 0 ]
-[a 79C 114 97 100 105 111 32 116 120 32 55 48 13 10 0 ]
-[a 76C 114 97 100 105 111 32 116 120 32 54 48 13 10 0 ]
-[a 14C 114 97 100 105 111 32 115 101 116 32 98 119 32 50 53 48 13 10 0 ]
-[a 73C 114 97 100 105 111 32 116 120 32 53 48 13 10 0 ]
-[a 70C 114 97 100 105 111 32 116 120 32 52 48 13 10 0 ]
-[a 67C 114 97 100 105 111 32 116 120 32 51 48 13 10 0 ]
-[a 64C 114 97 100 105 111 32 116 120 32 50 48 13 10 0 ]
-[a 61C 114 97 100 105 111 32 116 120 32 49 48 13 10 0 ]
-[a 38C 114 97 100 105 111 32 115 101 116 32 119 100 116 32 49 53 48 48 48 13 10 0 ]
-[a 18C 114 97 100 105 111 32 115 101 116 32 102 114 101 113 32 57 50 51 51 48 48 48 48 48 13 10 0 ]
+[a 73C 114 97 100 105 111 32 116 120 32 57 48 13 10 0 ]
+[a 70C 114 97 100 105 111 32 116 120 32 56 48 13 10 0 ]
+[a 67C 114 97 100 105 111 32 116 120 32 55 48 13 10 0 ]
+[a 64C 114 97 100 105 111 32 116 120 32 54 48 13 10 0 ]
+[a 13C 114 97 100 105 111 32 115 101 116 32 98 119 32 50 53 48 13 10 0 ]
+[a 61C 114 97 100 105 111 32 116 120 32 53 48 13 10 0 ]
+[a 58C 114 97 100 105 111 32 116 120 32 52 48 13 10 0 ]
+[a 55C 114 97 100 105 111 32 116 120 32 51 48 13 10 0 ]
+[a 52C 114 97 100 105 111 32 116 120 32 50 48 13 10 0 ]
+[a 49C 114 97 100 105 111 32 116 120 32 49 48 13 10 0 ]
+[a 31C 114 97 100 105 111 32 115 101 116 32 119 100 116 32 49 53 48 48 48 13 10 0 ]
+[a 16C 114 97 100 105 111 32 115 101 116 32 102 114 101 113 32 57 50 51 51 48 48 48 48 48 13 10 0 ]
 [a 5C 115 121 115 32 115 101 116 32 112 105 110 100 105 103 32 71 80 73 79 49 49 32 48 13 10 0 ]
 [a 4C 115 121 115 32 115 101 116 32 112 105 110 100 105 103 32 71 80 73 79 49 48 32 48 13 10 0 ]

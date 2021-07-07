@@ -8,22 +8,12 @@
 Normal 0
 Inverse 1
 ]
-"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
-[v _abs abs `(i  1 e 2 0 ]
-"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
-[v ___aodiv __aodiv `(o  1 e 8 0 ]
-"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
-[v ___aomod __aomod `(o  1 e 8 0 ]
 "7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 "7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
-"72 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-[v _pad pad `(i  1 s 2 pad ]
-"259
+"259 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
 [v _ctoa ctoa `(i  1 s 2 ctoa ]
-"287
-[v _dtoa dtoa `(i  1 s 2 dtoa ]
 "692
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 "1390
@@ -68,15 +58,13 @@ Inverse 1
 [v ___omul __omul `(uo  1 e 8 0 ]
 "12 C:\Users\ASUS\Dropbox\Trabajo de grado y PyR\Codigos\tx_rn2903.X\main.c
 [v _init_port init_port `(v  1 e 1 0 ]
-"23
-[v _delayms delayms `(v  1 e 1 0 ]
-"38
+"29
 [v _sendCommand sendCommand `(v  1 e 1 0 ]
-"68
+"58
 [v _RN_Leds RN_Leds `(v  1 e 1 0 ]
-"91
+"75
 [v _init_mod_LoRa init_mod_LoRa `(v  1 e 1 0 ]
-"242
+"200
 [v _main main `(v  1 e 1 0 ]
 "66 C:\Users\ASUS\Dropbox\Trabajo de grado y PyR\Codigos\tx_rn2903.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
@@ -175,7 +163,7 @@ Inverse 1
 [v _LATAbits LATAbits `VES506  1 e 1 @3977 ]
 "3871
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
-[s S855 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S837 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -185,7 +173,7 @@ Inverse 1
 `uc 1 LATB7 1 0 :1:7 
 ]
 "3898
-[s S864 . 1 `uc 1 LB0 1 0 :1:0 
+[s S846 . 1 `uc 1 LB0 1 0 :1:0 
 `uc 1 LB1 1 0 :1:1 
 `uc 1 LB2 1 0 :1:2 
 `uc 1 LB3 1 0 :1:3 
@@ -194,11 +182,11 @@ Inverse 1
 `uc 1 LB6 1 0 :1:6 
 `uc 1 LB7 1 0 :1:7 
 ]
-[u S873 . 1 `S855 1 . 1 0 `S864 1 . 1 0 ]
-[v _LATBbits LATBbits `VES873  1 e 1 @3978 ]
+[u S855 . 1 `S837 1 . 1 0 `S846 1 . 1 0 ]
+[v _LATBbits LATBbits `VES855  1 e 1 @3978 ]
 "3983
 [v _LATC LATC `VEuc  1 e 1 @3979 ]
-[s S929 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S911 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -208,7 +196,7 @@ Inverse 1
 `uc 1 LATC7 1 0 :1:7 
 ]
 "4010
-[s S938 . 1 `uc 1 LC0 1 0 :1:0 
+[s S920 . 1 `uc 1 LC0 1 0 :1:0 
 `uc 1 LC1 1 0 :1:1 
 `uc 1 LC2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -217,23 +205,23 @@ Inverse 1
 `uc 1 LC6 1 0 :1:6 
 `uc 1 LC7 1 0 :1:7 
 ]
-[u S947 . 1 `S929 1 . 1 0 `S938 1 . 1 0 ]
-[v _LATCbits LATCbits `VES947  1 e 1 @3979 ]
+[u S929 . 1 `S911 1 . 1 0 `S920 1 . 1 0 ]
+[v _LATCbits LATCbits `VES929  1 e 1 @3979 ]
 "4085
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
 "4197
 [v _LATE LATE `VEuc  1 e 1 @3981 ]
-[s S759 . 1 `uc 1 LATE0 1 0 :1:0 
+[s S741 . 1 `uc 1 LATE0 1 0 :1:0 
 `uc 1 LATE1 1 0 :1:1 
 `uc 1 LATE2 1 0 :1:2 
 ]
 "4214
-[s S763 . 1 `uc 1 LE0 1 0 :1:0 
+[s S745 . 1 `uc 1 LE0 1 0 :1:0 
 `uc 1 LE1 1 0 :1:1 
 `uc 1 LE2 1 0 :1:2 
 ]
-[u S767 . 1 `S759 1 . 1 0 `S763 1 . 1 0 ]
-[v _LATEbits LATEbits `VES767  1 e 1 @3981 ]
+[u S749 . 1 `S741 1 . 1 0 `S745 1 . 1 0 ]
+[v _LATEbits LATEbits `VES749  1 e 1 @3981 ]
 "4606
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 [s S448 . 1 `uc 1 TRISA0 1 0 :1:0 
@@ -259,7 +247,7 @@ Inverse 1
 [v _TRISAbits TRISAbits `VES466  1 e 1 @3986 ]
 "4828
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
-[s S779 . 1 `uc 1 TRISB0 1 0 :1:0 
+[s S761 . 1 `uc 1 TRISB0 1 0 :1:0 
 `uc 1 TRISB1 1 0 :1:1 
 `uc 1 TRISB2 1 0 :1:2 
 `uc 1 TRISB3 1 0 :1:3 
@@ -269,7 +257,7 @@ Inverse 1
 `uc 1 TRISB7 1 0 :1:7 
 ]
 "4860
-[s S788 . 1 `uc 1 RB0 1 0 :1:0 
+[s S770 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
 `uc 1 RB3 1 0 :1:3 
@@ -278,11 +266,11 @@ Inverse 1
 `uc 1 RB6 1 0 :1:6 
 `uc 1 RB7 1 0 :1:7 
 ]
-[u S797 . 1 `S779 1 . 1 0 `S788 1 . 1 0 ]
-[v _TRISBbits TRISBbits `VES797  1 e 1 @3987 ]
+[u S779 . 1 `S761 1 . 1 0 `S770 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES779  1 e 1 @3987 ]
 "5050
 [v _TRISC TRISC `VEuc  1 e 1 @3988 ]
-[s S819 . 1 `uc 1 TRISC0 1 0 :1:0 
+[s S801 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -292,32 +280,32 @@ Inverse 1
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "5080
-[s S828 . 1 `uc 1 RC0 1 0 :1:0 
+[s S810 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 RC6 1 0 :1:6 
 `uc 1 RC7 1 0 :1:7 
 ]
-[u S835 . 1 `S819 1 . 1 0 `S828 1 . 1 0 ]
-[v _TRISCbits TRISCbits `VES835  1 e 1 @3988 ]
+[u S817 . 1 `S801 1 . 1 0 `S810 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES817  1 e 1 @3988 ]
 "5228
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
 "5450
 [v _TRISE TRISE `VEuc  1 e 1 @3990 ]
-[s S735 . 1 `uc 1 TRISE0 1 0 :1:0 
+[s S717 . 1 `uc 1 TRISE0 1 0 :1:0 
 `uc 1 TRISE1 1 0 :1:1 
 `uc 1 TRISE2 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 WPUE3 1 0 :1:7 
 ]
 "5474
-[s S741 . 1 `uc 1 RE0 1 0 :1:0 
+[s S723 . 1 `uc 1 RE0 1 0 :1:0 
 `uc 1 RE1 1 0 :1:1 
 `uc 1 RE2 1 0 :1:2 
 ]
-[u S745 . 1 `S735 1 . 1 0 `S741 1 . 1 0 ]
-[v _TRISEbits TRISEbits `VES745  1 e 1 @3990 ]
+[u S727 . 1 `S717 1 . 1 0 `S723 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES727  1 e 1 @3990 ]
 "6030
 [v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
 [s S70 . 1 `uc 1 TMR1IF 1 0 :1:0 
@@ -477,8 +465,6 @@ Inverse 1
 [v _flags flags `i  1 s 2 flags ]
 [v _prec prec `i  1 s 2 prec ]
 [v _width width `i  1 s 2 width ]
-"66
-[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
 "69
 [v _nout nout `i  1 s 2 nout ]
 [s S24 . 1 `uc 1 perr 1 0 :1:0 
@@ -499,23 +485,23 @@ Inverse 1
 [v _OledFont0 OledFont0 `C[768]uc  1 e 768 0 ]
 "222
 [v _selectedFont selectedFont `*.25Cuc  1 e 2 0 ]
-"242 C:\Users\ASUS\Dropbox\Trabajo de grado y PyR\Codigos\tx_rn2903.X\main.c
+"200 C:\Users\ASUS\Dropbox\Trabajo de grado y PyR\Codigos\tx_rn2903.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"256
-[v main@read read `[32]uc  1 a 32 29 ]
-"257
-[v main@cont cont `uc  1 a 1 61 ]
-"353
+"208
+[v main@read read `[32]uc  1 a 32 62 ]
+"209
+[v main@cont cont `uc  1 a 1 94 ]
+"306
 } 0
 "264 C:\Users\ASUS\Dropbox\Trabajo de grado y PyR\Codigos\tx_rn2903.X\SSD1306oLED.c
 [v _oled_putUint8 oled_putUint8 `(v  1 e 1 0 ]
 {
 [v oled_putUint8@number number `uc  1 a 1 wreg ]
-[s S718 . 6 `uc 1 d0 1 0 `uc 1 d1 1 1 `uc 1 d2 1 2 `uc 1 d3 1 3 `uc 1 d4 1 4 `uc 1 d5 1 5 ]
+[s S700 . 6 `uc 1 d0 1 0 `uc 1 d1 1 1 `uc 1 d2 1 2 `uc 1 d3 1 3 `uc 1 d4 1 4 `uc 1 d5 1 5 ]
 "266
-[u S725 . 6 `S718 1 . 6 0 `[6]uc 1 b 6 0 ]
-[v oled_putUint8@numData numData `S725  1 a 6 20 ]
+[u S707 . 6 `S700 1 . 6 0 `[6]uc 1 b 6 0 ]
+[v oled_putUint8@numData numData `S707  1 a 6 20 ]
 "264
 [v oled_putUint8@number number `uc  1 a 1 wreg ]
 [v oled_putUint8@station_dot station_dot `uc  1 p 1 17 ]
@@ -614,144 +600,59 @@ Inverse 1
 {
 "21
 } 0
-"91
+"75
 [v _init_mod_LoRa init_mod_LoRa `(v  1 e 1 0 ]
 {
-"93
-[v init_mod_LoRa@READ READ `[10]uc  1 a 10 18 ]
-"92
-[v init_mod_LoRa@read read `[10]uc  1 a 10 8 ]
-"213
+"77
+[v init_mod_LoRa@READ READ `[10]uc  1 a 10 50 ]
+"177
 } 0
 "9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
-[s S1556 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[s S1538 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
 "13
-[v sprintf@f f `S1556  1 a 6 2 ]
+[v sprintf@f f `S1538  1 a 6 42 ]
 "12
-[v sprintf@ap ap `[1]*.39v  1 a 2 0 ]
+[v sprintf@ap ap `[1]*.39v  1 a 2 40 ]
 "9
-[v sprintf@s s `*.39uc  1 p 2 88 ]
-[v sprintf@fmt fmt `*.25Cuc  1 p 2 90 ]
+[v sprintf@s s `*.39uc  1 p 2 34 ]
+[v sprintf@fmt fmt `*.25Cuc  1 p 2 36 ]
 "23
 } 0
 "1390 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
 "1393
-[v vfprintf@cfmt cfmt `*.25uc  1 a 2 86 ]
-[s S1582 _IO_FILE 0 ]
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 32 ]
+[s S1564 _IO_FILE 0 ]
 "1390
-[v vfprintf@fp fp `*.39S1582  1 p 2 80 ]
-[v vfprintf@fmt fmt `*.25Cuc  1 p 2 82 ]
-[v vfprintf@ap ap `*.39*.39v  1 p 2 84 ]
+[v vfprintf@fp fp `*.39S1564  1 p 2 26 ]
+[v vfprintf@fmt fmt `*.25Cuc  1 p 2 28 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 30 ]
 "1404
 } 0
 "692
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 {
-"696
-[v vfpfcnvrt@ll ll `o  1 a 8 71 ]
 "694
-[v vfpfcnvrt@c c `uc  1 a 1 79 ]
-[s S1582 _IO_FILE 0 ]
+[v vfpfcnvrt@c c `uc  1 a 1 25 ]
+[s S1564 _IO_FILE 0 ]
 "692
-[v vfpfcnvrt@fp fp `*.39S1582  1 p 2 63 ]
-[v vfpfcnvrt@fmt fmt `*.39*.25uc  1 p 2 65 ]
-[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 67 ]
+[v vfpfcnvrt@fp fp `*.39S1564  1 p 2 17 ]
+[v vfpfcnvrt@fmt fmt `*.39*.25uc  1 p 2 19 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 21 ]
 "1387
 } 0
-"287
-[v _dtoa dtoa `(i  1 s 2 dtoa ]
-{
-"290
-[v dtoa@n n `o  1 a 8 53 ]
-"289
-[v dtoa@i i `i  1 a 2 61 ]
-[v dtoa@s s `i  1 a 2 51 ]
-[v dtoa@w w `i  1 a 2 49 ]
-[v dtoa@p p `i  1 a 2 47 ]
-[s S1582 _IO_FILE 0 ]
-"287
-[v dtoa@fp fp `*.39S1582  1 p 2 27 ]
-[v dtoa@d d `o  1 p 8 29 ]
-"328
-} 0
-"72
-[v _pad pad `(i  1 s 2 pad ]
-{
-"74
-[v pad@w w `i  1 a 2 25 ]
-[v pad@i i `i  1 a 2 23 ]
-[s S1582 _IO_FILE 0 ]
-"72
-[v pad@fp fp `*.39S1582  1 p 2 16 ]
-[v pad@buf buf `*.39uc  1 p 2 18 ]
-[v pad@p p `i  1 p 2 20 ]
-"95
-} 0
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
-[v _strlen strlen `(ui  1 e 2 0 ]
-{
-"7
-[v strlen@a a `*.39Cuc  1 a 2 2 ]
-"5
-[v strlen@s s `*.39Cuc  1 p 2 0 ]
-"12
-} 0
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
-[v _fputs fputs `(i  1 e 2 0 ]
-{
-"11
-[v fputs@i i `i  1 a 2 14 ]
-"10
-[v fputs@c c `uc  1 a 1 13 ]
-"8
-[v fputs@s s `*.39Cuc  1 p 2 9 ]
-[s S1556 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
-[v fputs@fp fp `*.39S1556  1 p 2 11 ]
-"19
-} 0
-"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
-[v _abs abs `(i  1 e 2 0 ]
-{
-[v abs@a a `i  1 p 2 18 ]
-"4
-} 0
-"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
-[v ___aomod __aomod `(o  1 e 8 0 ]
-{
-"12
-[v ___aomod@sign sign `uc  1 a 1 17 ]
-[v ___aomod@counter counter `uc  1 a 1 16 ]
-"9
-[v ___aomod@dividend dividend `o  1 p 8 0 ]
-[v ___aomod@divisor divisor `o  1 p 8 8 ]
-"36
-} 0
-"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
-[v ___aodiv __aodiv `(o  1 e 8 0 ]
-{
-"12
-[v ___aodiv@quotient quotient `o  1 a 8 18 ]
-"13
-[v ___aodiv@sign sign `uc  1 a 1 17 ]
-[v ___aodiv@counter counter `uc  1 a 1 16 ]
-"9
-[v ___aodiv@dividend dividend `o  1 p 8 0 ]
-[v ___aodiv@divisor divisor `o  1 p 8 8 ]
-"43
-} 0
-"259 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+"259
 [v _ctoa ctoa `(i  1 s 2 ctoa ]
 {
 "261
 [v ctoa@w w `i  1 a 2 15 ]
 [v ctoa@l l `i  1 a 2 13 ]
-[s S1582 _IO_FILE 0 ]
+[s S1564 _IO_FILE 0 ]
 "259
-[v ctoa@fp fp `*.39S1582  1 p 2 9 ]
+[v ctoa@fp fp `*.39S1564  1 p 2 9 ]
 [v ctoa@c c `uc  1 p 1 11 ]
 "283
 } 0
@@ -759,8 +660,8 @@ Inverse 1
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 0 ]
-[s S1556 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
-[v fputc@fp fp `*.39S1556  1 p 2 2 ]
+[s S1538 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputc@fp fp `*.39S1538  1 p 2 2 ]
 "24
 } 0
 "7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\putch.c
@@ -768,11 +669,11 @@ Inverse 1
 {
 "9
 } 0
-"38 C:\Users\ASUS\Dropbox\Trabajo de grado y PyR\Codigos\tx_rn2903.X\main.c
+"29 C:\Users\ASUS\Dropbox\Trabajo de grado y PyR\Codigos\tx_rn2903.X\main.c
 [v _sendCommand sendCommand `(v  1 e 1 0 ]
 {
 [v sendCommand@texto texto `*.25uc  1 p 2 1 ]
-"46
+"37
 } 0
 "156 C:\Users\ASUS\Dropbox\Trabajo de grado y PyR\Codigos\tx_rn2903.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
@@ -865,20 +766,6 @@ Inverse 1
 {
 "155
 } 0
-"23 C:\Users\ASUS\Dropbox\Trabajo de grado y PyR\Codigos\tx_rn2903.X\main.c
-[v _delayms delayms `(v  1 e 1 0 ]
-{
-"25
-[v delayms@counter counter `us  1 a 2 3 ]
-"23
-[v delayms@length length `us  1 p 2 0 ]
-"30
-} 0
-"113 C:\Users\ASUS\Dropbox\Trabajo de grado y PyR\Codigos\tx_rn2903.X\mcc_generated_files/eusart1.c
-[v _EUSART1_Read EUSART1_Read `(uc  1 e 1 0 ]
-{
-"130
-} 0
 "50 C:\Users\ASUS\Dropbox\Trabajo de grado y PyR\Codigos\tx_rn2903.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
@@ -916,4 +803,9 @@ Inverse 1
 {
 [v EUSART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
 "191
+} 0
+"113
+[v _EUSART1_Read EUSART1_Read `(uc  1 e 1 0 ]
+{
+"130
 } 0

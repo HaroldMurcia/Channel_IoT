@@ -8427,15 +8427,6 @@ void init_port(void)
     TRISD = 0b00000000;
 }
 
-void delayms(uint16_t length)
-{
-    uint16_t counter;
-    for(counter = 0; counter < length; counter++)
-    {
-        _delay((unsigned long)((1)*(48000000/4000.0)));
-    }
-}
-
 void Endline(void)
 {
     EUSART1_Write(0x0D);
@@ -8456,56 +8447,49 @@ void sendCommand(char * texto)
 void test_leds(void)
 {
     oled_putString("LED Test:",0,1);
-
     LATAbits.LATA6 = 1;
     LATAbits.LATA7 = 1;
-     delayms(500);
+    _delay((unsigned long)((500)*(48000000/4000.0)));
     LATAbits.LATA6 = 0;
     LATAbits.LATA7 = 0;
-    delayms(500);
+    _delay((unsigned long)((500)*(48000000/4000.0)));
     LATAbits.LATA6 = 1;
     LATAbits.LATA7 = 1;
-    delayms(500);
+    _delay((unsigned long)((500)*(48000000/4000.0)));
     LATAbits.LATA6 = 0;
     LATAbits.LATA7 = 0;
-    delayms(500);
+    _delay((unsigned long)((500)*(48000000/4000.0)));
 }
 
 
 void RN_Leds(_Bool state)
 {
-    _delay((unsigned long)((16)*(48000000/4000.0)));
-    _delay((unsigned long)((16)*(48000000/4000.0)));
-    _delay((unsigned long)((16)*(48000000/4000.0)));
+    _delay((unsigned long)((50)*(48000000/4000.0)));
     if (state)
     {
         sendCommand("sys set pindig GPIO10 1\r\n");
-        _delay((unsigned long)((16)*(48000000/4000.0)));
-        _delay((unsigned long)((16)*(48000000/4000.0)));
-        _delay((unsigned long)((16)*(48000000/4000.0)));
+        _delay((unsigned long)((50)*(48000000/4000.0)));
         sendCommand("sys set pindig GPIO11 1\r\n");
     }
     else
     {
         sendCommand("sys set pindig GPIO10 0\r\n");
-        _delay((unsigned long)((16)*(48000000/4000.0)));
-        _delay((unsigned long)((16)*(48000000/4000.0)));
-        _delay((unsigned long)((16)*(48000000/4000.0)));
+        _delay((unsigned long)((50)*(48000000/4000.0)));
         sendCommand("sys set pindig GPIO11 0\r\n");
     }
 }
 
 void init_mod_LoRa(void)
-{ char read[10];
+{
     char READ[10];
-    delayms(200);
+    _delay((unsigned long)((200)*(48000000/4000.0)));
     oled_clear();
     sprintf(READ,"%c",get_Data());
     oled_putString(READ,0,3);
-    delayms(100);
+    _delay((unsigned long)((100)*(48000000/4000.0)));
     sprintf(READ,"%c",get_Data());
     oled_putString(READ,0,3);
-    delayms(100);
+    _delay((unsigned long)((100)*(48000000/4000.0)));
 
     oled_putString("Config modulo RN",0,0);
     oled_clearRow(1);
@@ -8513,152 +8497,120 @@ void init_mod_LoRa(void)
     oled_clearRow(3);
     oled_putString("potencia",0,1);
     sendCommand("radio set pwr 3\r\n");
-    sprintf(read,"%d",EUSART1_Read());
     sprintf(READ,"%c",get_Data());
-    oled_putString(read,0,2);
     oled_putString(READ,0,3);
-    delayms(500);
+    _delay((unsigned long)((500)*(48000000/4000.0)));
 
     oled_clearRow(1);
     oled_clearRow(2);
     oled_clearRow(3);
     oled_putString("ancho de banda",0,1);
     sendCommand("radio set bw 250\r\n");
-    sprintf(read,"%d",EUSART1_Read());
     sprintf(READ,"%c",get_Data());
-    oled_putString(read,0,2);
     oled_putString(READ,0,3);
-    delayms(500);
+    _delay((unsigned long)((500)*(48000000/4000.0)));
 
     oled_clearRow(1);
     oled_clearRow(2);
     oled_clearRow(3);
     oled_putString("frecuencia",0,1);
     sendCommand("radio set freq 923300000\r\n");
-    sprintf(read,"%d",EUSART1_Read());
     sprintf(READ,"%c",get_Data());
-    oled_putString(read,0,2);
     oled_putString(READ,0,3);
-    delayms(500);
+    _delay((unsigned long)((500)*(48000000/4000.0)));
 
     oled_clearRow(1);
     oled_clearRow(2);
     oled_clearRow(3);
     oled_putString("cod Dec Errores",0,1);
     sendCommand("radio set crc on\r\n");
-    sprintf(read,"%d",EUSART1_Read());
     sprintf(READ,"%c",get_Data());
-    oled_putString(read,0,2);
     oled_putString(READ,0,3);
-    delayms(500);
+    _delay((unsigned long)((500)*(48000000/4000.0)));
 
     oled_clearRow(1);
     oled_clearRow(2);
     oled_clearRow(3);
     oled_putString("tasa de cod",0,1);
     sendCommand("radio set cr 4/5\r\n");
-    sprintf(read,"%d",EUSART1_Read());
     sprintf(READ,"%c",get_Data());
-    oled_putString(read,0,2);
     oled_putString(READ,0,3);
-    delayms(500);
+    _delay((unsigned long)((500)*(48000000/4000.0)));
 
     oled_clearRow(1);
     oled_clearRow(2);
     oled_clearRow(3);
     oled_putString("mod lora",0,1);
     sendCommand("radio set mod lora\r\n");
-    sprintf(read,"%d",EUSART1_Read());
     sprintf(READ,"%c",get_Data());
-    oled_putString(read,0,2);
     oled_putString(READ,0,3);
-    delayms(500);
+    _delay((unsigned long)((500)*(48000000/4000.0)));
 
     oled_clearRow(1);
     oled_clearRow(2);
     oled_clearRow(3);
     oled_putString("inversion",0,1);
     sendCommand("radio set iqi off\r\n");
-    sprintf(read,"%d",EUSART1_Read());
     sprintf(READ,"%c",get_Data());
-    oled_putString(read,0,2);
     oled_putString(READ,0,3);
-    delayms(500);
+    _delay((unsigned long)((500)*(48000000/4000.0)));
 
     oled_clearRow(1);
     oled_clearRow(2);
     oled_clearRow(3);
     oled_putString("wdt",0,1);
     sendCommand("radio set wdt 15000\r\n");
-    sprintf(read,"%d",EUSART1_Read());
     sprintf(READ,"%c",get_Data());
-    oled_putString(read,0,2);
     oled_putString(READ,0,3);
-    delayms(500);
+    _delay((unsigned long)((500)*(48000000/4000.0)));
 
     oled_clearRow(1);
     oled_clearRow(2);
     oled_clearRow(3);
     oled_putString("factor de dispersion",0,1);
     sendCommand("radio set sf SF12\r\n");
-    sprintf(read,"%d",EUSART1_Read());
     sprintf(READ,"%c",get_Data());
-    oled_putString(read,0,2);
     oled_putString(READ,0,3);
-    delayms(500);
+    _delay((unsigned long)((500)*(48000000/4000.0)));
 
     oled_clearRow(1);
     oled_clearRow(2);
     oled_clearRow(3);
     oled_putString("sync",0,1);
     sendCommand("radio set sync 34\r\n");
-    sprintf(read,"%d",EUSART1_Read());
     sprintf(READ,"%c",get_Data());
-    oled_putString(read,0,2);
     oled_putString(READ,0,3);
-    delayms(500);
+    _delay((unsigned long)((500)*(48000000/4000.0)));
 }
-void test_LoRa(void)
+void test_leds_LoRa(void)
 {
-    char read[32];
-    char READ[64];
+    char READ[10];
      oled_clear();
      RN_Leds(1);
      oled_putString("comando enviado",0,0);
      oled_putString("Encendido",0,1);
-     sprintf(read,"%d",EUSART1_Read());
      sprintf(READ,"%c",get_Data());
-     oled_putString(read,0,2);
      oled_putString(READ,0,3);
      LATAbits.LATA7 = 1;
      _delay((unsigned long)((100)*(48000000/4000.0)));
 
-     delayms(3000);
      oled_clear();
      RN_Leds(0);
      oled_putString("comando enviado",0,0);
      oled_putString("Apagado",0,1);
-     sprintf(read,"%d",EUSART1_Read());
      sprintf(READ,"%c",get_Data());
-     oled_putString(read,0,2);
      oled_putString(READ,0,3);
      LATAbits.LATA7 = 0;
      _delay((unsigned long)((100)*(48000000/4000.0)));
-     delayms(3000);
 }
+
 void main(void)
 {
     SYSTEM_Initialize();
     init_port();
-
-    delayms(500);
-
+    _delay((unsigned long)((200)*(48000000/4000.0)));
     oled_init();
-
     init_mod_LoRa();
-
-
-
     oled_clear();
     char read[32];
     uint8_t cont = 0;
@@ -8667,71 +8619,71 @@ void main(void)
         {
             oled_putString("MAC PUASE",0,0);
             sendCommand("mac pause\r\n");
-            sprintf(read,"%d",EUSART1_Read());
+            sprintf(read,"%c",EUSART1_Read());
             oled_putString(read,0,1);
-            delayms(200);
+
          }
         else if(cont == 1)
         {
             oled_putString("transmision=1",0,2);
             sendCommand("radio tx 10\r\n");
-            sprintf(read,"%d",EUSART1_Read());
+            sprintf(read,"%c",EUSART1_Read());
             oled_putString(read,0,3);
         }
         else if(cont == 2)
         {
             oled_putString("transmision=2",0,2);
             sendCommand("radio tx 20\r\n");
-            sprintf(read,"%d",EUSART1_Read());
+            sprintf(read,"%c",EUSART1_Read());
             oled_putString(read,0,3);
         }
         else if(cont == 3)
         {
             oled_putString("transmision=3",0,2);
             sendCommand("radio tx 30\r\n");
-            sprintf(read,"%d",EUSART1_Read());
+            sprintf(read,"%c",EUSART1_Read());
             oled_putString(read,0,3);
         }
         else if(cont == 4)
         {
             oled_putString("transmision=4",0,2);
             sendCommand("radio tx 40\r\n");
-            sprintf(read,"%d",EUSART1_Read());
+            sprintf(read,"%c",EUSART1_Read());
             oled_putString(read,0,3);
         }
         else if(cont == 5)
         {
             oled_putString("transmision=5",0,2);
             sendCommand("radio tx 50\r\n");
-            sprintf(read,"%d",EUSART1_Read());
+            sprintf(read,"%c",EUSART1_Read());
             oled_putString(read,0,3);
         }
         else if(cont == 6)
         {
             oled_putString("transmision=6",0,2);
             sendCommand("radio tx 60\r\n");
-            sprintf(read,"%d",EUSART1_Read());
+            sprintf(read,"%c",EUSART1_Read());
             oled_putString(read,0,3);
         }
          else if(cont == 7)
         {
             oled_putString("transmision=7",0,2);
             sendCommand("radio tx 70\r\n");
-            sprintf(read,"%d",EUSART1_Read());
+            sprintf(read,"%c",EUSART1_Read());
             oled_putString(read,0,3);
         }
         else if(cont == 8)
         {
             oled_putString("transmision=8",0,2);
             sendCommand("radio tx 80\r\n");
-            sprintf(read,"%d",EUSART1_Read());
+            sprintf(read,"%c",EUSART1_Read());
             oled_putString(read,0,3);
         }
         else if(cont == 9)
         {
             oled_putString("transmision=9",0,2);
             sendCommand("radio tx 90\r\n");
-            sprintf(read,"%d",EUSART1_Read());
+            sprintf(read,"%c",EUSART1_Read());
             oled_putString(read,0,3);
         }
         else if(cont == 10)
@@ -8739,22 +8691,23 @@ void main(void)
             oled_clear();
             oled_putString("termino",0,0);
             sendCommand("mac resume\r\n");
-            sprintf(read,"%d",EUSART1_Read());
+            sprintf(read,"%c",EUSART1_Read());
             oled_putString(read,0,3);
             oled_putUint8(cont,9,1);
             oled_putString("cont: ",4,1);
             cont = 0;
-            delayms(200);
+            _delay((unsigned long)((200)*(48000000/4000.0)));
+
             oled_clear();
             oled_putString("MAC PUASE",0,0);
             sendCommand("mac pause\r\n");
-            sprintf(read,"%d",EUSART1_Read());
+            sprintf(read,"%c",EUSART1_Read());
             oled_putString(read,0,1);
-            delayms(200);
+            _delay((unsigned long)((200)*(48000000/4000.0)));
         }
         oled_putUint8(cont,9,1);
         oled_putString("cont: ",4,1);
         cont++;
-        delayms(3000);
+        _delay((unsigned long)((3000)*(48000000/4000.0)));
     }
 }
