@@ -1,13 +1,13 @@
-Microchip MPLAB XC8 Compiler V2.32
+Microchip MPLAB XC8 Compiler V2.31
 
 Linker command line:
 
--W-3 --edf=C:\Program Files\Microchip\xc8\v2.32\pic\dat\en_msgs.txt -cn \
-  -h+dist/default/production\Rx_Rn2903.X.production.sym \
-  --cmf=dist/default/production\Rx_Rn2903.X.production.cmf -z -Q18LF45K50 \
-  -oC:\Users\ASUS\AppData\Local\Temp\xcAsi9g.4 --defsym=__MPLAB_BUILD=1 \
+-W-3 --edf=/opt/microchip/xc8/v2.31/pic/dat/en_msgs.txt -cn \
+  -h+dist/default/production/Rx_Rn2903.X.production.sym \
+  --cmf=dist/default/production/Rx_Rn2903.X.production.cmf -z -Q18LF45K50 \
+  -o/tmp/xcXDKalDN --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Rx_Rn2903.X.production.map -E1 \
-  -ver=XC8 Compiler --acfsm=1493 -ASTACK=084h-07FFh -pstack=STACK \
+  -ver=XC8 Compiler --acfsm=1493 -ASTACK=0C0h-07FFh -pstack=STACK \
   -ACODE=00h-07FFFh -ACONST=00h-07FFFh -ASMALLCONST=0800h-08FFhx120 \
   -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh -AABS1=00h-07FFh \
   -ABIGRAM=01h-07FFh -ARAM=060h-0FFh,0100h-01FFhx7 -ABANK0=060h-0FFh \
@@ -23,8 +23,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\ASUS\AppData\Local\Temp\xcAsi9g.o \
-  dist/default/production\Rx_Rn2903.X.production.o 
+  /tmp/xcXbbfeBP.o dist/default/production/Rx_Rn2903.X.production.o 
 
 Object code version is 3.11
 
@@ -33,122 +32,107 @@ Machine type is 18LF45K50
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\ASUS\AppData\Local\Temp\xcAsi9g.o
+/tmp/xcXbbfeBP.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                                  0        0        4        0       0
-dist/default/production\Rx_Rn2903.X.production.o
+dist/default/production/Rx_Rn2903.X.production.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
-                mediumconst                        7AC6     7AC6      53A     3D63       0
-                text40                             6752     6752       28     33A9       0
-                text39                             6694     6694       14     334A       0
-                text38                             6616     6616        A     330B       0
-                text37                             6620     6620        A     3310       0
-                text36                             662A     662A        A     3315       0
-                text35                             686A     686A       3E     3435       0
-                text34                             6732     6732       20     3399       0
-                text33                             68A8     68A8       3E     3454       0
-                text32                             6658     6658        E     332C       0
-                text31                             6800     6800       34     3400       0
-                text30                             66A8     66A8       14     3354       0
-                text29                             66D0     66D0       16     3368       0
-                text28                             6674     6674       10     333A       0
-                text27                             66BC     66BC       14     335E       0
-                text26                             6A4A     6A4A       7C     3525       0
-                text25                             677A     677A       28     33BD       0
-                text24                             66FC     66FC       1A     337E       0
-                text23                             6AC6     6AC6       80     3563       0
-                text22                             66E6     66E6       16     3373       0
-                text21                             6834     6834       36     341A       0
-                text20                             6610     6610        2     3308       0
-                text19                             6D4A     6D4A       CA     36A5       0
-                text18                             6E14     6E14       D4     370A       0
-                text17                             6EE8     6EE8      15E     3774       0
-                text16                             6974     6974       5E     34BA       0
-                text15                             6926     6926       4E     3493       0
-                text14                             7512     7512      5B4     3A89       0
-                text13                             6666     6666        E     3333       0
-                text12                             7046     7046      176     3823       0
-                text11                             6634     6634        C     331A       0
-                text10                             6640     6640        C     3320       0
-                text9                              664C     664C        C     3326       0
-                text8                              6684     6684       10     3342       0
-                text7                              69D2     69D2       78     34E9       0
-                text6                              67D0     67D0       30     33E8       0
-                text5                              6716     6716       1C     338B       0
-                text4                              67A2     67A2       2E     33D1       0
-                text3                              6C86     6C86       C4     3643       0
-                text2                              6BD6     6BD6       B0     35EB       0
-                text1                              6B46     6B46       90     35A3       0
-                text0                              71BC     71BC      356     38DE       0
-                cstackCOMRAM                          1        1       4F        1       1
-                bssBANK0                             60       60       24       60       1
-                dataCOMRAM                           5D       5D        3        1       1
-                bssCOMRAM                            50       50        D        1       1
-                cinit                              68E6     68E6       40     3473       0
-                idataCOMRAM                        6613     6613        3     6613       0
+                mediumconst                        7A6A     7A6A      596     3D35       0
+                text31                             749C     749C      1CC     3A4E       0
+                text30                             6D3C     6D3C        A     369E       0
+                text29                             6D46     6D46        A     36A3       0
+                text28                             6D50     6D50        A     36A8       0
+                text27                             6F74     6F74       3E     37BA       0
+                text26                             6E44     6E44       20     3722       0
+                text25                             6FB2     6FB2       3E     37D9       0
+                text24                             6D7E     6D7E        E     36BF       0
+                text23                             6DBA     6DBA       14     36DD       0
+                text22                             6DE2     6DE2       16     36F1       0
+                text21                             6D9A     6D9A       10     36CD       0
+                text20                             6DCE     6DCE       14     36E7       0
+                text19                             70CA     70CA       7C     3865       0
+                text18                             6E84     6E84       28     3742       0
+                text17                             6E0E     6E0E       1A     3707       0
+                text16                             7146     7146       80     38A3       0
+                text15                             71C6     71C6       D8     38E3       0
+                text14                             6F0A     6F0A       34     3785       0
+                text13                             729E     729E       F6     394F       0
+                text12                             6DF8     6DF8       16     36FC       0
+                text11                             6F3E     6F3E       36     379F       0
+                text10                             7668     7668      402     3B34       0
+                text9                              6D8C     6D8C        E     36C6       0
+                text8                              6D5A     6D5A        C     36AD       0
+                text7                              6D66     6D66        C     36B3       0
+                text6                              6D72     6D72        C     36B9       0
+                text5                              6DAA     6DAA       10     36D5       0
+                text4                              7052     7052       78     3829       0
+                text3                              6EDA     6EDA       30     376D       0
+                text2                              6E28     6E28       1C     3714       0
+                text1                              6EAC     6EAC       2E     3756       0
+                text0                              7394     7394      108     39CA       0
+                cstackCOMRAM                          1        1       3F        1       1
+                dataBANK0                            A0       A0       20       60       1
+                bssBANK0                             60       60       40       60       1
+                dataCOMRAM                           49       49        4        1       1
+                bssCOMRAM                            40       40        9        1       1
+                cinit                              6FF0     6FF0       62     37F8       0
+                idataBANK0                         6E64     6E64       20     6E64       0
+                idataCOMRAM                        6D38     6D38        4     6D38       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
         CLASS   CODE           
                 init                                  0        0        4         0
-                text40                             6752     6752       28         0
-                text39                             6694     6694       14         0
-                text38                             6616     6616        A         0
-                text37                             6620     6620        A         0
-                text36                             662A     662A        A         0
-                text35                             686A     686A       3E         0
-                text34                             6732     6732       20         0
-                text33                             68A8     68A8       3E         0
-                text32                             6658     6658        E         0
-                text31                             6800     6800       34         0
-                text30                             66A8     66A8       14         0
-                text29                             66D0     66D0       16         0
-                text28                             6674     6674       10         0
-                text27                             66BC     66BC       14         0
-                text26                             6A4A     6A4A       7C         0
-                text25                             677A     677A       28         0
-                text24                             66FC     66FC       1A         0
-                text23                             6AC6     6AC6       80         0
-                text22                             66E6     66E6       16         0
-                text21                             6834     6834       36         0
-                text20                             6610     6610        2         0
-                text19                             6D4A     6D4A       CA         0
-                text18                             6E14     6E14       D4         0
-                text17                             6EE8     6EE8      15E         0
-                text16                             6974     6974       5E         0
-                text15                             6926     6926       4E         0
-                text14                             7512     7512      5B4         0
-                text13                             6666     6666        E         0
-                text12                             7046     7046      176         0
-                text11                             6634     6634        C         0
-                text10                             6640     6640        C         0
-                text9                              664C     664C        C         0
-                text8                              6684     6684       10         0
-                text7                              69D2     69D2       78         0
-                text6                              67D0     67D0       30         0
-                text5                              6716     6716       1C         0
-                text4                              67A2     67A2       2E         0
-                text3                              6C86     6C86       C4         0
-                text2                              6BD6     6BD6       B0         0
-                text1                              6B46     6B46       90         0
-                text0                              71BC     71BC      356         0
-                cinit                              68E6     68E6       40         0
-                idataCOMRAM                        6613     6613        3         0
+                text31                             749C     749C      1CC         0
+                text30                             6D3C     6D3C        A         0
+                text29                             6D46     6D46        A         0
+                text28                             6D50     6D50        A         0
+                text27                             6F74     6F74       3E         0
+                text26                             6E44     6E44       20         0
+                text25                             6FB2     6FB2       3E         0
+                text24                             6D7E     6D7E        E         0
+                text23                             6DBA     6DBA       14         0
+                text22                             6DE2     6DE2       16         0
+                text21                             6D9A     6D9A       10         0
+                text20                             6DCE     6DCE       14         0
+                text19                             70CA     70CA       7C         0
+                text18                             6E84     6E84       28         0
+                text17                             6E0E     6E0E       1A         0
+                text16                             7146     7146       80         0
+                text15                             71C6     71C6       D8         0
+                text14                             6F0A     6F0A       34         0
+                text13                             729E     729E       F6         0
+                text12                             6DF8     6DF8       16         0
+                text11                             6F3E     6F3E       36         0
+                text10                             7668     7668      402         0
+                text9                              6D8C     6D8C        E         0
+                text8                              6D5A     6D5A        C         0
+                text7                              6D66     6D66        C         0
+                text6                              6D72     6D72        C         0
+                text5                              6DAA     6DAA       10         0
+                text4                              7052     7052       78         0
+                text3                              6EDA     6EDA       30         0
+                text2                              6E28     6E28       1C         0
+                text1                              6EAC     6EAC       2E         0
+                text0                              7394     7394      108         0
+                cinit                              6FF0     6FF0       62         0
+                idataBANK0                         6E64     6E64       20         0
+                idataCOMRAM                        6D38     6D38        4         0
 
         CLASS   CONST          
 
         CLASS   SMALLCONST     
 
         CLASS   MEDIUMCONST    
-                mediumconst                        7AC6     7AC6      53A         0
+                mediumconst                        7A6A     7A6A      596         0
 
         CLASS   COMRAM         
-                cstackCOMRAM                          1        1       4F         1
-                dataCOMRAM                           5D       5D        3         1
-                bssCOMRAM                            50       50        D         1
+                cstackCOMRAM                          1        1       3F         1
+                dataCOMRAM                           49       49        4         1
+                bssCOMRAM                            40       40        9         1
 
         CLASS   ABS1           
 
@@ -157,7 +141,8 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   RAM            
 
         CLASS   BANK0          
-                bssBANK0                             60       60       24         1
+                dataBANK0                            A0       A0       20         1
+                bssBANK0                             60       60       40         1
 
         CLASS   BANK1          
 
@@ -189,59 +174,51 @@ TOTAL           Name                               Link     Load   Length     Sp
 
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
+                text18                         006E84  000028  006EAC      3742       0  CODE    
+                text1                          006EAC  00002E  006EDA      3756       0  CODE    
+                text3                          006EDA  000030  006F0A      376D       0  CODE    
+                idataBANK0                     006E64  000020  006E84      6E64       0  CODE    
+                text17                         006E0E  00001A  006E28      3707       0  CODE    
+                text2                          006E28  00001C  006E44      3714       0  CODE    
+                text26                         006E44  000020  006E64      3722       0  CODE    
+                text14                         006F0A  000034  006F3E      3785       0  CODE    
+                text4                          007052  000078  0070CA      3829       0  CODE    
+                text19                         0070CA  00007C  007146      3865       0  CODE    
+                text16                         007146  000080  0071C6      38A3       0  CODE    
+                cinit                          006FF0  000062  007052      37F8       0  CODE    
+                text11                         006F3E  000036  006F74      379F       0  CODE    
+                text27                         006F74  00003E  006FB2      37BA       0  CODE    
+                text25                         006FB2  00003E  006FF0      37D9       0  CODE    
+                text8                          006D5A  00000C  006D66      36AD       0  CODE    
+                text7                          006D66  00000C  006D72      36B3       0  CODE    
+                text6                          006D72  00000C  006D7E      36B9       0  CODE    
+                text28                         006D50  00000A  006D5A      36A8       0  CODE    
+                idataCOMRAM                    006D38  000004  006D3C      6D38       0  CODE    
+                text30                         006D3C  00000A  006D46      369E       0  CODE    
+                text29                         006D46  00000A  006D50      36A3       0  CODE    
+                text24                         006D7E  00000E  006D8C      36BF       0  CODE    
+                text20                         006DCE  000014  006DE2      36E7       0  CODE    
+                text22                         006DE2  000016  006DF8      36F1       0  CODE    
+                text12                         006DF8  000016  006E0E      36FC       0  CODE    
+                text23                         006DBA  000014  006DCE      36DD       0  CODE    
+                text9                          006D8C  00000E  006D9A      36C6       0  CODE    
+                text21                         006D9A  000010  006DAA      36CD       0  CODE    
+                text5                          006DAA  000010  006DBA      36D5       0  CODE    
+                text15                         0071C6  0000D8  00729E      38E3       0  CODE    
+                cstackCOMRAM                   000001  00004C  00004D         1       1  COMRAM  
                 reset_vec                      000000  000004  000004         0       0  CODE    
-                cstackCOMRAM                   000001  00005F  000060         1       1  COMRAM  
-                bssBANK0                       000060  000024  000084        60       1  BANK0   
-                text20                         006610  000002  006612      3308       0  CODE    
-                idataCOMRAM                    006613  000003  006616      6613       0  CODE    
-                text38                         006616  00000A  006620      330B       0  CODE    
-                text37                         006620  00000A  00662A      3310       0  CODE    
-                text36                         00662A  00000A  006634      3315       0  CODE    
-                text11                         006634  00000C  006640      331A       0  CODE    
-                text10                         006640  00000C  00664C      3320       0  CODE    
-                text9                          00664C  00000C  006658      3326       0  CODE    
-                text32                         006658  00000E  006666      332C       0  CODE    
-                text13                         006666  00000E  006674      3333       0  CODE    
-                text28                         006674  000010  006684      333A       0  CODE    
-                text8                          006684  000010  006694      3342       0  CODE    
-                text39                         006694  000014  0066A8      334A       0  CODE    
-                text30                         0066A8  000014  0066BC      3354       0  CODE    
-                text27                         0066BC  000014  0066D0      335E       0  CODE    
-                text29                         0066D0  000016  0066E6      3368       0  CODE    
-                text22                         0066E6  000016  0066FC      3373       0  CODE    
-                text24                         0066FC  00001A  006716      337E       0  CODE    
-                text5                          006716  00001C  006732      338B       0  CODE    
-                text34                         006732  000020  006752      3399       0  CODE    
-                text40                         006752  000028  00677A      33A9       0  CODE    
-                text25                         00677A  000028  0067A2      33BD       0  CODE    
-                text4                          0067A2  00002E  0067D0      33D1       0  CODE    
-                text6                          0067D0  000030  006800      33E8       0  CODE    
-                text31                         006800  000034  006834      3400       0  CODE    
-                text21                         006834  000036  00686A      341A       0  CODE    
-                text35                         00686A  00003E  0068A8      3435       0  CODE    
-                text33                         0068A8  00003E  0068E6      3454       0  CODE    
-                cinit                          0068E6  000040  006926      3473       0  CODE    
-                text15                         006926  00004E  006974      3493       0  CODE    
-                text16                         006974  00005E  0069D2      34BA       0  CODE    
-                text7                          0069D2  000078  006A4A      34E9       0  CODE    
-                text26                         006A4A  00007C  006AC6      3525       0  CODE    
-                text23                         006AC6  000080  006B46      3563       0  CODE    
-                text1                          006B46  000090  006BD6      35A3       0  CODE    
-                text2                          006BD6  0000B0  006C86      35EB       0  CODE    
-                text3                          006C86  0000C4  006D4A      3643       0  CODE    
-                text19                         006D4A  0000CA  006E14      36A5       0  CODE    
-                text18                         006E14  0000D4  006EE8      370A       0  CODE    
-                text17                         006EE8  00015E  007046      3774       0  CODE    
-                text12                         007046  000176  0071BC      3823       0  CODE    
-                text0                          0071BC  000356  007512      38DE       0  CODE    
-                text14                         007512  0005B4  007AC6      3A89       0  CODE    
-                mediumconst                    007AC6  00053A  008000      3D63       0  MEDIUMCO
+                mediumconst                    007A6A  000596  008000      3D35       0  MEDIUMCO
+                text31                         00749C  0001CC  007668      3A4E       0  CODE    
+                text0                          007394  000108  00749C      39CA       0  CODE    
+                text10                         007668  000402  007A6A      3B34       0  CODE    
+                text13                         00729E  0000F6  007394      394F       0  CODE    
+                bssBANK0                       000060  000060  0000C0        60       1  BANK0   
 
 
 UNUSED ADDRESS RANGES
 
         Name                Unused          Largest block    Delta
-        BANK0            000084-0000FF               7C
+        BANK0            0000C0-0000FF               40
         BANK1            000100-0001FF              100
         BANK2            000200-0002FF              100
         BANK3            000300-0003FF              100
@@ -249,33 +226,32 @@ UNUSED ADDRESS RANGES
         BANK5            000500-0005FF              100
         BANK6            000600-0006FF              100
         BANK7            000700-0007FF              100
-        BIGRAM           000084-0007FF              77C
-        CODE             000004-00660F             660C
-                         006612-006612                1
-        CONST            000004-00660F             660C
-                         006612-006612                1
+        BIGRAM           00004D-00005F               13
+                         0000C0-0007FF              740
+        CODE             000004-006D37             6D34
+        COMRAM           00004D-00005F               13
+        CONST            000004-006D37             6D34
         EEDATA           F00000-F000FF              100
-        MEDIUMCONST      000800-00660F             5E10
-                         006612-006612                1
-        RAM              000084-0007FF              100
+        MEDIUMCONST      000800-006D37             6538
+        RAM              0000C0-0007FF              100
         SFR              000F53-000FFF                D
-        SMALLCONST       000800-00660F              100
-                         006612-006612                1
-        STACK            000084-0007FF              77C
+        SMALLCONST       000800-006D37              100
+        STACK            0000C0-0007FF              740
 
                                   Symbol Table
 
-?___awdiv                                       cstackCOMRAM 000001
-?___awmod                                       cstackCOMRAM 000001
-?_ctoa                                          cstackCOMRAM 00000A
 ?_get_Data                                      cstackCOMRAM 000001
-?_sprintf                                       cstackCOMRAM 000023
-?_vfpfcnvrt                                     cstackCOMRAM 000012
-?_vfprintf                                      cstackCOMRAM 00001B
 EUSART1_SetErrorHandler@interruptHandler        cstackCOMRAM 000001
 EUSART1_SetFramingErrorHandler@interruptHandler cstackCOMRAM 000001
 EUSART1_SetOverrunErrorHandler@interruptHandler cstackCOMRAM 000001
 EUSART1_Write@txData                            cstackCOMRAM 000001
+LoRA_DataAnswer_Decode@dataType                 cstackCOMRAM 000003
+LoRA_DataAnswer_Decode@flag                     cstackCOMRAM 000002
+LoRA_DataAnswer_Decode@i                        cstackCOMRAM 000004
+Opening@F5428                                   dataBANK0    0000A0
+Opening@aux                                     cstackCOMRAM 000019
+Opening@i                                       cstackCOMRAM 00003A
+Opening@size                                    cstackCOMRAM 000039
 Set_Column_Address@address                      cstackCOMRAM 000002
 Set_Page_Address@address                        cstackCOMRAM 000002
 _ACTCON                                         (abs)        000FB5
@@ -285,20 +261,18 @@ _ANSELC                                         (abs)        000F5D
 _ANSELD                                         (abs)        000F5E
 _ANSELE                                         (abs)        000F5F
 _BAUDCON1                                       (abs)        000FB8
-_Contrast_level                                 dataCOMRAM   00005F
+_Contrast_level                                 dataCOMRAM   00004B
 _EUSART1_DefaultErrorHandler                    (abs)        000000
 _EUSART1_DefaultFramingErrorHandler             (abs)        000000
 _EUSART1_DefaultOverrunErrorHandler             (abs)        000000
-_EUSART1_ErrorHandler                           bssCOMRAM    000056
-_EUSART1_FramingErrorHandler                    bssCOMRAM    00005A
-_EUSART1_Initialize                             text35       00686A
-_EUSART1_OverrunErrorHandler                    bssCOMRAM    000058
-_EUSART1_Read                                   text40       006752
-_EUSART1_SetErrorHandler                        text38       006616
-_EUSART1_SetFramingErrorHandler                 text37       006620
-_EUSART1_SetOverrunErrorHandler                 text36       00662A
-_EUSART1_Write                                  text22       0066E6
-_EUSART1_is_rx_ready                            text39       006694
+_EUSART1_ErrorHandler                           bssCOMRAM    000042
+_EUSART1_FramingErrorHandler                    bssCOMRAM    000046
+_EUSART1_Initialize                             text27       006F74
+_EUSART1_OverrunErrorHandler                    bssCOMRAM    000044
+_EUSART1_SetErrorHandler                        text30       006D3C
+_EUSART1_SetFramingErrorHandler                 text29       006D46
+_EUSART1_SetOverrunErrorHandler                 text28       006D50
+_EUSART1_Write                                  text12       006DF8
 _INTCON2bits                                    (abs)        000FF1
 _INTCONbits                                     (abs)        000FF2
 _LATA                                           (abs)        000F89
@@ -310,12 +284,15 @@ _LATCbits                                       (abs)        000F8B
 _LATD                                           (abs)        000F8C
 _LATE                                           (abs)        000F8D
 _LATEbits                                       (abs)        000F8D
+_LoRA_DataAnswer_Decode                         text31       00749C
+_LoRA_RX_data                                   bssBANK0     000060
 _OSCCON                                         (abs)        000FD3
 _OSCCON2                                        (abs)        000FD2
-_OSCILLATOR_Initialize                          text34       006732
+_OSCILLATOR_Initialize                          text26       006E44
 _OSCTUNE                                        (abs)        000F9B
-_OledFont0                                      mediumconst  007AC7
-_PIN_MANAGER_Initialize                         text33       0068A8
+_OledFont0                                      mediumconst  007A6B
+_Opening                                        text15       0071C6
+_PIN_MANAGER_Initialize                         text25       006FB2
 _PIR1bits                                       (abs)        000F9E
 _PLLRDY                                         (abs)        007E97
 _RCREG1                                         (abs)        000FAE
@@ -323,9 +300,9 @@ _RCSTA1                                         (abs)        000FAB
 _RCSTA1bits                                     (abs)        000FAB
 _SPBRG1                                         (abs)        000FAF
 _SPBRGH1                                        (abs)        000FB0
-_SYSTEM_Initialize                              text32       006658
-_Set_Column_Address                             text29       0066D0
-_Set_Page_Address                               text28       006674
+_SYSTEM_Initialize                              text24       006D7E
+_Set_Column_Address                             text22       006DE2
+_Set_Page_Address                               text21       006D9A
 _TRISA                                          (abs)        000F92
 _TRISAbits                                      (abs)        000F92
 _TRISB                                          (abs)        000F93
@@ -362,12 +339,14 @@ __Hconfig                                       config       30000E
 __Hconst                                        const        000000
 __HcstackCOMRAM                                 cstackCOMRAM 000000
 __Hdata                                         data         000000
+__HdataBANK0                                    dataBANK0    000000
 __HdataCOMRAM                                   dataCOMRAM   000000
 __Heeprom_data                                  eeprom_data  000000
 __Hfarbss                                       farbss       000000
 __Hfardata                                      fardata      000000
 __Hibigdata                                     ibigdata     000000
 __Hidata                                        idata        000000
+__HidataBANK0                                   idataBANK0   000000
 __HidataCOMRAM                                  idataCOMRAM  000000
 __Hidloc                                        idloc        200008
 __Hifardata                                     ifardata     000000
@@ -395,7 +374,7 @@ __Hrparam                                       rparam       000000
 __Hsfr                                          sfr          000000
 __Hsmallconst                                   smallconst   000000
 __Hspace_0                                      (abs)        008000
-__Hspace_1                                      (abs)        000084
+__Hspace_1                                      (abs)        0000C0
 __Hspace_2                                      (abs)        000000
 __Hspace_4                                      (abs)        60000E
 __Hstack                                        stack        000000
@@ -428,16 +407,7 @@ __Htext29                                       text29       000000
 __Htext3                                        text3        000000
 __Htext30                                       text30       000000
 __Htext31                                       text31       000000
-__Htext32                                       text32       000000
-__Htext33                                       text33       000000
-__Htext34                                       text34       000000
-__Htext35                                       text35       000000
-__Htext36                                       text36       000000
-__Htext37                                       text37       000000
-__Htext38                                       text38       000000
-__Htext39                                       text39       000000
 __Htext4                                        text4        000000
-__Htext40                                       text40       000000
 __Htext5                                        text5        000000
 __Htext6                                        text6        000000
 __Htext7                                        text7        000000
@@ -466,12 +436,14 @@ __Lconfig                                       config       000000
 __Lconst                                        const        000000
 __LcstackCOMRAM                                 cstackCOMRAM 000000
 __Ldata                                         data         000000
+__LdataBANK0                                    dataBANK0    000000
 __LdataCOMRAM                                   dataCOMRAM   000000
 __Leeprom_data                                  eeprom_data  000000
 __Lfarbss                                       farbss       000000
 __Lfardata                                      fardata      000000
 __Libigdata                                     ibigdata     000000
 __Lidata                                        idata        000000
+__LidataBANK0                                   idataBANK0   000000
 __LidataCOMRAM                                  idataCOMRAM  000000
 __Lidloc                                        idloc        000000
 __Lifardata                                     ifardata     000000
@@ -483,7 +455,7 @@ __Lintentry                                     intentry     000000
 __Lintret                                       intret       000000
 __Lintsave_regs                                 intsave_regs 000000
 __Lirdata                                       irdata       000000
-__Lmediumconst                                  mediumconst  007AC6
+__Lmediumconst                                  mediumconst  007A6A
 __LnvFARRAM                                     nvFARRAM     000000
 __Lnvbit                                        nvbit        000000
 __Lnvrram                                       nvrram       000000
@@ -532,37 +504,17 @@ __Ltext29                                       text29       000000
 __Ltext3                                        text3        000000
 __Ltext30                                       text30       000000
 __Ltext31                                       text31       000000
-__Ltext32                                       text32       000000
-__Ltext33                                       text33       000000
-__Ltext34                                       text34       000000
-__Ltext35                                       text35       000000
-__Ltext36                                       text36       000000
-__Ltext37                                       text37       000000
-__Ltext38                                       text38       000000
-__Ltext39                                       text39       000000
 __Ltext4                                        text4        000000
-__Ltext40                                       text40       000000
 __Ltext5                                        text5        000000
 __Ltext6                                        text6        000000
 __Ltext7                                        text7        000000
 __Ltext8                                        text8        000000
 __Ltext9                                        text9        000000
 __S0                                            (abs)        008000
-__S1                                            (abs)        000084
+__S1                                            (abs)        0000C0
 __S2                                            (abs)        000000
 __S4                                            (abs)        000000
 __S5                                            (abs)        000000
-___awdiv                                        text3        006C86
-___awdiv@counter                                cstackCOMRAM 000005
-___awdiv@dividend                               cstackCOMRAM 000001
-___awdiv@divisor                                cstackCOMRAM 000003
-___awdiv@quotient                               cstackCOMRAM 000007
-___awdiv@sign                                   cstackCOMRAM 000006
-___awmod                                        text2        006BD6
-___awmod@counter                                cstackCOMRAM 000005
-___awmod@dividend                               cstackCOMRAM 000001
-___awmod@divisor                                cstackCOMRAM 000003
-___awmod@sign                                   cstackCOMRAM 000006
 ___inthi_sp                                     stack        000000
 ___intlo_sp                                     stack        000000
 ___param_bank                                   (abs)        000000
@@ -570,121 +522,100 @@ ___rparam_used                                  (abs)        000001
 ___sp                                           stack        000000
 __accesstop                                     (abs)        000060
 __activetblptr                                  (abs)        000002
-__end_of_EUSART1_Initialize                     text35       0068A8
-__end_of_EUSART1_Read                           text40       00677A
-__end_of_EUSART1_SetErrorHandler                text38       006620
-__end_of_EUSART1_SetFramingErrorHandler         text37       00662A
-__end_of_EUSART1_SetOverrunErrorHandler         text36       006634
-__end_of_EUSART1_Write                          text22       0066FC
-__end_of_EUSART1_is_rx_ready                    text39       0066A8
-__end_of_OSCILLATOR_Initialize                  text34       006752
-__end_of_OledFont0                              mediumconst  007DC7
-__end_of_PIN_MANAGER_Initialize                 text33       0068E6
-__end_of_SYSTEM_Initialize                      text32       006666
-__end_of_Set_Column_Address                     text29       0066E6
-__end_of_Set_Page_Address                       text28       006684
-__end_of___awdiv                                text3        006D4A
-__end_of___awmod                                text2        006C86
-__end_of__initialization                        cinit        00691C
-__end_of_ctoa                                   text18       006EE8
-__end_of_fputc                                  text19       006E14
-__end_of_get_Data                               text31       006834
-__end_of_init_mod_LoRa                          text14       007AC6
-__end_of_init_port                              text13       006674
-__end_of_main                                   text0        007512
-__end_of_memset                                 text12       0071BC
-__end_of_oled_clear                             text24       006716
-__end_of_oled_clearRow                          text25       0067A2
-__end_of_oled_devInit                           text7        006A4A
-__end_of_oled_init                              text4        0067D0
-__end_of_oled_initialDispayLine                 text11       006640
-__end_of_oled_powerControl                      text10       00664C
-__end_of_oled_putChar                           text26       006AC6
-__end_of_oled_putString                         text23       006B46
-__end_of_oled_putUint8                          text1        006BD6
-__end_of_oled_regulorResistorSelect             text9        006658
-__end_of_oled_setContrastControlRegister        text8        006694
-__end_of_oled_setDisplay                        text6        006800
-__end_of_oled_setFont                           text5        006732
-__end_of_oled_writeCommand                      text30       0066BC
-__end_of_oled_writeData                         text27       0066D0
-__end_of_putch                                  text20       006612
-__end_of_sendCommand                            text21       00686A
-__end_of_sprintf                                text15       006974
-__end_of_vfpfcnvrt                              text17       007046
-__end_of_vfprintf                               text16       0069D2
-__initialization                                cinit        0068E6
-__mediumconst                                   mediumconst  007AC6
+__end_of_EUSART1_Initialize                     text27       006FB2
+__end_of_EUSART1_SetErrorHandler                text30       006D46
+__end_of_EUSART1_SetFramingErrorHandler         text29       006D50
+__end_of_EUSART1_SetOverrunErrorHandler         text28       006D5A
+__end_of_EUSART1_Write                          text12       006E0E
+__end_of_LoRA_DataAnswer_Decode                 text31       007668
+__end_of_OSCILLATOR_Initialize                  text26       006E64
+__end_of_OledFont0                              mediumconst  007D6B
+__end_of_Opening                                text15       00729E
+__end_of_PIN_MANAGER_Initialize                 text25       006FF0
+__end_of_SYSTEM_Initialize                      text24       006D8C
+__end_of_Set_Column_Address                     text22       006DF8
+__end_of_Set_Page_Address                       text21       006DAA
+__end_of__initialization                        cinit        007048
+__end_of_get_Data                               text14       006F3E
+__end_of_init_mod_LoRa                          text10       007A6A
+__end_of_init_port                              text9        006D9A
+__end_of_main                                   text0        00749C
+__end_of_oled_clear                             text17       006E28
+__end_of_oled_clearRow                          text18       006EAC
+__end_of_oled_devInit                           text4        0070CA
+__end_of_oled_init                              text1        006EDA
+__end_of_oled_initialDispayLine                 text8        006D66
+__end_of_oled_powerControl                      text7        006D72
+__end_of_oled_putChar                           text19       007146
+__end_of_oled_putString                         text16       0071C6
+__end_of_oled_regulorResistorSelect             text6        006D7E
+__end_of_oled_setContrastControlRegister        text5        006DBA
+__end_of_oled_setDisplay                        text3        006F0A
+__end_of_oled_setFont                           text2        006E44
+__end_of_oled_writeCommand                      text23       006DCE
+__end_of_oled_writeData                         text20       006DE2
+__end_of_read_LoRA_cmd                          text13       007394
+__end_of_sendCommand                            text11       006F74
+__initialization                                cinit        006FF0
+__mediumconst                                   mediumconst  007A6A
 __pbssBANK0                                     bssBANK0     000060
-__pbssCOMRAM                                    bssCOMRAM    000050
-__pcinit                                        cinit        0068E6
+__pbssCOMRAM                                    bssCOMRAM    000040
+__pcinit                                        cinit        006FF0
 __pcstackCOMRAM                                 cstackCOMRAM 000001
-__pdataCOMRAM                                   dataCOMRAM   00005D
-__pidataCOMRAM                                  idataCOMRAM  006613
-__pmediumconst                                  mediumconst  007AC6
-__ptext0                                        text0        0071BC
-__ptext1                                        text1        006B46
-__ptext10                                       text10       006640
-__ptext11                                       text11       006634
-__ptext12                                       text12       007046
-__ptext13                                       text13       006666
-__ptext14                                       text14       007512
-__ptext15                                       text15       006926
-__ptext16                                       text16       006974
-__ptext17                                       text17       006EE8
-__ptext18                                       text18       006E14
-__ptext19                                       text19       006D4A
-__ptext2                                        text2        006BD6
-__ptext20                                       text20       006610
-__ptext21                                       text21       006834
-__ptext22                                       text22       0066E6
-__ptext23                                       text23       006AC6
-__ptext24                                       text24       0066FC
-__ptext25                                       text25       00677A
-__ptext26                                       text26       006A4A
-__ptext27                                       text27       0066BC
-__ptext28                                       text28       006674
-__ptext29                                       text29       0066D0
-__ptext3                                        text3        006C86
-__ptext30                                       text30       0066A8
-__ptext31                                       text31       006800
-__ptext32                                       text32       006658
-__ptext33                                       text33       0068A8
-__ptext34                                       text34       006732
-__ptext35                                       text35       00686A
-__ptext36                                       text36       00662A
-__ptext37                                       text37       006620
-__ptext38                                       text38       006616
-__ptext39                                       text39       006694
-__ptext4                                        text4        0067A2
-__ptext40                                       text40       006752
-__ptext5                                        text5        006716
-__ptext6                                        text6        0067D0
-__ptext7                                        text7        0069D2
-__ptext8                                        text8        006684
-__ptext9                                        text9        00664C
+__pdataBANK0                                    dataBANK0    0000A0
+__pdataCOMRAM                                   dataCOMRAM   000049
+__pidataBANK0                                   idataBANK0   006E64
+__pidataCOMRAM                                  idataCOMRAM  006D38
+__pmediumconst                                  mediumconst  007A6A
+__ptext0                                        text0        007394
+__ptext1                                        text1        006EAC
+__ptext10                                       text10       007668
+__ptext11                                       text11       006F3E
+__ptext12                                       text12       006DF8
+__ptext13                                       text13       00729E
+__ptext14                                       text14       006F0A
+__ptext15                                       text15       0071C6
+__ptext16                                       text16       007146
+__ptext17                                       text17       006E0E
+__ptext18                                       text18       006E84
+__ptext19                                       text19       0070CA
+__ptext2                                        text2        006E28
+__ptext20                                       text20       006DCE
+__ptext21                                       text21       006D9A
+__ptext22                                       text22       006DE2
+__ptext23                                       text23       006DBA
+__ptext24                                       text24       006D7E
+__ptext25                                       text25       006FB2
+__ptext26                                       text26       006E44
+__ptext27                                       text27       006F74
+__ptext28                                       text28       006D50
+__ptext29                                       text29       006D46
+__ptext3                                        text3        006EDA
+__ptext30                                       text30       006D3C
+__ptext31                                       text31       00749C
+__ptext4                                        text4        007052
+__ptext5                                        text5        006DAA
+__ptext6                                        text6        006D72
+__ptext7                                        text7        006D66
+__ptext8                                        text8        006D5A
+__ptext9                                        text9        006D8C
 __ramtop                                        ramtop       000800
 __size_of_EUSART1_Initialize                    (abs)        000000
-__size_of_EUSART1_Read                          (abs)        000000
 __size_of_EUSART1_SetErrorHandler               (abs)        000000
 __size_of_EUSART1_SetFramingErrorHandler        (abs)        000000
 __size_of_EUSART1_SetOverrunErrorHandler        (abs)        000000
 __size_of_EUSART1_Write                         (abs)        000000
-__size_of_EUSART1_is_rx_ready                   (abs)        000000
+__size_of_LoRA_DataAnswer_Decode                (abs)        000000
 __size_of_OSCILLATOR_Initialize                 (abs)        000000
+__size_of_Opening                               (abs)        000000
 __size_of_PIN_MANAGER_Initialize                (abs)        000000
 __size_of_SYSTEM_Initialize                     (abs)        000000
 __size_of_Set_Column_Address                    (abs)        000000
 __size_of_Set_Page_Address                      (abs)        000000
-__size_of___awdiv                               (abs)        000000
-__size_of___awmod                               (abs)        000000
-__size_of_ctoa                                  (abs)        000000
-__size_of_fputc                                 (abs)        000000
 __size_of_get_Data                              (abs)        000000
 __size_of_init_mod_LoRa                         (abs)        000000
 __size_of_init_port                             (abs)        000000
 __size_of_main                                  (abs)        000000
-__size_of_memset                                (abs)        000000
 __size_of_oled_clear                            (abs)        000000
 __size_of_oled_clearRow                         (abs)        000000
 __size_of_oled_devInit                          (abs)        000000
@@ -693,75 +624,46 @@ __size_of_oled_initialDispayLine                (abs)        000000
 __size_of_oled_powerControl                     (abs)        000000
 __size_of_oled_putChar                          (abs)        000000
 __size_of_oled_putString                        (abs)        000000
-__size_of_oled_putUint8                         (abs)        000000
 __size_of_oled_regulorResistorSelect            (abs)        000000
 __size_of_oled_setContrastControlRegister       (abs)        000000
 __size_of_oled_setDisplay                       (abs)        000000
 __size_of_oled_setFont                          (abs)        000000
 __size_of_oled_writeCommand                     (abs)        000000
 __size_of_oled_writeData                        (abs)        000000
-__size_of_putch                                 (abs)        000000
+__size_of_read_LoRA_cmd                         (abs)        000000
 __size_of_sendCommand                           (abs)        000000
-__size_of_sprintf                               (abs)        000000
-__size_of_vfpfcnvrt                             (abs)        000000
-__size_of_vfprintf                              (abs)        000000
 __smallconst                                    smallconst   000000
-_ctoa                                           text18       006E14
-_eusart1RxLastError                             bssCOMRAM    00005C
-_flags                                          bssCOMRAM    000054
-_fputc                                          text19       006D4A
-_get_Data                                       text31       006800
-_init_mod_LoRa                                  text14       007512
-_init_port                                      text13       006666
-_log                                            bssBANK0     000082
-_main                                           text0        0071BC
-_memset                                         text12       007046
-_nout                                           bssCOMRAM    000050
-_oled_clear                                     text24       0066FC
-_oled_clearRow                                  text25       00677A
-_oled_devInit                                   text7        0069D2
-_oled_init                                      text4        0067A2
-_oled_initialDispayLine                         text11       006634
-_oled_powerControl                              text10       006640
-_oled_putChar                                   text26       006A4A
-_oled_putString                                 text23       006AC6
-_oled_putUint8                                  text1        006B46
-_oled_regulorResistorSelect                     text9        00664C
-_oled_setContrastControlRegister                text8        006684
-_oled_setDisplay                                text6        0067D0
-_oled_setFont                                   text5        006716
-_oled_writeCommand                              text30       0066A8
-_oled_writeData                                 text27       0066BC
-_prec                                           bssBANK0     000080
-_putch                                          text20       006610
-_selectedFont                                   dataCOMRAM   00005D
-_sendCommand                                    text21       006834
-_sprintf                                        text15       006926
-_vfpfcnvrt                                      text17       006EE8
-_vfprintf                                       text16       006974
-_width                                          bssCOMRAM    000052
-ctoa@c                                          cstackCOMRAM 00000C
-ctoa@fp                                         cstackCOMRAM 00000A
-ctoa@l                                          cstackCOMRAM 00000E
-ctoa@w                                          cstackCOMRAM 000010
-end_of_initialization                           cinit        00691C
-fputc@c                                         cstackCOMRAM 000001
-fputc@fp                                        cstackCOMRAM 000003
-init_mod_LoRa@READ                              cstackCOMRAM 000033
+_buff_size                                      dataCOMRAM   00004C
+_cmd_message                                    bssBANK0     000080
+_eusart1RxLastError                             bssCOMRAM    000048
+_get_Data                                       text14       006F0A
+_init_mod_LoRa                                  text10       007668
+_init_port                                      text9        006D8C
+_log                                            bssCOMRAM    000040
+_main                                           text0        007394
+_oled_clear                                     text17       006E0E
+_oled_clearRow                                  text18       006E84
+_oled_devInit                                   text4        007052
+_oled_init                                      text1        006EAC
+_oled_initialDispayLine                         text8        006D5A
+_oled_powerControl                              text7        006D66
+_oled_putChar                                   text19       0070CA
+_oled_putString                                 text16       007146
+_oled_regulorResistorSelect                     text6        006D72
+_oled_setContrastControlRegister                text5        006DAA
+_oled_setDisplay                                text3        006EDA
+_oled_setFont                                   text2        006E28
+_oled_writeCommand                              text23       006DBA
+_oled_writeData                                 text20       006DCE
+_read_LoRA_cmd                                  text13       00729E
+_selectedFont                                   dataCOMRAM   000049
+_sendCommand                                    text11       006F3E
+end_of_initialization                           cinit        007048
 intlevel0                                       text         000000
 intlevel1                                       text         000000
 intlevel2                                       text         000000
 intlevel3                                       text         000000
-isa$std                                         (abs)        000001
-isa$xinst                                       (abs)        000000
-main@cont                                       cstackCOMRAM 00004E
-main@i                                          cstackCOMRAM 00004F
-main@read                                       cstackCOMRAM 00003F
-memset@c                                        cstackCOMRAM 000003
-memset@dest                                     cstackCOMRAM 000001
-memset@k                                        cstackCOMRAM 000009
-memset@n                                        cstackCOMRAM 000005
-memset@s                                        cstackCOMRAM 00000B
+main@dataType                                   cstackCOMRAM 00003F
 oled_clearRow@index                             cstackCOMRAM 00000E
 oled_clearRow@page                              cstackCOMRAM 00000D
 oled_initialDispayLine@line                     cstackCOMRAM 000002
@@ -774,130 +676,1106 @@ oled_putString@index                            cstackCOMRAM 000011
 oled_putString@start_page                       cstackCOMRAM 000010
 oled_putString@station_dot                      cstackCOMRAM 00000F
 oled_putString@string                           cstackCOMRAM 00000D
-oled_putUint8@numData                           cstackCOMRAM 000015
-oled_putUint8@number                            cstackCOMRAM 000014
-oled_putUint8@start_page                        cstackCOMRAM 000013
-oled_putUint8@station_dot                       cstackCOMRAM 000012
 oled_regulorResistorSelect@r                    cstackCOMRAM 000002
 oled_setContrastControlRegister@mod             cstackCOMRAM 000002
 oled_setDisplay@displayType                     cstackCOMRAM 000002
 oled_setFont@font                               cstackCOMRAM 000001
 oled_writeCommand@command                       cstackCOMRAM 000001
 oled_writeData@data                             cstackCOMRAM 000001
+read_LoRA_cmd@Flag                              cstackCOMRAM 000006
+read_LoRA_cmd@i                                 cstackCOMRAM 000008
 sendCommand@texto                               cstackCOMRAM 000002
-sprintf@ap                                      cstackCOMRAM 000029
-sprintf@f                                       cstackCOMRAM 00002B
-sprintf@fmt                                     cstackCOMRAM 000025
-sprintf@s                                       cstackCOMRAM 000023
 stackhi                                         (abs)        0007FF
-stacklo                                         (abs)        000084
+stacklo                                         (abs)        0000C0
 start                                           init         000000
-start_initialization                            cinit        0068E6
-vfpfcnvrt@ap                                    cstackCOMRAM 000016
-vfpfcnvrt@c                                     cstackCOMRAM 00001A
-vfpfcnvrt@fmt                                   cstackCOMRAM 000014
-vfpfcnvrt@fp                                    cstackCOMRAM 000012
-vfprintf@ap                                     cstackCOMRAM 00001F
-vfprintf@cfmt                                   cstackCOMRAM 000021
-vfprintf@fmt                                    cstackCOMRAM 00001D
-vfprintf@fp                                     cstackCOMRAM 00001B
+start_initialization                            cinit        006FF0
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 276 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  dataType        1   62[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels required when called:    7
+ This function calls:
+		_LoRA_DataAnswer_Decode
+		_SYSTEM_Initialize
+		_init_mod_LoRa
+		_init_port
+		_oled_clear
+		_oled_init
+		_oled_putString
+		_read_LoRA_cmd
+		_sendCommand
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _oled_init *****************
+ Defined at:
+		line 366 in file "SSD1306oLED.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_oled_clear
+		_oled_devInit
+		_oled_setDisplay
+		_oled_setFont
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _oled_setFont *****************
+ Defined at:
+		line 256 in file "SSD1306oLED.c"
+ Parameters:    Size  Location     Type
+  font            2    0[COMRAM] PTR const unsigned char 
+		 -> OledFont0(768), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_oled_init
+ This function uses a non-reentrant model
+
+
+ *************** function _oled_setDisplay *****************
+ Defined at:
+		line 411 in file "SSD1306oLED.c"
+ Parameters:    Size  Location     Type
+  displayType     1    wreg     enum E4838
+ Auto vars:     Size  Location     Type
+  displayType     1    1[COMRAM] enum E4838
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_oled_writeCommand
+ This function is called by:
+		_oled_init
+ This function uses a non-reentrant model
+
+
+ *************** function _oled_devInit *****************
+ Defined at:
+		line 388 in file "SSD1306oLED.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_oled_initialDispayLine
+		_oled_powerControl
+		_oled_regulorResistorSelect
+		_oled_setContrastControlRegister
+		_oled_writeCommand
+ This function is called by:
+		_oled_init
+ This function uses a non-reentrant model
+
+
+ *************** function _oled_setContrastControlRegister *****************
+ Defined at:
+		line 454 in file "SSD1306oLED.c"
+ Parameters:    Size  Location     Type
+  mod             1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  mod             1    1[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_oled_writeCommand
+ This function is called by:
+		_oled_devInit
+ This function uses a non-reentrant model
+
+
+ *************** function _oled_regulorResistorSelect *****************
+ Defined at:
+		line 482 in file "SSD1306oLED.c"
+ Parameters:    Size  Location     Type
+  r               1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  r               1    1[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_oled_writeCommand
+ This function is called by:
+		_oled_devInit
+ This function uses a non-reentrant model
+
+
+ *************** function _oled_powerControl *****************
+ Defined at:
+		line 469 in file "SSD1306oLED.c"
+ Parameters:    Size  Location     Type
+  vol             1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  vol             1    1[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_oled_writeCommand
+ This function is called by:
+		_oled_devInit
+ This function uses a non-reentrant model
+
+
+ *************** function _oled_initialDispayLine *****************
+ Defined at:
+		line 462 in file "SSD1306oLED.c"
+ Parameters:    Size  Location     Type
+  line            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  line            1    1[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_oled_writeCommand
+ This function is called by:
+		_oled_devInit
+ This function uses a non-reentrant model
+
+
+ *************** function _init_port *****************
+ Defined at:
+		line 15 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _init_mod_LoRa *****************
+ Defined at:
+		line 124 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_Opening
+		_oled_clear
+		_oled_putString
+		_read_LoRA_cmd
+		_sendCommand
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _sendCommand *****************
+ Defined at:
+		line 32 in file "main.c"
+ Parameters:    Size  Location     Type
+  texto           2    1[COMRAM] PTR unsigned char 
+		 -> STR_41(13), STR_39(12), STR_37(20), STR_34(20), 
+		 -> STR_31(22), STR_28(20), STR_25(21), STR_22(19), 
+		 -> STR_19(27), STR_16(19), STR_13(18), STR_10(14), 
+		 -> STR_5(26), STR_4(26), STR_3(26), STR_2(26), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_EUSART1_Write
+ This function is called by:
+		_init_mod_LoRa
+		_main
+		_RN_Leds
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART1_Write *****************
+ Defined at:
+		line 156 in file "mcc_generated_files/eusart1.c"
+ Parameters:    Size  Location     Type
+  txData          1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  txData          1    0[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_sendCommand
+		_Endline
+ This function uses a non-reentrant model
+
+
+ *************** function _read_LoRA_cmd *****************
+ Defined at:
+		line 79 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               2    7[COMRAM] int 
+  Flag            2    5[COMRAM] int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0
+      Totals:         5       0       0       0       0       0       0       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_get_Data
+ This function is called by:
+		_init_mod_LoRa
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _get_Data *****************
+ Defined at:
+		line 132 in file "mcc_generated_files/eusart1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  2    0[COMRAM] PTR unsigned char 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_read_LoRA_cmd
+ This function uses a non-reentrant model
+
+
+ *************** function _Opening *****************
+ Defined at:
+		line 105 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  aux            32   24[COMRAM] unsigned char [32]
+  i               1   57[COMRAM] unsigned char 
+  size            1   56[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:        34       0       0       0       0       0       0       0       0
+      Temps:          7       0       0       0       0       0       0       0       0
+      Totals:        41       0       0       0       0       0       0       0       0
+Total ram usage:       41 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_oled_clear
+		_oled_putChar
+		_oled_putString
+ This function is called by:
+		_init_mod_LoRa
+ This function uses a non-reentrant model
+
+
+ *************** function _oled_putString *****************
+ Defined at:
+		line 331 in file "SSD1306oLED.c"
+ Parameters:    Size  Location     Type
+  string          2   12[COMRAM] PTR const unsigned char 
+		 -> oled_putUint16@numData(6), oled_putint8@numData(6), oled_putUint8@numData(6), STR_42(10), 
+		 -> STR_40(9), STR_38(10), LoRA_RX_data(32), STR_36(14), 
+		 -> STR_35(10), STR_33(17), STR_32(12), STR_30(14), 
+		 -> STR_29(9), STR_27(15), STR_26(15), STR_24(17), 
+		 -> STR_23(10), STR_21(17), STR_20(11), STR_18(17), 
+		 -> STR_17(13), STR_15(15), STR_14(8), STR_12(16), 
+		 -> STR_11(17), STR_9(3), STR_8(13), STR_7(11), 
+		 -> STR_6(17), cmd_message(32), STR_1(10), 
+  station_dot     1   14[COMRAM] unsigned char 
+  start_page      1   15[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  index           1   16[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         5       0       0       0       0       0       0       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_oled_putChar
+ This function is called by:
+		_Opening
+		_init_mod_LoRa
+		_main
+		_test_leds
+		_oled_putUint8
+		_oled_putint8
+		_oled_putUint16
+ This function uses a non-reentrant model
+
+
+ *************** function _oled_clear *****************
+ Defined at:
+		line 348 in file "SSD1306oLED.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_oled_clearRow
+ This function is called by:
+		_Opening
+		_init_mod_LoRa
+		_main
+		_oled_init
+ This function uses a non-reentrant model
+
+
+ *************** function _oled_clearRow *****************
+ Defined at:
+		line 356 in file "SSD1306oLED.c"
+ Parameters:    Size  Location     Type
+  page            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  page            1   12[COMRAM] unsigned char 
+  index           1   13[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_oled_putChar
+ This function is called by:
+		_oled_clear
+ This function uses a non-reentrant model
+
+
+ *************** function _oled_putChar *****************
+ Defined at:
+		line 318 in file "SSD1306oLED.c"
+ Parameters:    Size  Location     Type
+  k               1    wreg     unsigned char 
+  station_dot     1    2[COMRAM] unsigned char 
+  start_page      1    3[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  k               1   10[COMRAM] unsigned char 
+  index           1   11[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0
+      Temps:          6       0       0       0       0       0       0       0       0
+      Totals:        10       0       0       0       0       0       0       0       0
+Total ram usage:       10 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_Set_Column_Address
+		_Set_Page_Address
+		_oled_writeData
+ This function is called by:
+		_Opening
+		_oled_putString
+		_oled_clearRow
+ This function uses a non-reentrant model
+
+
+ *************** function _oled_writeData *****************
+ Defined at:
+		line 442 in file "SSD1306oLED.c"
+ Parameters:    Size  Location     Type
+  data            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  data            1    0[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_oled_putChar
+ This function uses a non-reentrant model
+
+
+ *************** function _Set_Page_Address *****************
+ Defined at:
+		line 241 in file "SSD1306oLED.c"
+ Parameters:    Size  Location     Type
+  address         1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  address         1    1[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_oled_writeCommand
+ This function is called by:
+		_oled_putChar
+ This function uses a non-reentrant model
+
+
+ *************** function _Set_Column_Address *****************
+ Defined at:
+		line 249 in file "SSD1306oLED.c"
+ Parameters:    Size  Location     Type
+  address         1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  address         1    1[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_oled_writeCommand
+ This function is called by:
+		_oled_putChar
+ This function uses a non-reentrant model
+
+
+ *************** function _oled_writeCommand *****************
+ Defined at:
+		line 430 in file "SSD1306oLED.c"
+ Parameters:    Size  Location     Type
+  command         1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  command         1    0[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_Set_Page_Address
+		_Set_Column_Address
+		_oled_devInit
+		_oled_setDisplay
+		_oled_setContrastControlRegister
+		_oled_initialDispayLine
+		_oled_powerControl
+		_oled_regulorResistorSelect
+		_oled_displayOff
+ This function uses a non-reentrant model
+
+
+ *************** function _SYSTEM_Initialize *****************
+ Defined at:
+		line 50 in file "mcc_generated_files/mcc.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_EUSART1_Initialize
+		_OSCILLATOR_Initialize
+		_PIN_MANAGER_Initialize
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _PIN_MANAGER_Initialize *****************
+ Defined at:
+		line 55 in file "mcc_generated_files/pin_manager.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _OSCILLATOR_Initialize *****************
+ Defined at:
+		line 58 in file "mcc_generated_files/mcc.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART1_Initialize *****************
+ Defined at:
+		line 66 in file "mcc_generated_files/eusart1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_EUSART1_SetErrorHandler
+		_EUSART1_SetFramingErrorHandler
+		_EUSART1_SetOverrunErrorHandler
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART1_SetOverrunErrorHandler *****************
+ Defined at:
+		line 185 in file "mcc_generated_files/eusart1.c"
+ Parameters:    Size  Location     Type
+  interruptHan    2    0[COMRAM] PTR FTN()void 
+		 -> EUSART1_DefaultOverrunErrorHandler(1), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_EUSART1_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART1_SetFramingErrorHandler *****************
+ Defined at:
+		line 181 in file "mcc_generated_files/eusart1.c"
+ Parameters:    Size  Location     Type
+  interruptHan    2    0[COMRAM] PTR FTN()void 
+		 -> EUSART1_DefaultFramingErrorHandler(1), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_EUSART1_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _EUSART1_SetErrorHandler *****************
+ Defined at:
+		line 189 in file "mcc_generated_files/eusart1.c"
+ Parameters:    Size  Location     Type
+  interruptHan    2    0[COMRAM] PTR FTN()void 
+		 -> EUSART1_DefaultErrorHandler(1), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_EUSART1_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _LoRA_DataAnswer_Decode *****************
+ Defined at:
+		line 236 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               1    3[COMRAM] unsigned char 
+  dataType        1    2[COMRAM] unsigned char 
+  flag            1    1[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         3       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
 
 
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
-C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memset.c
-		_memset        		CODE           	7046	0000	374
-
-C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memset.c estimated size: 374
-
-C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
-		___awdiv       		CODE           	6C86	0000	196
-
-C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c estimated size: 196
-
-C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
-		_sprintf       		CODE           	6926	0000	78
-
-C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c estimated size: 78
-
-C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-		_vfpfcnvrt     		CODE           	6EE8	0000	350
-		_ctoa          		CODE           	6E14	0000	212
-		_vfprintf      		CODE           	6974	0000	94
-
-C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c estimated size: 656
-
 mcc_generated_files/pin_manager.c
-		_PIN_MANAGER_Initialize		CODE           	68A8	0000	62
+		_PIN_MANAGER_Initialize		CODE           	6FB2	0000	62
 
 mcc_generated_files/pin_manager.c estimated size: 62
 
-C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\putch.c
-		_putch         		CODE           	6610	0000	2
-
-C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\putch.c estimated size: 2
-
 SSD1306oLED.c
-		_Set_Column_Address		CODE           	66D0	0000	22
-		_oled_powerControl		CODE           	6640	0000	12
-		_oled_putString		CODE           	6AC6	0000	128
-		_oled_clear    		CODE           	66FC	0000	26
-		_oled_regulorResistorSelect		CODE           	664C	0000	12
-		_oled_clearRow 		CODE           	677A	0000	40
-		_oled_initialDispayLine		CODE           	6634	0000	12
-		_oled_writeCommand		CODE           	66A8	0000	20
-		_Set_Page_Address		CODE           	6674	0000	16
-		_oled_writeData		CODE           	66BC	0000	20
-		_oled_setDisplay		CODE           	67D0	0000	48
-		_oled_setContrastControlRegister		CODE           	6684	0000	16
-		_oled_init     		CODE           	67A2	0000	46
-		_oled_devInit  		CODE           	69D2	0000	120
-		_oled_putChar  		CODE           	6A4A	0000	124
-		_oled_setFont  		CODE           	6716	0000	28
-		_oled_putUint8 		CODE           	6B46	0000	144
+		_Set_Column_Address		CODE           	6DE2	0000	22
+		_oled_powerControl		CODE           	6D66	0000	12
+		_oled_putString		CODE           	7146	0000	128
+		_oled_clear    		CODE           	6E0E	0000	26
+		_oled_regulorResistorSelect		CODE           	6D72	0000	12
+		_oled_clearRow 		CODE           	6E84	0000	40
+		_oled_initialDispayLine		CODE           	6D5A	0000	12
+		_oled_writeCommand		CODE           	6DBA	0000	20
+		_Set_Page_Address		CODE           	6D9A	0000	16
+		_oled_writeData		CODE           	6DCE	0000	20
+		_oled_setDisplay		CODE           	6EDA	0000	48
+		_oled_setContrastControlRegister		CODE           	6DAA	0000	16
+		_oled_init     		CODE           	6EAC	0000	46
+		_oled_devInit  		CODE           	7052	0000	120
+		_oled_putChar  		CODE           	70CA	0000	124
+		_oled_setFont  		CODE           	6E28	0000	28
 
-SSD1306oLED.c estimated size: 834
+SSD1306oLED.c estimated size: 690
 
 shared
-		_OledFont0     		MEDIUMCONST    	7AC7	0000	768
-		__initialization		CODE           	68E6	0000	54
+		_OledFont0     		MEDIUMCONST    	7A6B	0000	768
+		__initialization		CODE           	6FF0	0000	88
 
-shared estimated size: 822
+shared estimated size: 856
 
 mcc_generated_files/eusart1.c
-		_EUSART1_is_rx_ready		CODE           	6694	0000	20
-		_EUSART1_Initialize		CODE           	686A	0000	62
-		_EUSART1_SetFramingErrorHandler		CODE           	6620	0000	10
-		_get_Data      		CODE           	6800	0000	52
-		_EUSART1_Read  		CODE           	6752	0000	40
-		_EUSART1_SetOverrunErrorHandler		CODE           	662A	0000	10
-		_EUSART1_SetErrorHandler		CODE           	6616	0000	10
-		_EUSART1_Write 		CODE           	66E6	0000	22
+		_EUSART1_Initialize		CODE           	6F74	0000	62
+		_EUSART1_SetFramingErrorHandler		CODE           	6D46	0000	10
+		_get_Data      		CODE           	6F0A	0000	52
+		_EUSART1_SetOverrunErrorHandler		CODE           	6D50	0000	10
+		_EUSART1_SetErrorHandler		CODE           	6D3C	0000	10
+		_EUSART1_Write 		CODE           	6DF8	0000	22
 
-mcc_generated_files/eusart1.c estimated size: 226
-
-C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
-		___awmod       		CODE           	6BD6	0000	176
-
-C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c estimated size: 176
+mcc_generated_files/eusart1.c estimated size: 166
 
 mcc_generated_files/mcc.c
-		_OSCILLATOR_Initialize		CODE           	6732	0000	32
-		_SYSTEM_Initialize		CODE           	6658	0000	14
+		_OSCILLATOR_Initialize		CODE           	6E44	0000	32
+		_SYSTEM_Initialize		CODE           	6D7E	0000	14
 
 mcc_generated_files/mcc.c estimated size: 46
 
-C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
-		_fputc         		CODE           	6D4A	0000	202
-
-C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c estimated size: 202
-
 main.c
-		_init_port     		CODE           	6666	0000	14
-		_main          		CODE           	71BC	0000	854
-		_init_mod_LoRa 		CODE           	7512	0000	1460
-		_sendCommand   		CODE           	6834	0000	54
+		_read_LoRA_cmd 		CODE           	729E	0000	246
+		_init_port     		CODE           	6D8C	0000	14
+		_main          		CODE           	7394	0000	264
+		_init_mod_LoRa 		CODE           	7668	0000	1026
+		_sendCommand   		CODE           	6F3E	0000	54
+		_LoRA_DataAnswer_Decode		CODE           	749C	0000	460
+		_Opening       		CODE           	71C6	0000	216
 
-main.c estimated size: 2382
+main.c estimated size: 2280
 
