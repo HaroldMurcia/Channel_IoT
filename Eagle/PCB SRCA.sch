@@ -8422,97 +8422,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Switche button">
-<description>&lt;Tactile Switches 50mA 12VDC, SPST NO, 260 gf, 5.0mm H, SMT J-type&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="PTS645SK50JSMTR92LFS">
-<description>&lt;b&gt;PTS645SK50JSMTR92 LFS-2&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="A1" x="-3" y="2.25" dx="1.5" dy="1.3" layer="1"/>
-<smd name="B1" x="3" y="2.25" dx="1.5" dy="1.3" layer="1"/>
-<smd name="C1" x="-3" y="-2.25" dx="1.5" dy="1.3" layer="1"/>
-<smd name="D1" x="3" y="-2.25" dx="1.5" dy="1.3" layer="1"/>
-<text x="-0.4" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="-0.4" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.2" layer="51"/>
-<wire x1="3" y1="-3" x2="3" y2="3" width="0.2" layer="51"/>
-<wire x1="3" y1="3" x2="-3" y2="3" width="0.2" layer="51"/>
-<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.2" layer="51"/>
-<wire x1="-1.75" y1="3" x2="1.75" y2="3" width="0.1" layer="21"/>
-<wire x1="1.75" y1="3" x2="1.75" y2="3" width="0.1" layer="21"/>
-<wire x1="1.75" y1="3" x2="-1.75" y2="3" width="0.1" layer="21"/>
-<wire x1="-1.75" y1="3" x2="-1.75" y2="3" width="0.1" layer="21"/>
-<wire x1="-3" y1="-1" x2="-3" y2="-1" width="0.1" layer="21"/>
-<wire x1="-3" y1="-1" x2="-3" y2="1" width="0.1" layer="21"/>
-<wire x1="-3" y1="1" x2="-3" y2="1" width="0.1" layer="21"/>
-<wire x1="-3" y1="1" x2="-3" y2="-1" width="0.1" layer="21"/>
-<wire x1="-1.75" y1="-3" x2="1.75" y2="-3" width="0.1" layer="21"/>
-<wire x1="1.75" y1="-3" x2="1.75" y2="-3" width="0.1" layer="21"/>
-<wire x1="1.75" y1="-3" x2="-1.75" y2="-3" width="0.1" layer="21"/>
-<wire x1="-1.75" y1="-3" x2="-1.75" y2="-3" width="0.1" layer="21"/>
-<wire x1="3" y1="-1" x2="3" y2="-1" width="0.1" layer="21"/>
-<wire x1="3" y1="-1" x2="3" y2="1" width="0.1" layer="21"/>
-<wire x1="3" y1="1" x2="3" y2="1" width="0.1" layer="21"/>
-<wire x1="3" y1="1" x2="3" y2="-1" width="0.1" layer="21"/>
-<wire x1="-5.55" y1="4" x2="4.75" y2="4" width="0.1" layer="51"/>
-<wire x1="4.75" y1="4" x2="4.75" y2="-4" width="0.1" layer="51"/>
-<wire x1="4.75" y1="-4" x2="-5.55" y2="-4" width="0.1" layer="51"/>
-<wire x1="-5.55" y1="-4" x2="-5.55" y2="4" width="0.1" layer="51"/>
-<wire x1="-4.5" y1="2.3" x2="-4.5" y2="2.3" width="0.2" layer="21"/>
-<wire x1="-4.5" y1="2.3" x2="-4.5" y2="2.2" width="0.2" layer="21" curve="180"/>
-<wire x1="-4.5" y1="2.2" x2="-4.5" y2="2.2" width="0.2" layer="21"/>
-<wire x1="-4.5" y1="2.2" x2="-4.5" y2="2.3" width="0.2" layer="21" curve="180"/>
-<wire x1="-4.5" y1="2.3" x2="-4.5" y2="2.3" width="0.2" layer="21"/>
-<wire x1="-4.5" y1="2.3" x2="-4.5" y2="2.2" width="0.2" layer="21" curve="180"/>
-</package>
-</packages>
-<symbols>
-<symbol name="PTS645SK50JSMTR92_LFS">
-<wire x1="5.08" y1="2.54" x2="25.4" y2="2.54" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-5.08" x2="25.4" y2="2.54" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<text x="26.67" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="26.67" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="NO_1" x="0" y="0" length="middle"/>
-<pin name="NO_2" x="30.48" y="0" length="middle" rot="R180"/>
-<pin name="COM_1" x="0" y="-2.54" length="middle"/>
-<pin name="COM_2" x="30.48" y="-2.54" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PTS645SK50JSMTR92_LFS" prefix="S">
-<description>&lt;b&gt;Tactile Switches 50mA 12VDC, SPST NO, 260 gf, 5.0mm H, SMT J-type&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://www.digikey.in/product-detail/en/c-k/PTS645SK50JSMTR92-LFS/108-PTS645SK50JSMTR92LFSCT-ND/12163485"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="PTS645SK50JSMTR92_LFS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PTS645SK50JSMTR92LFS">
-<connects>
-<connect gate="G$1" pin="COM_1" pad="C1"/>
-<connect gate="G$1" pin="COM_2" pad="D1"/>
-<connect gate="G$1" pin="NO_1" pad="A1"/>
-<connect gate="G$1" pin="NO_2" pad="B1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="ARROW_PART_NUMBER" value="" constant="no"/>
-<attribute name="ARROW_PRICE-STOCK" value="" constant="no"/>
-<attribute name="DESCRIPTION" value="Tactile Switches 50mA 12VDC, SPST NO, 260 gf, 5.0mm H, SMT J-type" constant="no"/>
-<attribute name="HEIGHT" value="5mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="C &amp; K COMPONENTS" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="PTS645SK50JSMTR92 LFS" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="611-SK50JSMTR92LFS" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/CK/PTS645SK50JSMTR92-LFS?qs=TiOZkKH1s2Tk7%252B%2Fs4hXb%252Bw%3D%3D" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="LMT86QDCKRQ1">
 <description>&lt;Automotive Grade, 2.2V-Capable, 10 uA Analog Output Temperature Sensor&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
@@ -8825,68 +8734,6 @@ Source: &lt;a href="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L
 <technologies>
 <technology name="">
 <attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="ERA-6VEB1002V">
-<description>&lt;Thin Film Resistors - SMD 0805 0.1% 10Kohm 25ppm SMD&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="RESC2012X65N">
-<description>&lt;b&gt;ERA-6VEB1&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-0.95" y="0" dx="1.4" dy="1.05" layer="1" rot="R90"/>
-<smd name="2" x="0.95" y="0" dx="1.4" dy="1.05" layer="1" rot="R90"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-1.725" y1="0.95" x2="1.725" y2="0.95" width="0.05" layer="51"/>
-<wire x1="1.725" y1="0.95" x2="1.725" y2="-0.95" width="0.05" layer="51"/>
-<wire x1="1.725" y1="-0.95" x2="-1.725" y2="-0.95" width="0.05" layer="51"/>
-<wire x1="-1.725" y1="-0.95" x2="-1.725" y2="0.95" width="0.05" layer="51"/>
-<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.1" layer="51"/>
-<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.1" layer="51"/>
-<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.1" layer="51"/>
-<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.1" layer="51"/>
-<wire x1="0" y1="0.525" x2="0" y2="-0.525" width="0.2" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ERA-6VEB1002V">
-<wire x1="5.08" y1="1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="5.08" y1="1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
-<text x="13.97" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="13.97" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="1" x="0" y="0" visible="pad" length="middle"/>
-<pin name="2" x="17.78" y="0" visible="pad" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ERA-6VEB1002V" prefix="R">
-<description>&lt;b&gt;Thin Film Resistors - SMD 0805 0.1% 10Kohm 25ppm SMD&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/ERA-6VEB1002V.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="ERA-6VEB1002V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="RESC2012X65N">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value="Thin Film Resistors - SMD 0805 0.1% 10Kohm 25ppm SMD" constant="no"/>
-<attribute name="HEIGHT" value="0.65mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Panasonic" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="ERA-6VEB1002V" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="667-ERA-6VEB1002V" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Panasonic/ERA-6VEB1002V?qs=rI7uf1IzohQqQPsypW%252B%252B1w%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9325,6 +9172,219 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 </deviceset>
 </devicesets>
 </library>
+<library name="ICSP">
+<packages>
+<package name="ICSP">
+<pad name="MCLR" x="2.54" y="7.62" drill="0.65" shape="square"/>
+<pad name="VDD" x="2.54" y="5.08" drill="0.65"/>
+<pad name="VSS" x="2.54" y="2.54" drill="0.65"/>
+<pad name="PGD" x="2.54" y="0" drill="0.65"/>
+<pad name="PGC" x="2.54" y="-2.54" drill="0.65"/>
+<pad name="N/C" x="2.54" y="-5.08" drill="0.65"/>
+<wire x1="1.27" y1="8.89" x2="1.27" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-6.35" x2="3.81" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-6.35" x2="3.81" y2="8.89" width="0.127" layer="21"/>
+<wire x1="3.81" y1="8.89" x2="1.27" y2="8.89" width="0.127" layer="21"/>
+<text x="5.08" y="7.02" size="1.27" layer="21">MCLR</text>
+<text x="5.08" y="4.48" size="1.27" layer="21">VDD</text>
+<text x="5.08" y="1.94" size="1.27" layer="21">VSS</text>
+<text x="5.08" y="-0.6" size="1.27" layer="21">PGD</text>
+<text x="5.08" y="-3.14" size="1.27" layer="21">PGC</text>
+<text x="5.08" y="-5.68" size="1.27" layer="21">N/C</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ICSP">
+<pin name="MCLR" x="5.08" y="7.62" length="middle" rot="R180"/>
+<pin name="VDD" x="5.08" y="5.08" length="middle" rot="R180"/>
+<pin name="VSS" x="5.08" y="2.54" length="middle" rot="R180"/>
+<pin name="PGD" x="5.08" y="0" length="middle" rot="R180"/>
+<pin name="PGC" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="N/C" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-9" y1="9" x2="-9" y2="-7" width="0.254" layer="94"/>
+<wire x1="-9" y1="-7" x2="0" y2="-7" width="0.254" layer="94"/>
+<wire x1="0" y1="-7" x2="0" y2="9" width="0.254" layer="94"/>
+<wire x1="-9" y1="9" x2="0" y2="9" width="0.254" layer="94"/>
+<text x="-9" y="10" size="1.778" layer="95">&gt;Name</text>
+<text x="-9" y="12" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ICSP" prefix="J">
+<gates>
+<gate name="G$1" symbol="ICSP" x="-7.62" y="0"/>
+</gates>
+<devices>
+<device name="" package="ICSP">
+<connects>
+<connect gate="G$1" pin="MCLR" pad="MCLR"/>
+<connect gate="G$1" pin="N/C" pad="N/C"/>
+<connect gate="G$1" pin="PGC" pad="PGC"/>
+<connect gate="G$1" pin="PGD" pad="PGD"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+<connect gate="G$1" pin="VSS" pad="VSS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="Switche button">
+<description>&lt;Tactile Switches 50mA 12VDC, SPST NO, 260 gf, 5.0mm H, SMT J-type&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="PTS645SK50JSMTR92LFS">
+<description>&lt;b&gt;PTS645SK50JSMTR92 LFS-2&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="A1" x="-3" y="2.25" dx="1.5" dy="1.3" layer="1"/>
+<smd name="B1" x="3" y="2.25" dx="1.5" dy="1.3" layer="1"/>
+<smd name="C1" x="-3" y="-2.25" dx="1.5" dy="1.3" layer="1"/>
+<smd name="D1" x="3" y="-2.25" dx="1.5" dy="1.3" layer="1"/>
+<text x="-0.4" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-0.4" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.2" layer="51"/>
+<wire x1="3" y1="-3" x2="3" y2="3" width="0.2" layer="51"/>
+<wire x1="3" y1="3" x2="-3" y2="3" width="0.2" layer="51"/>
+<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.2" layer="51"/>
+<wire x1="-1.75" y1="3" x2="1.75" y2="3" width="0.1" layer="21"/>
+<wire x1="1.75" y1="3" x2="1.75" y2="3" width="0.1" layer="21"/>
+<wire x1="1.75" y1="3" x2="-1.75" y2="3" width="0.1" layer="21"/>
+<wire x1="-1.75" y1="3" x2="-1.75" y2="3" width="0.1" layer="21"/>
+<wire x1="-3" y1="-1" x2="-3" y2="-1" width="0.1" layer="21"/>
+<wire x1="-3" y1="-1" x2="-3" y2="1" width="0.1" layer="21"/>
+<wire x1="-3" y1="1" x2="-3" y2="1" width="0.1" layer="21"/>
+<wire x1="-3" y1="1" x2="-3" y2="-1" width="0.1" layer="21"/>
+<wire x1="-1.75" y1="-3" x2="1.75" y2="-3" width="0.1" layer="21"/>
+<wire x1="1.75" y1="-3" x2="1.75" y2="-3" width="0.1" layer="21"/>
+<wire x1="1.75" y1="-3" x2="-1.75" y2="-3" width="0.1" layer="21"/>
+<wire x1="-1.75" y1="-3" x2="-1.75" y2="-3" width="0.1" layer="21"/>
+<wire x1="3" y1="-1" x2="3" y2="-1" width="0.1" layer="21"/>
+<wire x1="3" y1="-1" x2="3" y2="1" width="0.1" layer="21"/>
+<wire x1="3" y1="1" x2="3" y2="1" width="0.1" layer="21"/>
+<wire x1="3" y1="1" x2="3" y2="-1" width="0.1" layer="21"/>
+<wire x1="-5.55" y1="4" x2="4.75" y2="4" width="0.1" layer="51"/>
+<wire x1="4.75" y1="4" x2="4.75" y2="-4" width="0.1" layer="51"/>
+<wire x1="4.75" y1="-4" x2="-5.55" y2="-4" width="0.1" layer="51"/>
+<wire x1="-5.55" y1="-4" x2="-5.55" y2="4" width="0.1" layer="51"/>
+<wire x1="-4.5" y1="2.3" x2="-4.5" y2="2.3" width="0.2" layer="21"/>
+<wire x1="-4.5" y1="2.3" x2="-4.5" y2="2.2" width="0.2" layer="21" curve="180"/>
+<wire x1="-4.5" y1="2.2" x2="-4.5" y2="2.2" width="0.2" layer="21"/>
+<wire x1="-4.5" y1="2.2" x2="-4.5" y2="2.3" width="0.2" layer="21" curve="180"/>
+<wire x1="-4.5" y1="2.3" x2="-4.5" y2="2.3" width="0.2" layer="21"/>
+<wire x1="-4.5" y1="2.3" x2="-4.5" y2="2.2" width="0.2" layer="21" curve="180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PTS645SK50JSMTR92_LFS">
+<wire x1="5.08" y1="2.54" x2="25.4" y2="2.54" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-5.08" x2="25.4" y2="2.54" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="26.67" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="26.67" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="NO_1" x="0" y="0" length="middle"/>
+<pin name="NO_2" x="30.48" y="0" length="middle" rot="R180"/>
+<pin name="COM_1" x="0" y="-2.54" length="middle"/>
+<pin name="COM_2" x="30.48" y="-2.54" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PTS645SK50JSMTR92_LFS" prefix="S">
+<description>&lt;b&gt;Tactile Switches 50mA 12VDC, SPST NO, 260 gf, 5.0mm H, SMT J-type&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.digikey.in/product-detail/en/c-k/PTS645SK50JSMTR92-LFS/108-PTS645SK50JSMTR92LFSCT-ND/12163485"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="PTS645SK50JSMTR92_LFS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PTS645SK50JSMTR92LFS">
+<connects>
+<connect gate="G$1" pin="COM_1" pad="C1"/>
+<connect gate="G$1" pin="COM_2" pad="D1"/>
+<connect gate="G$1" pin="NO_1" pad="A1"/>
+<connect gate="G$1" pin="NO_2" pad="B1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ARROW_PART_NUMBER" value="" constant="no"/>
+<attribute name="ARROW_PRICE-STOCK" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Tactile Switches 50mA 12VDC, SPST NO, 260 gf, 5.0mm H, SMT J-type" constant="no"/>
+<attribute name="HEIGHT" value="5mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="C &amp; K COMPONENTS" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="PTS645SK50JSMTR92 LFS" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="611-SK50JSMTR92LFS" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/CK/PTS645SK50JSMTR92-LFS?qs=TiOZkKH1s2Tk7%252B%2Fs4hXb%252Bw%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="ERA-6VEB1002V">
+<description>&lt;Thin Film Resistors - SMD 0805 0.1% 10Kohm 25ppm SMD&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="RESC2012X65N">
+<description>&lt;b&gt;ERA-6VEB1&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-0.95" y="0" dx="1.4" dy="1.05" layer="1" rot="R90"/>
+<smd name="2" x="0.95" y="0" dx="1.4" dy="1.05" layer="1" rot="R90"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.725" y1="0.95" x2="1.725" y2="0.95" width="0.05" layer="51"/>
+<wire x1="1.725" y1="0.95" x2="1.725" y2="-0.95" width="0.05" layer="51"/>
+<wire x1="1.725" y1="-0.95" x2="-1.725" y2="-0.95" width="0.05" layer="51"/>
+<wire x1="-1.725" y1="-0.95" x2="-1.725" y2="0.95" width="0.05" layer="51"/>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.1" layer="51"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.1" layer="51"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.1" layer="51"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.1" layer="51"/>
+<wire x1="0" y1="0.525" x2="0" y2="-0.525" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ERA-6VEB1002V">
+<wire x1="5.08" y1="1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
+<text x="13.97" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="13.97" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" visible="pad" length="middle"/>
+<pin name="2" x="17.78" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ERA-6VEB1002V" prefix="R">
+<description>&lt;b&gt;Thin Film Resistors - SMD 0805 0.1% 10Kohm 25ppm SMD&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/ERA-6VEB1002V.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ERA-6VEB1002V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RESC2012X65N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Thin Film Resistors - SMD 0805 0.1% 10Kohm 25ppm SMD" constant="no"/>
+<attribute name="HEIGHT" value="0.65mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Panasonic" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ERA-6VEB1002V" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="667-ERA-6VEB1002V" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Panasonic/ERA-6VEB1002V?qs=rI7uf1IzohQqQPsypW%252B%252B1w%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9344,21 +9404,13 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <part name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="TIP41C" device="" package3d_urn="urn:adsk.eagle:package:29487/2"/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
 <part name="LS1" library="PS1240P02BT" deviceset="PS1240P02BT" device=""/>
-<part name="S1" library="Switche button" deviceset="PTS645SK50JSMTR92_LFS" device=""/>
-<part name="S2" library="Switche button" deviceset="PTS645SK50JSMTR92_LFS" device=""/>
-<part name="S3" library="Switche button" deviceset="PTS645SK50JSMTR92_LFS" device=""/>
-<part name="S4" library="Switche button" deviceset="PTS645SK50JSMTR92_LFS" device=""/>
 <part name="IC3" library="LMT86QDCKRQ1" deviceset="LMT86QDCKRQ1" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2"/>
 <part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2"/>
 <part name="IC2" library="LM324LVIDR" deviceset="LM324LVIDR" device=""/>
 <part name="R1" library="RC0805FR-071KL" deviceset="RC0805FR-071KL" device=""/>
-<part name="R3" library="RC0805FR-071KL" deviceset="RC0805FR-071KL" device=""/>
-<part name="R4" library="RC0805FR-071KL" deviceset="RC0805FR-071KL" device=""/>
-<part name="R5" library="RC0805FR-071KL" deviceset="RC0805FR-071KL" device=""/>
 <part name="T1" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" deviceset="2N3904" device="" package3d_urn="urn:adsk.eagle:package:28725/2"/>
-<part name="R2" library="ERA-6VEB1002V" deviceset="ERA-6VEB1002V" device=""/>
 <part name="J4" library="172447-0004" deviceset="172447-0004" device=""/>
 <part name="J1" library="TBL002A-350-03GR-2OR" deviceset="TBL002A-350-03GR-2OR" device=""/>
 <part name="J2" library="TBL002A-350-03GR-2OR" deviceset="TBL002A-350-03GR-2OR" device=""/>
@@ -9396,6 +9448,15 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <part name="R18" library="RC0805FR-071KL" deviceset="RC0805FR-071KL" device=""/>
 <part name="T11" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" deviceset="2N3904" device="" package3d_urn="urn:adsk.eagle:package:28725/2"/>
 <part name="IC4" library="LORA_MOTE" deviceset="LORA_MOTE" device=""/>
+<part name="J5" library="ICSP" deviceset="ICSP" device=""/>
+<part name="S1" library="Switche button" deviceset="PTS645SK50JSMTR92_LFS" device=""/>
+<part name="S2" library="Switche button" deviceset="PTS645SK50JSMTR92_LFS" device=""/>
+<part name="S3" library="Switche button" deviceset="PTS645SK50JSMTR92_LFS" device=""/>
+<part name="S4" library="Switche button" deviceset="PTS645SK50JSMTR92_LFS" device=""/>
+<part name="R3" library="RC0805FR-071KL" deviceset="RC0805FR-071KL" device=""/>
+<part name="R4" library="RC0805FR-071KL" deviceset="RC0805FR-071KL" device=""/>
+<part name="R5" library="RC0805FR-071KL" deviceset="RC0805FR-071KL" device=""/>
+<part name="R2" library="ERA-6VEB1002V" deviceset="ERA-6VEB1002V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9430,22 +9491,6 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <attribute name="NAME" x="204.47" y="160.02" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="204.47" y="157.48" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="S1" gate="G$1" x="10.16" y="86.36" smashed="yes">
-<attribute name="NAME" x="6.35" y="93.98" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="6.35" y="91.44" size="1.778" layer="96" align="center-left"/>
-</instance>
-<instance part="S2" gate="G$1" x="63.5" y="104.14" smashed="yes">
-<attribute name="NAME" x="64.77" y="111.76" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="64.77" y="109.22" size="1.778" layer="96" align="center-left"/>
-</instance>
-<instance part="S3" gate="G$1" x="33.02" y="48.26" smashed="yes">
-<attribute name="NAME" x="34.29" y="55.88" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="34.29" y="53.34" size="1.778" layer="96" align="center-left"/>
-</instance>
-<instance part="S4" gate="G$1" x="71.12" y="48.26" smashed="yes">
-<attribute name="NAME" x="72.39" y="55.88" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="72.39" y="53.34" size="1.778" layer="96" align="center-left"/>
-</instance>
 <instance part="IC3" gate="G$1" x="132.08" y="106.68" smashed="yes">
 <attribute name="NAME" x="135.89" y="114.3" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="135.89" y="111.76" size="1.778" layer="96" align="center-left"/>
@@ -9470,29 +9515,49 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <attribute name="NAME" x="181.61" y="148.59" size="1.778" layer="95" rot="R90" align="center-left"/>
 <attribute name="VALUE" x="184.15" y="148.59" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
-<instance part="R3" gate="G$1" x="71.12" y="17.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="64.77" y="19.05" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="67.31" y="19.05" size="1.778" layer="96" rot="R90" align="center-left"/>
-</instance>
-<instance part="R4" gate="G$1" x="30.48" y="20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="24.13" y="21.59" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="26.67" y="21.59" size="1.778" layer="96" rot="R90" align="center-left"/>
-</instance>
-<instance part="R5" gate="G$1" x="63.5" y="76.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="57.15" y="77.47" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="59.69" y="77.47" size="1.778" layer="96" rot="R90" align="center-left"/>
-</instance>
 <instance part="T1" gate="G1" x="198.12" y="132.08" smashed="yes">
 <attribute name="NAME" x="187.96" y="139.7" size="1.778" layer="95"/>
 <attribute name="VALUE" x="187.96" y="137.16" size="1.778" layer="96"/>
 </instance>
-<instance part="R2" gate="G$1" x="40.64" y="93.98" smashed="yes" rot="R90">
-<attribute name="NAME" x="34.29" y="95.25" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="36.83" y="95.25" size="1.778" layer="96" rot="R90" align="center-left"/>
-</instance>
 <instance part="J4" gate="G$1" x="177.8" y="43.18" smashed="yes">
 <attribute name="NAME" x="184.15" y="50.8" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="184.15" y="48.26" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="J5" gate="G$1" x="152.4" y="162.56" smashed="yes">
+<attribute name="NAME" x="143.4" y="172.56" size="1.778" layer="95"/>
+<attribute name="VALUE" x="143.4" y="174.56" size="1.778" layer="96"/>
+</instance>
+<instance part="S1" gate="G$1" x="7.62" y="86.36" smashed="yes">
+<attribute name="NAME" x="3.81" y="93.98" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="3.81" y="91.44" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="S2" gate="G$1" x="60.96" y="104.14" smashed="yes">
+<attribute name="NAME" x="62.23" y="111.76" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="62.23" y="109.22" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="S3" gate="G$1" x="30.48" y="48.26" smashed="yes">
+<attribute name="NAME" x="31.75" y="55.88" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="31.75" y="53.34" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="S4" gate="G$1" x="68.58" y="48.26" smashed="yes">
+<attribute name="NAME" x="69.85" y="55.88" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="69.85" y="53.34" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="R3" gate="G$1" x="68.58" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="62.23" y="19.05" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="64.77" y="19.05" size="1.778" layer="96" rot="R90" align="center-left"/>
+</instance>
+<instance part="R4" gate="G$1" x="27.94" y="20.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="21.59" y="21.59" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="24.13" y="21.59" size="1.778" layer="96" rot="R90" align="center-left"/>
+</instance>
+<instance part="R5" gate="G$1" x="60.96" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="54.61" y="77.47" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="57.15" y="77.47" size="1.778" layer="96" rot="R90" align="center-left"/>
+</instance>
+<instance part="R2" gate="G$1" x="38.1" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="31.75" y="95.25" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="34.29" y="95.25" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -9525,23 +9590,6 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <pinref part="T1" gate="G1" pin="E"/>
 </segment>
 <segment>
-<wire x1="63.5" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="COM_2"/>
-<wire x1="40.64" y1="73.66" x2="40.64" y2="83.82" width="0.1524" layer="91"/>
-<label x="40.64" y="73.66" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="76.2" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="30.48" y1="15.24" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
-<label x="30.48" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="17.78" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="17.78" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
-<junction x="30.48" y="17.78"/>
-</segment>
-<segment>
 <pinref part="IC3" gate="G$1" pin="GND_1"/>
 <wire x1="132.08" y1="106.68" x2="129.54" y2="106.68" width="0.1524" layer="91"/>
 <label x="129.54" y="106.68" size="1.27" layer="95" ratio="7" rot="R180" xref="yes"/>
@@ -9566,6 +9614,28 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <pinref part="J4" gate="G$1" pin="3"/>
 <wire x1="198.12" y1="43.18" x2="200.66" y2="43.18" width="0.1524" layer="91"/>
 <label x="200.66" y="43.18" size="1.4224" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="157.48" y1="165.1" x2="162.56" y2="165.1" width="0.1524" layer="91"/>
+<label x="162.56" y="165.1" size="1.4224" layer="95" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="VSS"/>
+</segment>
+<segment>
+<wire x1="60.96" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="COM_2"/>
+<label x="38.1" y="73.66" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="73.66" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="76.2" x2="60.96" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="27.94" y1="15.24" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
+<label x="27.94" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="17.78" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
+<junction x="27.94" y="17.78"/>
 </segment>
 </net>
 <net name="BUZZER" class="0">
@@ -9639,25 +9709,6 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <label x="30.48" y="147.32" size="1.4224" layer="95" ratio="6" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="S4" gate="G$1" pin="NO_1"/>
-<wire x1="71.12" y1="48.26" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
-<label x="71.12" y="68.58" size="1.778" layer="95" rot="R90" xref="yes"/>
-<pinref part="S3" gate="G$1" pin="NO_1"/>
-<wire x1="71.12" y1="60.96" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="48.26" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="48.26" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="60.96" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
-<junction x="71.12" y="60.96"/>
-</segment>
-<segment>
-<pinref part="S2" gate="G$1" pin="NO_1"/>
-<wire x1="63.5" y1="104.14" x2="63.5" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="114.3" x2="40.64" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="114.3" x2="40.64" y2="111.76" width="0.1524" layer="91"/>
-<label x="40.64" y="114.3" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="IC3" gate="G$1" pin="VDD_1"/>
 <wire x1="162.56" y1="106.68" x2="167.64" y2="106.68" width="0.1524" layer="91"/>
 <label x="167.64" y="106.68" size="1.27" layer="95" ratio="7" xref="yes"/>
@@ -9677,6 +9728,27 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <wire x1="226.06" y1="154.94" x2="226.06" y2="165.1" width="0.1524" layer="91"/>
 <label x="226.06" y="165.1" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<wire x1="157.48" y1="167.64" x2="162.56" y2="167.64" width="0.1524" layer="91"/>
+<label x="162.56" y="167.64" size="1.4224" layer="95" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="VDD"/>
+</segment>
+<segment>
+<pinref part="S4" gate="G$1" pin="NO_1"/>
+<wire x1="68.58" y1="48.26" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
+<label x="68.58" y="68.58" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="S3" gate="G$1" pin="NO_2"/>
+<wire x1="60.96" y1="48.26" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
+<junction x="68.58" y="48.26"/>
+</segment>
+<segment>
+<pinref part="S2" gate="G$1" pin="NO_1"/>
+<wire x1="60.96" y1="104.14" x2="60.96" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="114.3" x2="38.1" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="114.3" x2="38.1" y2="111.76" width="0.1524" layer="91"/>
+<label x="38.1" y="114.3" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="MCLR" class="0">
 <segment>
@@ -9685,12 +9757,17 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <label x="30.48" y="172.72" size="1.4224" layer="95" ratio="6" rot="R180" xref="yes"/>
 </segment>
 <segment>
+<wire x1="157.48" y1="170.18" x2="162.56" y2="170.18" width="0.1524" layer="91"/>
+<label x="162.56" y="170.18" size="1.4224" layer="95" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="MCLR"/>
+</segment>
+<segment>
 <pinref part="S1" gate="G$1" pin="NO_2"/>
-<wire x1="40.64" y1="86.36" x2="40.64" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="91.44" x2="40.64" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="91.44" x2="48.26" y2="91.44" width="0.1524" layer="91"/>
-<junction x="40.64" y="91.44"/>
-<label x="48.26" y="91.44" size="1.778" layer="95" xref="yes"/>
+<wire x1="38.1" y1="86.36" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="91.44" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="91.44" x2="45.72" y2="91.44" width="0.1524" layer="91"/>
+<junction x="38.1" y="91.44"/>
+<label x="45.72" y="91.44" size="1.778" layer="95" xref="yes"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -9726,7 +9803,7 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <pinref part="IC2" gate="G$1" pin="OUT1"/>
 </segment>
 </net>
-<net name="POWER_ERROR" class="0">
+<net name="L_POWER_ERROR" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="AN3/INDX/CN5/RB3"/>
 <wire x1="33.02" y1="162.56" x2="30.48" y2="162.56" width="0.1524" layer="91"/>
@@ -9747,21 +9824,21 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <label x="30.48" y="157.48" size="1.4224" layer="95" ratio="6" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SONAR_DATA" class="0">
+<net name="L_SONAR_DATA" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="AN6/OCFA/RB6"/>
 <wire x1="33.02" y1="154.94" x2="30.48" y2="154.94" width="0.1524" layer="91"/>
 <label x="30.48" y="154.94" size="1.4224" layer="95" ratio="6" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="TX_DATA" class="0">
+<net name="L_TX_DATA" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="AN7/RB7"/>
 <wire x1="33.02" y1="152.4" x2="30.48" y2="152.4" width="0.1524" layer="91"/>
 <label x="30.48" y="152.4" size="1.4224" layer="95" ratio="6" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="RX_DATA" class="0">
+<net name="L_RX_DATA" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="AN8/RB8"/>
 <wire x1="33.02" y1="149.86" x2="30.48" y2="149.86" width="0.1524" layer="91"/>
@@ -9771,50 +9848,50 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <net name="GATE_UP" class="0">
 <segment>
 <pinref part="S2" gate="G$1" pin="COM_1"/>
-<wire x1="63.5" y1="101.6" x2="63.5" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="93.98" x2="63.5" y2="91.44" width="0.1524" layer="91"/>
-<junction x="63.5" y="93.98"/>
-<wire x1="63.5" y1="93.98" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
-<label x="68.58" y="93.98" size="1.4224" layer="95" ratio="6" xref="yes"/>
-<label x="68.58" y="93.98" size="1.4224" layer="95" ratio="6" xref="yes"/>
+<wire x1="60.96" y1="101.6" x2="60.96" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="93.98" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
+<junction x="60.96" y="93.98"/>
+<wire x1="60.96" y1="93.98" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
+<label x="66.04" y="93.98" size="1.4224" layer="95" ratio="6" xref="yes"/>
+<label x="66.04" y="93.98" size="1.4224" layer="95" ratio="6" xref="yes"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="EMUD2/OC2/IC2/INT2/RD1"/>
-<wire x1="33.02" y1="129.54" x2="30.48" y2="129.54" width="0.1524" layer="91"/>
-<label x="30.48" y="129.54" size="1.4224" layer="95" ratio="6" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="G$1" pin="SCK1/RF6"/>
+<wire x1="124.46" y1="132.08" x2="127" y2="132.08" width="0.1524" layer="91"/>
+<label x="127" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GATE_DOWN" class="0">
 <segment>
 <pinref part="S3" gate="G$1" pin="COM_1"/>
-<wire x1="33.02" y1="45.72" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="45.72" x2="30.48" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
-<label x="40.64" y="38.1" size="1.4224" layer="95" ratio="6" xref="yes"/>
+<wire x1="30.48" y1="45.72" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="45.72" x2="27.94" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="38.1" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
+<label x="38.1" y="38.1" size="1.4224" layer="95" ratio="6" xref="yes"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<junction x="30.48" y="38.1"/>
+<junction x="27.94" y="38.1"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="OC4/RD3"/>
-<wire x1="33.02" y1="127" x2="30.48" y2="127" width="0.1524" layer="91"/>
-<label x="30.48" y="127" size="1.4224" layer="95" ratio="6" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="G$1" pin="EMUC2/OC1/IC1/INT1/RD0"/>
+<wire x1="124.46" y1="129.54" x2="127" y2="129.54" width="0.1524" layer="91"/>
+<label x="127" y="129.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="AVAILABLE" class="0">
 <segment>
-<pinref part="S4" gate="G$1" pin="COM_1"/>
-<wire x1="71.12" y1="35.56" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="38.1" x2="71.12" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="38.1" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
-<junction x="71.12" y="38.1"/>
-<label x="76.2" y="38.1" size="1.4224" layer="95" ratio="6" xref="yes"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="IC1" gate="G$1" pin="OC3/RD2"/>
 <wire x1="124.46" y1="127" x2="127" y2="127" width="0.1524" layer="91"/>
 <label x="127" y="127" size="1.4224" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="S4" gate="G$1" pin="COM_1"/>
+<wire x1="68.58" y1="35.56" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="38.1" x2="68.58" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
+<junction x="68.58" y="38.1"/>
+<label x="73.66" y="38.1" size="1.4224" layer="95" ratio="6" xref="yes"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SONAR_SERIAL" class="0">
@@ -9838,20 +9915,6 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <pinref part="IC2" gate="G$1" pin="IN1+"/>
 </segment>
 </net>
-<net name="RX_UART" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="C1RX/RF0"/>
-<wire x1="124.46" y1="147.32" x2="127" y2="147.32" width="0.1524" layer="91"/>
-<label x="127" y="147.32" size="1.27" layer="95" ratio="7" xref="yes"/>
-</segment>
-</net>
-<net name="TX_UART" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="C1TX/RF1"/>
-<wire x1="124.46" y1="144.78" x2="127" y2="144.78" width="0.1524" layer="91"/>
-<label x="127" y="144.78" size="1.27" layer="95" ratio="7" xref="yes"/>
-</segment>
-</net>
 <net name="RESISTENCIA" class="0">
 <segment>
 <wire x1="127" y1="78.74" x2="121.92" y2="78.74" width="0.1524" layer="91"/>
@@ -9869,39 +9932,16 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <wire x1="198.12" y1="88.9" x2="198.12" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LED7" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="OSC2/CLKO/RC15"/>
-<wire x1="33.02" y1="139.7" x2="30.48" y2="139.7" width="0.1524" layer="91"/>
-<label x="30.48" y="139.7" size="1.4224" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="LED8" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="EMUD1/SOSCI/T2CK/U1ATX/CN1/RC13"/>
-<wire x1="33.02" y1="137.16" x2="30.48" y2="137.16" width="0.1524" layer="91"/>
-<label x="30.48" y="137.16" size="1.4224" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="LED9" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="EMUC1/SOSCO/T1CK/U1ARX/CN0/RC14"/>
-<wire x1="33.02" y1="134.62" x2="30.48" y2="134.62" width="0.1524" layer="91"/>
-<label x="30.48" y="134.62" size="1.4224" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="LED10" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="!FLTA!/INT0/RE8"/>
-<wire x1="33.02" y1="132.08" x2="30.48" y2="132.08" width="0.1524" layer="91"/>
-<label x="30.48" y="132.08" size="1.4224" layer="95" ratio="6" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="I2C_SDA" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PGC/EMUC/U1RX/SDI1/SDA/RF2"/>
 <wire x1="124.46" y1="137.16" x2="127" y2="137.16" width="0.1524" layer="91"/>
 <label x="127" y="137.16" size="1.4224" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="157.48" y1="160.02" x2="162.56" y2="160.02" width="0.1524" layer="91"/>
+<label x="162.56" y="160.02" size="1.4224" layer="95" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="PGC"/>
 </segment>
 </net>
 <net name="I2C_SCL" class="0">
@@ -9910,12 +9950,65 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <wire x1="124.46" y1="134.62" x2="127" y2="134.62" width="0.1524" layer="91"/>
 <label x="127" y="134.62" size="1.4224" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="157.48" y1="162.56" x2="162.56" y2="162.56" width="0.1524" layer="91"/>
+<label x="162.56" y="162.56" size="1.4224" layer="95" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="PGD"/>
+</segment>
 </net>
 <net name="TX_UART2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="U2TX/CN18/RF5"/>
 <wire x1="124.46" y1="139.7" x2="127" y2="139.7" width="0.1524" layer="91"/>
 <label x="127" y="139.7" size="1.4224" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="LED7" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="OSC2/CLKO/RC15"/>
+<wire x1="33.02" y1="139.7" x2="30.48" y2="139.7" width="0.1524" layer="91"/>
+<label x="30.48" y="139.7" size="1.4224" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="TX_UART" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="EMUD1/SOSCI/T2CK/U1ATX/CN1/RC13"/>
+<wire x1="33.02" y1="137.16" x2="30.48" y2="137.16" width="0.1524" layer="91"/>
+<label x="30.48" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="RX_UART" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="EMUC1/SOSCO/T1CK/U1ARX/CN0/RC14"/>
+<wire x1="33.02" y1="134.62" x2="30.48" y2="134.62" width="0.1524" layer="91"/>
+<label x="30.48" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LED8" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="!FLTA!/INT0/RE8"/>
+<wire x1="33.02" y1="132.08" x2="30.48" y2="132.08" width="0.1524" layer="91"/>
+<label x="30.48" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LED9" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="EMUD2/OC2/IC2/INT2/RD1"/>
+<wire x1="33.02" y1="129.54" x2="30.48" y2="129.54" width="0.1524" layer="91"/>
+<label x="30.48" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LED10" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="OC4/RD3"/>
+<wire x1="33.02" y1="127" x2="30.48" y2="127" width="0.1524" layer="91"/>
+<label x="30.48" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="S3" gate="G$1" pin="NO_1"/>
+<wire x1="30.48" y1="48.26" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -9930,25 +10023,25 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <attribute name="SHEET" x="233.68" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="165.1" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="J1" gate="G$1" x="198.12" y="53.34" smashed="yes" rot="R90">
-<attribute name="NAME" x="190.5" y="52.07" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="193.04" y="52.07" size="1.778" layer="96" rot="R90" align="center-left"/>
+<instance part="J1" gate="G$1" x="180.34" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="172.72" y="52.07" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="175.26" y="52.07" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
-<instance part="J2" gate="G$1" x="220.98" y="53.34" smashed="yes" rot="R90">
-<attribute name="NAME" x="213.36" y="49.53" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="215.9" y="49.53" size="1.778" layer="96" rot="R90" align="center-left"/>
+<instance part="J2" gate="G$1" x="203.2" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="195.58" y="49.53" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="198.12" y="49.53" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
-<instance part="J3" gate="G$1" x="241.3" y="53.34" smashed="yes" rot="R90">
-<attribute name="NAME" x="233.68" y="49.53" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="236.22" y="49.53" size="1.778" layer="96" rot="R90" align="center-left"/>
+<instance part="J3" gate="G$1" x="223.52" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="215.9" y="49.53" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="218.44" y="49.53" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
-<instance part="C2" gate="G$1" x="152.4" y="53.34" smashed="yes" rot="R90">
-<attribute name="NAME" x="146.05" y="62.23" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="148.59" y="62.23" size="1.778" layer="96" rot="R90" align="center-left"/>
+<instance part="C2" gate="G$1" x="144.78" y="55.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="138.43" y="64.77" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="140.97" y="64.77" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
-<instance part="C3" gate="G$1" x="162.56" y="53.34" smashed="yes" rot="R90">
-<attribute name="NAME" x="156.21" y="62.23" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="158.75" y="62.23" size="1.778" layer="96" rot="R90" align="center-left"/>
+<instance part="C3" gate="G$1" x="154.94" y="55.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="148.59" y="64.77" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="151.13" y="64.77" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
 <instance part="LED1" gate="G$1" x="38.1" y="132.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="29.21" y="144.78" size="1.778" layer="95" rot="R90"/>
@@ -9962,21 +10055,21 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <attribute name="NAME" x="95.25" y="144.78" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="97.79" y="144.78" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LED4" gate="G$1" x="137.16" y="132.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="128.27" y="144.78" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="130.81" y="144.78" size="1.778" layer="96" rot="R90"/>
+<instance part="LED4" gate="G$1" x="139.7" y="132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="130.81" y="144.78" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="133.35" y="144.78" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LED5" gate="G$1" x="165.1" y="132.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="156.21" y="144.78" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="158.75" y="144.78" size="1.778" layer="96" rot="R90"/>
+<instance part="LED5" gate="G$1" x="175.26" y="132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="166.37" y="144.78" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="168.91" y="144.78" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LED6" gate="G$1" x="193.04" y="132.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="184.15" y="142.24" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="186.69" y="142.24" size="1.778" layer="96" rot="R90"/>
+<instance part="LED6" gate="G$1" x="210.82" y="132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="201.93" y="142.24" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="204.47" y="142.24" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LED7" gate="G$1" x="228.6" y="132.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="219.71" y="144.78" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="222.25" y="144.78" size="1.778" layer="96" rot="R90"/>
+<instance part="LED7" gate="G$1" x="241.3" y="132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="232.41" y="144.78" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="234.95" y="144.78" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R6" gate="G$1" x="38.1" y="157.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="31.75" y="166.37" size="1.778" layer="95" rot="R90" align="center-left"/>
@@ -9990,21 +10083,21 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <attribute name="NAME" x="97.79" y="163.83" size="1.778" layer="95" rot="R90" align="center-left"/>
 <attribute name="VALUE" x="100.33" y="161.29" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
-<instance part="R9" gate="G$1" x="137.16" y="154.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="130.81" y="163.83" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="133.35" y="158.75" size="1.778" layer="96" rot="R90" align="center-left"/>
+<instance part="R9" gate="G$1" x="139.7" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="133.35" y="163.83" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="135.89" y="158.75" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
-<instance part="R10" gate="G$1" x="165.1" y="154.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="158.75" y="163.83" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="161.29" y="158.75" size="1.778" layer="96" rot="R90" align="center-left"/>
+<instance part="R10" gate="G$1" x="175.26" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="168.91" y="163.83" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="171.45" y="158.75" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
-<instance part="R11" gate="G$1" x="193.04" y="154.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="186.69" y="161.29" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="189.23" y="158.75" size="1.778" layer="96" rot="R90" align="center-left"/>
+<instance part="R11" gate="G$1" x="210.82" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="204.47" y="161.29" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="207.01" y="158.75" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
-<instance part="R12" gate="G$1" x="228.6" y="154.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="222.25" y="163.83" size="1.778" layer="95" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="224.79" y="161.29" size="1.778" layer="96" rot="R90" align="center-left"/>
+<instance part="R12" gate="G$1" x="241.3" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="234.95" y="163.83" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="237.49" y="161.29" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
 <instance part="T2" gate="G1" x="35.56" y="119.38" smashed="yes">
 <attribute name="NAME" x="25.4" y="127" size="1.778" layer="95"/>
@@ -10018,21 +10111,21 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <attribute name="NAME" x="91.44" y="127" size="1.778" layer="95"/>
 <attribute name="VALUE" x="91.44" y="124.46" size="1.778" layer="96"/>
 </instance>
-<instance part="T5" gate="G1" x="134.62" y="119.38" smashed="yes">
-<attribute name="NAME" x="124.46" y="127" size="1.778" layer="95"/>
-<attribute name="VALUE" x="124.46" y="124.46" size="1.778" layer="96"/>
+<instance part="T5" gate="G1" x="137.16" y="119.38" smashed="yes">
+<attribute name="NAME" x="127" y="127" size="1.778" layer="95"/>
+<attribute name="VALUE" x="127" y="124.46" size="1.778" layer="96"/>
 </instance>
-<instance part="T6" gate="G1" x="162.56" y="119.38" smashed="yes">
-<attribute name="NAME" x="152.4" y="127" size="1.778" layer="95"/>
-<attribute name="VALUE" x="152.4" y="124.46" size="1.778" layer="96"/>
+<instance part="T6" gate="G1" x="172.72" y="119.38" smashed="yes">
+<attribute name="NAME" x="162.56" y="127" size="1.778" layer="95"/>
+<attribute name="VALUE" x="162.56" y="124.46" size="1.778" layer="96"/>
 </instance>
-<instance part="T7" gate="G1" x="190.5" y="119.38" smashed="yes">
-<attribute name="NAME" x="180.34" y="127" size="1.778" layer="95"/>
-<attribute name="VALUE" x="180.34" y="124.46" size="1.778" layer="96"/>
+<instance part="T7" gate="G1" x="208.28" y="119.38" smashed="yes">
+<attribute name="NAME" x="198.12" y="127" size="1.778" layer="95"/>
+<attribute name="VALUE" x="198.12" y="124.46" size="1.778" layer="96"/>
 </instance>
-<instance part="T8" gate="G1" x="226.06" y="119.38" smashed="yes">
-<attribute name="NAME" x="215.9" y="127" size="1.778" layer="95"/>
-<attribute name="VALUE" x="215.9" y="124.46" size="1.778" layer="96"/>
+<instance part="T8" gate="G1" x="238.76" y="119.38" smashed="yes">
+<attribute name="NAME" x="228.6" y="127" size="1.778" layer="95"/>
+<attribute name="VALUE" x="228.6" y="124.46" size="1.778" layer="96"/>
 </instance>
 <instance part="LED8" gate="G$1" x="76.2" y="38.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="67.31" y="50.8" size="1.778" layer="95" rot="R90"/>
@@ -10076,27 +10169,22 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="A1"/>
-<wire x1="198.12" y1="53.34" x2="198.12" y2="45.72" width="0.1524" layer="91"/>
-<label x="198.12" y="45.72" size="1.4224" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="53.34" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="50.8" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="55.88" x2="144.78" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="53.34" x2="154.94" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="53.34" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
-<label x="152.4" y="50.8" size="1.4224" layer="95" rot="R180" xref="yes"/>
+<wire x1="154.94" y1="55.88" x2="154.94" y2="53.34" width="0.1524" layer="91"/>
+<label x="144.78" y="53.34" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="111.76" x2="228.6" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="114.3" x2="193.04" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="114.3" x2="228.6" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="111.76" x2="165.1" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="111.76" x2="165.1" y2="114.3" width="0.1524" layer="91"/>
-<junction x="193.04" y="111.76"/>
-<wire x1="137.16" y1="114.3" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="111.76" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="111.76" x2="241.3" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="114.3" x2="210.82" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="114.3" x2="241.3" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="111.76" x2="175.26" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="111.76" x2="175.26" y2="114.3" width="0.1524" layer="91"/>
+<junction x="210.82" y="111.76"/>
+<wire x1="139.7" y1="114.3" x2="139.7" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="111.76" x2="139.7" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="114.3" x2="104.14" y2="111.76" width="0.1524" layer="91"/>
 <junction x="104.14" y="111.76"/>
 <wire x1="68.58" y1="111.76" x2="104.14" y2="111.76" width="0.1524" layer="91"/>
@@ -10104,9 +10192,9 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <junction x="68.58" y="111.76"/>
 <wire x1="38.1" y1="114.3" x2="38.1" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="111.76" x2="68.58" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="111.76" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
-<junction x="165.1" y="111.76"/>
-<junction x="137.16" y="111.76"/>
+<wire x1="175.26" y1="111.76" x2="139.7" y2="111.76" width="0.1524" layer="91"/>
+<junction x="175.26" y="111.76"/>
+<junction x="139.7" y="111.76"/>
 <label x="27.94" y="111.76" size="1.778" layer="95" rot="R180" xref="yes"/>
 <wire x1="38.1" y1="111.76" x2="27.94" y2="111.76" width="0.1524" layer="91"/>
 <junction x="38.1" y="111.76"/>
@@ -10118,22 +10206,41 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <pinref part="T7" gate="G1" pin="E"/>
 <pinref part="T8" gate="G1" pin="E"/>
 </segment>
+<segment>
+<wire x1="58.42" y1="17.78" x2="76.2" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="20.32" x2="76.2" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="T9" gate="G1" pin="E"/>
+<label x="58.42" y="17.78" size="1.4224" layer="95" rot="R180" xref="yes"/>
+<pinref part="T10" gate="G1" pin="E"/>
+<wire x1="101.6" y1="20.32" x2="101.6" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="17.78" x2="76.2" y2="17.78" width="0.1524" layer="91"/>
+<junction x="76.2" y="17.78"/>
+<pinref part="T11" gate="G1" pin="E"/>
+<wire x1="124.46" y1="20.32" x2="124.46" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="17.78" x2="101.6" y2="17.78" width="0.1524" layer="91"/>
+<junction x="101.6" y="17.78"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="A1"/>
+<wire x1="223.52" y1="53.34" x2="223.52" y2="43.18" width="0.1524" layer="91"/>
+<label x="223.52" y="43.18" size="1.4224" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="V5" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="B1"/>
-<wire x1="198.12" y1="76.2" x2="198.12" y2="83.82" width="0.1524" layer="91"/>
-<label x="198.12" y="83.82" size="1.4224" layer="95" rot="R180" xref="yes"/>
+<wire x1="180.34" y1="76.2" x2="180.34" y2="83.82" width="0.1524" layer="91"/>
+<label x="180.34" y="83.82" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="152.4" y1="66.04" x2="152.4" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="73.66" x2="162.56" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="68.58" x2="144.78" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="76.2" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="73.66" x2="162.56" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="73.66" x2="172.72" y2="73.66" width="0.1524" layer="91"/>
-<junction x="162.56" y="73.66"/>
-<label x="172.72" y="73.66" size="1.4224" layer="95" xref="yes"/>
+<wire x1="154.94" y1="76.2" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="76.2" x2="157.48" y2="76.2" width="0.1524" layer="91"/>
+<junction x="154.94" y="76.2"/>
+<label x="157.48" y="76.2" size="1.4224" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="27.94" y1="180.34" x2="38.1" y2="180.34" width="0.1524" layer="91"/>
@@ -10141,10 +10248,10 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="180.34" x2="68.58" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="180.34" x2="104.14" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="180.34" x2="137.16" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="180.34" x2="165.1" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="180.34" x2="193.04" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="180.34" x2="228.6" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="180.34" x2="139.7" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="180.34" x2="175.26" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="180.34" x2="210.82" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="180.34" x2="241.3" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="175.26" x2="38.1" y2="180.34" width="0.1524" layer="91"/>
 <junction x="38.1" y="180.34"/>
 <pinref part="R7" gate="G$1" pin="2"/>
@@ -10154,16 +10261,16 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <wire x1="104.14" y1="172.72" x2="104.14" y2="180.34" width="0.1524" layer="91"/>
 <junction x="104.14" y="180.34"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="137.16" y1="172.72" x2="137.16" y2="180.34" width="0.1524" layer="91"/>
-<junction x="137.16" y="180.34"/>
+<wire x1="139.7" y1="172.72" x2="139.7" y2="180.34" width="0.1524" layer="91"/>
+<junction x="139.7" y="180.34"/>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="172.72" x2="165.1" y2="180.34" width="0.1524" layer="91"/>
-<junction x="165.1" y="180.34"/>
+<wire x1="175.26" y1="172.72" x2="175.26" y2="180.34" width="0.1524" layer="91"/>
+<junction x="175.26" y="180.34"/>
 <pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="172.72" x2="193.04" y2="180.34" width="0.1524" layer="91"/>
-<junction x="193.04" y="180.34"/>
+<wire x1="210.82" y1="172.72" x2="210.82" y2="180.34" width="0.1524" layer="91"/>
+<junction x="210.82" y="180.34"/>
 <pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="228.6" y1="172.72" x2="228.6" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="172.72" x2="241.3" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="63.5" y1="91.44" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
@@ -10180,52 +10287,30 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <junction x="101.6" y="91.44"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="A1"/>
-<wire x1="220.98" y1="53.34" x2="220.98" y2="48.26" width="0.1524" layer="91"/>
-<label x="220.98" y="48.26" size="1.4224" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="A2"/>
+<wire x1="205.74" y1="53.34" x2="205.74" y2="45.72" width="0.1524" layer="91"/>
+<label x="205.74" y="45.72" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SONAR_SERIAL" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="A2"/>
-<wire x1="200.66" y1="53.34" x2="200.66" y2="43.18" width="0.1524" layer="91"/>
-<label x="200.66" y="43.18" size="1.4224" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
-<net name="SONAR_ADC" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="A2"/>
-<wire x1="223.52" y1="53.34" x2="223.52" y2="45.72" width="0.1524" layer="91"/>
-<label x="223.52" y="45.72" size="1.4224" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="FAN1" class="0">
-<segment>
 <pinref part="J2" gate="G$1" pin="B1"/>
-<wire x1="220.98" y1="76.2" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
-<label x="220.98" y="83.82" size="1.4224" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="POT_LINEAR" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="A1"/>
-<wire x1="241.3" y1="53.34" x2="241.3" y2="43.18" width="0.1524" layer="91"/>
-<label x="241.3" y="43.18" size="1.4224" layer="95" rot="R180" xref="yes"/>
+<wire x1="203.2" y1="76.2" x2="203.2" y2="83.82" width="0.1524" layer="91"/>
+<label x="203.2" y="83.82" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="I2C_SDA" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="B1"/>
-<wire x1="241.3" y1="76.2" x2="241.3" y2="81.28" width="0.1524" layer="91"/>
-<label x="241.3" y="81.28" size="1.4224" layer="95" rot="R180" xref="yes"/>
+<wire x1="223.52" y1="76.2" x2="223.52" y2="81.28" width="0.1524" layer="91"/>
+<label x="223.52" y="81.28" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="I2C_SCL" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="A2"/>
-<wire x1="243.84" y1="53.34" x2="243.84" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="38.1" x2="243.84" y2="40.64" width="0.1524" layer="91"/>
-<label x="243.84" y="38.1" size="1.4224" layer="95" rot="R180" xref="yes"/>
+<wire x1="226.06" y1="53.34" x2="226.06" y2="38.1" width="0.1524" layer="91"/>
+<label x="226.06" y="38.1" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -10252,36 +10337,29 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <net name="N$8" class="0">
 <segment>
 <pinref part="LED4" gate="G$1" pin="K"/>
-<wire x1="137.16" y1="132.08" x2="137.16" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="132.08" x2="139.7" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="T5" gate="G1" pin="C"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="LED5" gate="G$1" pin="K"/>
-<wire x1="165.1" y1="132.08" x2="165.1" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="132.08" x2="175.26" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="T6" gate="G1" pin="C"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="LED6" gate="G$1" pin="K"/>
-<wire x1="193.04" y1="132.08" x2="193.04" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="132.08" x2="210.82" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="T7" gate="G1" pin="C"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="LED7" gate="G$1" pin="K"/>
-<wire x1="228.6" y1="132.08" x2="228.6" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="132.08" x2="241.3" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="T8" gate="G1" pin="C"/>
-</segment>
-</net>
-<net name="POWER_ERROR" class="0">
-<segment>
-<wire x1="33.02" y1="119.38" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
-<label x="30.48" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="T2" gate="G1" pin="B"/>
 </segment>
 </net>
 <net name="L_GATEUP" class="0">
@@ -10298,31 +10376,10 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <pinref part="T4" gate="G1" pin="B"/>
 </segment>
 </net>
-<net name="SONAR_DATA" class="0">
-<segment>
-<wire x1="132.08" y1="119.38" x2="129.54" y2="119.38" width="0.1524" layer="91"/>
-<label x="129.54" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="T5" gate="G1" pin="B"/>
-</segment>
-</net>
-<net name="TX_DATA" class="0">
-<segment>
-<wire x1="160.02" y1="119.38" x2="157.48" y2="119.38" width="0.1524" layer="91"/>
-<label x="157.48" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="T6" gate="G1" pin="B"/>
-</segment>
-</net>
-<net name="RX_DATA" class="0">
-<segment>
-<wire x1="187.96" y1="119.38" x2="185.42" y2="119.38" width="0.1524" layer="91"/>
-<label x="185.42" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="T7" gate="G1" pin="B"/>
-</segment>
-</net>
 <net name="LED7" class="0">
 <segment>
-<wire x1="223.52" y1="119.38" x2="220.98" y2="119.38" width="0.1524" layer="91"/>
-<label x="220.98" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="236.22" y1="119.38" x2="233.68" y2="119.38" width="0.1524" layer="91"/>
+<label x="233.68" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="T8" gate="G1" pin="B"/>
 </segment>
 </net>
@@ -10351,28 +10408,28 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <segment>
 <pinref part="LED4" gate="G$1" pin="A"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="147.32" x2="137.16" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="147.32" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="LED5" gate="G$1" pin="A"/>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="147.32" x2="165.1" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="147.32" x2="175.26" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="LED6" gate="G$1" pin="A"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="147.32" x2="193.04" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="147.32" x2="210.82" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="LED7" gate="G$1" pin="A"/>
-<wire x1="228.6" y1="154.94" x2="228.6" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="154.94" x2="241.3" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -10387,22 +10444,6 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <pinref part="LED9" gate="G$1" pin="K"/>
 <wire x1="101.6" y1="38.1" x2="101.6" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="T10" gate="G1" pin="C"/>
-</segment>
-</net>
-<net name="GND1" class="0">
-<segment>
-<wire x1="58.42" y1="17.78" x2="76.2" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="20.32" x2="76.2" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="T9" gate="G1" pin="E"/>
-<label x="58.42" y="17.78" size="1.4224" layer="95" rot="R180" xref="yes"/>
-<pinref part="T10" gate="G1" pin="E"/>
-<wire x1="101.6" y1="20.32" x2="101.6" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="17.78" x2="76.2" y2="17.78" width="0.1524" layer="91"/>
-<junction x="76.2" y="17.78"/>
-<pinref part="T11" gate="G1" pin="E"/>
-<wire x1="124.46" y1="20.32" x2="124.46" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="17.78" x2="101.6" y2="17.78" width="0.1524" layer="91"/>
-<junction x="101.6" y="17.78"/>
 </segment>
 </net>
 <net name="LED8" class="0">
@@ -10452,6 +10493,55 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/109/Dialight_CBI_data_599-
 <wire x1="119.38" y1="25.4" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
 <label x="116.84" y="25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="T11" gate="G1" pin="B"/>
+</segment>
+</net>
+<net name="L_POWER_ERROR" class="0">
+<segment>
+<wire x1="33.02" y1="119.38" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
+<label x="30.48" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="T2" gate="G1" pin="B"/>
+</segment>
+</net>
+<net name="L_SONAR_DATA" class="0">
+<segment>
+<wire x1="134.62" y1="119.38" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
+<label x="132.08" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="T5" gate="G1" pin="B"/>
+</segment>
+</net>
+<net name="L_TX_DATA" class="0">
+<segment>
+<wire x1="170.18" y1="119.38" x2="167.64" y2="119.38" width="0.1524" layer="91"/>
+<label x="167.64" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="T6" gate="G1" pin="B"/>
+</segment>
+</net>
+<net name="L_RX_DATA" class="0">
+<segment>
+<wire x1="205.74" y1="119.38" x2="203.2" y2="119.38" width="0.1524" layer="91"/>
+<label x="203.2" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="T7" gate="G1" pin="B"/>
+</segment>
+</net>
+<net name="SONAR_ADC" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="A1"/>
+<wire x1="203.2" y1="53.34" x2="203.2" y2="48.26" width="0.1524" layer="91"/>
+<label x="203.2" y="48.26" size="1.4224" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="POT_LINEAR" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="A2"/>
+<wire x1="182.88" y1="53.34" x2="182.88" y2="43.18" width="0.1524" layer="91"/>
+<label x="182.88" y="43.18" size="1.4224" layer="95" rot="MR0" xref="yes"/>
+</segment>
+</net>
+<net name="FAN1" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="A1"/>
+<wire x1="180.34" y1="53.34" x2="180.34" y2="45.72" width="0.1524" layer="91"/>
+<label x="180.34" y="45.72" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
