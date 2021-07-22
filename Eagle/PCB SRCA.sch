@@ -9457,6 +9457,14 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/ERA-6VEB1002V
 <part name="R4" library="RC0805FR-071KL" deviceset="RC0805FR-071KL" device=""/>
 <part name="R5" library="RC0805FR-071KL" deviceset="RC0805FR-071KL" device=""/>
 <part name="R2" library="ERA-6VEB1002V" deviceset="ERA-6VEB1002V" device=""/>
+<part name="T12" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" deviceset="2N3904" device="" package3d_urn="urn:adsk.eagle:package:28725/2"/>
+<part name="T13" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" deviceset="2N3904" device="" package3d_urn="urn:adsk.eagle:package:28725/2"/>
+<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2"/>
+<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2"/>
+<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2"/>
+<part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2"/>
+<part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2"/>
+<part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -10560,6 +10568,38 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/ERA-6VEB1002V
 <attribute name="NAME" x="22.86" y="180.594" size="1.778" layer="95"/>
 <attribute name="VALUE" x="22.86" y="124.46" size="1.778" layer="96"/>
 </instance>
+<instance part="T12" gate="G1" x="114.3" y="149.86" smashed="yes">
+<attribute name="NAME" x="104.14" y="157.48" size="1.778" layer="95"/>
+<attribute name="VALUE" x="104.14" y="154.94" size="1.778" layer="96"/>
+</instance>
+<instance part="T13" gate="G1" x="137.16" y="157.48" smashed="yes">
+<attribute name="NAME" x="127" y="162.56" size="1.778" layer="95"/>
+<attribute name="VALUE" x="127" y="160.02" size="1.778" layer="96"/>
+</instance>
+<instance part="R17" gate="G$1" x="116.84" y="165.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="115.3414" y="161.29" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="120.142" y="161.29" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R19" gate="G$1" x="139.7" y="170.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="138.2014" y="166.37" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="143.002" y="166.37" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R20" gate="G$1" x="127" y="157.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="130.81" y="155.9814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="130.81" y="160.782" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R21" gate="G$1" x="104.14" y="149.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="107.95" y="148.3614" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="107.95" y="153.162" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R22" gate="G$1" x="124.46" y="137.16" smashed="yes">
+<attribute name="NAME" x="120.65" y="138.6586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="120.65" y="133.858" size="1.778" layer="96"/>
+</instance>
+<instance part="R23" gate="G$1" x="116.84" y="129.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="115.3414" y="125.73" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="120.142" y="125.73" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10570,12 +10610,35 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/ERA-6VEB1002V
 <label x="15.24" y="132.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="IC4" gate="G$1" pin="V5"/>
 </segment>
+<segment>
+<pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="175.26" x2="116.84" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="175.26" x2="116.84" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="175.26" x2="114.3" y2="175.26" width="0.1524" layer="91"/>
+<junction x="116.84" y="175.26"/>
+<label x="114.3" y="175.26" size="1.4224" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <wire x1="17.78" y1="137.16" x2="15.24" y2="137.16" width="0.1524" layer="91"/>
 <label x="15.24" y="137.16" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="IC4" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="T12" gate="G1" pin="E"/>
+<pinref part="T13" gate="G1" pin="E"/>
+<wire x1="116.84" y1="144.78" x2="139.7" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="144.78" x2="139.7" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="144.78" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
+<junction x="116.84" y="144.78"/>
+<label x="111.76" y="144.78" size="1.4224" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="124.46" x2="111.76" y2="124.46" width="0.1524" layer="91"/>
+<label x="111.76" y="124.46" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TX_LORA" class="0">
@@ -10584,12 +10647,67 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/ERA-6VEB1002V
 <label x="66.04" y="165.1" size="1.4224" layer="95" xref="yes"/>
 <pinref part="IC4" gate="G$1" pin="UARTRX"/>
 </segment>
+<segment>
+<pinref part="R21" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="149.86" x2="93.98" y2="149.86" width="0.1524" layer="91"/>
+<label x="93.98" y="149.86" size="1.4224" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="RX_LORA" class="0">
 <segment>
 <wire x1="58.42" y1="162.56" x2="66.04" y2="162.56" width="0.1524" layer="91"/>
 <label x="66.04" y="162.56" size="1.4224" layer="95" xref="yes"/>
 <pinref part="IC4" gate="G$1" pin="UARTTX"/>
+</segment>
+<segment>
+<pinref part="R22" gate="G$1" pin="1"/>
+<pinref part="R23" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="137.16" x2="116.84" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="137.16" x2="116.84" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="137.16" x2="111.76" y2="137.16" width="0.1524" layer="91"/>
+<junction x="116.84" y="137.16"/>
+<label x="111.76" y="137.16" size="1.4224" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="T12" gate="G1" pin="C"/>
+<wire x1="116.84" y1="160.02" x2="116.84" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="116.84" y1="157.48" x2="116.84" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="157.48" x2="116.84" y2="157.48" width="0.1524" layer="91"/>
+<junction x="116.84" y="157.48"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="T12" gate="G1" pin="B"/>
+<wire x1="109.22" y1="149.86" x2="111.76" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="R20" gate="G$1" pin="1"/>
+<pinref part="T13" gate="G1" pin="B"/>
+<wire x1="132.08" y1="157.48" x2="134.62" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RX_UART" class="0">
+<segment>
+<pinref part="T13" gate="G1" pin="C"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="165.1" x2="139.7" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="162.56" x2="144.78" y2="162.56" width="0.1524" layer="91"/>
+<label x="144.78" y="162.56" size="1.4224" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="TX_UART" class="0">
+<segment>
+<pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="137.16" x2="134.62" y2="137.16" width="0.1524" layer="91"/>
+<label x="134.62" y="137.16" size="1.4224" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
