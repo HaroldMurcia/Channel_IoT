@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10306,6 +10306,13 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <text x="165.1" y="127" size="2.1844" layer="91">resistencia pull up I2C</text>
 <text x="190.5" y="81.28" size="2.1844" layer="91">RTC</text>
 <text x="68.58" y="180.34" size="2.1844" layer="91">DSPIC</text>
+<text x="194" y="154" size="1.9304" layer="96" rot="R90">1k</text>
+<text x="13" y="32" size="1.9304" layer="96" rot="R90">1k</text>
+<text x="54" y="30" size="1.9304" layer="96" rot="R90">1k</text>
+<text x="61" y="78" size="1.9304" layer="96" rot="R90">1k</text>
+<text x="37" y="95" size="1.9304" layer="96" rot="R90">10k</text>
+<text x="160" y="45" size="1.9304" layer="96">1k</text>
+<text x="157" y="59" size="1.9304" layer="96" rot="R90">1k</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -10602,6 +10609,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <wire x1="101.6" y1="27.94" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <pinref part="IC3" gate="G$1" pin="GND_1"/>
+<pinref part="IC3" gate="G$1" pin="GND_2"/>
+<wire x1="101.6" y1="25.4" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="25.4" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
+<junction x="99.06" y="27.94"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -10950,11 +10961,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <junction x="175.26" y="121.92"/>
 </segment>
 <segment>
-<wire x1="132.08" y1="27.94" x2="134.62" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="P+14" gate="1" pin="V+"/>
-<pinref part="IC3" gate="G$1" pin="VDD_1"/>
-</segment>
-<segment>
 <pinref part="P+19" gate="1" pin="V+"/>
 <pinref part="R27" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="68.58" x2="152.4" y2="66.04" width="0.1524" layer="91"/>
@@ -10963,6 +10969,15 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <pinref part="JP5" gate="A" pin="5"/>
 <wire x1="185.42" y1="76.2" x2="175.26" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="V+"/>
+</segment>
+<segment>
+<pinref part="P+14" gate="1" pin="V+"/>
+<pinref part="IC3" gate="G$1" pin="VDD_1"/>
+<wire x1="134.62" y1="27.94" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="VDD_2"/>
+<wire x1="132.08" y1="25.4" x2="134.62" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="25.4" x2="134.62" y2="27.94" width="0.1524" layer="91"/>
+<junction x="134.62" y="27.94"/>
 </segment>
 </net>
 <net name="SONAR_ADC1" class="0">
