@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9053,196 +9053,6 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="ICSP">
-<packages>
-<package name="ICSP">
-<pad name="MCLR" x="2.54" y="7.62" drill="1.03" shape="square"/>
-<pad name="VDD" x="2.54" y="5.08" drill="1.03"/>
-<pad name="VSS" x="2.54" y="2.54" drill="1.03"/>
-<pad name="PGD" x="2.54" y="0" drill="1.03"/>
-<pad name="PGC" x="2.54" y="-2.54" drill="1.03"/>
-<pad name="N/C" x="2.54" y="-5.08" drill="1.03"/>
-<wire x1="1.27" y1="8.89" x2="1.27" y2="-6.35" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-6.35" x2="3.81" y2="-6.35" width="0.127" layer="21"/>
-<wire x1="3.81" y1="-6.35" x2="3.81" y2="8.89" width="0.127" layer="21"/>
-<wire x1="3.81" y1="8.89" x2="1.27" y2="8.89" width="0.127" layer="21"/>
-<text x="5.08" y="7.02" size="1.27" layer="21">MCLR</text>
-<text x="5.08" y="4.48" size="1.27" layer="21">VDD</text>
-<text x="5.08" y="1.94" size="1.27" layer="21">VSS</text>
-<text x="5.08" y="-0.6" size="1.27" layer="21">PGD</text>
-<text x="5.08" y="-3.14" size="1.27" layer="21">PGC</text>
-<text x="5.08" y="-5.68" size="1.27" layer="21">N/C</text>
-</package>
-</packages>
-<symbols>
-<symbol name="ICSP">
-<pin name="MCLR" x="5.08" y="7.62" length="middle" rot="R180"/>
-<pin name="VDD" x="5.08" y="5.08" length="middle" rot="R180"/>
-<pin name="VSS" x="5.08" y="2.54" length="middle" rot="R180"/>
-<pin name="PGD" x="5.08" y="0" length="middle" rot="R180"/>
-<pin name="PGC" x="5.08" y="-2.54" length="middle" rot="R180"/>
-<pin name="N/C" x="5.08" y="-5.08" length="middle" rot="R180"/>
-<wire x1="-9" y1="9" x2="-9" y2="-7" width="0.254" layer="94"/>
-<wire x1="-9" y1="-7" x2="0" y2="-7" width="0.254" layer="94"/>
-<wire x1="0" y1="-7" x2="0" y2="9" width="0.254" layer="94"/>
-<wire x1="-9" y1="9" x2="0" y2="9" width="0.254" layer="94"/>
-<text x="-9" y="10" size="1.778" layer="95">&gt;Name</text>
-<text x="-9" y="12" size="1.778" layer="96">&gt;Value</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ICSP" prefix="J">
-<gates>
-<gate name="G$1" symbol="ICSP" x="-7.62" y="0"/>
-</gates>
-<devices>
-<device name="" package="ICSP">
-<connects>
-<connect gate="G$1" pin="MCLR" pad="MCLR"/>
-<connect gate="G$1" pin="N/C" pad="N/C"/>
-<connect gate="G$1" pin="PGC" pad="PGC"/>
-<connect gate="G$1" pin="PGD" pad="PGD"/>
-<connect gate="G$1" pin="VDD" pad="VDD"/>
-<connect gate="G$1" pin="VSS" pad="VSS"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="LORA_MOTE">
-<packages>
-<package name="LORA_MOTE_RN2903">
-<pad name="MCLR" x="-21" y="29" drill="1.03" shape="square"/>
-<pad name="GPIO10" x="20" y="29" drill="1.03" shape="square"/>
-<pad name="GPIO0" x="-20.97" y="26.57" drill="1.03"/>
-<pad name="GPIO1" x="-20.97" y="24.03" drill="1.03"/>
-<pad name="GPIO2" x="-20.97" y="21.49" drill="1.03"/>
-<pad name="GPIO3" x="-20.97" y="18.95" drill="1.03"/>
-<pad name="GPIO4" x="-20.97" y="16.41" drill="1.03"/>
-<pad name="GPIO5" x="-20.97" y="13.87" drill="1.03"/>
-<pad name="GPIO6" x="-20.97" y="11.33" drill="1.03"/>
-<pad name="GPIO7" x="-20.97" y="8.79" drill="1.03"/>
-<pad name="GPIO8" x="-20.97" y="6.25" drill="1.03"/>
-<pad name="GPIO9" x="-20.97" y="3.71" drill="1.03"/>
-<pad name="GND0" x="-20.97" y="1.17" drill="1.03"/>
-<pad name="GPIO11" x="20.03" y="26.57" drill="1.03"/>
-<pad name="GPIO12" x="20.03" y="24.03" drill="1.03"/>
-<pad name="GPIO13" x="20.03" y="21.49" drill="1.03"/>
-<pad name="UARTRX" x="20.03" y="18.95" drill="1.03"/>
-<pad name="UARTTX" x="20.03" y="16.41" drill="1.03"/>
-<pad name="RESRV." x="20.03" y="13.87" drill="1.03"/>
-<pad name="RESRV" x="20.03" y="11.33" drill="1.03"/>
-<pad name="CTS" x="20.03" y="8.79" drill="1.03"/>
-<pad name="RTS" x="20.03" y="6.25" drill="1.03"/>
-<pad name="V3.3" x="20.03" y="3.71" drill="1.03"/>
-<pad name="GND1" x="20.03" y="1.17" drill="1.03"/>
-<wire x1="-29" y1="40" x2="28" y2="40" width="0.127" layer="21"/>
-<wire x1="28" y1="40" x2="28" y2="-54" width="0.127" layer="21"/>
-<wire x1="-29" y1="40" x2="-29" y2="-54" width="0.127" layer="21"/>
-<wire x1="-29" y1="-54" x2="28" y2="-54" width="0.127" layer="21"/>
-<pad name="V5" x="-24" y="-43" drill="1.03"/>
-<pad name="GND" x="-24" y="-37" drill="1.03"/>
-<wire x1="-23.27" y1="31.27" x2="-18.73" y2="31.27" width="0.127" layer="21"/>
-<wire x1="-18.73" y1="31.27" x2="-18.73" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-18.73" y1="-1.27" x2="-23.27" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-23.27" y1="-1.27" x2="-23.27" y2="31.27" width="0.127" layer="21"/>
-<wire x1="17.73" y1="31.27" x2="22.27" y2="31.27" width="0.127" layer="21"/>
-<wire x1="22.27" y1="31.27" x2="22.27" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="22.27" y1="-1.27" x2="17.73" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="17.73" y1="-1.27" x2="17.73" y2="31.27" width="0.127" layer="21"/>
-<text x="-6" y="15" size="1.778" layer="21" ratio="7">RN2903A</text>
-<text x="-8" y="11" size="1.778" layer="21" ratio="7">LORA MOTE</text>
-<wire x1="-25" y1="-36" x2="-25" y2="-45" width="0.127" layer="21"/>
-<wire x1="-25" y1="-45" x2="-23" y2="-45" width="0.127" layer="21"/>
-<wire x1="-23" y1="-45" x2="-23" y2="-36" width="0.127" layer="21"/>
-<wire x1="-23" y1="-36" x2="-25" y2="-36" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="LORA_MOTE">
-<pin name="MCLR" x="-20.32" y="40.64" length="middle"/>
-<pin name="GPIO0" x="-20.32" y="38.1" length="middle"/>
-<pin name="GPIO1" x="-20.32" y="35.56" length="middle"/>
-<pin name="GPIO2" x="-20.32" y="33.02" length="middle"/>
-<pin name="GPIO3" x="-20.32" y="30.48" length="middle"/>
-<pin name="GPIO4" x="-20.32" y="27.94" length="middle"/>
-<pin name="GPIO5" x="-20.32" y="25.4" length="middle"/>
-<pin name="GPIO6" x="-20.32" y="22.86" length="middle"/>
-<pin name="GPIO7" x="-20.32" y="20.32" length="middle"/>
-<pin name="GPIO8" x="-20.32" y="17.78" length="middle"/>
-<pin name="GPIO9" x="-20.32" y="15.24" length="middle"/>
-<pin name="GND0" x="-20.32" y="12.7" length="middle"/>
-<pin name="GND1" x="20.32" y="12.7" length="middle" rot="R180"/>
-<pin name="V3.3" x="20.32" y="15.24" length="middle" rot="R180"/>
-<pin name="RTS" x="20.32" y="17.78" length="middle" rot="R180"/>
-<pin name="CTS" x="20.32" y="20.32" length="middle" rot="R180"/>
-<pin name="RESRV" x="20.32" y="22.86" length="middle" rot="R180"/>
-<pin name="RESRV." x="20.32" y="25.4" length="middle" rot="R180"/>
-<pin name="UARTTX" x="20.32" y="27.94" length="middle" rot="R180"/>
-<pin name="UARTRX" x="20.32" y="30.48" length="middle" rot="R180"/>
-<pin name="GPIO13" x="20.32" y="33.02" length="middle" rot="R180"/>
-<pin name="GPIO12" x="20.32" y="35.56" length="middle" rot="R180"/>
-<pin name="GPIO11" x="20.32" y="38.1" length="middle" rot="R180"/>
-<pin name="GPIO10" x="20.32" y="40.64" length="middle" rot="R180"/>
-<wire x1="-15.24" y1="45.72" x2="15.24" y2="45.72" width="0.254" layer="94"/>
-<wire x1="15.24" y1="45.72" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-7.62" x2="-15.24" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-7.62" x2="-15.24" y2="45.72" width="0.254" layer="94"/>
-<text x="-15.24" y="48.514" size="1.778" layer="95">&gt;NAME</text>
-<text x="-15.24" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="V5" x="-20.32" y="-2.54" length="middle"/>
-<pin name="GND" x="-20.32" y="2.54" length="middle"/>
-<text x="-5.08" y="27.94" size="1.6764" layer="94">RN2903A</text>
-<text x="-7.62" y="7.62" size="1.6764" layer="94" ratio="7">LORA MOTE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LORA_MOTE" prefix="IC">
-<gates>
-<gate name="G$1" symbol="LORA_MOTE" x="0" y="-40.64"/>
-</gates>
-<devices>
-<device name="" package="LORA_MOTE_RN2903">
-<connects>
-<connect gate="G$1" pin="CTS" pad="CTS"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND0" pad="GND0"/>
-<connect gate="G$1" pin="GND1" pad="GND1"/>
-<connect gate="G$1" pin="GPIO0" pad="GPIO0"/>
-<connect gate="G$1" pin="GPIO1" pad="GPIO1"/>
-<connect gate="G$1" pin="GPIO10" pad="GPIO10"/>
-<connect gate="G$1" pin="GPIO11" pad="GPIO11"/>
-<connect gate="G$1" pin="GPIO12" pad="GPIO12"/>
-<connect gate="G$1" pin="GPIO13" pad="GPIO13"/>
-<connect gate="G$1" pin="GPIO2" pad="GPIO2"/>
-<connect gate="G$1" pin="GPIO3" pad="GPIO3"/>
-<connect gate="G$1" pin="GPIO4" pad="GPIO4"/>
-<connect gate="G$1" pin="GPIO5" pad="GPIO5"/>
-<connect gate="G$1" pin="GPIO6" pad="GPIO6"/>
-<connect gate="G$1" pin="GPIO7" pad="GPIO7"/>
-<connect gate="G$1" pin="GPIO8" pad="GPIO8"/>
-<connect gate="G$1" pin="GPIO9" pad="GPIO9"/>
-<connect gate="G$1" pin="MCLR" pad="MCLR"/>
-<connect gate="G$1" pin="RESRV" pad="RESRV"/>
-<connect gate="G$1" pin="RESRV." pad="RESRV."/>
-<connect gate="G$1" pin="RTS" pad="RTS"/>
-<connect gate="G$1" pin="UARTRX" pad="UARTRX"/>
-<connect gate="G$1" pin="UARTTX" pad="UARTTX"/>
-<connect gate="G$1" pin="V3.3" pad="V3.3"/>
-<connect gate="G$1" pin="V5" pad="V5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="jumper" urn="urn:adsk.eagle:library:252">
 <description>&lt;b&gt;Jumpers&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -10159,6 +9969,167 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 </deviceset>
 </devicesets>
 </library>
+<library name="LORA_MOTE">
+<packages>
+<package name="LORA_MOTE_RN2903">
+<wire x1="-29" y1="41" x2="28" y2="41" width="0.127" layer="21"/>
+<wire x1="28" y1="41" x2="28" y2="-54" width="0.127" layer="21"/>
+<wire x1="-29" y1="41" x2="-29" y2="-54" width="0.127" layer="21"/>
+<wire x1="-29" y1="-54" x2="28" y2="-54" width="0.127" layer="21"/>
+<pad name="V5" x="-25.5" y="-43" drill="1.03" shape="long"/>
+<pad name="GND" x="-25.5" y="-37" drill="1.03" shape="long"/>
+<wire x1="-23.27" y1="31.27" x2="-18.73" y2="31.27" width="0.127" layer="21"/>
+<wire x1="-18.73" y1="31.27" x2="-18.73" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-18.73" y1="-1.27" x2="-23.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-23.27" y1="-1.27" x2="-23.27" y2="31.27" width="0.127" layer="21"/>
+<wire x1="17.73" y1="31.27" x2="22.27" y2="31.27" width="0.127" layer="21"/>
+<wire x1="22.27" y1="31.27" x2="22.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="22.27" y1="-1.27" x2="17.73" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="17.73" y1="-1.27" x2="17.73" y2="31.27" width="0.127" layer="21"/>
+<text x="-6" y="15" size="1.778" layer="21" ratio="7">RN2903A</text>
+<text x="-8" y="11" size="1.778" layer="21" ratio="7">LORA MOTE</text>
+<wire x1="-27.77" y1="-36" x2="-27.77" y2="-44" width="0.127" layer="21"/>
+<wire x1="-27.77" y1="-44" x2="-23.23" y2="-44" width="0.127" layer="21"/>
+<wire x1="-23.23" y1="-44" x2="-23.23" y2="-36" width="0.127" layer="21"/>
+<wire x1="-23.23" y1="-36" x2="-27.77" y2="-36" width="0.127" layer="21"/>
+<wire x1="-19.015" y1="30.29" x2="-19.015" y2="-0.19" width="0.1524" layer="21"/>
+<pad name="MCLR" x="-20.92" y="29.02" drill="1.016" shape="long"/>
+<pad name="GPIO0" x="-20.92" y="26.48" drill="1.016" shape="long"/>
+<pad name="GPIO1" x="-20.92" y="23.94" drill="1.016" shape="long"/>
+<pad name="GPIO2" x="-20.92" y="21.4" drill="1.016" shape="long"/>
+<pad name="GPIO3" x="-20.92" y="18.86" drill="1.016" shape="long"/>
+<pad name="GPIO4" x="-20.92" y="16.32" drill="1.016" shape="long"/>
+<pad name="GPIO5" x="-20.92" y="13.78" drill="1.016" shape="long"/>
+<pad name="GPIO6" x="-20.92" y="11.24" drill="1.016" shape="long"/>
+<pad name="GPIO7" x="-20.92" y="8.7" drill="1.016" shape="long"/>
+<pad name="GPIO8" x="-20.92" y="6.16" drill="1.016" shape="long"/>
+<pad name="GPIO9" x="-20.92" y="3.62" drill="1.016" shape="long"/>
+<pad name="GND0" x="-20.92" y="1.08" drill="1.016" shape="long"/>
+<text x="-4.41" y="-6.615" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-4.41" y="-3.365" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-19.904" y1="28.512" x2="-19.142" y2="29.528" layer="21" rot="R270"/>
+<rectangle x1="-19.904" y1="25.972" x2="-19.142" y2="26.988" layer="21" rot="R270"/>
+<rectangle x1="-19.904" y1="23.432" x2="-19.142" y2="24.448" layer="21" rot="R270"/>
+<rectangle x1="-19.904" y1="20.892" x2="-19.142" y2="21.908" layer="21" rot="R270"/>
+<rectangle x1="-19.904" y1="18.352" x2="-19.142" y2="19.368" layer="21" rot="R270"/>
+<rectangle x1="-19.904" y1="15.812" x2="-19.142" y2="16.828" layer="21" rot="R270"/>
+<rectangle x1="-19.904" y1="13.272" x2="-19.142" y2="14.288" layer="21" rot="R270"/>
+<rectangle x1="-19.904" y1="10.732" x2="-19.142" y2="11.748" layer="21" rot="R270"/>
+<rectangle x1="-19.904" y1="8.192" x2="-19.142" y2="9.208" layer="21" rot="R270"/>
+<rectangle x1="-19.904" y1="5.652" x2="-19.142" y2="6.668" layer="21" rot="R270"/>
+<rectangle x1="-19.904" y1="3.112" x2="-19.142" y2="4.128" layer="21" rot="R270"/>
+<rectangle x1="-19.904" y1="0.572" x2="-19.142" y2="1.588" layer="21" rot="R270"/>
+<wire x1="18.015" y1="-0.29" x2="18.015" y2="30.19" width="0.1524" layer="21"/>
+<pad name="GND1" x="19.92" y="0.98" drill="1.016" shape="long" rot="R180"/>
+<pad name="3.3V" x="19.92" y="3.52" drill="1.016" shape="long" rot="R180"/>
+<pad name="RTS" x="19.92" y="6.06" drill="1.016" shape="long" rot="R180"/>
+<pad name="CTS" x="19.92" y="8.6" drill="1.016" shape="long" rot="R180"/>
+<pad name="RESRV" x="19.92" y="11.14" drill="1.016" shape="long" rot="R180"/>
+<pad name="RESRV." x="19.92" y="13.68" drill="1.016" shape="long" rot="R180"/>
+<pad name="UARTTX" x="19.92" y="16.22" drill="1.016" shape="long" rot="R180"/>
+<pad name="UARTRX" x="19.92" y="18.76" drill="1.016" shape="long" rot="R180"/>
+<pad name="GPIO13" x="19.92" y="21.3" drill="1.016" shape="long" rot="R180"/>
+<pad name="GPIO12" x="19.92" y="23.84" drill="1.016" shape="long" rot="R180"/>
+<pad name="GPIO11" x="19.92" y="26.38" drill="1.016" shape="long" rot="R180"/>
+<pad name="GPIO10" x="19.92" y="28.92" drill="1.016" shape="long" rot="R180"/>
+<rectangle x1="18.142" y1="0.472" x2="18.904" y2="1.488" layer="21" rot="R90"/>
+<rectangle x1="18.142" y1="3.012" x2="18.904" y2="4.028" layer="21" rot="R90"/>
+<rectangle x1="18.142" y1="5.552" x2="18.904" y2="6.568" layer="21" rot="R90"/>
+<rectangle x1="18.142" y1="8.092" x2="18.904" y2="9.108" layer="21" rot="R90"/>
+<rectangle x1="18.142" y1="10.632" x2="18.904" y2="11.648" layer="21" rot="R90"/>
+<rectangle x1="18.142" y1="13.172" x2="18.904" y2="14.188" layer="21" rot="R90"/>
+<rectangle x1="18.142" y1="15.712" x2="18.904" y2="16.728" layer="21" rot="R90"/>
+<rectangle x1="18.142" y1="18.252" x2="18.904" y2="19.268" layer="21" rot="R90"/>
+<rectangle x1="18.142" y1="20.792" x2="18.904" y2="21.808" layer="21" rot="R90"/>
+<rectangle x1="18.142" y1="23.332" x2="18.904" y2="24.348" layer="21" rot="R90"/>
+<rectangle x1="18.142" y1="25.872" x2="18.904" y2="26.888" layer="21" rot="R90"/>
+<rectangle x1="18.142" y1="28.412" x2="18.904" y2="29.428" layer="21" rot="R90"/>
+<text x="-22.46" y="-37.46" size="1.27" layer="25">-</text>
+<text x="-22.96" y="-43.77" size="1.27" layer="25">+</text>
+<text x="-18" y="29" size="1.27" layer="21">MCLR</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LORA_MOTE">
+<pin name="MCLR" x="-20.32" y="40.64" length="middle"/>
+<pin name="GPIO0" x="-20.32" y="38.1" length="middle"/>
+<pin name="GPIO1" x="-20.32" y="35.56" length="middle"/>
+<pin name="GPIO2" x="-20.32" y="33.02" length="middle"/>
+<pin name="GPIO3" x="-20.32" y="30.48" length="middle"/>
+<pin name="GPIO4" x="-20.32" y="27.94" length="middle"/>
+<pin name="GPIO5" x="-20.32" y="25.4" length="middle"/>
+<pin name="GPIO6" x="-20.32" y="22.86" length="middle"/>
+<pin name="GPIO7" x="-20.32" y="20.32" length="middle"/>
+<pin name="GPIO8" x="-20.32" y="17.78" length="middle"/>
+<pin name="GPIO9" x="-20.32" y="15.24" length="middle"/>
+<pin name="GND0" x="-20.32" y="12.7" length="middle"/>
+<pin name="GND1" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="V3.3" x="20.32" y="15.24" length="middle" rot="R180"/>
+<pin name="RTS" x="20.32" y="17.78" length="middle" rot="R180"/>
+<pin name="CTS" x="20.32" y="20.32" length="middle" rot="R180"/>
+<pin name="RESRV" x="20.32" y="22.86" length="middle" rot="R180"/>
+<pin name="RESRV." x="20.32" y="25.4" length="middle" rot="R180"/>
+<pin name="UARTTX" x="20.32" y="27.94" length="middle" rot="R180"/>
+<pin name="UARTRX" x="20.32" y="30.48" length="middle" rot="R180"/>
+<pin name="GPIO13" x="20.32" y="33.02" length="middle" rot="R180"/>
+<pin name="GPIO12" x="20.32" y="35.56" length="middle" rot="R180"/>
+<pin name="GPIO11" x="20.32" y="38.1" length="middle" rot="R180"/>
+<pin name="GPIO10" x="20.32" y="40.64" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="45.72" x2="15.24" y2="45.72" width="0.254" layer="94"/>
+<wire x1="15.24" y1="45.72" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="-15.24" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-7.62" x2="-15.24" y2="45.72" width="0.254" layer="94"/>
+<text x="-15.24" y="48.514" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="V5" x="-20.32" y="-2.54" length="middle"/>
+<pin name="GND" x="-20.32" y="2.54" length="middle"/>
+<text x="-5.08" y="27.94" size="1.6764" layer="94">RN2903A</text>
+<text x="-7.62" y="7.62" size="1.6764" layer="94" ratio="7">LORA MOTE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LORA_MOTE" prefix="ICS">
+<gates>
+<gate name="G$1" symbol="LORA_MOTE" x="5.08" y="-12.7"/>
+</gates>
+<devices>
+<device name="" package="LORA_MOTE_RN2903">
+<connects>
+<connect gate="G$1" pin="CTS" pad="CTS"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND0" pad="GND0"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GPIO0" pad="GPIO0"/>
+<connect gate="G$1" pin="GPIO1" pad="GPIO1"/>
+<connect gate="G$1" pin="GPIO10" pad="GPIO10"/>
+<connect gate="G$1" pin="GPIO11" pad="GPIO11"/>
+<connect gate="G$1" pin="GPIO12" pad="GPIO12"/>
+<connect gate="G$1" pin="GPIO13" pad="GPIO13"/>
+<connect gate="G$1" pin="GPIO2" pad="GPIO2"/>
+<connect gate="G$1" pin="GPIO3" pad="GPIO3"/>
+<connect gate="G$1" pin="GPIO4" pad="GPIO4"/>
+<connect gate="G$1" pin="GPIO5" pad="GPIO5"/>
+<connect gate="G$1" pin="GPIO6" pad="GPIO6"/>
+<connect gate="G$1" pin="GPIO7" pad="GPIO7"/>
+<connect gate="G$1" pin="GPIO8" pad="GPIO8"/>
+<connect gate="G$1" pin="GPIO9" pad="GPIO9"/>
+<connect gate="G$1" pin="MCLR" pad="MCLR"/>
+<connect gate="G$1" pin="RESRV" pad="RESRV"/>
+<connect gate="G$1" pin="RESRV." pad="RESRV."/>
+<connect gate="G$1" pin="RTS" pad="RTS"/>
+<connect gate="G$1" pin="UARTRX" pad="UARTRX"/>
+<connect gate="G$1" pin="UARTTX" pad="UARTTX"/>
+<connect gate="G$1" pin="V3.3" pad="3.3V"/>
+<connect gate="G$1" pin="V5" pad="V5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10247,8 +10218,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <part name="C2" library="TAJR104K020RNJ" deviceset="TAJR104K020RNJ" device=""/>
 <part name="C3" library="TAJR104K020RNJ" deviceset="TAJR104K020RNJ" device=""/>
 <part name="P+13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
-<part name="J5" library="ICSP" deviceset="ICSP" device=""/>
-<part name="IC4" library="LORA_MOTE" deviceset="LORA_MOTE" device=""/>
 <part name="JP2" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1"/>
 <part name="JP1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1"/>
 <part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2"/>
@@ -10293,6 +10262,8 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <part name="P+20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
 <part name="P+21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
 <part name="C6" library="UUP1C100MCL1GS" deviceset="UUP1C100MCL1GS" device=""/>
+<part name="JP7" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device="" package3d_urn="urn:adsk.eagle:package:22472/2"/>
+<part name="ICS1" library="LORA_MOTE" deviceset="LORA_MOTE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10307,12 +10278,15 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <text x="190.5" y="81.28" size="2.1844" layer="91">RTC</text>
 <text x="68.58" y="180.34" size="2.1844" layer="91">DSPIC</text>
 <text x="194" y="154" size="1.9304" layer="96" rot="R90">1k</text>
-<text x="13" y="32" size="1.9304" layer="96" rot="R90">1k</text>
-<text x="54" y="30" size="1.9304" layer="96" rot="R90">1k</text>
-<text x="61" y="78" size="1.9304" layer="96" rot="R90">1k</text>
+<text x="12" y="31" size="1.9304" layer="96" rot="R90">1k</text>
+<text x="52" y="28" size="1.9304" layer="96" rot="R90">1k</text>
+<text x="60" y="76" size="1.9304" layer="96" rot="R90">1k</text>
 <text x="37" y="95" size="1.9304" layer="96" rot="R90">10k</text>
-<text x="160" y="45" size="1.9304" layer="96">1k</text>
+<text x="157" y="46" size="1.9304" layer="96" rot="R90">1k</text>
 <text x="157" y="59" size="1.9304" layer="96" rot="R90">1k</text>
+<text x="164" y="134" size="1.778" layer="95">104</text>
+<text x="153" y="134" size="1.778" layer="95">104</text>
+<text x="221" y="73" size="1.778" layer="95" rot="R90">1k</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -10365,13 +10339,13 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <attribute name="NAME" x="54.61" y="58.42" size="1.778" layer="95" align="center-left"/>
 </instance>
 <instance part="R3" gate="G$1" x="48.26" y="22.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="41.91" y="26.67" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="NAME" x="44.91" y="28.67" size="1.778" layer="95" rot="R90" align="center-left"/>
 </instance>
 <instance part="R4" gate="G$1" x="7.62" y="25.4" smashed="yes" rot="R90">
-<attribute name="NAME" x="3.81" y="26.67" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="NAME" x="4.81" y="30.67" size="1.778" layer="95" rot="R90" align="center-left"/>
 </instance>
 <instance part="R5" gate="G$1" x="55.88" y="71.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="52.07" y="72.39" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="NAME" x="53.07" y="75.93" size="1.778" layer="95" rot="R90" align="center-left"/>
 </instance>
 <instance part="R2" gate="G$1" x="33.02" y="88.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="29.21" y="87.63" size="1.778" layer="95" rot="R90" align="center-left"/>
@@ -10445,10 +10419,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <instance part="P+13" gate="1" x="157.48" y="157.48" smashed="yes">
 <attribute name="VALUE" x="154.94" y="154.94" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="J5" gate="G$1" x="152.4" y="167.64" smashed="yes">
-<attribute name="NAME" x="143.4" y="177.64" size="1.778" layer="95"/>
-<attribute name="VALUE" x="143.4" y="179.64" size="1.778" layer="96"/>
-</instance>
 <instance part="R25" gate="G$1" x="180.34" y="114.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="178.8414" y="110.49" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="183.642" y="110.49" size="1.778" layer="96" rot="R90"/>
@@ -10521,6 +10491,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <instance part="P+5" gate="1" x="172.72" y="76.2" smashed="yes" rot="R90">
 <attribute name="VALUE" x="175.26" y="73.66" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="JP7" gate="A" x="147.32" y="170.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="148.59" y="179.705" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="153.67" y="180.34" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10543,8 +10517,8 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="157.48" y1="170.18" x2="177.8" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="VSS"/>
+<wire x1="149.86" y1="170.18" x2="177.8" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="JP7" gate="A" pin="4"/>
 </segment>
 <segment>
 <wire x1="55.88" y1="68.58" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
@@ -10672,9 +10646,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <label x="30.48" y="172.72" size="1.4224" layer="95" ratio="6" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="157.48" y1="175.26" x2="162.56" y2="175.26" width="0.1524" layer="91"/>
-<label x="162.56" y="175.26" size="1.4224" layer="95" xref="yes"/>
-<pinref part="J5" gate="G$1" pin="MCLR"/>
+<wire x1="149.86" y1="175.26" x2="157.48" y2="175.26" width="0.1524" layer="91"/>
+<label x="157.48" y="175.26" size="1.4224" layer="95" xref="yes"/>
+<pinref part="JP7" gate="A" pin="6"/>
 </segment>
 <segment>
 <wire x1="33.02" y1="86.36" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
@@ -10823,9 +10797,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <label x="127" y="137.16" size="1.4224" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="157.48" y1="165.1" x2="162.56" y2="165.1" width="0.1524" layer="91"/>
-<label x="162.56" y="165.1" size="1.4224" layer="95" xref="yes"/>
-<pinref part="J5" gate="G$1" pin="PGC"/>
+<wire x1="149.86" y1="165.1" x2="157.48" y2="165.1" width="0.1524" layer="91"/>
+<label x="157.48" y="165.1" size="1.4224" layer="95" xref="yes"/>
+<pinref part="JP7" gate="A" pin="2"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="A" pin="1"/>
@@ -10842,9 +10816,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <label x="127" y="134.62" size="1.4224" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="157.48" y1="167.64" x2="162.56" y2="167.64" width="0.1524" layer="91"/>
-<label x="162.56" y="167.64" size="1.4224" layer="95" xref="yes"/>
-<pinref part="J5" gate="G$1" pin="PGD"/>
+<wire x1="149.86" y1="167.64" x2="157.48" y2="167.64" width="0.1524" layer="91"/>
+<label x="157.48" y="167.64" size="1.4224" layer="95" xref="yes"/>
+<pinref part="JP7" gate="A" pin="3"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="A" pin="2"/>
@@ -10931,8 +10905,8 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 </segment>
 <segment>
 <pinref part="P+7" gate="1" pin="V+"/>
-<wire x1="172.72" y1="172.72" x2="157.48" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="VDD"/>
+<wire x1="172.72" y1="172.72" x2="149.86" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="JP7" gate="A" pin="5"/>
 </segment>
 <segment>
 <wire x1="106.68" y1="50.8" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
@@ -11623,14 +11597,19 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <pinref part="P+18" gate="1" pin="V+"/>
 </segment>
 <segment>
-<pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="88.9" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="88.9" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="P+10" gate="1" pin="V+"/>
+<wire x1="86.36" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="86.36" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="JP6" gate="A" pin="1"/>
+<wire x1="106.46" y1="28.08" x2="106.46" y2="28" width="0.1524" layer="91"/>
+<wire x1="106.46" y1="28.08" x2="106.46" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="106.46" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
+<junction x="106.46" y="28.08"/>
 <junction x="91.44" y="88.9"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="86.36" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+20" gate="1" pin="V+"/>
@@ -11728,13 +11707,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <label x="25.4" y="45.72" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="JP6" gate="A" pin="1"/>
-<wire x1="106.46" y1="28.08" x2="106.46" y2="89" width="0.1524" layer="91"/>
-<wire x1="106.46" y1="89" x2="96" y2="89" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="IC5" gate="G$1" pin="USBDM"/>
@@ -11764,6 +11736,14 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 </sheet>
 <sheet>
 <plain>
+<text x="104.6" y="151.4" size="1.778" layer="95">1k</text>
+<text x="120" y="163" size="1.778" layer="95" rot="R90">1k</text>
+<text x="143" y="168" size="1.778" layer="95" rot="R90">1k</text>
+<text x="128" y="161" size="1.778" layer="95" rot="R180">1k</text>
+<text x="124.46" y="177.8" size="1.778" layer="91">transductor de voltaje 3.3 to 5V</text>
+<text x="142.24" y="147.32" size="1.778" layer="91">transductor de voltaje 5 to 3.3V</text>
+<text x="121.92" y="133.62" size="1.778" layer="95">5.1k</text>
+<text x="120" y="127" size="1.778" layer="95" rot="R90">10k</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -11773,12 +11753,12 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <attribute name="DRAWING_NAME" x="165.1" y="19.05" size="2.54" layer="94"/>
 </instance>
 <instance part="T12" gate="G1" x="114.3" y="149.86" smashed="yes">
-<attribute name="NAME" x="104.14" y="157.48" size="1.778" layer="95"/>
-<attribute name="VALUE" x="104.14" y="154.94" size="1.778" layer="96"/>
+<attribute name="NAME" x="117.14" y="150.48" size="1.778" layer="95"/>
+<attribute name="VALUE" x="117.14" y="147.94" size="1.778" layer="96"/>
 </instance>
 <instance part="T13" gate="G1" x="137.16" y="157.48" smashed="yes">
-<attribute name="NAME" x="127" y="162.56" size="1.778" layer="95"/>
-<attribute name="VALUE" x="127" y="160.02" size="1.778" layer="96"/>
+<attribute name="NAME" x="140" y="157.56" size="1.778" layer="95"/>
+<attribute name="VALUE" x="141" y="155.02" size="1.778" layer="96"/>
 </instance>
 <instance part="R17" gate="G$1" x="116.84" y="165.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="115.3414" y="161.29" size="1.778" layer="95" rot="R90"/>
@@ -11819,10 +11799,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <instance part="GND17" gate="1" x="116.84" y="119.38" smashed="yes">
 <attribute name="VALUE" x="114.3" y="116.84" size="1.778" layer="96"/>
 </instance>
-<instance part="IC4" gate="G$1" x="38.1" y="134.62" smashed="yes">
-<attribute name="NAME" x="22.86" y="183.134" size="1.778" layer="95"/>
-<attribute name="VALUE" x="22.86" y="124.46" size="1.778" layer="96"/>
-</instance>
 <instance part="JP2" gate="A" x="144.78" y="139.7" smashed="yes">
 <attribute name="NAME" x="143.51" y="139.7" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="150.495" y="139.7" size="1.778" layer="96" rot="R90"/>
@@ -11830,6 +11806,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <instance part="JP1" gate="A" x="147.32" y="165.1" smashed="yes">
 <attribute name="NAME" x="146.05" y="165.1" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="153.035" y="165.1" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="ICS1" gate="G$1" x="38.1" y="134.62" smashed="yes">
+<attribute name="NAME" x="22.86" y="183.134" size="1.778" layer="95"/>
+<attribute name="VALUE" x="22.86" y="124.46" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -11839,7 +11819,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <segment>
 <wire x1="17.78" y1="137.16" x2="15.24" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<pinref part="IC4" gate="G$1" pin="GND"/>
+<pinref part="ICS1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="T12" gate="G1" pin="E"/>
@@ -11859,7 +11839,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <segment>
 <wire x1="58.42" y1="165.1" x2="66.04" y2="165.1" width="0.1524" layer="91"/>
 <label x="66.04" y="165.1" size="1.4224" layer="95" xref="yes"/>
-<pinref part="IC4" gate="G$1" pin="UARTRX"/>
+<pinref part="ICS1" gate="G$1" pin="UARTRX"/>
 </segment>
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
@@ -11871,7 +11851,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <segment>
 <wire x1="58.42" y1="162.56" x2="66.04" y2="162.56" width="0.1524" layer="91"/>
 <label x="66.04" y="162.56" size="1.4224" layer="95" xref="yes"/>
-<pinref part="IC4" gate="G$1" pin="UARTTX"/>
+<pinref part="ICS1" gate="G$1" pin="UARTTX"/>
 </segment>
 <segment>
 <pinref part="R22" gate="G$1" pin="1"/>
@@ -11926,7 +11906,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <segment>
 <wire x1="17.78" y1="132.08" x2="15.24" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="P+11" gate="1" pin="V+"/>
-<pinref part="IC4" gate="G$1" pin="V5"/>
+<pinref part="ICS1" gate="G$1" pin="V5"/>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
