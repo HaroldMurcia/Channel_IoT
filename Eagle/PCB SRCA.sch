@@ -10287,6 +10287,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <text x="164" y="134" size="1.778" layer="95">104</text>
 <text x="153" y="134" size="1.778" layer="95">104</text>
 <text x="221" y="73" size="1.778" layer="95" rot="R90">1k</text>
+<text x="173" y="111" size="1.778" layer="96" rot="R90">4.7k</text>
+<text x="184" y="111" size="1.778" layer="96" rot="R90">4.7k</text>
+<text x="92" y="48" size="1.778" layer="96" rot="R90">6.8k</text>
+<text x="102" y="67" size="1.778" layer="96" rot="R180">2.7k</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -10858,13 +10862,15 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <wire x1="226.06" y1="170.18" x2="208.28" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="170.18" x2="200.66" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="ICS" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="152.4" x2="200.66" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="152.4" x2="200.66" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="1" pin="V+"/>
-<wire x1="200.66" y1="162.56" x2="200.66" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="165.1" x2="200.66" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="172.72" x2="208.28" y2="170.18" width="0.1524" layer="91"/>
 <junction x="208.28" y="170.18"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="200.66" y1="162.56" x2="190.5" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="162.56" x2="190.5" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="165.1" x2="200.66" y2="165.1" width="0.1524" layer="91"/>
+<junction x="200.66" y="165.1"/>
 </segment>
 <segment>
 <pinref part="P+1" gate="1" pin="V+"/>
@@ -11612,10 +11618,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <wire x1="96.52" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="P+20" gate="1" pin="V+"/>
-<wire x1="53" y1="69.46" x2="53" y2="66" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <wire x1="13" y1="24" x2="20" y2="24" width="0.1524" layer="91"/>
 <pinref part="P+21" gate="1" pin="V+"/>
 <wire x1="20" y1="24" x2="27" y2="24" width="0.1524" layer="91"/>
@@ -11625,6 +11627,23 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="13" y1="21" x2="13" y2="24" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="+"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="G$1" pin="VCCIO"/>
+<wire x1="38.1" y1="48.26" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="48.26" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="66.04" x2="53" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="66.04" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="66.04" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="G$1" pin="VCC"/>
+<wire x1="73.66" y1="35.56" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="G$1" pin="RESET#"/>
+<wire x1="71.12" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="33.02" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
+<junction x="73.66" y="35.56"/>
+<pinref part="P+20" gate="1" pin="V+"/>
+<wire x1="53.34" y1="66.04" x2="53" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="53" y1="66.04" x2="53" y2="69.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SONAR_ADC2" class="0">
@@ -11676,21 +11695,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="LED8" gate="G$1" pin="A"/>
 <wire x1="96.52" y1="68.58" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="IC5" gate="G$1" pin="VCCIO"/>
-<wire x1="38.1" y1="48.26" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="48.26" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="66.04" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="66.04" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="VCC"/>
-<wire x1="73.66" y1="35.56" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="RESET#"/>
-<wire x1="71.12" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="33.02" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
-<junction x="73.66" y="35.56"/>
 </segment>
 </net>
 <net name="UART_RX_2" class="0">
@@ -11803,9 +11807,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <attribute name="NAME" x="143.51" y="139.7" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="150.495" y="139.7" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="JP1" gate="A" x="147.32" y="165.1" smashed="yes">
-<attribute name="NAME" x="146.05" y="165.1" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="153.035" y="165.1" size="1.778" layer="96" rot="R90"/>
+<instance part="JP1" gate="A" x="147.32" y="167.64" smashed="yes">
+<attribute name="NAME" x="146.05" y="167.64" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="153.035" y="167.64" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="ICS1" gate="G$1" x="38.1" y="134.62" smashed="yes">
 <attribute name="NAME" x="22.86" y="183.134" size="1.778" layer="95"/>
@@ -11888,13 +11892,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 <wire x1="132.08" y1="157.48" x2="134.62" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RX_UART" class="0">
-<segment>
-<label x="160.02" y="162.56" size="1.4224" layer="95" xref="yes"/>
-<wire x1="149.86" y1="162.56" x2="160.02" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="2"/>
-</segment>
-</net>
 <net name="TX_UART" class="0">
 <segment>
 <label x="162.56" y="137.16" size="1.4224" layer="95" xref="yes"/>
@@ -11927,11 +11924,20 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/UUP1C100MCL1G
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="T13" gate="G1" pin="C"/>
 <pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="165.1" x2="139.7" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="162.56" x2="147.32" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="1"/>
+<wire x1="139.7" y1="165.1" x2="147.32" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="T13" gate="G1" pin="C"/>
+<wire x1="139.7" y1="162.56" x2="139.7" y2="165.1" width="0.1524" layer="91"/>
+<junction x="139.7" y="165.1"/>
+</segment>
+</net>
+<net name="RX_UART" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="149.86" y1="165.1" x2="149.86" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="162.56" x2="154.94" y2="162.56" width="0.1524" layer="91"/>
+<label x="154.94" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
