@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.2" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -74,12 +74,12 @@
 <library>
 <packages>
 <package name="ICSP">
-<pad name="MCLR" x="2.54" y="7.62" drill="0.65" shape="square"/>
-<pad name="VDD" x="2.54" y="5.08" drill="0.65"/>
-<pad name="VSS" x="2.54" y="2.54" drill="0.65"/>
-<pad name="PGD" x="2.54" y="0" drill="0.65"/>
-<pad name="PGC" x="2.54" y="-2.54" drill="0.65"/>
-<pad name="N/C" x="2.54" y="-5.08" drill="0.65"/>
+<pad name="MCLR" x="2.54" y="7.62" drill="1.03" shape="square"/>
+<pad name="VDD" x="2.54" y="5.08" drill="1.03"/>
+<pad name="VSS" x="2.54" y="2.54" drill="1.03"/>
+<pad name="PGD" x="2.54" y="0" drill="1.03"/>
+<pad name="PGC" x="2.54" y="-2.54" drill="1.03"/>
+<pad name="N/C" x="2.54" y="-5.08" drill="1.03"/>
 <wire x1="1.27" y1="8.89" x2="1.27" y2="-6.35" width="0.127" layer="21"/>
 <wire x1="1.27" y1="-6.35" x2="3.81" y2="-6.35" width="0.127" layer="21"/>
 <wire x1="3.81" y1="-6.35" x2="3.81" y2="8.89" width="0.127" layer="21"/>
