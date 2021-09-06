@@ -7196,14 +7196,10 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
 <part name="IC3" library="LM35DZ_NOPB" library_urn="urn:adsk.eagle:library:30647920" deviceset="LM35DZ_NOPB" device="" package3d_urn="urn:adsk.eagle:package:30647923/2"/>
-<part name="T10" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" deviceset="2N3904" device="" package3d_urn="urn:adsk.eagle:package:28725/2"/>
-<part name="T11" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" deviceset="2N3904" device="" package3d_urn="urn:adsk.eagle:package:28725/2"/>
-<part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1k"/>
-<part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1k"/>
-<part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1k"/>
-<part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1k"/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="ICS1" library="LORA_MOTE" library_urn="urn:adsk.eagle:library:30678623" deviceset="LORA_MOTE" device="" package3d_urn="urn:adsk.eagle:package:30678626/2"/>
+<part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="3.3k"/>
+<part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="6.8k"/>
 </parts>
 <sheets>
 <sheet>
@@ -7213,7 +7209,7 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <text x="111.76" y="114.3" size="2.54" layer="91">conector de 8bits</text>
 <text x="160.02" y="154.94" size="2.54" layer="91">cap Dspic</text>
 <text x="152.4" y="180.34" size="2.54" layer="91">puerto de pickit</text>
-<text x="200.66" y="101.6" size="2.54" layer="91">Conector de alimentacion</text>
+<text x="205.74" y="101.6" size="2.54" layer="91">Conector de alimentacion</text>
 <text x="165.1" y="127" size="2.1844" layer="91">resistencia pull up I2C</text>
 <text x="190.5" y="81.28" size="2.1844" layer="91">RTC</text>
 <text x="68.58" y="180.34" size="2.1844" layer="91">DSPIC</text>
@@ -7224,6 +7220,7 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <text x="164" y="134" size="1.778" layer="95">104</text>
 <text x="153" y="134" size="1.778" layer="95">104</text>
 <text x="221" y="73" size="1.778" layer="95" rot="R90">1k</text>
+<text x="203.2" y="177.8" size="2.54" layer="91">Buzzer y Fan</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -7355,8 +7352,8 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <attribute name="NAME" x="45.15" y="27.67" size="1.778" layer="95" rot="R90" align="center-left"/>
 </instance>
 <instance part="IC2" gate="G$1" x="132.3" y="60.1" smashed="yes" rot="MR0">
-<attribute name="NAME" x="114.89" y="66.72" size="1.778" layer="95" rot="MR0" align="center-left"/>
-<attribute name="VALUE" x="125.85" y="64.18" size="1.778" layer="96" rot="MR0" align="center-left"/>
+<attribute name="NAME" x="114.89" y="69.26" size="1.778" layer="95" rot="MR0" align="center-left"/>
+<attribute name="VALUE" x="125.85" y="66.72" size="1.778" layer="96" rot="MR0" align="center-left"/>
 </instance>
 <instance part="C2" gate="G$1" x="151.8" y="144.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="153.45" y="142.41" size="1.778" layer="95" align="center-left"/>
@@ -8089,8 +8086,8 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <plain>
 <text x="187.96" y="91.44" size="2.1844" layer="91">Conectores de bloque sonar, fan y I2C</text>
 <text x="129.54" y="177.8" size="2.1844" layer="91">LEDS</text>
-<text x="90.44" y="75.66" size="1.9304" layer="96" rot="R90">270</text>
-<text x="100.6" y="75.66" size="1.9304" layer="96" rot="R90">270</text>
+<text x="90.44" y="75.66" size="1.9304" layer="96" rot="R90">390</text>
+<text x="100.6" y="75.66" size="1.9304" layer="96" rot="R90">390</text>
 <text x="42" y="76" size="2.54" layer="91">ft232</text>
 <text x="9" y="12" size="2.54" layer="96" rot="R90">1uF</text>
 <text x="81" y="12" size="2.54" layer="96" rot="R90">1uF</text>
@@ -8177,7 +8174,7 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <attribute name="VALUE" x="50.46" y="69.46" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+21" gate="1" x="20" y="29" smashed="yes">
-<attribute name="VALUE" x="18.46" y="25.46" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="18.46" y="28" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="J1" gate="G$1" x="180.34" y="53.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="175.26" y="59.69" size="1.778" layer="95" rot="R90" align="center-left"/>
@@ -8736,13 +8733,13 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <attribute name="NAME" x="130.81" y="168.94" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="137.795" y="167.64" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="JP2" gate="A" x="163.74" y="153.54" smashed="yes">
-<attribute name="NAME" x="162.47" y="154.84" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="169.455" y="153.54" size="1.778" layer="96" rot="R90"/>
+<instance part="JP2" gate="A" x="181.52" y="173.86" smashed="yes">
+<attribute name="NAME" x="180.25" y="175.16" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="187.235" y="173.86" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U1" gate="G$1" x="52" y="95" smashed="yes">
-<attribute name="NAME" x="41.8305" y="102.627109375" size="1.779659375" layer="95"/>
-<attribute name="VALUE" x="39.2773" y="87.366359375" size="1.78118125" layer="96"/>
+<attribute name="NAME" x="39.2905" y="105.167109375" size="1.779659375" layer="95"/>
+<attribute name="VALUE" x="39.2773" y="102.606359375" size="1.78118125" layer="96"/>
 </instance>
 <instance part="C7" gate="G$1" x="83" y="96" smashed="yes" rot="R270">
 <attribute name="NAME" x="86.35" y="92.11" size="1.778" layer="95" align="center-left"/>
@@ -8753,36 +8750,20 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <instance part="GND26" gate="1" x="69.7" y="77.9" smashed="yes">
 <attribute name="VALUE" x="67.16" y="75.36" size="1.778" layer="96"/>
 </instance>
-<instance part="T10" gate="G1" x="185.42" y="149.86" smashed="yes">
-<attribute name="NAME" x="188.26" y="150.48" size="1.778" layer="95"/>
-<attribute name="VALUE" x="188.26" y="147.94" size="1.778" layer="96"/>
-</instance>
-<instance part="T11" gate="G1" x="208.28" y="157.48" smashed="yes">
-<attribute name="NAME" x="211.12" y="157.56" size="1.778" layer="95"/>
-<attribute name="VALUE" x="212.12" y="155.02" size="1.778" layer="96"/>
-</instance>
-<instance part="R22" gate="G$1" x="187.96" y="165.1" smashed="yes" rot="R90">
-<attribute name="NAME" x="186.4614" y="161.29" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="191.262" y="161.29" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R23" gate="G$1" x="210.82" y="170.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="209.3214" y="168.37" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="214.122" y="168.37" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R27" gate="G$1" x="198.12" y="157.48" smashed="yes" rot="R180">
-<attribute name="NAME" x="199.93" y="160.9814" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="197.93" y="155.782" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R28" gate="G$1" x="175.26" y="149.86" smashed="yes" rot="R180">
-<attribute name="NAME" x="177.07" y="153.3614" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="175.07" y="148.162" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="GND17" gate="1" x="187.96" y="139.7" smashed="yes">
-<attribute name="VALUE" x="185.42" y="137.16" size="1.778" layer="96"/>
+<instance part="GND17" gate="1" x="200.66" y="144.78" smashed="yes">
+<attribute name="VALUE" x="198.12" y="142.24" size="1.778" layer="96"/>
 </instance>
 <instance part="ICS1" gate="G$1" x="38.1" y="134.62" smashed="yes">
 <attribute name="NAME" x="22.86" y="183.134" size="1.778" layer="95"/>
 <attribute name="VALUE" x="22.86" y="124.46" size="1.778" layer="96"/>
+</instance>
+<instance part="R22" gate="G$1" x="193.04" y="170.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="194.85" y="173.6814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="195.39" y="168.482" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R23" gate="G$1" x="200.66" y="160.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="197.1586" y="161.83" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="202.358" y="162.37" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -8817,13 +8798,9 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <junction x="69.8" y="81.3"/>
 </segment>
 <segment>
-<pinref part="T10" gate="G1" pin="E"/>
-<pinref part="T11" gate="G1" pin="E"/>
-<wire x1="187.96" y1="144.78" x2="210.82" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="144.78" x2="210.82" y2="152.4" width="0.1524" layer="91"/>
-<junction x="187.96" y="144.78"/>
 <pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="187.96" y1="144.78" x2="187.96" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="R23" gate="G$1" pin="2"/>
+<wire x1="200.66" y1="147.32" x2="200.66" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX_LORA" class="0">
@@ -8845,12 +8822,14 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <pinref part="ICS1" gate="G$1" pin="UARTRX"/>
 </segment>
 <segment>
+<pinref part="R22" gate="G$1" pin="1"/>
 <pinref part="R23" gate="G$1" pin="1"/>
-<pinref part="T11" gate="G1" pin="C"/>
-<wire x1="210.82" y1="162.56" x2="210.82" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="165.1" x2="220.98" y2="165.1" width="0.1524" layer="91"/>
-<junction x="210.82" y="165.1"/>
-<label x="220.98" y="165.1" size="1.4224" layer="95" xref="yes"/>
+<wire x1="198.12" y1="170.18" x2="200.66" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="170.18" x2="200.66" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="170.18" x2="205.74" y2="170.18" width="0.1524" layer="91"/>
+<junction x="200.66" y="170.18"/>
+<label x="205.74" y="170.18" size="1.4224" layer="95" xref="yes"/>
+<label x="205.74" y="170.18" size="1.4224" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -8932,55 +8911,21 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <label x="15.7" y="132.1" size="1.4224" layer="95" rot="R180" xref="yes"/>
 <pinref part="ICS1" gate="G$1" pin="V5"/>
 </segment>
-<segment>
-<pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="177.8" x2="187.96" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="R23" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="175.26" x2="187.96" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="175.26" x2="187.96" y2="175.26" width="0.1524" layer="91"/>
-<junction x="187.96" y="175.26"/>
-<label x="187.96" y="177.8" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="R22" gate="G$1" pin="1"/>
-<pinref part="T10" gate="G1" pin="C"/>
-<wire x1="187.96" y1="160.02" x2="187.96" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="R27" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="157.48" x2="187.96" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="157.48" x2="187.96" y2="157.48" width="0.1524" layer="91"/>
-<junction x="187.96" y="157.48"/>
-</segment>
-</net>
-<net name="N$33" class="0">
-<segment>
-<pinref part="R28" gate="G$1" pin="1"/>
-<pinref part="T10" gate="G1" pin="B"/>
-<wire x1="180.34" y1="149.86" x2="182.88" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$34" class="0">
-<segment>
-<pinref part="R27" gate="G$1" pin="1"/>
-<pinref part="T11" gate="G1" pin="B"/>
-<wire x1="203.2" y1="157.48" x2="205.74" y2="157.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="JP2" gate="A" pin="2"/>
-<pinref part="R28" gate="G$1" pin="2"/>
-<wire x1="166.28" y1="151" x2="166.28" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="166.28" y1="149.86" x2="170.18" y2="149.86" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="TX_UART" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="1"/>
-<wire x1="163.74" y1="151" x2="163.74" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="163.74" y1="149.86" x2="160.02" y2="149.86" width="0.1524" layer="91"/>
-<label x="160.02" y="149.86" size="1.4224" layer="95" rot="R180" xref="yes"/>
+<wire x1="181.52" y1="171.32" x2="181.52" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="181.52" y1="170.18" x2="177.8" y2="170.18" width="0.1524" layer="91"/>
+<label x="177.8" y="170.18" size="1.4224" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="R22" gate="G$1" pin="2"/>
+<pinref part="JP2" gate="A" pin="2"/>
+<wire x1="187.96" y1="170.18" x2="184.06" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="184.06" y1="170.18" x2="184.06" y2="171.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

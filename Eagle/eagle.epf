@@ -281,15 +281,15 @@ UsedLibraryUrn="urn:adsk.eagle:library:197"
 UsedLibraryUrn="urn:adsk.eagle:library:198"
 UsedLibraryUrn="urn:adsk.eagle:library:199"
 UsedLibrary="C:/Users/ASUS/Documents/EAGLE/libraries/ICSP/ICSP.lbr"
-UsedLibrary="C:/Users/ASUS/Documents/EAGLE/libraries/Lora MOTE/LORA_MOTE.lbr"
 UsedLibrary="C:/Users/ASUS/Documents/EAGLE/libraries/Resistencia/R10k 125mW/ERA-6VEB1002V.lbr"
 UsedLibrary="C:/Users/ASUS/Documents/EAGLE/libraries/Resistencia/R125mW/ERA6AEB101V.lbr"
 UsedLibrary="C:/Users/ASUS/Documents/EAGLE/libraries/cap electrolitico/ESK106M016AC3KA.lbr"
+UsedLibraryUrn="urn:adsk.eagle:library:30678623"
 
 [Win_1]
 Type="Control Panel"
 Number=0
 
 [Desktop]
-Screen="1366 768"
+Screen="2966 906"
 Window="Win_1"
