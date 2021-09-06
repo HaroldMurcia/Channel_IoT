@@ -7152,8 +7152,8 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <part name="R4" library="RC0805FR-071KL" library_urn="urn:adsk.eagle:library:30514931" deviceset="RC0805FR-071KL" device="" package3d_urn="urn:adsk.eagle:package:30514934/2"/>
 <part name="R3" library="RC0805FR-071KL" library_urn="urn:adsk.eagle:library:30514931" deviceset="RC0805FR-071KL" device="" package3d_urn="urn:adsk.eagle:package:30514934/2"/>
 <part name="IC2" library="LM324LVIDR" library_urn="urn:adsk.eagle:library:30514898" deviceset="LM324LVIDR" device="" package3d_urn="urn:adsk.eagle:package:30514901/2"/>
+<part name="C1" library="TAJR104K020RNJ" library_urn="urn:adsk.eagle:library:30514861" deviceset="TAJR104K020RNJ" device="" package3d_urn="urn:adsk.eagle:package:30514864/2"/>
 <part name="C2" library="TAJR104K020RNJ" library_urn="urn:adsk.eagle:library:30514861" deviceset="TAJR104K020RNJ" device="" package3d_urn="urn:adsk.eagle:package:30514864/2"/>
-<part name="C3" library="TAJR104K020RNJ" library_urn="urn:adsk.eagle:library:30514861" deviceset="TAJR104K020RNJ" device="" package3d_urn="urn:adsk.eagle:package:30514864/2"/>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="3.3k"/>
 <part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10k"/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10k"/>
@@ -7161,10 +7161,10 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1k"/>
 <part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4.7k"/>
 <part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4.7k"/>
-<part name="C5" library="C0805X104K1RAC3316" library_urn="urn:adsk.eagle:library:30534331" deviceset="C0805X104K1RAC3316" device="" package3d_urn="urn:adsk.eagle:package:30534334/2"/>
+<part name="C3" library="C0805X104K1RAC3316" library_urn="urn:adsk.eagle:library:30534331" deviceset="C0805X104K1RAC3316" device="" package3d_urn="urn:adsk.eagle:package:30534334/2"/>
 <part name="C4" library="C0805X104K1RAC3316" library_urn="urn:adsk.eagle:library:30534331" deviceset="C0805X104K1RAC3316" device="" package3d_urn="urn:adsk.eagle:package:30534334/2"/>
 <part name="IC4" library="FT232RL-REEL" library_urn="urn:adsk.eagle:library:30514882" deviceset="FT232RL-REEL" device="" package3d_urn="urn:adsk.eagle:package:30514885/2"/>
-<part name="C6" library="UUP1C100MCL1GS" library_urn="urn:adsk.eagle:library:30514850" deviceset="UUP1C100MCL1GS" device="" package3d_urn="urn:adsk.eagle:package:30514853/2"/>
+<part name="C5" library="UUP1C100MCL1GS" library_urn="urn:adsk.eagle:library:30514850" deviceset="UUP1C100MCL1GS" device="" package3d_urn="urn:adsk.eagle:package:30514853/2"/>
 <part name="LED7" library="599-0181-007F" library_urn="urn:adsk.eagle:library:30514893" deviceset="599-0181-007F" device="" package3d_urn="urn:adsk.eagle:package:30514896/2"/>
 <part name="LED8" library="599-0181-007F" library_urn="urn:adsk.eagle:library:30514893" deviceset="599-0181-007F" device="" package3d_urn="urn:adsk.eagle:package:30514896/2"/>
 <part name="R12" library="RC0805FR-071KL" library_urn="urn:adsk.eagle:library:30514931" deviceset="RC0805FR-071KL" device="" package3d_urn="urn:adsk.eagle:package:30514934/2"/>
@@ -7191,7 +7191,7 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <part name="JP4" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1" override_package3d_urn="urn:adsk.eagle:package:30541858/2" override_package_urn="urn:adsk.eagle:footprint:15398/1"/>
 <part name="U1" library="LD1117S33TR" library_urn="urn:adsk.eagle:library:30606054" deviceset="LD1117S33TR" device="" package3d_urn="urn:adsk.eagle:package:30606057/2"/>
 <part name="C7" library="UUP1C100MCL1GS" library_urn="urn:adsk.eagle:library:30514850" deviceset="UUP1C100MCL1GS" device="" package3d_urn="urn:adsk.eagle:package:30514853/2"/>
-<part name="C8" library="C0805X104K1RAC3316" library_urn="urn:adsk.eagle:library:30534331" deviceset="C0805X104K1RAC3316" device="" package3d_urn="urn:adsk.eagle:package:30534334/2"/>
+<part name="C6" library="C0805X104K1RAC3316" library_urn="urn:adsk.eagle:library:30534331" deviceset="C0805X104K1RAC3316" device="" package3d_urn="urn:adsk.eagle:package:30534334/2"/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
@@ -7355,10 +7355,10 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <attribute name="NAME" x="114.89" y="69.26" size="1.778" layer="95" rot="MR0" align="center-left"/>
 <attribute name="VALUE" x="125.85" y="66.72" size="1.778" layer="96" rot="MR0" align="center-left"/>
 </instance>
-<instance part="C2" gate="G$1" x="151.8" y="144.6" smashed="yes" rot="R270">
+<instance part="C1" gate="G$1" x="151.8" y="144.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="153.45" y="142.41" size="1.778" layer="95" align="center-left"/>
 </instance>
-<instance part="C3" gate="G$1" x="162.8" y="145" smashed="yes" rot="R270">
+<instance part="C2" gate="G$1" x="162.8" y="145" smashed="yes" rot="R270">
 <attribute name="NAME" x="164.65" y="142.71" size="1.778" layer="95" align="center-left"/>
 </instance>
 <instance part="R15" gate="G$1" x="83.74" y="43.56" smashed="yes" rot="R90">
@@ -7475,11 +7475,11 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <junction x="12.7" y="20.32"/>
 </segment>
 <segment>
-<pinref part="C2" gate="G$1" pin="-"/>
+<pinref part="C1" gate="G$1" pin="-"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="151.8" y1="131.9" x2="151.8" y2="127" width="0.1524" layer="91"/>
 <wire x1="151.8" y1="127" x2="157.48" y2="127" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="-"/>
+<pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="157.48" y1="127" x2="162.8" y2="127" width="0.1524" layer="91"/>
 <wire x1="162.8" y1="127" x2="162.8" y2="132.3" width="0.1524" layer="91"/>
 <junction x="157.48" y="127"/>
@@ -7803,12 +7803,12 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <wire x1="33.02" y1="147.32" x2="27.94" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C2" gate="G$1" pin="+"/>
+<pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="151.8" y1="144.6" x2="151.8" y2="149.3" width="0.1524" layer="91"/>
 <pinref part="P+13" gate="1" pin="V+"/>
 <wire x1="151.8" y1="149.3" x2="157.48" y2="149.3" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="149.3" x2="157.48" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="+"/>
+<pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="162.8" y1="145" x2="162.8" y2="149.4" width="0.1524" layer="91"/>
 <wire x1="162.8" y1="149.4" x2="157.4" y2="149.4" width="0.1524" layer="91"/>
 <wire x1="157.4" y1="149.4" x2="157.4" y2="154.94" width="0.1524" layer="91"/>
@@ -8188,7 +8188,7 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <instance part="J5" gate="G$1" x="238.76" y="53.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="233.68" y="57.15" size="1.778" layer="95" rot="R90" align="center-left"/>
 </instance>
-<instance part="C5" gate="G$1" x="14" y="9.1" smashed="yes" rot="R90">
+<instance part="C3" gate="G$1" x="14" y="9.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="16.65" y="10.99" size="1.778" layer="95" rot="R90" align="center-left"/>
 </instance>
 <instance part="C4" gate="G$1" x="76" y="8" smashed="yes" rot="R90">
@@ -8198,7 +8198,7 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <attribute name="NAME" x="45.01" y="63.22" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="45.01" y="60.68" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="C6" gate="G$1" x="25.7" y="20.6" smashed="yes" rot="R270">
+<instance part="C5" gate="G$1" x="25.7" y="20.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="21.55" y="15.91" size="1.778" layer="95" rot="R270" align="center-left"/>
 </instance>
 <instance part="LED7" gate="G$1" x="86.6" y="47.9" smashed="yes" rot="R90">
@@ -8299,13 +8299,13 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <wire x1="39" y1="6" x2="76" y2="6" width="0.1524" layer="91"/>
 <wire x1="39" y1="5.54" x2="39" y2="6" width="0.1524" layer="91"/>
 <junction x="39" y="6"/>
-<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="14" y1="9.1" x2="14" y2="6" width="0.1524" layer="91"/>
 <wire x1="14" y1="6" x2="25.7" y2="6" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="25.7" y1="6" x2="39" y2="6" width="0.1524" layer="91"/>
 <wire x1="76" y1="8" x2="76" y2="6" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="-"/>
+<pinref part="C5" gate="G$1" pin="-"/>
 <wire x1="25.7" y1="7.9" x2="25.7" y2="6" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -8476,10 +8476,10 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 </segment>
 <segment>
 <pinref part="P+21" gate="1" pin="V+"/>
-<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="20" y1="26.46" x2="14" y2="26.46" width="0.1524" layer="91"/>
 <wire x1="14" y1="26.46" x2="14" y2="21.8" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="+"/>
+<pinref part="C5" gate="G$1" pin="+"/>
 <wire x1="20" y1="26.46" x2="25.7" y2="26.46" width="0.1524" layer="91"/>
 <wire x1="25.7" y1="26.46" x2="25.7" y2="20.6" width="0.1524" layer="91"/>
 <junction x="20" y="26.46"/>
@@ -8680,8 +8680,8 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 </sheet>
 <sheet>
 <plain>
-<text x="101.6" y="182.88" size="1.778" layer="91">transductor de voltaje 3.3V to 5V</text>
-<text x="185.42" y="180.34" size="1.778" layer="91">transductor de voltaje 5V to 3.3V</text>
+<text x="109.22" y="177.8" size="1.778" layer="91">transductor de voltaje 3.3V to 5V</text>
+<text x="187.96" y="177.8" size="1.778" layer="91">transductor de voltaje 5V to 3.3V</text>
 <text x="36.5" y="107.9" size="1.9304" layer="91">Regulacion de 5V a 3.3v.</text>
 <text x="30" y="85" size="1.9304" layer="95">0.1uF</text>
 <text x="86" y="88" size="1.9304" layer="95">10uF</text>
@@ -8744,7 +8744,7 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <instance part="C7" gate="G$1" x="83" y="96" smashed="yes" rot="R270">
 <attribute name="NAME" x="86.35" y="92.11" size="1.778" layer="95" align="center-left"/>
 </instance>
-<instance part="C8" gate="G$1" x="27" y="94" smashed="yes" rot="R270">
+<instance part="C6" gate="G$1" x="27" y="94" smashed="yes" rot="R270">
 <attribute name="NAME" x="30.35" y="89.11" size="1.778" layer="95" align="center-left"/>
 </instance>
 <instance part="GND26" gate="1" x="69.7" y="77.9" smashed="yes">
@@ -8784,7 +8784,7 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="C7" gate="G$1" pin="-"/>
 <wire x1="27" y1="81.3" x2="69.78" y2="81.3" width="0.1524" layer="91"/>
 <wire x1="69.8" y1="81.3" x2="83" y2="81.3" width="0.1524" layer="91"/>
@@ -8869,7 +8869,7 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="IN"/>
-<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="34.22" y1="95" x2="27" y2="95" width="0.1524" layer="91"/>
 <wire x1="27" y1="95" x2="27" y2="94" width="0.1524" layer="91"/>
 <pinref part="P+11" gate="1" pin="V+"/>
