@@ -1,5 +1,5 @@
 # Diseño de schematic y PCB en Eagle 
-
+[Cotización de los componentes](https://docs.google.com/spreadsheets/d/19cve4B_YzyOGqIv9DEK3eCqArvopMfsAZXm61Hay0jQ/edit#gid=1774424504)
 ## ESTRUCTURA DEL PCB
 ![PCB ruteo](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/ruteo.png)
 ## PCB TERMINADA CARAS BUTTOM Y TOP
