@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -73,7 +73,7 @@
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6Z21haWwxODU1MTgw" projecturn="a.YnVzaW5lc3M6Z21haWwxODU1MTgwIzIwMjEwODI0NDM3MjIwNDA2" f3durn="urn:adsk.wipprod:dm.lineage:9RdnEizDSZWnVXfx1H3Ocg" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="20cc03f1-af99-4a4c-a276-f269cff5e179" lastsyncedrevisionid="20cc03f1-af99-4a4c-a276-f269cff5e179" lastboardhashguid="1d953e68-588c-0330-f4bb-c947bb569c06" lastpushedtime="2021-09-06T21:43:07Z" linktopcb3d="true"/>
+<fusionsync huburn="a.YnVzaW5lc3M6Z21haWwxODU1MTgw" projecturn="a.YnVzaW5lc3M6Z21haWwxODU1MTgwIzIwMjEwODI0NDM3MjIwNDA2" f3durn="urn:adsk.wipprod:dm.lineage:9RdnEizDSZWnVXfx1H3Ocg" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="c4a1ce47-2d88-4aa0-bed6-f5c6ff134eef" lastsyncedrevisionid="c4a1ce47-2d88-4aa0-bed6-f5c6ff134eef" lastboardhashguid="45040a8e-f6d4-4a60-a59d-9d538ec767cb" lastpushedtime="2021-09-06T22:51:12Z" linktopcb3d="true"/>
 <plain>
 <text x="9.69" y="29.4" size="1.778" layer="25">MCLR</text>
 <dimension x1="0" y1="100" x2="160" y2="100" x3="80" y3="104" textsize="1.778" layer="27"/>
@@ -14791,9 +14791,9 @@ design rules under a new name.</description>
 <wire x1="131.29" y1="25.7" x2="117.59" y2="12" width="0.254" layer="16"/>
 <wire x1="133.1" y1="38.275" x2="133.1" y2="38.925" width="0.254" layer="1"/>
 <wire x1="133.1" y1="38.275" x2="130.975" y2="38.275" width="0.254" layer="1"/>
-<wire x1="130.975" y1="38.275" x2="130.3" y2="37.6" width="0.254" layer="1"/>
-<wire x1="130.3" y1="37.6" x2="130.3" y2="26.69" width="0.254" layer="1"/>
-<wire x1="130.3" y1="26.69" x2="131.29" y2="25.7" width="0.254" layer="1"/>
+<wire x1="130.975" y1="38.275" x2="130.1" y2="37.4" width="0.254" layer="1"/>
+<wire x1="130.1" y1="37.4" x2="130.1" y2="26.89" width="0.254" layer="1"/>
+<wire x1="130.1" y1="26.89" x2="131.29" y2="25.7" width="0.254" layer="1"/>
 <wire x1="126.1" y1="42.175" x2="118.6" y2="42.175" width="0.254" layer="1"/>
 <wire x1="94.5" y1="34.7" x2="96.48" y2="41.68" width="0.254" layer="1"/>
 <wire x1="96.48" y1="41.68" x2="96.48" y2="43.6" width="0.254" layer="1"/>
@@ -15076,8 +15076,10 @@ design rules under a new name.</description>
 <signal name="N$21">
 <contactref element="JP6" pad="2"/>
 <contactref element="IC4" pad="16"/>
-<wire x1="133.83" y1="25.7" x2="131" y2="28.53" width="0.254" layer="1"/>
-<wire x1="131" y1="28.53" x2="131" y2="35.8" width="0.254" layer="1"/>
+<wire x1="133.83" y1="25.7" x2="133.73" y2="25.8" width="0.254" layer="1"/>
+<wire x1="133.73" y1="27.1" x2="133.73" y2="25.8" width="0.254" layer="1"/>
+<wire x1="133.73" y1="27.1" x2="131" y2="29.83" width="0.254" layer="1"/>
+<wire x1="131" y1="29.83" x2="131" y2="35.8" width="0.254" layer="1"/>
 <wire x1="131" y1="35.8" x2="131.525" y2="36.325" width="0.254" layer="1"/>
 <wire x1="131.525" y1="36.325" x2="133.1" y2="36.325" width="0.254" layer="1"/>
 </signal>
@@ -15116,12 +15118,12 @@ design rules under a new name.</description>
 <signal name="N$3">
 <contactref element="IC4" pad="23"/>
 <contactref element="LED7" pad="1"/>
-<wire x1="128.7" y1="39.9" x2="129.7" y2="40.9" width="0.254" layer="1"/>
+<wire x1="128.4" y1="39.6" x2="129.7" y2="40.9" width="0.254" layer="1"/>
 <wire x1="133.075" y1="40.9" x2="133.1" y2="40.875" width="0.254" layer="1"/>
 <wire x1="129.7" y1="40.9" x2="133.075" y2="40.9" width="0.254" layer="1"/>
 <wire x1="121.15" y1="3.1" x2="121.15" y2="26.35" width="0.254" layer="1"/>
-<wire x1="128.7" y1="33.9" x2="128.7" y2="39.9" width="0.254" layer="1"/>
-<wire x1="121.15" y1="26.35" x2="128.7" y2="33.9" width="0.254" layer="1"/>
+<wire x1="128.4" y1="33.6" x2="128.4" y2="39.6" width="0.254" layer="1"/>
+<wire x1="121.15" y1="26.35" x2="128.4" y2="33.6" width="0.254" layer="1"/>
 </signal>
 <signal name="N$18">
 <contactref element="IC4" pad="22"/>
@@ -15129,9 +15131,9 @@ design rules under a new name.</description>
 <wire x1="113.75" y1="3" x2="115.607" y2="1.143" width="0.254" layer="1"/>
 <wire x1="115.607" y1="1.143" x2="123.6" y2="1.143" width="0.254" layer="1"/>
 <wire x1="123.6" y1="1.143" x2="124.4" y2="1.943" width="0.254" layer="1"/>
-<wire x1="124.4" y1="27.9" x2="129.4" y2="32.9" width="0.254" layer="1"/>
-<wire x1="129.4" y1="32.9" x2="129.4" y2="39.4" width="0.254" layer="1"/>
-<wire x1="129.4" y1="39.4" x2="130.269" y2="40.269" width="0.254" layer="1"/>
+<wire x1="124.4" y1="27.9" x2="129.2" y2="32.7" width="0.254" layer="1"/>
+<wire x1="129.2" y1="32.7" x2="129.2" y2="39.2" width="0.254" layer="1"/>
+<wire x1="129.2" y1="39.2" x2="130.269" y2="40.269" width="0.254" layer="1"/>
 <wire x1="133.056" y1="40.269" x2="133.1" y2="40.225" width="0.254" layer="1"/>
 <wire x1="124.4" y1="1.943" x2="124.4" y2="27.9" width="0.254" layer="1"/>
 <wire x1="130.269" y1="40.269" x2="133.056" y2="40.269" width="0.254" layer="1"/>

@@ -7221,6 +7221,8 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/lm35"&gt; Datasheet &lt;/a&gt;</de
 <text x="153" y="134" size="1.778" layer="95">104</text>
 <text x="221" y="73" size="1.778" layer="95" rot="R90">1k</text>
 <text x="203.2" y="177.8" size="2.54" layer="91">Buzzer y Fan</text>
+<text x="175.26" y="167.64" size="1.778" layer="91">PGD</text>
+<text x="175.26" y="165.1" size="1.778" layer="91">PGC</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
