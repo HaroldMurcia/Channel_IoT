@@ -1,0 +1,2622 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"229 SSD1306oLED.c
+[; ;SSD1306oLED.c: 229: void oled_writeCommand(uint8_t);
+[v _oled_writeCommand `(v ~T0 @X0 0 ef1`uc ]
+"37 ./SSD1306oLED.h
+[; ;./SSD1306oLED.h: 37:     {
+[s S635 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S635 . d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 d10 d11 d12 d13 d14 d15 d16 d17 d18 d19 d20 ]
+"35
+[; ;./SSD1306oLED.h: 35: {
+[u S634 `S635 1 `uc -> 21 `i ]
+[n S634 . . b ]
+"80
+[; ;./SSD1306oLED.h: 80: void oled_putString(const char *string, uint8_t station_dot, uint8_t start_page);
+[v _oled_putString `(v ~T0 @X0 0 ef3`*Cuc`uc`uc ]
+"78
+[; ;./SSD1306oLED.h: 78: void oled_putChar(char k,uint8_t station_dot, uint8_t start_page);
+[v _oled_putChar `(v ~T0 @X0 0 ef3`uc`uc`uc ]
+"230 SSD1306oLED.c
+[; ;SSD1306oLED.c: 230: void oled_writeData(uint8_t);
+[v _oled_writeData `(v ~T0 @X0 0 ef1`uc ]
+"72 ./SSD1306oLED.h
+[; ;./SSD1306oLED.h: 72: void oled_clearRow(uint8_t page);
+[v _oled_clearRow `(v ~T0 @X0 0 ef1`uc ]
+"5462 C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5462:     struct {
+[s S217 :1 `uc 1 :1 `uc 1 :1 `uc 1 :4 `uc 1 :1 `uc 1 ]
+[n S217 . TRISE0 TRISE1 TRISE2 . WPUE3 ]
+"5469
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5469:     struct {
+[s S218 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S218 . RE0 RE1 RE2 ]
+"5461
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5461: typedef union {
+[u S216 `S217 1 `S218 1 ]
+[n S216 . . . ]
+"5475
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5475: extern volatile TRISEbits_t TRISEbits __attribute__((address(0xF96)));
+[v _TRISEbits `VS216 ~T0 @X0 0 e@3990 ]
+"4204
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4204:     struct {
+[s S174 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S174 . LATE0 LATE1 LATE2 ]
+"4209
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4209:     struct {
+[s S175 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S175 . LE0 LE1 LE2 ]
+"4203
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4203: typedef union {
+[u S173 `S174 1 `S175 1 ]
+[n S173 . . . ]
+"4215
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4215: extern volatile LATEbits_t LATEbits __attribute__((address(0xF8D)));
+[v _LATEbits `VS173 ~T0 @X0 0 e@3981 ]
+"4840
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4840:     struct {
+[s S199 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S199 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
+"4850
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4850:     struct {
+[s S200 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S200 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"4839
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4839: typedef union {
+[u S198 `S199 1 `S200 1 ]
+[n S198 . . . ]
+"4861
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4861: extern volatile TRISBbits_t TRISBbits __attribute__((address(0xF93)));
+[v _TRISBbits `VS198 ~T0 @X0 0 e@3987 ]
+"5062
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5062:     struct {
+[s S205 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S205 . TRISC0 TRISC1 TRISC2 . TRISC4 TRISC5 TRISC6 TRISC7 ]
+"5072
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5072:     struct {
+[s S206 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S206 . RC0 RC1 RC2 . RC6 RC7 ]
+"5061
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5061: typedef union {
+[u S204 `S205 1 `S206 1 ]
+[n S204 . . . ]
+"5081
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5081: extern volatile TRISCbits_t TRISCbits __attribute__((address(0xF94)));
+[v _TRISCbits `VS204 ~T0 @X0 0 e@3988 ]
+"3878
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3878:     struct {
+[s S165 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S165 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
+"3888
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3888:     struct {
+[s S166 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S166 . LB0 LB1 LB2 LB3 LB4 LB5 LB6 LB7 ]
+"3877
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3877: typedef union {
+[u S164 `S165 1 `S166 1 ]
+[n S164 . . . ]
+"3899
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3899: extern volatile LATBbits_t LATBbits __attribute__((address(0xF8A)));
+[v _LATBbits `VS164 ~T0 @X0 0 e@3978 ]
+"228 SSD1306oLED.c
+[; ;SSD1306oLED.c: 228: void oled_devInit(void);
+[v _oled_devInit `(v ~T0 @X0 0 ef ]
+"470
+[; ;SSD1306oLED.c: 470:     oled_setDisplay(Inverse);
+[c E4838 0 1 .. ]
+[n E4838 . Normal Inverse  ]
+"74 ./SSD1306oLED.h
+[; ;./SSD1306oLED.h: 74: void oled_setDisplay (oLED_DisplayMode_t);
+[v _oled_setDisplay `(v ~T0 @X0 0 ef1`E4838 ]
+[v F183 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\builtins.h
+[v __delay `JF183 ~T0 @X0 0 e ]
+[p i __delay ]
+"233 SSD1306oLED.c
+[; ;SSD1306oLED.c: 233: void oled_powerControl(uint8_t vol);
+[v _oled_powerControl `(v ~T0 @X0 0 ef1`uc ]
+"234
+[; ;SSD1306oLED.c: 234: void oled_regulorResistorSelect(uint8_t r);
+[v _oled_regulorResistorSelect `(v ~T0 @X0 0 ef1`uc ]
+"231
+[; ;SSD1306oLED.c: 231: void oled_setContrastControlRegister(uint8_t);
+[v _oled_setContrastControlRegister `(v ~T0 @X0 0 ef1`uc ]
+"232
+[; ;SSD1306oLED.c: 232: void oled_initialDispayLine(uint8_t line);
+[v _oled_initialDispayLine `(v ~T0 @X0 0 ef1`uc ]
+"3990 C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3990:     struct {
+[s S168 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S168 . LATC0 LATC1 LATC2 . LATC4 LATC5 LATC6 LATC7 ]
+"4000
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4000:     struct {
+[s S169 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S169 . LC0 LC1 LC2 . LC4 LC5 LC6 LC7 ]
+"3989
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3989: typedef union {
+[u S167 `S168 1 `S169 1 ]
+[n S167 . . . ]
+"4011
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4011: extern volatile LATCbits_t LATCbits __attribute__((address(0xF8B)));
+[v _LATCbits `VS167 ~T0 @X0 0 e@3979 ]
+"4086
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4086: extern volatile unsigned char LATD __attribute__((address(0xF8C)));
+[v _LATD `Vuc ~T0 @X0 0 e@3980 ]
+"8 C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\builtins.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
+"55 C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 55: __asm("SRCON1 equ 0F57h");
+[; <" SRCON1 equ 0F57h ;# ">
+"117
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 117: __asm("SRCON0 equ 0F58h");
+[; <" SRCON0 equ 0F58h ;# ">
+"188
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 188: __asm("CCPTMRS equ 0F59h");
+[; <" CCPTMRS equ 0F59h ;# ">
+"215
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 215: __asm("ANSELA equ 0F5Bh");
+[; <" ANSELA equ 0F5Bh ;# ">
+"260
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 260: __asm("ANSELB equ 0F5Ch");
+[; <" ANSELB equ 0F5Ch ;# ">
+"310
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 310: __asm("ANSELC equ 0F5Dh");
+[; <" ANSELC equ 0F5Dh ;# ">
+"344
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 344: __asm("ANSELD equ 0F5Eh");
+[; <" ANSELD equ 0F5Eh ;# ">
+"406
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 406: __asm("ANSELE equ 0F5Fh");
+[; <" ANSELE equ 0F5Fh ;# ">
+"438
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 438: __asm("UCON equ 0F60h");
+[; <" UCON equ 0F60h ;# ">
+"489
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 489: __asm("USTAT equ 0F61h");
+[; <" USTAT equ 0F61h ;# ">
+"549
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 549: __asm("UCFG equ 0F62h");
+[; <" UCFG equ 0F62h ;# ">
+"628
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 628: __asm("UADDR equ 0F63h");
+[; <" UADDR equ 0F63h ;# ">
+"692
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 692: __asm("UIE equ 0F64h");
+[; <" UIE equ 0F64h ;# ">
+"748
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 748: __asm("UIR equ 0F65h");
+[; <" UIR equ 0F65h ;# ">
+"804
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 804: __asm("UEIE equ 0F66h");
+[; <" UEIE equ 0F66h ;# ">
+"855
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 855: __asm("UEIR equ 0F67h");
+[; <" UEIR equ 0F67h ;# ">
+"906
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 906: __asm("UFRM equ 0F68h");
+[; <" UFRM equ 0F68h ;# ">
+"913
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 913: __asm("UFRML equ 0F68h");
+[; <" UFRML equ 0F68h ;# ">
+"991
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 991: __asm("UFRMH equ 0F69h");
+[; <" UFRMH equ 0F69h ;# ">
+"1031
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 1031: __asm("UEP0 equ 0F6Ah");
+[; <" UEP0 equ 0F6Ah ;# ">
+"1139
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 1139: __asm("UEP1 equ 0F6Bh");
+[; <" UEP1 equ 0F6Bh ;# ">
+"1247
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 1247: __asm("UEP2 equ 0F6Ch");
+[; <" UEP2 equ 0F6Ch ;# ">
+"1355
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 1355: __asm("UEP3 equ 0F6Dh");
+[; <" UEP3 equ 0F6Dh ;# ">
+"1463
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 1463: __asm("UEP4 equ 0F6Eh");
+[; <" UEP4 equ 0F6Eh ;# ">
+"1571
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 1571: __asm("UEP5 equ 0F6Fh");
+[; <" UEP5 equ 0F6Fh ;# ">
+"1679
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 1679: __asm("UEP6 equ 0F70h");
+[; <" UEP6 equ 0F70h ;# ">
+"1787
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 1787: __asm("UEP7 equ 0F71h");
+[; <" UEP7 equ 0F71h ;# ">
+"1895
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 1895: __asm("UEP8 equ 0F72h");
+[; <" UEP8 equ 0F72h ;# ">
+"1971
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 1971: __asm("UEP9 equ 0F73h");
+[; <" UEP9 equ 0F73h ;# ">
+"2047
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 2047: __asm("UEP10 equ 0F74h");
+[; <" UEP10 equ 0F74h ;# ">
+"2123
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 2123: __asm("UEP11 equ 0F75h");
+[; <" UEP11 equ 0F75h ;# ">
+"2199
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 2199: __asm("UEP12 equ 0F76h");
+[; <" UEP12 equ 0F76h ;# ">
+"2275
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 2275: __asm("UEP13 equ 0F77h");
+[; <" UEP13 equ 0F77h ;# ">
+"2351
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 2351: __asm("UEP14 equ 0F78h");
+[; <" UEP14 equ 0F78h ;# ">
+"2427
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 2427: __asm("UEP15 equ 0F79h");
+[; <" UEP15 equ 0F79h ;# ">
+"2503
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 2503: __asm("SLRCON equ 0F7Ah");
+[; <" SLRCON equ 0F7Ah ;# ">
+"2547
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 2547: __asm("VREFCON2 equ 0F7Bh");
+[; <" VREFCON2 equ 0F7Bh ;# ">
+"2599
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 2599: __asm("VREFCON1 equ 0F7Ch");
+[; <" VREFCON1 equ 0F7Ch ;# ">
+"2660
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 2660: __asm("VREFCON0 equ 0F7Dh");
+[; <" VREFCON0 equ 0F7Dh ;# ">
+"2720
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 2720: __asm("PMD0 equ 0F7Eh");
+[; <" PMD0 equ 0F7Eh ;# ">
+"2802
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 2802: __asm("PMD1 equ 0F7Fh");
+[; <" PMD1 equ 0F7Fh ;# ">
+"2884
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 2884: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"3036
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3036: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"3146
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3146: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"3288
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3288: __asm("PORTD equ 0F83h");
+[; <" PORTD equ 0F83h ;# ">
+"3409
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3409: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"3528
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3528: __asm("WPUB equ 0F85h");
+[; <" WPUB equ 0F85h ;# ">
+"3590
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3590: __asm("IOCB equ 0F86h");
+[; <" IOCB equ 0F86h ;# ">
+"3629
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3629: __asm("IOCC equ 0F87h");
+[; <" IOCC equ 0F87h ;# ">
+"3686
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3686: __asm("CTMUICON equ 0F88h");
+[; <" CTMUICON equ 0F88h ;# ">
+"3762
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3762: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"3874
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3874: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"3986
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 3986: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"4088
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4088: __asm("LATD equ 0F8Ch");
+[; <" LATD equ 0F8Ch ;# ">
+"4200
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4200: __asm("LATE equ 0F8Dh");
+[; <" LATE equ 0F8Dh ;# ">
+"4252
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4252: __asm("CTMUCONL equ 0F8Eh");
+[; <" CTMUCONL equ 0F8Eh ;# ">
+"4257
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4257: __asm("CTMUCON1 equ 0F8Eh");
+[; <" CTMUCON1 equ 0F8Eh ;# ">
+"4406
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4406: __asm("CTMUCONH equ 0F8Fh");
+[; <" CTMUCONH equ 0F8Fh ;# ">
+"4411
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4411: __asm("CTMUCON0 equ 0F8Fh");
+[; <" CTMUCON0 equ 0F8Fh ;# ">
+"4562
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4562: __asm("CCPR2 equ 0F90h");
+[; <" CCPR2 equ 0F90h ;# ">
+"4569
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4569: __asm("CCPR2L equ 0F90h");
+[; <" CCPR2L equ 0F90h ;# ">
+"4589
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4589: __asm("CCPR2H equ 0F91h");
+[; <" CCPR2H equ 0F91h ;# ">
+"4609
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4609: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"4614
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4614: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"4831
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4831: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"4836
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 4836: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"5053
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5053: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"5058
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5058: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"5231
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5231: __asm("TRISD equ 0F95h");
+[; <" TRISD equ 0F95h ;# ">
+"5236
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5236: __asm("DDRD equ 0F95h");
+[; <" DDRD equ 0F95h ;# ">
+"5453
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5453: __asm("TRISE equ 0F96h");
+[; <" TRISE equ 0F96h ;# ">
+"5458
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5458: __asm("DDRE equ 0F96h");
+[; <" DDRE equ 0F96h ;# ">
+"5569
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5569: __asm("CCP2CON equ 0F97h");
+[; <" CCP2CON equ 0F97h ;# ">
+"5574
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5574: __asm("ECCP2CON equ 0F97h");
+[; <" ECCP2CON equ 0F97h ;# ">
+"5725
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5725: __asm("CM1CON0 equ 0F98h");
+[; <" CM1CON0 equ 0F98h ;# ">
+"5848
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5848: __asm("CM2CON0 equ 0F99h");
+[; <" CM2CON0 equ 0F99h ;# ">
+"5971
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 5971: __asm("CM2CON1 equ 0F9Ah");
+[; <" CM2CON1 equ 0F9Ah ;# ">
+"6033
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 6033: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"6103
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 6103: __asm("HLVDCON equ 0F9Ch");
+[; <" HLVDCON equ 0F9Ch ;# ">
+"6173
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 6173: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"6272
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 6272: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"6371
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 6371: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"6470
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 6470: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"6569
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 6569: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"6668
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 6668: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"6767
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 6767: __asm("PIE3 equ 0FA3h");
+[; <" PIE3 equ 0FA3h ;# ">
+"6840
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 6840: __asm("PIR3 equ 0FA4h");
+[; <" PIR3 equ 0FA4h ;# ">
+"6887
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 6887: __asm("IPR3 equ 0FA5h");
+[; <" IPR3 equ 0FA5h ;# ">
+"6934
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 6934: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"7000
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 7000: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"7020
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 7020: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"7027
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 7027: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"7034
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 7034: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"7039
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 7039: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"7240
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 7240: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"7245
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 7245: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"7534
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 7534: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"7539
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 7539: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"7572
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 7572: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"7577
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 7577: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"7610
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 7610: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"7615
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 7615: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"7748
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 7748: __asm("SPBRGH1 equ 0FB0h");
+[; <" SPBRGH1 equ 0FB0h ;# ">
+"7753
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 7753: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"7886
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 7886: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"8015
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 8015: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"8022
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 8022: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"8042
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 8042: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"8062
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 8062: __asm("T3GCON equ 0FB4h");
+[; <" T3GCON equ 0FB4h ;# ">
+"8193
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 8193: __asm("ACTCON equ 0FB5h");
+[; <" ACTCON equ 0FB5h ;# ">
+"8198
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 8198: __asm("STCON equ 0FB5h");
+[; <" STCON equ 0FB5h ;# ">
+"8399
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 8399: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"8533
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 8533: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"8538
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 8538: __asm("ECCP1DEL equ 0FB7h");
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"8683
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 8683: __asm("BAUDCON1 equ 0FB8h");
+[; <" BAUDCON1 equ 0FB8h ;# ">
+"8688
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 8688: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"8692
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 8692: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"9193
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 9193: __asm("PSTR1CON equ 0FB9h");
+[; <" PSTR1CON equ 0FB9h ;# ">
+"9269
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 9269: __asm("T2CON equ 0FBAh");
+[; <" T2CON equ 0FBAh ;# ">
+"9340
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 9340: __asm("PR2 equ 0FBBh");
+[; <" PR2 equ 0FBBh ;# ">
+"9360
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 9360: __asm("TMR2 equ 0FBCh");
+[; <" TMR2 equ 0FBCh ;# ">
+"9380
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 9380: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"9385
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 9385: __asm("ECCP1CON equ 0FBDh");
+[; <" ECCP1CON equ 0FBDh ;# ">
+"9572
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 9572: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"9579
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 9579: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"9599
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 9599: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"9619
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 9619: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"9690
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 9690: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"9758
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 9758: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"9853
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 9853: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"9860
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 9860: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"9867
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 9867: __asm("SSP1CON2 equ 0FC5h");
+[; <" SSP1CON2 equ 0FC5h ;# ">
+"9872
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 9872: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"10221
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 10221: __asm("SSP1CON1 equ 0FC6h");
+[; <" SSP1CON1 equ 0FC6h ;# ">
+"10226
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 10226: __asm("SSPCON equ 0FC6h");
+[; <" SSPCON equ 0FC6h ;# ">
+"10230
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 10230: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"10575
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 10575: __asm("SSP1STAT equ 0FC7h");
+[; <" SSP1STAT equ 0FC7h ;# ">
+"10580
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 10580: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"11173
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 11173: __asm("SSP1ADD equ 0FC8h");
+[; <" SSP1ADD equ 0FC8h ;# ">
+"11178
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 11178: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"11511
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 11511: __asm("SSP1BUF equ 0FC9h");
+[; <" SSP1BUF equ 0FC9h ;# ">
+"11516
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 11516: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"11549
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 11549: __asm("SSP1MSK equ 0FCAh");
+[; <" SSP1MSK equ 0FCAh ;# ">
+"11554
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 11554: __asm("SSPMSK equ 0FCAh");
+[; <" SSPMSK equ 0FCAh ;# ">
+"11687
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 11687: __asm("SSP1CON3 equ 0FCBh");
+[; <" SSP1CON3 equ 0FCBh ;# ">
+"11692
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 11692: __asm("SSPCON3 equ 0FCBh");
+[; <" SSPCON3 equ 0FCBh ;# ">
+"11809
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 11809: __asm("T1GCON equ 0FCCh");
+[; <" T1GCON equ 0FCCh ;# ">
+"11940
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 11940: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"12069
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12069: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"12076
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12076: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"12096
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12096: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"12116
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12116: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"12249
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12249: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"12277
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12277: __asm("OSCCON2 equ 0FD2h");
+[; <" OSCCON2 equ 0FD2h ;# ">
+"12339
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12339: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"12422
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12422: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"12492
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12492: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"12499
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12499: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"12519
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12519: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"12539
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12539: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"12610
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12610: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"12617
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12617: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"12637
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12637: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"12644
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12644: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"12664
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12664: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"12684
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12684: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"12704
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12704: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"12724
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12724: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"12744
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12744: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"12751
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12751: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"12758
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12758: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"12778
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12778: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"12785
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12785: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"12805
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12805: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"12825
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12825: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"12845
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12845: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"12865
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12865: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"12885
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12885: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"12905
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12905: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"12912
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12912: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"12932
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12932: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"12939
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12939: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"12959
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12959: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"12979
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12979: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"12999
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 12999: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"13019
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13019: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"13039
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13039: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"13131
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13131: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"13208
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13208: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"13325
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13325: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"13332
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13332: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"13352
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13352: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"13372
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13372: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"13394
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13394: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"13401
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13401: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"13421
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13421: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"13441
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13441: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"13450
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13450: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"13457
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13457: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"13464
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13464: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"13484
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13484: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"13504
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13504: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"13511
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13511: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"13585
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13585: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"13592
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13592: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"13612
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13612: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"13632
+[; ;C:/Users/ASUS/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18lf45k50.h: 13632: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"59 SSD1306oLED.c
+[; ;SSD1306oLED.c: 59: unsigned char Contrast_level=19;
+[v _Contrast_level `uc ~T0 @X0 1 e ]
+[i _Contrast_level
+-> -> 19 `i `uc
+]
+"60
+[; ;SSD1306oLED.c: 60: int log=0;
+[v _log `i ~T0 @X0 1 e ]
+[i _log
+-> 0 `i
+]
+"86
+[; ;SSD1306oLED.c: 86: const uint8_t OledFont0[] = {
+[v _OledFont0 `Cuc ~T0 @X0 -> 768 `i e ]
+[i _OledFont0
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 95 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 100 `i `uc
+-> -> 60 `i `uc
+-> -> 38 `i `uc
+-> -> 100 `i `uc
+-> -> 60 `i `uc
+-> -> 38 `i `uc
+-> -> 36 `i `uc
+-> -> 0 `i `uc
+-> -> 38 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 127 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 50 `i `uc
+-> -> 0 `i `uc
+-> -> 66 `i `uc
+-> -> 37 `i `uc
+-> -> 18 `i `uc
+-> -> 8 `i `uc
+-> -> 36 `i `uc
+-> -> 82 `i `uc
+-> -> 33 `i `uc
+-> -> 0 `i `uc
+-> -> 32 `i `uc
+-> -> 80 `i `uc
+-> -> 78 `i `uc
+-> -> 85 `i `uc
+-> -> 34 `i `uc
+-> -> 88 `i `uc
+-> -> 40 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 28 `i `uc
+-> -> 34 `i `uc
+-> -> 65 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 34 `i `uc
+-> -> 28 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 21 `i `uc
+-> -> 21 `i `uc
+-> -> 14 `i `uc
+-> -> 14 `i `uc
+-> -> 21 `i `uc
+-> -> 21 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 62 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 80 `i `uc
+-> -> 48 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 64 `i `uc
+-> -> 32 `i `uc
+-> -> 16 `i `uc
+-> -> 8 `i `uc
+-> -> 4 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 62 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 62 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 66 `i `uc
+-> -> 97 `i `uc
+-> -> 81 `i `uc
+-> -> 73 `i `uc
+-> -> 110 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 34 `i `uc
+-> -> 65 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 54 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 24 `i `uc
+-> -> 20 `i `uc
+-> -> 18 `i `uc
+-> -> 127 `i `uc
+-> -> 16 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 39 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 113 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 60 `i `uc
+-> -> 74 `i `uc
+-> -> 73 `i `uc
+-> -> 72 `i `uc
+-> -> 112 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 67 `i `uc
+-> -> 33 `i `uc
+-> -> 17 `i `uc
+-> -> 13 `i `uc
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 54 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 54 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 6 `i `uc
+-> -> 9 `i `uc
+-> -> 73 `i `uc
+-> -> 41 `i `uc
+-> -> 30 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 18 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 82 `i `uc
+-> -> 48 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 8 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 34 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 34 `i `uc
+-> -> 20 `i `uc
+-> -> 20 `i `uc
+-> -> 8 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 89 `i `uc
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 62 `i `uc
+-> -> 65 `i `uc
+-> -> 93 `i `uc
+-> -> 85 `i `uc
+-> -> 77 `i `uc
+-> -> 81 `i `uc
+-> -> 46 `i `uc
+-> -> 0 `i `uc
+-> -> 64 `i `uc
+-> -> 124 `i `uc
+-> -> 74 `i `uc
+-> -> 9 `i `uc
+-> -> 74 `i `uc
+-> -> 124 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 54 `i `uc
+-> -> 0 `i `uc
+-> -> 28 `i `uc
+-> -> 34 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 34 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 34 `i `uc
+-> -> 28 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 93 `i `uc
+-> -> 65 `i `uc
+-> -> 99 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 73 `i `uc
+-> -> 9 `i `uc
+-> -> 29 `i `uc
+-> -> 1 `i `uc
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 28 `i `uc
+-> -> 34 `i `uc
+-> -> 65 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 58 `i `uc
+-> -> 8 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 127 `i `uc
+-> -> 65 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 48 `i `uc
+-> -> 64 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 63 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 8 `i `uc
+-> -> 12 `i `uc
+-> -> 18 `i `uc
+-> -> 97 `i `uc
+-> -> 65 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 65 `i `uc
+-> -> 64 `i `uc
+-> -> 64 `i `uc
+-> -> 64 `i `uc
+-> -> 96 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 66 `i `uc
+-> -> 12 `i `uc
+-> -> 66 `i `uc
+-> -> 127 `i `uc
+-> -> 65 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 66 `i `uc
+-> -> 12 `i `uc
+-> -> 17 `i `uc
+-> -> 127 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 28 `i `uc
+-> -> 34 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 34 `i `uc
+-> -> 28 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 73 `i `uc
+-> -> 9 `i `uc
+-> -> 9 `i `uc
+-> -> 9 `i `uc
+-> -> 6 `i `uc
+-> -> 0 `i `uc
+-> -> 12 `i `uc
+-> -> 18 `i `uc
+-> -> 33 `i `uc
+-> -> 33 `i `uc
+-> -> 97 `i `uc
+-> -> 82 `i `uc
+-> -> 76 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 9 `i `uc
+-> -> 9 `i `uc
+-> -> 25 `i `uc
+-> -> 105 `i `uc
+-> -> 70 `i `uc
+-> -> 0 `i `uc
+-> -> 102 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 51 `i `uc
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 1 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 65 `i `uc
+-> -> 1 `i `uc
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 63 `i `uc
+-> -> 65 `i `uc
+-> -> 64 `i `uc
+-> -> 65 `i `uc
+-> -> 63 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 15 `i `uc
+-> -> 49 `i `uc
+-> -> 64 `i `uc
+-> -> 49 `i `uc
+-> -> 15 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 31 `i `uc
+-> -> 97 `i `uc
+-> -> 20 `i `uc
+-> -> 97 `i `uc
+-> -> 31 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 54 `i `uc
+-> -> 8 `i `uc
+-> -> 54 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 3 `i `uc
+-> -> 68 `i `uc
+-> -> 120 `i `uc
+-> -> 68 `i `uc
+-> -> 3 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 67 `i `uc
+-> -> 97 `i `uc
+-> -> 81 `i `uc
+-> -> 73 `i `uc
+-> -> 69 `i `uc
+-> -> 67 `i `uc
+-> -> 97 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 127 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 4 `i `uc
+-> -> 8 `i `uc
+-> -> 16 `i `uc
+-> -> 32 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 64 `i `uc
+-> -> 64 `i `uc
+-> -> 64 `i `uc
+-> -> 64 `i `uc
+-> -> 64 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 52 `i `uc
+-> -> 74 `i `uc
+-> -> 74 `i `uc
+-> -> 74 `i `uc
+-> -> 60 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 63 `i `uc
+-> -> 72 `i `uc
+-> -> 72 `i `uc
+-> -> 72 `i `uc
+-> -> 48 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 60 `i `uc
+-> -> 66 `i `uc
+-> -> 66 `i `uc
+-> -> 66 `i `uc
+-> -> 36 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 48 `i `uc
+-> -> 72 `i `uc
+-> -> 72 `i `uc
+-> -> 73 `i `uc
+-> -> 63 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 60 `i `uc
+-> -> 74 `i `uc
+-> -> 74 `i `uc
+-> -> 74 `i `uc
+-> -> 44 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 72 `i `uc
+-> -> 126 `i `uc
+-> -> 73 `i `uc
+-> -> 9 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 38 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 73 `i `uc
+-> -> 63 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 72 `i `uc
+-> -> 4 `i `uc
+-> -> 68 `i `uc
+-> -> 120 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 68 `i `uc
+-> -> 125 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 64 `i `uc
+-> -> 68 `i `uc
+-> -> 61 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 16 `i `uc
+-> -> 24 `i `uc
+-> -> 36 `i `uc
+-> -> 66 `i `uc
+-> -> 66 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 64 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 64 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 66 `i `uc
+-> -> 126 `i `uc
+-> -> 2 `i `uc
+-> -> 124 `i `uc
+-> -> 2 `i `uc
+-> -> 126 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 66 `i `uc
+-> -> 126 `i `uc
+-> -> 68 `i `uc
+-> -> 2 `i `uc
+-> -> 66 `i `uc
+-> -> 124 `i `uc
+-> -> 64 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 60 `i `uc
+-> -> 66 `i `uc
+-> -> 66 `i `uc
+-> -> 66 `i `uc
+-> -> 60 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 127 `i `uc
+-> -> 73 `i `uc
+-> -> 9 `i `uc
+-> -> 9 `i `uc
+-> -> 6 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 6 `i `uc
+-> -> 9 `i `uc
+-> -> 9 `i `uc
+-> -> 73 `i `uc
+-> -> 127 `i `uc
+-> -> 65 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 66 `i `uc
+-> -> 126 `i `uc
+-> -> 68 `i `uc
+-> -> 2 `i `uc
+-> -> 2 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 100 `i `uc
+-> -> 74 `i `uc
+-> -> 74 `i `uc
+-> -> 74 `i `uc
+-> -> 54 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 63 `i `uc
+-> -> 68 `i `uc
+-> -> 68 `i `uc
+-> -> 32 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 62 `i `uc
+-> -> 64 `i `uc
+-> -> 64 `i `uc
+-> -> 34 `i `uc
+-> -> 126 `i `uc
+-> -> 64 `i `uc
+-> -> 2 `i `uc
+-> -> 14 `i `uc
+-> -> 50 `i `uc
+-> -> 64 `i `uc
+-> -> 50 `i `uc
+-> -> 14 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 30 `i `uc
+-> -> 98 `i `uc
+-> -> 24 `i `uc
+-> -> 98 `i `uc
+-> -> 30 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 66 `i `uc
+-> -> 98 `i `uc
+-> -> 20 `i `uc
+-> -> 8 `i `uc
+-> -> 20 `i `uc
+-> -> 98 `i `uc
+-> -> 66 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 67 `i `uc
+-> -> 69 `i `uc
+-> -> 56 `i `uc
+-> -> 5 `i `uc
+-> -> 3 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 70 `i `uc
+-> -> 98 `i `uc
+-> -> 82 `i `uc
+-> -> 74 `i `uc
+-> -> 70 `i `uc
+-> -> 98 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 8 `i `uc
+-> -> 54 `i `uc
+-> -> 65 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 127 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 65 `i `uc
+-> -> 54 `i `uc
+-> -> 8 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 24 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 24 `i `uc
+-> -> 0 `i `uc
+-> -> 170 `i `uc
+-> -> 85 `i `uc
+-> -> 170 `i `uc
+-> -> 85 `i `uc
+-> -> 170 `i `uc
+-> -> 85 `i `uc
+-> -> 170 `i `uc
+-> -> 85 `i `uc
+..
+]
+"222
+[; ;SSD1306oLED.c: 222: const uint8_t *selectedFont = OledFont0;
+[v _selectedFont `*Cuc ~T0 @X0 1 e ]
+[i _selectedFont
+&U _OledFont0
+]
+"241
+[; ;SSD1306oLED.c: 241: void Set_Page_Address(uint8_t address)
+[v _Set_Page_Address `(v ~T0 @X0 1 ef1`uc ]
+"242
+[; ;SSD1306oLED.c: 242: {
+{
+[e :U _Set_Page_Address ]
+"241
+[; ;SSD1306oLED.c: 241: void Set_Page_Address(uint8_t address)
+[v _address `uc ~T0 @X0 1 r1 ]
+"242
+[; ;SSD1306oLED.c: 242: {
+[f ]
+"243
+[; ;SSD1306oLED.c: 243:     address = 0xb0 | address;
+[e = _address -> | -> 176 `i -> _address `i `uc ]
+"244
+[; ;SSD1306oLED.c: 244:     oled_writeCommand(address);
+[e ( _oled_writeCommand (1 _address ]
+"245
+[; ;SSD1306oLED.c: 245:     return;
+[e $UE 638  ]
+"246
+[; ;SSD1306oLED.c: 246: }
+[e :UE 638 ]
+}
+"249
+[; ;SSD1306oLED.c: 249: void Set_Column_Address(uint8_t address)
+[v _Set_Column_Address `(v ~T0 @X0 1 ef1`uc ]
+"250
+[; ;SSD1306oLED.c: 250: {
+{
+[e :U _Set_Column_Address ]
+"249
+[; ;SSD1306oLED.c: 249: void Set_Column_Address(uint8_t address)
+[v _address `uc ~T0 @X0 1 r1 ]
+"250
+[; ;SSD1306oLED.c: 250: {
+[f ]
+"251
+[; ;SSD1306oLED.c: 251:     oled_writeCommand((0x10|(address>>4)));
+[e ( _oled_writeCommand (1 -> | -> 16 `i >> -> _address `i -> 4 `i `uc ]
+"252
+[; ;SSD1306oLED.c: 252:     oled_writeCommand((0x0f&address));
+[e ( _oled_writeCommand (1 -> & -> 15 `i -> _address `i `uc ]
+"253
+[; ;SSD1306oLED.c: 253:     return;
+[e $UE 639  ]
+"254
+[; ;SSD1306oLED.c: 254: }
+[e :UE 639 ]
+}
+"256
+[; ;SSD1306oLED.c: 256: void oled_setFont(const uint8_t *font)
+[v _oled_setFont `(v ~T0 @X0 1 ef1`*Cuc ]
+"257
+[; ;SSD1306oLED.c: 257: {
+{
+[e :U _oled_setFont ]
+"256
+[; ;SSD1306oLED.c: 256: void oled_setFont(const uint8_t *font)
+[v _font `*Cuc ~T0 @X0 1 r1 ]
+"257
+[; ;SSD1306oLED.c: 257: {
+[f ]
+"258
+[; ;SSD1306oLED.c: 258:     if(font!=0)
+[e $ ! != _font -> -> 0 `i `*Cuc 641  ]
+"259
+[; ;SSD1306oLED.c: 259:     {
+{
+"260
+[; ;SSD1306oLED.c: 260:         selectedFont=font;
+[e = _selectedFont _font ]
+"261
+[; ;SSD1306oLED.c: 261:     }
+}
+[e :U 641 ]
+"262
+[; ;SSD1306oLED.c: 262: }
+[e :UE 640 ]
+}
+"264
+[; ;SSD1306oLED.c: 264: void oled_putUint8(uint8_t number, uint8_t station_dot, uint8_t start_page)
+[v _oled_putUint8 `(v ~T0 @X0 1 ef3`uc`uc`uc ]
+"265
+[; ;SSD1306oLED.c: 265: {
+{
+[e :U _oled_putUint8 ]
+"264
+[; ;SSD1306oLED.c: 264: void oled_putUint8(uint8_t number, uint8_t station_dot, uint8_t start_page)
+[v _number `uc ~T0 @X0 1 r1 ]
+[v _station_dot `uc ~T0 @X0 1 r2 ]
+[v _start_page `uc ~T0 @X0 1 r3 ]
+"265
+[; ;SSD1306oLED.c: 265: {
+[f ]
+"266
+[; ;SSD1306oLED.c: 266:     display_data_t numData;
+[v _numData `S634 ~T0 @X0 1 a ]
+"267
+[; ;SSD1306oLED.c: 267:     numData.d2 = '0' + (number % 10);
+[e = . . _numData 0 2 -> + -> 48 `ui -> % -> _number `i -> 10 `i `ui `uc ]
+"268
+[; ;SSD1306oLED.c: 268:     number /= 10;
+[e =/ _number -> 10 `i ]
+"269
+[; ;SSD1306oLED.c: 269:     numData.d1 = '0' + (number % 10);
+[e = . . _numData 0 1 -> + -> 48 `ui -> % -> _number `i -> 10 `i `ui `uc ]
+"270
+[; ;SSD1306oLED.c: 270:     number /= 10;
+[e =/ _number -> 10 `i ]
+"271
+[; ;SSD1306oLED.c: 271:     numData.d0 = '0' + (number % 10);
+[e = . . _numData 0 0 -> + -> 48 `ui -> % -> _number `i -> 10 `i `ui `uc ]
+"273
+[; ;SSD1306oLED.c: 273:     numData.b[3]=0;
+[e = *U + &U . _numData 1 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _numData 1 `ui `ux -> -> 0 `i `uc ]
+"275
+[; ;SSD1306oLED.c: 275:     oled_putString(numData.b,station_dot,start_page);
+[e ( _oled_putString (3 , , -> &U . _numData 1 `*Cuc _station_dot _start_page ]
+"276
+[; ;SSD1306oLED.c: 276: }
+[e :UE 642 ]
+}
+"278
+[; ;SSD1306oLED.c: 278: void oled_putint8(uint8_t number, uint8_t station_dot, uint8_t start_page)
+[v _oled_putint8 `(v ~T0 @X0 1 ef3`uc`uc`uc ]
+"279
+[; ;SSD1306oLED.c: 279: {
+{
+[e :U _oled_putint8 ]
+"278
+[; ;SSD1306oLED.c: 278: void oled_putint8(uint8_t number, uint8_t station_dot, uint8_t start_page)
+[v _number `uc ~T0 @X0 1 r1 ]
+[v _station_dot `uc ~T0 @X0 1 r2 ]
+[v _start_page `uc ~T0 @X0 1 r3 ]
+"279
+[; ;SSD1306oLED.c: 279: {
+[f ]
+"280
+[; ;SSD1306oLED.c: 280:     display_data_t numData;
+[v _numData `S634 ~T0 @X0 1 a ]
+"281
+[; ;SSD1306oLED.c: 281:     _Bool negative = 0;
+[v _negative `a ~T0 @X0 1 a ]
+[e = _negative -> -> 0 `i `a ]
+"283
+[; ;SSD1306oLED.c: 283:     if(number & 0x80)
+[e $ ! != & -> _number `i -> 128 `i -> 0 `i 644  ]
+"284
+[; ;SSD1306oLED.c: 284:         negative = 1;
+[e = _negative -> -> 1 `i `a ]
+[e :U 644 ]
+"285
+[; ;SSD1306oLED.c: 285:     number = (number & 0x7F);
+[e = _number -> & -> _number `i -> 127 `i `uc ]
+"287
+[; ;SSD1306oLED.c: 287:     numData.d2 = '0' + (number % 10);
+[e = . . _numData 0 2 -> + -> 48 `ui -> % -> _number `i -> 10 `i `ui `uc ]
+"288
+[; ;SSD1306oLED.c: 288:     number /= 10;
+[e =/ _number -> 10 `i ]
+"289
+[; ;SSD1306oLED.c: 289:     numData.d1 = '0' + (number % 10);
+[e = . . _numData 0 1 -> + -> 48 `ui -> % -> _number `i -> 10 `i `ui `uc ]
+"290
+[; ;SSD1306oLED.c: 290:     number /= 10;
+[e =/ _number -> 10 `i ]
+"291
+[; ;SSD1306oLED.c: 291:     numData.d0 = '0' + (number % 10);
+[e = . . _numData 0 0 -> + -> 48 `ui -> % -> _number `i -> 10 `i `ui `uc ]
+"292
+[; ;SSD1306oLED.c: 292:     if(negative)
+[e $ ! != -> _negative `i -> 0 `i 645  ]
+"293
+[; ;SSD1306oLED.c: 293:         numData.d0 = '-';
+[e = . . _numData 0 0 -> -> 45 `ui `uc ]
+[e :U 645 ]
+"295
+[; ;SSD1306oLED.c: 295:     numData.b[3]=0;
+[e = *U + &U . _numData 1 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _numData 1 `ui `ux -> -> 0 `i `uc ]
+"297
+[; ;SSD1306oLED.c: 297:     oled_putString(numData.b,station_dot,start_page);
+[e ( _oled_putString (3 , , -> &U . _numData 1 `*Cuc _station_dot _start_page ]
+"298
+[; ;SSD1306oLED.c: 298: }
+[e :UE 643 ]
+}
+"300
+[; ;SSD1306oLED.c: 300: void oled_putUint16(uint16_t number, uint8_t station_dot, uint8_t start_page)
+[v _oled_putUint16 `(v ~T0 @X0 1 ef3`us`uc`uc ]
+"301
+[; ;SSD1306oLED.c: 301: {
+{
+[e :U _oled_putUint16 ]
+"300
+[; ;SSD1306oLED.c: 300: void oled_putUint16(uint16_t number, uint8_t station_dot, uint8_t start_page)
+[v _number `us ~T0 @X0 1 r1 ]
+[v _station_dot `uc ~T0 @X0 1 r2 ]
+[v _start_page `uc ~T0 @X0 1 r3 ]
+"301
+[; ;SSD1306oLED.c: 301: {
+[f ]
+"302
+[; ;SSD1306oLED.c: 302:     display_data_t numData;
+[v _numData `S634 ~T0 @X0 1 a ]
+"303
+[; ;SSD1306oLED.c: 303:     numData.d4 = '0' + (number % 10);
+[e = . . _numData 0 4 -> + -> 48 `ui % -> _number `ui -> -> 10 `i `ui `uc ]
+"304
+[; ;SSD1306oLED.c: 304:     number /= 10;
+[e =/ _number -> -> 10 `i `ui ]
+"305
+[; ;SSD1306oLED.c: 305:     numData.d3 = '0' + (number % 10);
+[e = . . _numData 0 3 -> + -> 48 `ui % -> _number `ui -> -> 10 `i `ui `uc ]
+"306
+[; ;SSD1306oLED.c: 306:     number /= 10;
+[e =/ _number -> -> 10 `i `ui ]
+"307
+[; ;SSD1306oLED.c: 307:     numData.d2 = '0' + (number % 10);
+[e = . . _numData 0 2 -> + -> 48 `ui % -> _number `ui -> -> 10 `i `ui `uc ]
+"308
+[; ;SSD1306oLED.c: 308:     number /= 10;
+[e =/ _number -> -> 10 `i `ui ]
+"309
+[; ;SSD1306oLED.c: 309:     numData.d1 = '0' + (number % 10);
+[e = . . _numData 0 1 -> + -> 48 `ui % -> _number `ui -> -> 10 `i `ui `uc ]
+"310
+[; ;SSD1306oLED.c: 310:     number /= 10;
+[e =/ _number -> -> 10 `i `ui ]
+"311
+[; ;SSD1306oLED.c: 311:     numData.d0 = '0' + (number % 10);
+[e = . . _numData 0 0 -> + -> 48 `ui % -> _number `ui -> -> 10 `i `ui `uc ]
+"313
+[; ;SSD1306oLED.c: 313:     numData.b[5]=0;
+[e = *U + &U . _numData 1 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _numData 1 `ui `ux -> -> 0 `i `uc ]
+"315
+[; ;SSD1306oLED.c: 315:     oled_putString(numData.b,station_dot,start_page);
+[e ( _oled_putString (3 , , -> &U . _numData 1 `*Cuc _station_dot _start_page ]
+"316
+[; ;SSD1306oLED.c: 316: }
+[e :UE 646 ]
+}
+"317
+[; ;SSD1306oLED.c: 317: void oled_putUint32(uint32_t number, uint8_t station_dot, uint8_t start_page)
+[v _oled_putUint32 `(v ~T0 @X0 1 ef3`ul`uc`uc ]
+"318
+[; ;SSD1306oLED.c: 318: {
+{
+[e :U _oled_putUint32 ]
+"317
+[; ;SSD1306oLED.c: 317: void oled_putUint32(uint32_t number, uint8_t station_dot, uint8_t start_page)
+[v _number `ul ~T0 @X0 1 r1 ]
+[v _station_dot `uc ~T0 @X0 1 r2 ]
+[v _start_page `uc ~T0 @X0 1 r3 ]
+"318
+[; ;SSD1306oLED.c: 318: {
+[f ]
+"319
+[; ;SSD1306oLED.c: 319:     display_data_t numData;
+[v _numData `S634 ~T0 @X0 1 a ]
+"320
+[; ;SSD1306oLED.c: 320:     numData.d9 = '0' + (number % 10);
+[e = . . _numData 0 9 -> + -> -> 48 `ui `ul % _number -> -> -> 10 `i `l `ul `uc ]
+"321
+[; ;SSD1306oLED.c: 321:     number /= 10;
+[e =/ _number -> -> -> 10 `i `l `ul ]
+"322
+[; ;SSD1306oLED.c: 322:     numData.d8 = '0' + (number % 10);
+[e = . . _numData 0 8 -> + -> -> 48 `ui `ul % _number -> -> -> 10 `i `l `ul `uc ]
+"323
+[; ;SSD1306oLED.c: 323:     number /= 10;
+[e =/ _number -> -> -> 10 `i `l `ul ]
+"324
+[; ;SSD1306oLED.c: 324:     numData.d7 = '0' + (number % 10);
+[e = . . _numData 0 7 -> + -> -> 48 `ui `ul % _number -> -> -> 10 `i `l `ul `uc ]
+"325
+[; ;SSD1306oLED.c: 325:     number /= 10;
+[e =/ _number -> -> -> 10 `i `l `ul ]
+"326
+[; ;SSD1306oLED.c: 326:     numData.d6 = '0' + (number % 10);
+[e = . . _numData 0 6 -> + -> -> 48 `ui `ul % _number -> -> -> 10 `i `l `ul `uc ]
+"327
+[; ;SSD1306oLED.c: 327:     number /= 10;
+[e =/ _number -> -> -> 10 `i `l `ul ]
+"328
+[; ;SSD1306oLED.c: 328:     numData.d5 = '0' + (number % 10);
+[e = . . _numData 0 5 -> + -> -> 48 `ui `ul % _number -> -> -> 10 `i `l `ul `uc ]
+"329
+[; ;SSD1306oLED.c: 329:     number /= 10;
+[e =/ _number -> -> -> 10 `i `l `ul ]
+"330
+[; ;SSD1306oLED.c: 330:     numData.d4 = '0' + (number % 10);
+[e = . . _numData 0 4 -> + -> -> 48 `ui `ul % _number -> -> -> 10 `i `l `ul `uc ]
+"331
+[; ;SSD1306oLED.c: 331:     number /= 10;
+[e =/ _number -> -> -> 10 `i `l `ul ]
+"332
+[; ;SSD1306oLED.c: 332:     numData.d3 = '0' + (number % 10);
+[e = . . _numData 0 3 -> + -> -> 48 `ui `ul % _number -> -> -> 10 `i `l `ul `uc ]
+"333
+[; ;SSD1306oLED.c: 333:     number /= 10;
+[e =/ _number -> -> -> 10 `i `l `ul ]
+"334
+[; ;SSD1306oLED.c: 334:     numData.d2 = '0' + (number % 10);
+[e = . . _numData 0 2 -> + -> -> 48 `ui `ul % _number -> -> -> 10 `i `l `ul `uc ]
+"335
+[; ;SSD1306oLED.c: 335:     number /= 10;
+[e =/ _number -> -> -> 10 `i `l `ul ]
+"336
+[; ;SSD1306oLED.c: 336:     numData.d1 = '0' + (number % 10);
+[e = . . _numData 0 1 -> + -> -> 48 `ui `ul % _number -> -> -> 10 `i `l `ul `uc ]
+"337
+[; ;SSD1306oLED.c: 337:     number /= 10;
+[e =/ _number -> -> -> 10 `i `l `ul ]
+"338
+[; ;SSD1306oLED.c: 338:     numData.d0 = '0' + (number % 10);
+[e = . . _numData 0 0 -> + -> -> 48 `ui `ul % _number -> -> -> 10 `i `l `ul `uc ]
+"340
+[; ;SSD1306oLED.c: 340:     numData.b[10]=0;
+[e = *U + &U . _numData 1 * -> -> -> 10 `i `ui `ux -> -> # *U &U . _numData 1 `ui `ux -> -> 0 `i `uc ]
+"342
+[; ;SSD1306oLED.c: 342:     oled_putString(numData.b,station_dot,start_page);
+[e ( _oled_putString (3 , , -> &U . _numData 1 `*Cuc _station_dot _start_page ]
+"343
+[; ;SSD1306oLED.c: 343: }
+[e :UE 647 ]
+}
+"344
+[; ;SSD1306oLED.c: 344: void oled_putUint64(uint64_t number, uint8_t station_dot, uint8_t start_page)
+[v _oled_putUint64 `(v ~T0 @X0 1 ef3`uo`uc`uc ]
+"345
+[; ;SSD1306oLED.c: 345: {
+{
+[e :U _oled_putUint64 ]
+"344
+[; ;SSD1306oLED.c: 344: void oled_putUint64(uint64_t number, uint8_t station_dot, uint8_t start_page)
+[v _number `uo ~T0 @X0 1 r1 ]
+[v _station_dot `uc ~T0 @X0 1 r2 ]
+[v _start_page `uc ~T0 @X0 1 r3 ]
+"345
+[; ;SSD1306oLED.c: 345: {
+[f ]
+"346
+[; ;SSD1306oLED.c: 346:     display_data_t numData;
+[v _numData `S634 ~T0 @X0 1 a ]
+"348
+[; ;SSD1306oLED.c: 348:     numData.d19 = '0' + (number % 10);
+[e = . . _numData 0 19 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"349
+[; ;SSD1306oLED.c: 349:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"350
+[; ;SSD1306oLED.c: 350:     numData.d18 = '0' + (number % 10);
+[e = . . _numData 0 18 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"351
+[; ;SSD1306oLED.c: 351:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"352
+[; ;SSD1306oLED.c: 352:     numData.d17 = '0' + (number % 10);
+[e = . . _numData 0 17 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"353
+[; ;SSD1306oLED.c: 353:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"354
+[; ;SSD1306oLED.c: 354:     numData.d16 = '0' + (number % 10);
+[e = . . _numData 0 16 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"355
+[; ;SSD1306oLED.c: 355:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"356
+[; ;SSD1306oLED.c: 356:     numData.d15 = '0' + (number % 10);
+[e = . . _numData 0 15 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"357
+[; ;SSD1306oLED.c: 357:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"358
+[; ;SSD1306oLED.c: 358:     numData.d14 = '0' + (number % 10);
+[e = . . _numData 0 14 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"359
+[; ;SSD1306oLED.c: 359:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"360
+[; ;SSD1306oLED.c: 360:     numData.d13 = '0' + (number % 10);
+[e = . . _numData 0 13 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"361
+[; ;SSD1306oLED.c: 361:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"362
+[; ;SSD1306oLED.c: 362:     numData.d12 = '0' + (number % 10);
+[e = . . _numData 0 12 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"363
+[; ;SSD1306oLED.c: 363:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"364
+[; ;SSD1306oLED.c: 364:     numData.d11 = '0' + (number % 10);
+[e = . . _numData 0 11 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"365
+[; ;SSD1306oLED.c: 365:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"366
+[; ;SSD1306oLED.c: 366:     numData.d10 = '0' + (number % 10);
+[e = . . _numData 0 10 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"367
+[; ;SSD1306oLED.c: 367:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"368
+[; ;SSD1306oLED.c: 368:     numData.d9 = '0' + (number % 10);
+[e = . . _numData 0 9 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"369
+[; ;SSD1306oLED.c: 369:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"370
+[; ;SSD1306oLED.c: 370:     numData.d8 = '0' + (number % 10);
+[e = . . _numData 0 8 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"371
+[; ;SSD1306oLED.c: 371:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"372
+[; ;SSD1306oLED.c: 372:     numData.d7 = '0' + (number % 10);
+[e = . . _numData 0 7 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"373
+[; ;SSD1306oLED.c: 373:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"374
+[; ;SSD1306oLED.c: 374:     numData.d6 = '0' + (number % 10);
+[e = . . _numData 0 6 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"375
+[; ;SSD1306oLED.c: 375:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"376
+[; ;SSD1306oLED.c: 376:     numData.d5 = '0' + (number % 10);
+[e = . . _numData 0 5 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"377
+[; ;SSD1306oLED.c: 377:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"378
+[; ;SSD1306oLED.c: 378:     numData.d4 = '0' + (number % 10);
+[e = . . _numData 0 4 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"379
+[; ;SSD1306oLED.c: 379:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"380
+[; ;SSD1306oLED.c: 380:     numData.d3 = '0' + (number % 10);
+[e = . . _numData 0 3 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"381
+[; ;SSD1306oLED.c: 381:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"382
+[; ;SSD1306oLED.c: 382:     numData.d2 = '0' + (number % 10);
+[e = . . _numData 0 2 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"383
+[; ;SSD1306oLED.c: 383:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"384
+[; ;SSD1306oLED.c: 384:     numData.d1 = '0' + (number % 10);
+[e = . . _numData 0 1 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"385
+[; ;SSD1306oLED.c: 385:     number /= 10;
+[e =/ _number -> -> -> 10 `i `o `uo ]
+"386
+[; ;SSD1306oLED.c: 386:     numData.d0 = '0' + (number % 10);
+[e = . . _numData 0 0 -> + -> -> 48 `ui `uo % _number -> -> -> 10 `i `o `uo `uc ]
+"388
+[; ;SSD1306oLED.c: 388:     numData.b[20]=0;
+[e = *U + &U . _numData 1 * -> -> -> 20 `i `ui `ux -> -> # *U &U . _numData 1 `ui `ux -> -> 0 `i `uc ]
+"391
+[; ;SSD1306oLED.c: 391:     uint8_t k = 0;
+[v _k `uc ~T0 @X0 1 a ]
+[e = _k -> -> 0 `i `uc ]
+"392
+[; ;SSD1306oLED.c: 392:     while(numData.b[k] != '\0')
+[e $U 649  ]
+[e :U 650 ]
+"393
+[; ;SSD1306oLED.c: 393:     {
+{
+"394
+[; ;SSD1306oLED.c: 394:         if(k<16)
+[e $ ! < -> _k `i -> 16 `i 652  ]
+"395
+[; ;SSD1306oLED.c: 395:         {
+{
+"396
+[; ;SSD1306oLED.c: 396:             oled_putChar(numData.b[k],k,start_page);
+[e ( _oled_putChar (3 , , -> *U + &U . _numData 1 * -> _k `ux -> -> # *U &U . _numData 1 `ui `ux `uc _k _start_page ]
+"397
+[; ;SSD1306oLED.c: 397:         }
+}
+[e $U 653  ]
+"398
+[; ;SSD1306oLED.c: 398:         else
+[e :U 652 ]
+"399
+[; ;SSD1306oLED.c: 399:         {
+{
+"400
+[; ;SSD1306oLED.c: 400:             oled_putChar(numData.b[k],k-16,start_page+1);
+[e ( _oled_putChar (3 , , -> *U + &U . _numData 1 * -> _k `ux -> -> # *U &U . _numData 1 `ui `ux `uc -> - -> _k `i -> 16 `i `uc -> + -> _start_page `i -> 1 `i `uc ]
+"401
+[; ;SSD1306oLED.c: 401:         }
+}
+[e :U 653 ]
+"402
+[; ;SSD1306oLED.c: 402:         k++;
+[e ++ _k -> -> 1 `i `uc ]
+"403
+[; ;SSD1306oLED.c: 403:     }
+}
+[e :U 649 ]
+"392
+[; ;SSD1306oLED.c: 392:     while(numData.b[k] != '\0')
+[e $ != -> *U + &U . _numData 1 * -> _k `ux -> -> # *U &U . _numData 1 `ui `ux `ui -> 0 `ui 650  ]
+[e :U 651 ]
+"404
+[; ;SSD1306oLED.c: 404: }
+[e :UE 648 ]
+}
+"405
+[; ;SSD1306oLED.c: 405: void oled_putChar(char k,uint8_t station_dot, uint8_t start_page)
+[v _oled_putChar `(v ~T0 @X0 1 ef3`uc`uc`uc ]
+"406
+[; ;SSD1306oLED.c: 406: {
+{
+[e :U _oled_putChar ]
+"405
+[; ;SSD1306oLED.c: 405: void oled_putChar(char k,uint8_t station_dot, uint8_t start_page)
+[v _k `uc ~T0 @X0 1 r1 ]
+[v _station_dot `uc ~T0 @X0 1 r2 ]
+[v _start_page `uc ~T0 @X0 1 r3 ]
+"406
+[; ;SSD1306oLED.c: 406: {
+[f ]
+"407
+[; ;SSD1306oLED.c: 407:     uint8_t index;
+[v _index `uc ~T0 @X0 1 a ]
+"409
+[; ;SSD1306oLED.c: 409:     Set_Page_Address(start_page);
+[e ( _Set_Page_Address (1 _start_page ]
+"410
+[; ;SSD1306oLED.c: 410:     Set_Column_Address(0x00 + station_dot * 8 + 4);
+[e ( _Set_Column_Address (1 -> + + -> 0 `i * -> _station_dot `i -> 8 `i -> 4 `i `uc ]
+"412
+[; ;SSD1306oLED.c: 412:     for(index = 0; index < 8; index++)
+{
+[e = _index -> -> 0 `i `uc ]
+[e $ < -> _index `i -> 8 `i 655  ]
+[e $U 656  ]
+[e :U 655 ]
+"413
+[; ;SSD1306oLED.c: 413:     {
+{
+"414
+[; ;SSD1306oLED.c: 414:         oled_writeData(*(selectedFont + 8 * (k - 0x20) + index));
+[e ( _oled_writeData (1 *U + + _selectedFont * -> * -> 8 `i - -> _k `i -> 32 `i `x -> -> # *U _selectedFont `i `x * -> -> _index `i `x -> -> # *U + _selectedFont * -> * -> 8 `i - -> _k `i -> 32 `i `x -> -> # *U _selectedFont `i `x `i `x ]
+"415
+[; ;SSD1306oLED.c: 415:     }
+}
+[e ++ _index -> -> 1 `i `uc ]
+[e $ < -> _index `i -> 8 `i 655  ]
+[e :U 656 ]
+}
+"416
+[; ;SSD1306oLED.c: 416: }
+[e :UE 654 ]
+}
+"418
+[; ;SSD1306oLED.c: 418: void oled_putString(const char *string, uint8_t station_dot, uint8_t start_page)
+[v _oled_putString `(v ~T0 @X0 1 ef3`*Cuc`uc`uc ]
+"419
+[; ;SSD1306oLED.c: 419: {
+{
+[e :U _oled_putString ]
+"418
+[; ;SSD1306oLED.c: 418: void oled_putString(const char *string, uint8_t station_dot, uint8_t start_page)
+[v _string `*Cuc ~T0 @X0 1 r1 ]
+[v _station_dot `uc ~T0 @X0 1 r2 ]
+[v _start_page `uc ~T0 @X0 1 r3 ]
+"419
+[; ;SSD1306oLED.c: 419: {
+[f ]
+"420
+[; ;SSD1306oLED.c: 420:     uint8_t index;
+[v _index `uc ~T0 @X0 1 a ]
+"421
+[; ;SSD1306oLED.c: 421:     for(index = station_dot; index < 16; index++)
+{
+[e = _index _station_dot ]
+[e $ < -> _index `i -> 16 `i 659  ]
+[e $U 660  ]
+[e :U 659 ]
+"422
+[; ;SSD1306oLED.c: 422:     {
+{
+"423
+[; ;SSD1306oLED.c: 423:         if (*string != 0)
+[e $ ! != -> *U _string `i -> 0 `i 662  ]
+"424
+[; ;SSD1306oLED.c: 424:         {
+{
+"425
+[; ;SSD1306oLED.c: 425:             oled_putChar(*string, index, start_page);
+[e ( _oled_putChar (3 , , *U _string _index _start_page ]
+"426
+[; ;SSD1306oLED.c: 426:             *string++;
+[e *U ++ _string * -> -> 1 `i `x -> -> # *U _string `i `x ]
+"427
+[; ;SSD1306oLED.c: 427:         }
+}
+[e $U 663  ]
+"428
+[; ;SSD1306oLED.c: 428:         else
+[e :U 662 ]
+"429
+[; ;SSD1306oLED.c: 429:         {
+{
+"430
+[; ;SSD1306oLED.c: 430:             break;
+[e $U 660  ]
+"431
+[; ;SSD1306oLED.c: 431:         }
+}
+[e :U 663 ]
+"432
+[; ;SSD1306oLED.c: 432:     }
+}
+[e ++ _index -> -> 1 `i `uc ]
+[e $ < -> _index `i -> 16 `i 659  ]
+[e :U 660 ]
+}
+"433
+[; ;SSD1306oLED.c: 433: }
+[e :UE 658 ]
+}
+"435
+[; ;SSD1306oLED.c: 435: void oled_clear(void)
+[v _oled_clear `(v ~T0 @X0 1 ef ]
+"436
+[; ;SSD1306oLED.c: 436: {
+{
+[e :U _oled_clear ]
+[f ]
+"437
+[; ;SSD1306oLED.c: 437:     oled_clearRow(0);
+[e ( _oled_clearRow (1 -> -> 0 `i `uc ]
+"438
+[; ;SSD1306oLED.c: 438:     oled_clearRow(1);
+[e ( _oled_clearRow (1 -> -> 1 `i `uc ]
+"439
+[; ;SSD1306oLED.c: 439:     oled_clearRow(2);
+[e ( _oled_clearRow (1 -> -> 2 `i `uc ]
+"440
+[; ;SSD1306oLED.c: 440:     oled_clearRow(3);
+[e ( _oled_clearRow (1 -> -> 3 `i `uc ]
+"441
+[; ;SSD1306oLED.c: 441: }
+[e :UE 664 ]
+}
+"443
+[; ;SSD1306oLED.c: 443: void oled_clearRow(uint8_t page)
+[v _oled_clearRow `(v ~T0 @X0 1 ef1`uc ]
+"444
+[; ;SSD1306oLED.c: 444: {
+{
+[e :U _oled_clearRow ]
+"443
+[; ;SSD1306oLED.c: 443: void oled_clearRow(uint8_t page)
+[v _page `uc ~T0 @X0 1 r1 ]
+"444
+[; ;SSD1306oLED.c: 444: {
+[f ]
+"445
+[; ;SSD1306oLED.c: 445:     uint8_t index;
+[v _index `uc ~T0 @X0 1 a ]
+"447
+[; ;SSD1306oLED.c: 447:     for(index = 0; index < 16; index++)
+{
+[e = _index -> -> 0 `i `uc ]
+[e $ < -> _index `i -> 16 `i 666  ]
+[e $U 667  ]
+[e :U 666 ]
+"448
+[; ;SSD1306oLED.c: 448:     {
+{
+"449
+[; ;SSD1306oLED.c: 449:       oled_putChar( ' ', index, page);
+[e ( _oled_putChar (3 , , -> -> 32 `ui `uc _index _page ]
+"450
+[; ;SSD1306oLED.c: 450:     }
+}
+[e ++ _index -> -> 1 `i `uc ]
+[e $ < -> _index `i -> 16 `i 666  ]
+[e :U 667 ]
+}
+"451
+[; ;SSD1306oLED.c: 451: }
+[e :UE 665 ]
+}
+"453
+[; ;SSD1306oLED.c: 453: void oled_init(void)
+[v _oled_init `(v ~T0 @X0 1 ef ]
+"454
+[; ;SSD1306oLED.c: 454: {
+{
+[e :U _oled_init ]
+[f ]
+"456
+[; ;SSD1306oLED.c: 456:     TRISEbits.TRISE2 = 0;
+[e = . . _TRISEbits 0 2 -> -> 0 `i `uc ]
+"457
+[; ;SSD1306oLED.c: 457:     LATEbits.LATE2 = 1;
+[e = . . _LATEbits 0 2 -> -> 1 `i `uc ]
+"458
+[; ;SSD1306oLED.c: 458:     TRISBbits.TRISB2 = 0;
+[e = . . _TRISBbits 0 2 -> -> 0 `i `uc ]
+"459
+[; ;SSD1306oLED.c: 459:     TRISBbits.TRISB3 = 0;
+[e = . . _TRISBbits 0 3 -> -> 0 `i `uc ]
+"460
+[; ;SSD1306oLED.c: 460:     TRISBbits.TRISB4 = 0;
+[e = . . _TRISBbits 0 4 -> -> 0 `i `uc ]
+"461
+[; ;SSD1306oLED.c: 461:     TRISCbits.TRISC0 = 0;
+[e = . . _TRISCbits 0 0 -> -> 0 `i `uc ]
+"462
+[; ;SSD1306oLED.c: 462:     TRISCbits.TRISC1 = 0;
+[e = . . _TRISCbits 0 1 -> -> 0 `i `uc ]
+"464
+[; ;SSD1306oLED.c: 464:     LATBbits.LATB3 = 1;
+[e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
+"466
+[; ;SSD1306oLED.c: 466:     LATBbits.LATB4 = 0;
+[e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
+"468
+[; ;SSD1306oLED.c: 468:     oled_devInit();
+[e ( _oled_devInit ..  ]
+"470
+[; ;SSD1306oLED.c: 470:     oled_setDisplay(Inverse);
+[e ( _oled_setDisplay (1 . `E4838 1 ]
+"471
+[; ;SSD1306oLED.c: 471:     oled_setFont(OledFont0);
+[e ( _oled_setFont (1 &U _OledFont0 ]
+"472
+[; ;SSD1306oLED.c: 472:     oled_clear();
+[e ( _oled_clear ..  ]
+"473
+[; ;SSD1306oLED.c: 473: }
+[e :UE 669 ]
+}
+"475
+[; ;SSD1306oLED.c: 475: void oled_devInit(void)
+[v _oled_devInit `(v ~T0 @X0 1 ef ]
+"476
+[; ;SSD1306oLED.c: 476: {
+{
+[e :U _oled_devInit ]
+[f ]
+"477
+[; ;SSD1306oLED.c: 477:     oled_writeCommand(0xe2);
+[e ( _oled_writeCommand (1 -> -> 226 `i `uc ]
+"478
+[; ;SSD1306oLED.c: 478:     LATBbits.LATB2=1;
+[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+"479
+[; ;SSD1306oLED.c: 479:     _delay((unsigned long)((200)*(48000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 48000000 `l `d .4000000.0 `ul ]
+"480
+[; ;SSD1306oLED.c: 480:     LATBbits.LATB2=0;
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+"481
+[; ;SSD1306oLED.c: 481:     _delay((unsigned long)((2000)*(48000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 48000000 `l `d .4000000.0 `ul ]
+"482
+[; ;SSD1306oLED.c: 482:     LATBbits.LATB2=1;
+[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+"483
+[; ;SSD1306oLED.c: 483:     _delay((unsigned long)((1000)*(48000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 48000000 `l `d .4000000.0 `ul ]
+"485
+[; ;SSD1306oLED.c: 485:     oled_writeCommand(0xa1);
+[e ( _oled_writeCommand (1 -> -> 161 `i `uc ]
+"486
+[; ;SSD1306oLED.c: 486:     oled_writeCommand(0xc0);
+[e ( _oled_writeCommand (1 -> -> 192 `i `uc ]
+"487
+[; ;SSD1306oLED.c: 487:     oled_writeCommand(0xa3);
+[e ( _oled_writeCommand (1 -> -> 163 `i `uc ]
+"488
+[; ;SSD1306oLED.c: 488:     oled_powerControl(0x07);
+[e ( _oled_powerControl (1 -> -> 7 `i `uc ]
+"489
+[; ;SSD1306oLED.c: 489:     oled_regulorResistorSelect(0x05);
+[e ( _oled_regulorResistorSelect (1 -> -> 5 `i `uc ]
+"490
+[; ;SSD1306oLED.c: 490:     oled_setContrastControlRegister(Contrast_level);
+[e ( _oled_setContrastControlRegister (1 _Contrast_level ]
+"491
+[; ;SSD1306oLED.c: 491:     oled_initialDispayLine(0x00);
+[e ( _oled_initialDispayLine (1 -> -> 0 `i `uc ]
+"492
+[; ;SSD1306oLED.c: 492:     oled_writeCommand(0xF8);
+[e ( _oled_writeCommand (1 -> -> 248 `i `uc ]
+"493
+[; ;SSD1306oLED.c: 493:     oled_writeCommand(0x00);
+[e ( _oled_writeCommand (1 -> -> 0 `i `uc ]
+"494
+[; ;SSD1306oLED.c: 494:     oled_writeCommand(0xaf);
+[e ( _oled_writeCommand (1 -> -> 175 `i `uc ]
+"495
+[; ;SSD1306oLED.c: 495: }
+[e :UE 670 ]
+}
+"498
+[; ;SSD1306oLED.c: 498: void oled_setDisplay (oLED_DisplayMode_t displayType)
+[v _oled_setDisplay `(v ~T0 @X0 1 ef1`E4838 ]
+"499
+[; ;SSD1306oLED.c: 499: {
+{
+[e :U _oled_setDisplay ]
+"498
+[; ;SSD1306oLED.c: 498: void oled_setDisplay (oLED_DisplayMode_t displayType)
+[v _displayType `E4838 ~T0 @X0 1 r1 ]
+"499
+[; ;SSD1306oLED.c: 499: {
+[f ]
+"500
+[; ;SSD1306oLED.c: 500:     if (displayType == Normal)
+[e $ ! == -> _displayType `ui -> . `E4838 0 `ui 672  ]
+"501
+[; ;SSD1306oLED.c: 501:     {
+{
+"502
+[; ;SSD1306oLED.c: 502:         oled_writeCommand(0xa0);
+[e ( _oled_writeCommand (1 -> -> 160 `i `uc ]
+"503
+[; ;SSD1306oLED.c: 503:         oled_writeCommand(0xc8);
+[e ( _oled_writeCommand (1 -> -> 200 `i `uc ]
+"504
+[; ;SSD1306oLED.c: 504:     }
+}
+[e $U 673  ]
+"505
+[; ;SSD1306oLED.c: 505:     else
+[e :U 672 ]
+"506
+[; ;SSD1306oLED.c: 506:     {
+{
+"507
+[; ;SSD1306oLED.c: 507:         oled_writeCommand(0xa1);
+[e ( _oled_writeCommand (1 -> -> 161 `i `uc ]
+"508
+[; ;SSD1306oLED.c: 508:         oled_writeCommand(0xc0);
+[e ( _oled_writeCommand (1 -> -> 192 `i `uc ]
+"509
+[; ;SSD1306oLED.c: 509:     }
+}
+[e :U 673 ]
+"510
+[; ;SSD1306oLED.c: 510: }
+[e :UE 671 ]
+}
+"512
+[; ;SSD1306oLED.c: 512: void oled_displayOff (_Bool state)
+[v _oled_displayOff `(v ~T0 @X0 1 ef1`a ]
+"513
+[; ;SSD1306oLED.c: 513: {
+{
+[e :U _oled_displayOff ]
+"512
+[; ;SSD1306oLED.c: 512: void oled_displayOff (_Bool state)
+[v _state `a ~T0 @X0 1 r1 ]
+"513
+[; ;SSD1306oLED.c: 513: {
+[f ]
+"514
+[; ;SSD1306oLED.c: 514:     oled_writeCommand(0xae);
+[e ( _oled_writeCommand (1 -> -> 174 `i `uc ]
+"515
+[; ;SSD1306oLED.c: 515: }
+[e :UE 674 ]
+}
+"517
+[; ;SSD1306oLED.c: 517: void oled_writeCommand(uint8_t command)
+[v _oled_writeCommand `(v ~T0 @X0 1 ef1`uc ]
+"518
+[; ;SSD1306oLED.c: 518: {
+{
+[e :U _oled_writeCommand ]
+"517
+[; ;SSD1306oLED.c: 517: void oled_writeCommand(uint8_t command)
+[v _command `uc ~T0 @X0 1 r1 ]
+"518
+[; ;SSD1306oLED.c: 518: {
+[f ]
+"519
+[; ;SSD1306oLED.c: 519:     LATBbits.LATB4=0;
+[e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
+"520
+[; ;SSD1306oLED.c: 520:     LATCbits.LATC0=0;
+[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
+"521
+[; ;SSD1306oLED.c: 521:     LATD=command;
+[e = _LATD _command ]
+"522
+[; ;SSD1306oLED.c: 522:     LATCbits.LATC1=0;
+[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
+"523
+[; ;SSD1306oLED.c: 523:     __nop();
+[e ( ___nop ..  ]
+"524
+[; ;SSD1306oLED.c: 524:     LATCbits.LATC1=1;
+[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
+"525
+[; ;SSD1306oLED.c: 525:     LATBbits.LATB4=1;
+[e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
+"526
+[; ;SSD1306oLED.c: 526:     return;
+[e $UE 675  ]
+"527
+[; ;SSD1306oLED.c: 527: }
+[e :UE 675 ]
+}
+"529
+[; ;SSD1306oLED.c: 529: void oled_writeData(uint8_t data)
+[v _oled_writeData `(v ~T0 @X0 1 ef1`uc ]
+"530
+[; ;SSD1306oLED.c: 530: {
+{
+[e :U _oled_writeData ]
+"529
+[; ;SSD1306oLED.c: 529: void oled_writeData(uint8_t data)
+[v _data `uc ~T0 @X0 1 r1 ]
+"530
+[; ;SSD1306oLED.c: 530: {
+[f ]
+"531
+[; ;SSD1306oLED.c: 531:     LATBbits.LATB4=0;
+[e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
+"532
+[; ;SSD1306oLED.c: 532:     LATCbits.LATC0=1;
+[e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
+"533
+[; ;SSD1306oLED.c: 533:     LATD=data;
+[e = _LATD _data ]
+"534
+[; ;SSD1306oLED.c: 534:     LATCbits.LATC1=0;
+[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
+"535
+[; ;SSD1306oLED.c: 535:     __nop();
+[e ( ___nop ..  ]
+"536
+[; ;SSD1306oLED.c: 536:     LATCbits.LATC1=1;
+[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
+"537
+[; ;SSD1306oLED.c: 537:     LATBbits.LATB4=1;
+[e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
+"538
+[; ;SSD1306oLED.c: 538:     return;
+[e $UE 676  ]
+"539
+[; ;SSD1306oLED.c: 539: }
+[e :UE 676 ]
+}
+"541
+[; ;SSD1306oLED.c: 541: void oled_setContrastControlRegister(uint8_t mod)
+[v _oled_setContrastControlRegister `(v ~T0 @X0 1 ef1`uc ]
+"542
+[; ;SSD1306oLED.c: 542: {
+{
+[e :U _oled_setContrastControlRegister ]
+"541
+[; ;SSD1306oLED.c: 541: void oled_setContrastControlRegister(uint8_t mod)
+[v _mod `uc ~T0 @X0 1 r1 ]
+"542
+[; ;SSD1306oLED.c: 542: {
+[f ]
+"543
+[; ;SSD1306oLED.c: 543:     oled_writeCommand(0x81);
+[e ( _oled_writeCommand (1 -> -> 129 `i `uc ]
+"544
+[; ;SSD1306oLED.c: 544:     oled_writeCommand(mod);
+[e ( _oled_writeCommand (1 _mod ]
+"545
+[; ;SSD1306oLED.c: 545:     return;
+[e $UE 677  ]
+"546
+[; ;SSD1306oLED.c: 546: }
+[e :UE 677 ]
+}
+"549
+[; ;SSD1306oLED.c: 549: void oled_initialDispayLine(uint8_t line)
+[v _oled_initialDispayLine `(v ~T0 @X0 1 ef1`uc ]
+"550
+[; ;SSD1306oLED.c: 550: {
+{
+[e :U _oled_initialDispayLine ]
+"549
+[; ;SSD1306oLED.c: 549: void oled_initialDispayLine(uint8_t line)
+[v _line `uc ~T0 @X0 1 r1 ]
+"550
+[; ;SSD1306oLED.c: 550: {
+[f ]
+"551
+[; ;SSD1306oLED.c: 551:     line|=0x40;
+[e =| _line -> -> 64 `i `uc ]
+"552
+[; ;SSD1306oLED.c: 552:     oled_writeCommand(line);
+[e ( _oled_writeCommand (1 _line ]
+"553
+[; ;SSD1306oLED.c: 553:     return;
+[e $UE 678  ]
+"554
+[; ;SSD1306oLED.c: 554: }
+[e :UE 678 ]
+}
+"556
+[; ;SSD1306oLED.c: 556: void oled_powerControl(uint8_t vol)
+[v _oled_powerControl `(v ~T0 @X0 1 ef1`uc ]
+"557
+[; ;SSD1306oLED.c: 557: {
+{
+[e :U _oled_powerControl ]
+"556
+[; ;SSD1306oLED.c: 556: void oled_powerControl(uint8_t vol)
+[v _vol `uc ~T0 @X0 1 r1 ]
+"557
+[; ;SSD1306oLED.c: 557: {
+[f ]
+"558
+[; ;SSD1306oLED.c: 558:     oled_writeCommand((0x28|vol));
+[e ( _oled_writeCommand (1 -> | -> 40 `i -> _vol `i `uc ]
+"559
+[; ;SSD1306oLED.c: 559:     return;
+[e $UE 679  ]
+"560
+[; ;SSD1306oLED.c: 560: }
+[e :UE 679 ]
+}
+"569
+[; ;SSD1306oLED.c: 569: void oled_regulorResistorSelect(uint8_t r)
+[v _oled_regulorResistorSelect `(v ~T0 @X0 1 ef1`uc ]
+"570
+[; ;SSD1306oLED.c: 570: {
+{
+[e :U _oled_regulorResistorSelect ]
+"569
+[; ;SSD1306oLED.c: 569: void oled_regulorResistorSelect(uint8_t r)
+[v _r `uc ~T0 @X0 1 r1 ]
+"570
+[; ;SSD1306oLED.c: 570: {
+[f ]
+"571
+[; ;SSD1306oLED.c: 571:     oled_writeCommand((0x20|r));
+[e ( _oled_writeCommand (1 -> | -> 32 `i -> _r `i `uc ]
+"572
+[; ;SSD1306oLED.c: 572:     return;
+[e $UE 680  ]
+"573
+[; ;SSD1306oLED.c: 573: }
+[e :UE 680 ]
+}
