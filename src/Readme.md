@@ -1,26 +1,27 @@
 # **Índice**   
-- 1 [COMANDOS MODULO RN2903](#id1)
-   - 1.1 [COMANDOS RADIO ](#id2)
-     - 1.1.1 [COMANDOS PARA INICIALIZAR EL RADIO **MODULACIÓN LORA**](#id3)
-     - 1.1.2 [COMANDOS DE TRANSMISIÓN](#id4)
-     - 1.1.3 [COMANDOS DE RECEPCIÓN](#id5) 
-- 2 [DOCUMENTACIÓN DE CÓDIGO](#id6)
-- 3 [PROTOCOLO SERIAL ](#id7)
-  - 3.1 [TABLAS DE CONTENIDO DEL MENSAJE](#id8)
-    - 3.1.1 [CABECERA DEL MENSAJE](#id9)
-    - 3.1.2 [TABLA DE FAMILIA](#id10)
-    - 3.1.2 [DESCRIPCIÓN TABLAS](#id11)
+- 4 [Comandos modulo RN2903](#id15)
+   - 4.1 [Comandos radio ](#id16)
+     - 4.1.1 [Comandos para inicializar el radio **modulación LoRa**](#id17)
+     - 4.1.2 [Comandos de transmisión](#id18)
+     - 4.1.3 [Comandos de recepción](#id19) 
+- 5 [Documentación de código](#id20)
+- 6 [Protocolo serial ](#id21)
+  - 6.1 [Tablas de contenido del mensaje](#id22)
+    - 6.1.1 [Cabecera del mensaje](#id23)
+    - 6.1.2 [Tabla de familia](#id24)
+    - 6.1.2 [Descripción tablas](#id25)
 
-# COMANDOS MODULO RN2903<a name="id1"></a>
+
+# Comandos modulo RN2903<a name="id15"></a>
 ![commands interface](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/commands%20%20interface.PNG)
 
 El modulo RN2903 tiene una gran cantidad de comandos, sin embargo solo se deben usar una cabecera para la comunicación ya sea **mac o radio**, en esta sección se implementaron los comandos radio, estos facilitan la comunicación entre dos módulos RN2903.
 
 Por otra parte, los comandos en general se deben enviar con la misma cantidad de espacios que especifica la hoja de datos, a su vez al final de cada comando se de enviar retorno de carro **CR** y salto de línea **LF** .
 
-## COMANDOS RADIO<a name="id2"></a>
+## Comandos radio<a name="id16"></a>
 
-### COMANDOS PARA INICIALIZAR EL RADIO **MODULACIÓN LORA**<a name="id3"></a>
+### Comandos para inicializar el radio **modulación LoRa**<a name="id3"></a>
 
 1. El siguiente comando permite   configurar el tipo de modulación del modulo  
 ```http
@@ -182,7 +183,7 @@ Se debe realizar cuando se termina de hacer una transmisión o recepción
 ```http
   mac resume\r\n
 ```
-### COMANDOS DE RECEPCIÓN<a name="id5"></a>  
+### Comandos de Recepción <a name="id5"></a>  
 
 1. El siguiente comando pausa la funcionalidad de la pila LoRaWAN para permitir la configuración del transceptor (radio).  
 Se debe llamar antes de hacer una transmisión o recepción.
@@ -223,7 +224,7 @@ Se debe realizar cuando se termina de hacer una transmisión o recepción
   mac resume\r\n
 ```
 
-# DOCUMENTACIÓN DE CÓDIGO<a name="id6"></a>
+# Documentación de código<a name="id6"></a>
 El proyecto, denominado **Tx_RN2903 y RX_RN2903** cuenta con varias carpetas las mas importantes son **Header files** en esta se encuentra los archivos de cabecera **.h** que permiten llamar las funciones de otros archivos del mismo proyecto **.c**, la segunda es **Sours Files**, la cual contiene todos los archivos **.c**, en esta se encuentra una carpeta que genera MCC **“”los códigos generados se pueden modificar, sin embargo si se hacen actualizaciones desde MCC las modificaciones hechas se borran y se remplazaran por las predeterminadas.””**
 El main contiene funciones principales y algunas que se han creado 
 
@@ -308,7 +309,7 @@ Este es un protocolo que se implementa para hacer una comunicación entre maestr
 |`7`|`1`| **send_data **| 
 |`7`|`2`| **get_data  **| 
 
-### DESCRIPCIÓN TABLAS<a name="id11"></a>   
+### Descripción tablas<a name="id11"></a>   
 
 Como se mostró anteriormente el protocolo cuenta con diferentes tablas, de esta manera mostrar a gran escala como se conforma protocolo. Para empezar, el protocolo tiene una palabra de inicio ` star msg ` la cual viene definida por el módulo RN2903 que es: ` radio_rx` con esta se identifica donde comienza el mensaje. Las siguientes palabras del mensaje son los identificadores de las tarjetas  ` ID1 = ID master`, ` ID2 = ID slave`, estos identificadores pueden tener un valor en decimal entre  0 – 255 cada tarjeta debe tener un numero único, de tal forma que cuando se envié la información no haya más de un dispositivo recibiendo algo que no debe, estos identificadores sirven para saber con quién se está haciendo la comunicación  ` ID1 = ID master` y de donde proviene la información ` ID2 = ID slave`, además estos identificadores se usan para saber si se deben procesar la información o no ya que  hay varia tarjetas sintonizadas a la misma frecuencia.
 

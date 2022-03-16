@@ -1,12 +1,12 @@
 # **Índice**   
-- 1 [Diseño de schematic y PCB en Eagle](#id1)
-  - 1.1 [ESTRUCTURA DEL PCB](#id2)
-  - 1.2 [PCB TERMINADA CARAS BUTTOM Y TOP](#id3)
-  - 1.3 [MODELO PCB EN 3D](#id4)
+- 3 [Diseño de schematic y PCB en Eagle](#id11)
+  - 3.1 [ESTRUCTURA DEL PCB](#id12)
+  - 3.2 [PCB TERMINADA CARAS BUTTOM Y TOP](#id13)
+  - 3.3 [MODELO PCB EN 3D](#id14)
 
-# Diseño de schematic y PCB en Eagle <a name="id1"></a> 
+# Diseño de schematic y PCB en Eagle <a name="id11"></a> 
 [Cotización de los componentes](https://docs.google.com/spreadsheets/d/1AnpxCE8uhZ4Mzhw6TfTGnhGRriO4N8LUufEemXK9A1I/edit#gid=807096094) En este link se entra la cotización de los diferentes componentes usados en la PCB exceptuando la tarjeta LoRa mote, Dspic, Tblocks y buzzer, dicha cotización se realizo para armar 3 tarjetas, mas adelante se describe  de manera superficial la función del componente.
-## ESTRUCTURA DEL PCB <a name="id2"></a> 
+## ESTRUCTURA DEL PCB <a name="id12"></a> 
 En el siguiente [enlace](https://docs.google.com/spreadsheets/d/1AnpxCE8uhZ4Mzhw6TfTGnhGRriO4N8LUufEemXK9A1I/edit#gid=1786186541) se encontrarán la distribución de los pines del DSpic para realizar las diferentes conexiones, este archivo contiene el número del pin, así como el label del esquemático de Eagle su tipo de puerto, es decir si es ADC, Digital etc.
 
 La siguiente imagen muestra la distribución de cada uno de los componentes usados para la Pcb, estos componentes tienen su letra y numero correspondiente o identificador del componente, además de su valor si este lo requiere, cada  uno de los componentes se situó de manera estratégica, de tal manera que sea fácil soldar y acceder a este; de igual forma cada elemento esta lo más cerca posible a la conexión con otros dispositivos con los que se interconecta con el fin de tener la menor resistencia posible en la pista que los interconecta. 
@@ -16,12 +16,12 @@ Como se puede evidenciar la pcb diseñada es doble capa y cuenta con dos tamaño
 [Tabla de cosumo y calculos de ruteo](https://docs.google.com/spreadsheets/d/1AnpxCE8uhZ4Mzhw6TfTGnhGRriO4N8LUufEemXK9A1I/edit#gid=618312286)
 
 ![PCB ruteo](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/ruteo.png)
-## PCB TERMINADA CARAS BUTTOM Y TOP <a name="id3"></a> 
+## PCB TERMINADA CARAS BUTTOM Y TOP <a name="id13"></a> 
 
 ![PCB TOP](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/PCB%20SRCAT.png)
 ![PCB BOTTOM](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/PCB%20SRCAB.png)
 
-## MODELO PCB EN 3D <a name="id4"></a>
+## MODELO PCB EN 3D <a name="id14"></a>
 La Pcb cuenta con diferentes componentes, la alimentación cuenta con un conector molex de 4 pines, el cual tiene una sola forma de conectar, por otra parte los indicadores visuales y audibles son indicadores del estado en que se encuentran el sistema, por otra parte el microcontrolador es que se encargara de procesar los diferentes sensores, procesamiento de datos y envió de datos al LoRa, por otra parte los sensores se leen mediante ADC, el bloque de comunicación de sistema de potencia se usa para comunicar un sistema de potencia que se encarga de abrir o cerrar la compuerta, los botones de calibración sirven para abrir o cerrar la compuerta calibrar la altura de sensores sonar, por último se dejó un puerto para programar el microcontrolador con un pickit mediante ICSP.
 ![PCB SRCA indicadores](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/PCB%20SRCA%20indicadores.png)
 
