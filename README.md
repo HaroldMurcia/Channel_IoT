@@ -28,8 +28,12 @@
     - 5.1.1 [Cabecera del mensaje](#id23)
     - 5.1.2 [Tabla de familia](#id24)
     - 5.1.2 [Descripción tablas](#id25)
-- 6 [Documentación de código](#id20)
-
+- 6 [Documentación de código](#id26)
+- 7 [Resultados](#id27)
+  - 7.1 [Apertura de compuerta](#id28)
+  - 7.2 [Distancia del sensor de ultrasonido](#id29)
+  - 7.3 [Alimentación de la board](#id30)
+  - 7.4 [Temperatura de la board](#id31)
 
 # INSTALACION DE HERRAMIENTAS <a name="id1"></a> 
 ## MPLABX <a name="id2"></a> 
@@ -484,6 +488,21 @@ Como se mostró anteriormente el protocolo cuenta con diferentes tablas, de esta
 La siguiente palabra clave del mensaje es tipo de comando `Type Command ` y este es un numero especifico, este se especifica en la **tabla de familia** en esta se muestra que significa cada valor, por otra parte, este dato le dice al que recibe el mensaje que tipo de lectura se ha enviado en el mensaje. Por ultimo las dos palabras que termina el mensaje son: datos y fin del mensaje `Data` `end smg` respectivamente. `Data` corresponde al valor de lectura de las mediciones o datos específicos que se estén enviado y `end smg` corresponde al final del mensaje, el cual esta definido por el modulo RN2903 y corresponde al retorno de carro CR y salto de línea LN \r\n 
 
 
-# Documentación de código<a name="id20"></a>
+# Documentación de código<a name="id26"></a>
 
-La carpeta src contiene 3 diferentes capetas en las que se muestran diferentes códigos de manera simple a la mas compleja el manejo del dispositivo RN2903 usando una [comunicación simple]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Comunicacion%20basica%20MOTE%20a%20MOTE), usando una [comunicación avanzada]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Comunicacion%20avanzada%20Mote%20a%20Mote) usando una estructura de mensaje y por último la integración de sistema embebido construido [Nodo esclavo]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Nodo%20esclavo/SlaveDSpic.X).
+La carpeta src contiene 4 diferentes capetas en las que se muestran diferentes códigos de manera simple a la mas compleja el manejo del dispositivo RN2903 usando una [comunicación simple]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Comunicacion%20basica%20MOTE%20a%20MOTE), usando una [comunicación avanzada]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Comunicacion%20avanzada%20Mote%20a%20Mote) usando una estructura de mensaje y por último la integración de sistema embebido construido [Nodo esclavo]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Nodo%20esclavo/SlaveDSpic.X). En la carpeta [InterfazNodoMaster]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/InterfazNodoMaster) se encuentra la interfaz de nodo maestro.
+
+# Resultados<a name="id27"></a>
+A continuación, se muestra la interfaz usada para la comunicación con el nodo maestro y además una serie datos representados gráficamente que fueron recolectadas en una ventana de 24 horas. ![interfaz](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/interfaz.PNG)
+## Apertura de compuerta<a name="id28"></a>
+![Potecimetro](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/58_potlinear.png)
+## Distancia del sensor de ultrasonido<a name="id29"></a>
+![ultrasonido](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/61_sonar1.png)
+## Alimentación de la board<a name="id30"></a>
+![alimentancion](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/59_source.png)
+## Temperatura de la board<a name="id31"></a>
+![temperatura](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/60_teperature.png)
+
+
+
+
