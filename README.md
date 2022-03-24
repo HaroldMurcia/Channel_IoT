@@ -15,7 +15,7 @@
   - 2.2 [Requerimientos de hardware](#id9)
   - 2.3 [Enlaces de interés](#id10)
 - 3 [Diseño de schematic y PCB en Eagle](#id11)
-  - 3.1 [Estrutra de la PCB](#id12)
+  - 3.1 [Estructura de la PCB](#id12)
   - 3.2 [PCB  Botton y Top](#id13)
   - 3.3 [Modelo PCB en 3D](#id14)
  - 4 [Comandos modulo RN2903](#id15)
