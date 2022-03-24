@@ -23,12 +23,12 @@
      - 4.1.1 [Comandos para inicializar el radio **modulación LoRa**](#id17)
      - 4.1.2 [Comandos de transmisión](#id18)
      - 4.1.3 [Comandos de recepción](#id19) 
-- 5 [Documentación de código](#id20)
-- 6 [Protocolo serial ](#id21)
-  - 6.1 [Tablas de contenido del mensaje](#id22)
-    - 6.1.1 [Cabecera del mensaje](#id23)
-    - 6.1.2 [Tabla de familia](#id24)
-    - 6.1.2 [Descripción tablas](#id25)
+- 5 [Protocolo serial ](#id21)
+  - 5.1 [Tablas de contenido del mensaje](#id22)
+    - 5.1.1 [Cabecera del mensaje](#id23)
+    - 5.1.2 [Tabla de familia](#id24)
+    - 5.1.2 [Descripción tablas](#id25)
+- 6 [Documentación de código](#id20)
 
 
 # INSTALACION DE HERRAMIENTAS <a name="id1"></a> 
@@ -162,7 +162,7 @@ A continuación se muestran los componentes principales que encabezan el sistema
 En el siguiente [enlace](https://docs.google.com/spreadsheets/d/1AnpxCE8uhZ4Mzhw6TfTGnhGRriO4N8LUufEemXK9A1I/edit#gid=1786186541) se encontrarán la distribución de los pines del DSpic para realizar las diferentes conexiones, este archivo contiene el número del pin, así como el label del esquemático de Eagle su tipo de puerto, es decir si es ADC, Digital etc.
 
 La siguiente imagen muestra la distribución de cada uno de los componentes usados para la Pcb, estos componentes tienen su letra y numero correspondiente o identificador del componente, además de su valor si este lo requiere, cada  uno de los componentes se situó de manera estratégica, de tal manera que sea fácil soldar y acceder a este; de igual forma cada elemento esta lo más cerca posible a la conexión con otros dispositivos con los que se interconecta con el fin de tener la menor resistencia posible en la pista que los interconecta. 
-La siguiente [tabla](https://docs.google.com/spreadsheets/d/1AnpxCE8uhZ4Mzhw6TfTGnhGRriO4N8LUufEemXK9A1I/edit#gid=1117524344) muestra la descripción mas detallada de cada elemento de la Pcb.
+La siguiente [tabla](https://docs.google.com/spreadsheets/d/1AnpxCE8uhZ4Mzhw6TfTGnhGRriO4N8LUufEemXK9A1I/edit#gid=1117524344) muestra la descripción mas detallada de cada elemento de la PCB.
 
 Como se puede evidenciar la pcb diseñada es doble capa y cuenta con dos tamaños de anchura, cada uno de estos tamaños fueron calculados por medio de la norma IPS2221, estos cálculos se hicieron por medio de una calculadora que ofrece [Digikey]( https://www.digikey.com/es/resources/conversion-calculators/conversion-calculator-pcb-trace-width) para ello se busco en el datasheet de cada unos de los componentes las corrientes nominales, el consumo de cada uno de los componentes es bajo y en ancho de la pista es muy pequeño, por tanto por requerimientos mínimos que exigen algunas empresas para la fabricación de las pcb para  cada pista debe ser de 0.2mm, para este diseño se tomo un valor por arriba que es de 0.254mm, por otra parte para el calculo de las pistas de potencia se sumo la corriente nominal de todos los componentes, esto se hizo buscado el peor de los casos, lo cual hace suponer que todos los componentes están encendidos en el mismo momento. La corriente total fue alrededor de 1.3A, por tanto el anchor de la pista es de 0.55mm, sin embargo se sobre dimensiono un poco ya que algunos dispositivos pueden tener picos de corriente que muchas veces  no se especifica en el datasheet por tanto el ancho es de 1.016mm, por ultimo para realizar el cálculo se escogió una temperatura ambiente de 25°C y el aumento de temperatura de 30°C el espesor de 1oz/ft^2. 
 [Tabla de cosumo y calculos de ruteo](https://docs.google.com/spreadsheets/d/1AnpxCE8uhZ4Mzhw6TfTGnhGRriO4N8LUufEemXK9A1I/edit#gid=618312286)
@@ -193,7 +193,10 @@ Por otra parte, los comandos en general se deben enviar con la misma cantidad de
 
 ### Comandos para inicializar el radio **modulación LoRa**<a name="id17"></a>
 
-1. El siguiente comando permite   configurar el tipo de modulación del modulo  
+1. El siguiente comando permite cambiar el método de modulación utilizado por el módulo.
+Además, la modificación del modo de funcionamiento no afecta los parámetros, variables o
+registros previamente configurados. Así mismo, el comando es muy simple ya que solamente
+decide si es LoRa o FSK. En este documento se trabaja los comandos relacionados con LoRa.
 ```http
   radio set mod <mode>
 ```
@@ -205,7 +208,10 @@ Por otra parte, los comandos en general se deben enviar con la misma cantidad de
 ```http
   radio set mod lora\r\n
 ```
-2. El siguiente comando permite   configurar la potencia de salida del tranceptor  
+2. El siguiente comando determina la potencia de salida del transceptor. La cual se puede
+ajustar por encima del límite especificado, este ajuste de potencia permite compensar algunas
+pérdidas en el cable o línea de transmisión en dBm. El valor máximo que puede alcanzar es
+de 17 dBm a 20 dBm
 ```http
   radio set pwr <pwrOut>
 ```
@@ -217,7 +223,9 @@ Por otra parte, los comandos en general se deben enviar con la misma cantidad de
 ```http
    radio set pwr 3\r\n 
 ```
-3. El siguiente comando permite   configurar el ancho de banda del radio  
+3. Este comando establece el ancho de banda de radio para el funcionamiento de LoRa,
+ambos dispositivos deben tener el mismo ancho de banda, puesto que, ambos dispositivos se
+comportan como transmisor y receptor 
 ```http
   radio set bw <bandWidth>
 ```
@@ -229,7 +237,10 @@ Por otra parte, los comandos en general se deben enviar con la misma cantidad de
 ```http
    radio set bw 250\r\n 
 ```
-4. El siguiente comando permite   configurar la cabecera de detección de errores
+4. El comando crc permite activar o desactivar la detección de errores, CRC Cyclic Redun-
+dancy Check este comando se usa para detectar errores o cambios accidentales en datos
+sin procesar. Por tanto, si el detector de errores encuentra irregularidades en los mensajes
+automáticamente los eliminará del sistema
 ```http
   radio set crc < crcHeader >
 ```
@@ -241,7 +252,8 @@ Por otra parte, los comandos en general se deben enviar con la misma cantidad de
 ```http
    radio set crc on\r\n
 ```
-5. El siguiente comando permite   configurar la tasa de codificación utilizada por la radio.
+5. El siguiente comando permite configurar la tasa de codificación de errores. Esto significa
+que cada 4 bits útiles se codificarán con 5, 6, 7 u 8 bits transmitidos según su valor.
 ```http
   radio set cr <codingRate>
 ```
@@ -253,7 +265,9 @@ Por otra parte, los comandos en general se deben enviar con la misma cantidad de
 ```http
    radio set cr 4/5\r\n
 ``` 
-6. El siguiente comando permite   configurar la frecuencia de operación de la radio.
+6. El siguiente comando permite configurar la frecuencia de operación del transmisor y
+receptor. Cabe añadir que el transmisor y receptor deben estar sintonizados a la misma
+frecuencia, si no se cumple, no habrá comunicación entre los dispositivos.
 ```http
   radio set freq <frequency>
 ```
@@ -277,7 +291,11 @@ Por otra parte, los comandos en general se deben enviar con la misma cantidad de
 ```http
   radio set iqi off\r\n
 ``` 
-8. El siguiente comando permite   configurar el límite de tiempo de espera para el temporizador de vigilancia de la radio.
+8. El watchDog actualiza la duración del tiempo de espera (en milisegundos) del
+temporizador de vigilancia aplicado al módulo. Cuando esta función está habilitada, el reloj
+de vigilancia se iniciará para cada transceptor que recibe o transmite. El reloj de Watchdog
+se detiene mientras una actividad está en curso. Si el parámetro de la recepción es continuo
+WDT debe ser 0.
 ```http
   radio set wdt <watchDog>
 ```
@@ -289,7 +307,12 @@ Por otra parte, los comandos en general se deben enviar con la misma cantidad de
 ```http
   radio set wdt 15000\r\n
 ``` 
-9. El siguiente comando permite   configurar el factor de dispersión durante la transmisión.
+9. El parámetro sf permite configurar el factor de dispersión ortogonal FS, esta instrucción es
+muy importante, ya que, la configuración ayuda a aumentar o disminuir el rango de alcance
+que puede ser entre 5 km en zonas urbanas y 15 km en zona rural. Sin embargo,
+la velocidad de transmisión de datos se ve afectada por el valor que tome SF lo que hace
+que disminuya o aumente la velocidad de transmisión, es decir, que FS a mayor rango es
+inversamente proporcional a la velocidad de transmisión de datos en kb/s..
 ```http
   radio set sf <spreadingFactor>
 ```
@@ -301,7 +324,10 @@ Por otra parte, los comandos en general se deben enviar con la misma cantidad de
 ```http
   radio set sf SF12\r\n 
 ``` 
-10. El siguiente comando permite   configurar la  palabra de sincronía durante la comunicación  .
+10. El parámetro sync configura la palabra de sincrónica para la comunicación, esta palabra
+para la modulación LoRa es de 1 byte y se usa para sincronizar una transmisión de datos
+indicando el final de la información del encabezado y el inicio de los datos, la cual debe ser
+igual en el dispositivo que reciba la información.
 ```http
   radio set sync <syncWord>
 ```
@@ -394,34 +420,6 @@ Se debe realizar cuando se termina de hacer una transmisión o recepción
   mac resume\r\n
 ```
 
-# Documentación de código<a name="id20"></a>
-El proyecto, denominado **Tx_RN2903 y RX_RN2903** cuenta con varias carpetas las mas importantes son **Header files** en esta se encuentra los archivos de cabecera **.h** que permiten llamar las funciones de otros archivos del mismo proyecto **.c**, la segunda es **Sours Files**, la cual contiene todos los archivos **.c**, en esta se encuentra una carpeta que genera MCC **“”los códigos generados se pueden modificar, sin embargo si se hacen actualizaciones desde MCC las modificaciones hechas se borran y se remplazaran por las predeterminadas.””**
-El main contiene funciones principales y algunas que se han creado 
-
-```
-void init_port(void)
-```
-Su función es inicializar los puertos del micro controlador 
-```
-void Endline(void)
-```
-Esta función esta pensada para mas adelante cuando se envié la información y sea necesario enviar  **CR y LF** después de los datos 
-```
-void sendCommand(char  * texto)
-```
-Está función permite enviar un String de manera serial 
-```
-void test_leds(void)
-```
-Está función simplemente enciende los leds conectados al micro controlador
-```
-void RN_Leds(int state)
-```
-Esta función permite testear los leds conectados al módulo RN209
-```
-void main(void) 
-```
-La función main llama las demás librerías mencionadas anterior mente cabe aclara que la librería **SSD1306oLED** fue tomada del programa que ofrece el fabricante LoRa Mote
 
 # Protocolo serial<a name="id21"></a>
 Este es un protocolo que se implementa para hacer una comunicación entre maestro y esclavo, de manera que se pueda reconocer que se esta enviando, como llega el mensaje y que datos son los que se están enviado, a continuación, se explica como esta conformado 
@@ -486,4 +484,6 @@ Como se mostró anteriormente el protocolo cuenta con diferentes tablas, de esta
 La siguiente palabra clave del mensaje es tipo de comando `Type Command ` y este es un numero especifico, este se especifica en la **tabla de familia** en esta se muestra que significa cada valor, por otra parte, este dato le dice al que recibe el mensaje que tipo de lectura se ha enviado en el mensaje. Por ultimo las dos palabras que termina el mensaje son: datos y fin del mensaje `Data` `end smg` respectivamente. `Data` corresponde al valor de lectura de las mediciones o datos específicos que se estén enviado y `end smg` corresponde al final del mensaje, el cual esta definido por el modulo RN2903 y corresponde al retorno de carro CR y salto de línea LN \r\n 
 
 
+# Documentación de código<a name="id20"></a>
 
+La carpeta src contiene 3 diferentes capetas en las que se muestran diferentes códigos de manera simple a la mas compleja el manejo del dispositivo RN2903 usando una [comunicación simple]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Comunicacion%20basica%20MOTE%20a%20MOTE), usando una [comunicación avanzada]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Comunicacion%20avanzada%20Mote%20a%20Mote) usando una estructura de mensaje y por último la integración de sistema embebido construido [Nodo esclavo]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Nodo%20esclavo/SlaveDSpic.X).
