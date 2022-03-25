@@ -29,11 +29,15 @@
     - 5.1.2 [Tabla de familia](#id24)
     - 5.1.2 [Descripción tablas](#id25)
 - 6 [Documentación de código](#id26)
-- 7 [Resultados](#id27)
-  - 7.1 [Apertura de compuerta](#id28)
-  - 7.2 [Distancia del sensor de ultrasonido](#id29)
-  - 7.3 [Alimentación de la board](#id30)
-  - 7.4 [Temperatura de la board](#id31)
+- - 6.1 [Versiones de software](#id27)
+    - 6.1.1 [Programación en PIC18Lf45k50](#id28)
+    - 6.1.2 [Programación en dsPIC30F4011](#id29)
+    - 6.1.2 [Interfaz nodo maestro](#id30)
+- 7 [Resultados](#id31)
+  - 7.1 [Apertura de compuerta](#id32)
+  - 7.2 [Distancia del sensor de ultrasonido](#id33)
+  - 7.3 [Alimentación de la board](#id34)
+  - 7.4 [Temperatura de la board](#id35)
 
 # INSTALACION DE HERRAMIENTAS <a name="id1"></a> 
 ## MPLABX <a name="id2"></a> 
@@ -489,18 +493,34 @@ La siguiente palabra clave del mensaje es tipo de comando `Type Command ` y este
 
 
 # Documentación de código<a name="id26"></a>
-
 La carpeta src contiene 4 diferentes capetas en las que se muestran diferentes códigos de manera simple a la mas compleja el manejo del dispositivo RN2903 usando una [comunicación simple]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Comunicacion%20basica%20MOTE%20a%20MOTE), usando una [comunicación avanzada]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Comunicacion%20avanzada%20Mote%20a%20Mote) usando una estructura de mensaje y por último la integración de sistema embebido construido [Nodo esclavo]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Nodo%20esclavo/SlaveDSpic.X). En la carpeta [InterfazNodoMaster]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/InterfazNodoMaster) se encuentra la interfaz de nodo maestro.
-
-# Resultados<a name="id27"></a>
+## versiones de software<a name="id27"></a>
+### Programación en PIC18Lf45k50<a name="id28"></a>
+```http
+   MPLAB X 5.45v
+   XC8 compiler 2.25v
+```
+### Programación en dsPIC30F4011<a name="id29"></a>
+```http
+   MPLAB X 5.45v
+   XC16 compiler 1.7v
+```
+### Interfaz nodo maestro<a name="id30"></a>
+```http
+   Python 3.9.7v
+   serial 3.5v
+   tkinter 8.5v
+   threadign 3.8v
+```
+# Resultados<a name="id31"></a>
 A continuación, se muestra la interfaz usada para la comunicación con el nodo maestro y además una serie datos representados gráficamente que fueron recolectadas en una ventana de 24 horas. ![interfaz](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/interfaz.PNG)
-## Apertura de compuerta<a name="id28"></a>
+## Apertura de compuerta<a name="id32"></a>
 ![Potecimetro](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/58_potlinear.png)
-## Distancia del sensor de ultrasonido<a name="id29"></a>
+## Distancia del sensor de ultrasonido<a name="id33"></a>
 ![ultrasonido](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/61_sonar1.png)
-## Alimentación de la board<a name="id30"></a>
+## Alimentación de la board<a name="id34"></a>
 ![alimentancion](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/59_source.png)
-## Temperatura de la board<a name="id31"></a>
+## Temperatura de la board<a name="id35"></a>
 ![temperatura](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/60_teperature.png)
 
 
