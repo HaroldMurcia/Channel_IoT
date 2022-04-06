@@ -1,7 +1,9 @@
 # Channel_IoT
 <p align='center'>
-    <img src="https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/pcb.gif" alt="drawing" width="800"/>
+    <img src="https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/pcb.gif" alt="drawing" width="500"/>
+    <img src="https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/slave%20node.gif" alt="drawing" width="500"/>
 </p>
+
 
 # **Índice**   
 - 1 [INSTALACION DE HERRAMIENTAS](#id1)
