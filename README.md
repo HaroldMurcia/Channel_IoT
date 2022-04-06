@@ -11,25 +11,34 @@
   - 1.4 [Instalación de MPLAB CODE CONFIGURATOR MCC ](#id5)
   - 1.5 [LoRa Development Suite](#id6)
 - 2 [HARDWARE](#id7)
-  - 2.1 [Requerimientos de hardware](#id8) 
+  - 2.1 [Documentos relacionados ](#id8) 
   - 2.2 [Requerimientos de hardware](#id9)
   - 2.3 [Enlaces de interés](#id10)
 - 3 [Diseño de schematic y PCB en Eagle](#id11)
-  - 3.1 [Estrutra de la PCB](#id12)
+  - 3.1 [Estructura de la PCB](#id12)
   - 3.2 [PCB  Botton y Top](#id13)
   - 3.3 [Modelo PCB en 3D](#id14)
- - 4 [Comandos modulo RN2903](#id15)
-   - 4.1 [Comandos radio ](#id16)
-     - 4.1.1 [Comandos para inicializar el radio **modulación LoRa**](#id17)
-     - 4.1.2 [Comandos de transmisión](#id18)
-     - 4.1.3 [Comandos de recepción](#id19) 
-- 5 [Protocolo serial ](#id21)
-  - 5.1 [Tablas de contenido del mensaje](#id22)
+- 4 [Errores de diseño](#id36)
+- 5 [Comandos modulo RN2903](#id15)
+   - 5.1 [Comandos radio ](#id16)
+     - 5.1.1 [Comandos para inicializar el radio **modulación LoRa**](#id17)
+     - 5.1.2 [Comandos de transmisión](#id18)
+     - 5.1.3 [Comandos de recepción](#id19) 
+- 6 [Protocolo serial ](#id21)
+  - 6.1 [Tablas de contenido del mensaje](#id22)
     - 5.1.1 [Cabecera del mensaje](#id23)
     - 5.1.2 [Tabla de familia](#id24)
     - 5.1.2 [Descripción tablas](#id25)
-- 6 [Documentación de código](#id20)
-
+- 7 [Documentación de código](#id26)
+-  6.1 [Versiones de software](#id27)
+    - 7.1.1 [Programación en PIC18Lf45k50](#id28)
+    - 7.1.2 [Programación en dsPIC30F4011](#id29)
+    - 7.1.2 [Interfaz nodo maestro](#id30)
+- 8 [Resultados](#id31)
+  - 8.1 [Apertura de compuerta](#id32)
+  - 8.2 [Distancia del sensor de ultrasonido](#id33)
+  - 8.3 [Alimentación de la board](#id34)
+  - 8.4 [Temperatura de la board](#id35)
 
 # INSTALACION DE HERRAMIENTAS <a name="id1"></a> 
 ## MPLABX <a name="id2"></a> 
@@ -181,6 +190,9 @@ La Pcb cuenta con diferentes componentes, la alimentación cuenta con un conecto
 Clave: 159753
 ![PCB TOP](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/PCB%20SRCA%20vista%20superior.png)
 ![PCB TOP DIAGOANL](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/PCB%20SRCA%20vistaDiagonal.png)
+# Errores de diseño <a name="id36"></a>
+- El primer error se encuentra en la parte de los pulsadores, las pistas para soldar cada pulsador son muy cortas, por tanto se deben dejar con mayor longitud a la actual, con el fin de que el pulsador se pueda soldar con mayor facilidad.
+- cuando se construyeron las librerías del ADC, en la hoja de datos de la familia dsPIC30f se especifica que se deben conectar los pines 40 y 39 a la alimentación para la referencia del ADC, no obstante, la hoja de datos del dsPIC30f4011 especificaba que los pines eran usados para colocar un voltaje entre 2.7 y 5V, con lo anterior, se colocaron dos cables entre la base del dsPIC y el MCU, para poder leer las señales análogicas provenientes de los sensores.
 
 # Comandos modulo RN2903<a name="id15"></a>
 ![commands interface](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/commands%20%20interface.PNG)
@@ -484,6 +496,37 @@ Como se mostró anteriormente el protocolo cuenta con diferentes tablas, de esta
 La siguiente palabra clave del mensaje es tipo de comando `Type Command ` y este es un numero especifico, este se especifica en la **tabla de familia** en esta se muestra que significa cada valor, por otra parte, este dato le dice al que recibe el mensaje que tipo de lectura se ha enviado en el mensaje. Por ultimo las dos palabras que termina el mensaje son: datos y fin del mensaje `Data` `end smg` respectivamente. `Data` corresponde al valor de lectura de las mediciones o datos específicos que se estén enviado y `end smg` corresponde al final del mensaje, el cual esta definido por el modulo RN2903 y corresponde al retorno de carro CR y salto de línea LN \r\n 
 
 
-# Documentación de código<a name="id20"></a>
+# Documentación de código<a name="id26"></a>
+La carpeta src contiene 4 diferentes capetas en las que se muestran diferentes códigos de manera simple a la mas compleja el manejo del dispositivo RN2903 usando una [comunicación simple]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Comunicacion%20basica%20MOTE%20a%20MOTE), usando una [comunicación avanzada]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Comunicacion%20avanzada%20Mote%20a%20Mote) usando una estructura de mensaje y por último la integración de sistema embebido construido [Nodo esclavo]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Nodo%20esclavo/SlaveDSpic.X). En la carpeta [InterfazNodoMaster]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/InterfazNodoMaster) se encuentra la interfaz de nodo maestro.
+## versiones de software<a name="id27"></a>
+### Programación en PIC18Lf45k50<a name="id28"></a>
+```http
+   MPLAB X 5.45v
+   XC8 compiler 2.25v
+```
+### Programación en dsPIC30F4011<a name="id29"></a>
+```http
+   MPLAB X 5.45v
+   XC16 compiler 1.7v
+```
+### Interfaz nodo maestro<a name="id30"></a>
+```http
+   Python 3.9.7v
+   serial 3.5v
+   tkinter 8.5v
+   threadign 3.8v
+```
+# Resultados<a name="id31"></a>
+A continuación, se muestra la interfaz usada para la comunicación con el nodo maestro y además una serie datos representados gráficamente que fueron recolectadas en una ventana de 24 horas. ![interfaz](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/interfaz.PNG)
+## Apertura de compuerta<a name="id32"></a>
+![Potecimetro](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/58_potlinear.png)
+## Distancia del sensor de ultrasonido<a name="id33"></a>
+![ultrasonido](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/61_sonar1.png)
+## Alimentación de la board<a name="id34"></a>
+![alimentancion](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/59_source.png)
+## Temperatura de la board<a name="id35"></a>
+![temperatura](https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/60_teperature.png)
 
-La carpeta src contiene 3 diferentes capetas en las que se muestran diferentes códigos de manera simple a la mas compleja el manejo del dispositivo RN2903 usando una [comunicación simple]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Comunicacion%20basica%20MOTE%20a%20MOTE), usando una [comunicación avanzada]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Comunicacion%20avanzada%20Mote%20a%20Mote) usando una estructura de mensaje y por último la integración de sistema embebido construido [Nodo esclavo]( https://github.com/HaroldMurcia/Channel_IoT/tree/master/src/Nodo%20esclavo/SlaveDSpic.X).
+
+
+
