@@ -1,7 +1,7 @@
 # Channel_IoT
-<p align='center'>
-    <img src="https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/pcb.gif" alt="drawing" width="450"/>
-    <img src="https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/slave%20node.gif" alt="drawing" width="450"/>
+<p align='left'>
+    <img src="https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/pcb.gif" alt="drawing" width="400"/>
+    <img src="https://github.com/HaroldMurcia/Channel_IoT/blob/master/Documents/imagenes/slave%20node.gif" alt="drawing" width="400"/>
 </p>
 
 
